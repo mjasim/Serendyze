@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+
+    text {
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    .commentText:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="jquery.paginate.css">
+
+<!-- CCrit -->
+<!-- 
+<div class="container" style="display:flex; flex-direction: column; align-items: center;">
+    <div id="header" style="margin: 10px">
+        <div class="w3-content">
+            <div class="row">
+                <div class="col-12">
+                    <select id="area" name="area">
+                        <option value="">Pick a Discussion</option>
+                        <option value="0">Building a Tower</option>
+                        <option value="1">Public Art</option>
+                        <option value="2">Roundabout</option>
+                        <option value="3">Huge Fountain</option>
+                        <option value="4">Interactive Art</option>
+                        <option value="5">El Parquecito</option>
+                        <option value="6">Pedestrian Destination</option>
+                        <option value="7">Promenade Real</option>
+                        <option value="8">Platform Connected with Bridges</option>
+                        <option value="9">Triangle Platform</option>
+                        <option value="10">Zipline</option>
+                        <option value="11">Transit Hub</option>
+                        <option value="12">Gateway</option>
+                        <option value="13">Connecing Past with Future</option>
+                        <option value="14">Cart before the Horse</option>
+                        <option value="15">Call the Area Something Else</option>
+                        <option value="16">The Diamond</option>
+                        <option value="17">The Lyre</option>
+                        <option value="18">EV / Barrio Market</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<!-- Amazon -->
+<div class="container" style="display:flex; flex-direction: column; align-items: center;">
+    <div id="header" style="margin: 10px">
+        <div class="w3-content">
+            <div class="row">
+                <div class="col-12">
+                    <select id="area" name="area">
+                        <option value="">Pick a Discussion</option>
+                        <option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>
+                        <option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>
+                        <option value="2">Sennheiser HD280PRO Headphones (old model)</option>
+                        <option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock</option>
+                        <option value="4">Sony MDR7506 Professional Large Diaphragm Headphone</option>
+                        <option value="5">Sennheiser HD 202 II Professional Headphones (Black)</option>
+                        <option value="6">Sony MDREX10LP/BLK In-Ear Headphones</option>
+                        <option value="7">Bose QuietComfort 15 Acoustic Noise Cancelling Headphones (Discontinued by
+                            Manufacturer)</option>
+                        <option value="8">Bose QuietComfort 25 Acoustic Noise Cancelling Headphones for Apple devices -
+                            Black (wired, 3.5mm)</option>
+                        <option value="9">Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver Rotary Folding
+                            Wireless Headset, Wired and Wireless
+                            headphones for Cell Phone/TV/PC, 40 Hours Play Time (White)
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="topicbox" style="display:flex; flex-direction: row; align-items: center; margin:10px"></div>
+
+    <div id="discbox" style="display:flex; flex-direction: row; align-items: center; margin:10px"></div>
+
+    <div id="textbox" style="margin: 10px; width: 960px; height: 300px; overflow-y:auto"></div>
+
+    <div id="metricsbox" class="container" style="width:600px">
+        <div class="w3-light-grey">
+            <div id="coverageBar" class="w3-container w3-green w3-center"
+                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        </div>
+        <div class="w3-light-grey">
+            <div id="visitBar" class="w3-container w3-blue w3-center"
+                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        </div>
+        <div class="w3-light-grey">
+            <div id="distributionBar" class="w3-container w3-red w3-center"
+                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        </div>
+    </div>
+
+    <div id="topicbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
+        <div id="coordinate" style="margin-right: 10px"></div>
+        <div id="timing" style="margin-left: 10px"></div>
+    </div>
+
+    <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div>
+
+
+</div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="hilitor.js"></script>
+<script src="jquery.paginate.js"></script>
+
+<!-- <script>
+    function draw_topics(topic_id) {
+        var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+        radius = 6;
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+        var simulation = d3.forceSimulation()
+            // .force("link", d3.forceLink().id(function(d) { return d.id; }))
+            // .force("link", d3.forceLink().distance(function(d) {return d.id;}).strength(0.1))
+            .force("link", d3.forceLink().id(function (d, i) {
+                return d.id;
+            }).distance(60).strength(1))
+            .force("charge", d3.forceManyBody().strength(-12))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        d3.json("cc_fd_graph.json", function (error, graph) {
+            if (error) throw error;
+
+            graph = graph[parseInt(topic_id)]
+
+            console.log(graph)
+
+            var link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(graph.links)
+                .enter().append("line")
+                .attr("stroke-width", function (d) {
+                    return Math.sqrt(d.value);
+                });
+
+            var node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("g")
+                .data(graph.nodes)
+                .enter().append("g")
+
+            var circles = node.append("circle")
+                .attr("r", 6)
+                .attr("fill", function (d) {
+                    return color(d.group);
+                })
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            var lables = node.append("text")
+                .text(function (d) {
+                    return d.label;
+                })
+                .attr('x', 6)
+                .attr('y', 3)
+                .style("font-size", "11pt")
+
+            node.append("title")
+                .text(function (d) {
+                    return d.label;
+                })
+
+            node.on("click", function (d) {
+                d3.json("cc_sent.json", function (error, full_data) {
+                    if (error) throw error;
+                    comms = []
+                    console.log(d.label, "clicked", full_data)
+                    for (var i in full_data) {
+                        if (full_data[i].comment.includes(d.label)) {
+                            var show_comm = {
+                                "text": full_data[i].comment,
+                                "sent": full_data[i].sentiment
+                            }
+                            comms.push(show_comm)
+                        }
+                    }
+
+                    var myNode = document.getElementById("textbox");
+                    while (myNode.firstChild) {
+                        myNode.removeChild(myNode.firstChild);
+                    }
+
+                    for (var i in comms) {
+                        divSum = document.createElement("div")
+                        var divHTML =
+                            '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                            '<span ' +
+                            'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                            comms[i].sent + '</span>' + "\xa0\xa0\xa0" +
+                            comms[i].text +
+                            '</div>'
+
+                        divSum.innerHTML = divHTML;
+                        myNode.appendChild(divSum)
+                    }
+
+                })
+            });
+
+            simulation
+                .nodes(graph.nodes)
+                .on("tick", ticked);
+
+            simulation.force("link")
+                .links(graph.links);
+
+            function ticked() {
+
+                node.attr("cx", function (d) {
+                        return d.x = Math.max(radius, Math.min(width - radius, d.x));
+                    })
+                    .attr("cy", function (d) {
+                        return d.y = Math.max(radius, Math.min(height - radius, d.y));
+                    });
+
+                link
+                    .attr("x1", function (d) {
+                        return d.source.x;
+                    })
+                    .attr("y1", function (d) {
+                        return d.source.y;
+                    })
+                    .attr("x2", function (d) {
+                        return d.target.x;
+                    })
+                    .attr("y2", function (d) {
+                        return d.target.y;
+                    });
+
+                node
+                    .attr("transform", function (d) {
+                        return "translate(" + d.x + "," + d.y + ")";
+                    })
+            }
+        });
+
+        function dragstarted(d) {
+            if (!d3.event.active) simulation.alphaTarget(0.05).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(d) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+            if (!d3.event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+    }
+</script> -->
+
+<script>
+    time_start = 0
+    time_end = 0
+    full_data = null;
+    text_filter = "null"
+    filter = ""
+    did = null
+    dc_array = []
+
+    // discourses_array = {
+    //     "question": 0,
+    //     "answer": 0,
+    //     "announcement": 0,
+    //     "elaboration": 0,
+    //     "appreciation": 0,
+    //     "agreement": 0,
+    //     "disagreement": 0,
+    //     "negativereaction": 0,
+    //     "humor": 0,
+    //     "other": 0
+    // }
+
+    myHilitor = ""
+
+    discourses_array = {
+        "Positive": 0,
+        "Negative": 0,
+        "Neutral": 0,
+    }
+
+    disc_array = {
+
+    }
+
+    metrics = {
+        "coverage": 0,
+        "visit": 0,
+        "distribution": 0,
+        "depth": 0
+    }
+
+    explored_list = []
+    unexplored_list = []
+
+    // d3.json("mat_data_cc.json", function (error, data) {
+    //     if (error) throw error;
+    //     full_data = JSON.parse(JSON.stringify(data));
+    // })
+
+    d3.json("mat_data_amz.json", function (error, data) {
+        if (error) throw error;
+        full_data = JSON.parse(JSON.stringify(data));
+        console.log(full_data)
+    })
+
+    function render_topics(topic_id) {
+        proposal_data = full_data[topic_id]
+        // console.log(proposal_data)
+        var myNode = document.getElementById("topicbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        // for (var i in proposal_data.topics) {
+        //     // console.log(proposal_data.topics[i].topic_phrase)
+        //     var divbutton = document.createElement("div")
+        //     var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" style="margin:5px">' +
+        //         proposal_data.topics[i].topic_phrase + '</button>'
+        //     divbutton.innerHTML = buttonHTML;
+        //     myNode.appendChild(divbutton)
+        // }
+
+        for (var i in proposal_data.ngrams) {
+            console.log(proposal_data.ngrams[i].ngram)
+            var divbutton = document.createElement("div")
+            var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" style="margin:5px">' +
+                proposal_data.ngrams[i].ngram + '</button>'
+            divbutton.innerHTML = buttonHTML;
+            myNode.appendChild(divbutton)
+        }
+    }
+
+    function render_discourse(discussion_id) {
+        proposal_data = full_data[discussion_id]
+        // console.log(proposal_data.discourses)
+        var myNode = document.getElementById("discbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        for (var i in proposal_data.discourses) {
+            // console.log(proposal_data.discourses[i].discourse_name)
+            var divbutton = document.createElement("div")
+            var buttonHTML = '<button type="button" class="btn btn-success discbtn" style="margin:5px">' +
+                proposal_data.discourses[i].discourse_name + ': ' + proposal_data.discourses[i].count + '</button>'
+            divbutton.innerHTML = buttonHTML;
+            myNode.appendChild(divbutton)
+        }
+    }
+
+    function render_text(text_filter) {
+        if (filter == "disc") {
+            text_filter = text_filter.substring(0, text_filter.indexOf(':'))
+        }
+
+        proposal_data = full_data[did]
+        console.log(proposal_data, filter, text_filter)
+        var myNode = document.getElementById("textbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        for (var i in proposal_data.comments) {
+            if (filter == "topic") {
+                // if (text_filter == proposal_data.comments[i].topic_phrase) {
+                //     divSum = document.createElement("div")
+
+                //     var divHTML =
+                //         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                //         '<span ' +
+                //         'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                //         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                //         '<div class="commentText" id="comment_' + i + '">' + proposal_data.comments[i].comment +
+                //         '</div></div>'
+                //     divSum.innerHTML = divHTML;
+                //     myNode.appendChild(divSum)
+                // }
+
+                var tokens = proposal_data.comments[i].comment.split(" ");
+
+                if ((tokens.includes(text_filter.split(" ")[0]) || tokens.includes(text_filter.split(" ")[1]))) {
+                    // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
+
+                    divSum = document.createElement("div")
+
+                    var divHTML =
+                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<span ' +
+                        ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius: 10px;\">' +
+                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
+                        proposal_data.comments[i].comment +
+                        '</p></div>'
+                    divSum.innerHTML = divHTML;
+                    myNode.appendChild(divSum)
+
+                    if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                        console.log("here")
+                        document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
+                            "style",
+                            "background-color: #E0F9C9")
+                    }
+                }
+
+                // if (text_filter == proposal_data.ngrams[i].ngram) {
+                //     divSum = document.createElement("div")
+
+                //     var divHTML =
+                //         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                //         '<span ' +
+                //         ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border - radius: 10 px;\">' +
+                //         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                //         '<div class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' + proposal_data.comments[i].comment +
+                //         '</div></div>'
+                //     divSum.innerHTML = divHTML;
+                //     myNode.appendChild(divSum)
+                // }
+            } else if (filter == "disc") {
+                if (text_filter == proposal_data.comments[i].discourse) {
+                    divSum = document.createElement("div")
+                    // var divHTML =
+                    //     '<div class="commentText" style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                    //     proposal_data.comments[i].comment + '</div>'
+
+                    var divHTML =
+                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<span ' +
+                        'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
+                        proposal_data.comments[i].comment +
+                        '</p></div>'
+                    divSum.innerHTML = divHTML;
+                    myNode.appendChild(divSum)
+
+                    if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                        console.log("here")
+                        document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
+                            "style",
+                            "background-color: #E0F9C9")
+                    }
+                }
+            } else if (filter == "") {
+                divSum = document.createElement("div")
+                var divHTML =
+                    '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                    '<span ' +
+                    'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                    proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                    '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
+                    proposal_data.comments[i].comment +
+                    '</p></div>'
+                divSum.innerHTML = divHTML;
+                myNode.appendChild(divSum)
+
+                if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                    console.log("here")
+                    document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
+                        "style",
+                        "background-color: #E0F9C9")
+                }
+            }
+        }
+
+        do_pagination()
+    }
+
+    function move(bar_id, max_len) {
+        var elem = document.getElementById(bar_id);
+        var width = 0
+
+        if (bar_id == "coverageBar") {
+            width = metrics.coverage
+        } else if (bar_id == "distributionBar") {
+            width = metrics.distribution
+        } else {
+            width = metrics.visit
+        }
+
+        // console.log(width, max_len)
+        var id = setInterval(frame, 10);
+
+        function frame() {
+            if (width >= max_len) {
+                clearInterval(id);
+            } else {
+                width = width + 1;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+
+            if (bar_id == "coverageBar") {
+                metrics.coverage = width
+            } else if (bar_id == "distributionBar") {
+                metrics.distribution = width
+            } else {
+                metrics.visit = width
+            }
+        }
+    }
+
+    function refresh_move(bar_id) {
+        var elem = document.getElementById(bar_id);
+        elem.style.width = '0%';
+        elem.innerHTML = "";
+    }
+
+    function get_visit() {
+        var cnt = 0
+        for (var i in dc_array) {
+            if (dc_array[i] == 1) {
+                cnt = cnt + 1
+            }
+        }
+        console.log((cnt / dc_array.length) * 100)
+        move("visitBar", (cnt / dc_array.length) * 100);
+    }
+
+    function get_distribution() {
+        var active_cnt = 0
+        var perc_per_discourse = 0
+        var cnt = 0
+        proposal_disc = full_data[did].discourses
+        // console.log(proposal_disc)
+        for (var i in proposal_disc) {
+            if (proposal_disc[i].count > 0) {
+                active_cnt += 1
+            }
+        }
+        active_cnt = 100 / active_cnt
+
+        console.log(active_cnt)
+
+        for (var i in proposal_disc) {
+            if (proposal_disc[i].count > 0) {
+                perc_per_discourse += (discourses_array[proposal_disc[i].discourse_name] / proposal_disc[i]
+                        .count) *
+                    active_cnt
+
+                console.log(perc_per_discourse)
+            }
+        }
+        move("distributionBar", perc_per_discourse);
+    }
+
+    function get_coverage(disc_comments) {
+
+        // for (var i in disc_comments) {
+        //     for (var j in explored_list) {
+        //         if (disc_comments[i].comment != explored_list[j])
+        //             unexplored_list.push(disc_comments[i].comment)
+        //     }
+        // }
+
+        // console.log(Array.from(new Set(explored_list)), Array.from(new Set(unexplored_list)))
+
+        $.ajax({
+            type: "POST",
+            url: "http://mjasim.pythonanywhere.com/",
+            data: JSON.stringify({
+                explored: explored_list,
+                unexplored: unexplored_list
+            }),
+            contentType: 'application/json;charset=UTF-8',
+            success: function (data, status) {
+                console.log(data, status);
+                var myNode = document.getElementById("serenbox");
+                while (myNode.firstChild) {
+                    myNode.removeChild(myNode.firstChild);
+                }
+
+                divSum = document.createElement("div")
+                var divHTML = '<div class="serenText" id="comment_' + '0' + '">' + '--' + data[1][0]
+                    .text +
+                    '</div>' +
+                    '<div class="serenText" id="comment_' + '1' + '">' + '--' + data[1][1].text +
+                    '</div>' +
+                    '<div class="serenText" id="comment_' + '2' + '">' + '--' + data[1][2].text +
+                    '</div>';
+
+                divSum.innerHTML = divHTML;
+                myNode.appendChild(divSum)
+
+                move("coverageBar", ((explored_list.length + data[0].length) / disc_comments
+                        .length) *
+                    100);
+            }
+        });
+
+        // $.post("http://mjasim.pythonanywhere.com/", JSON.stringify({
+        //         query: text,
+        //         comments: comments
+        //     }),
+        //     function (data, status) {
+        //         console.log(data, status);
+        //     });
+    }
+
+    $(document).ready(function () {
+        $('#area').change(function () {
+            var discussion_id = $("#area").val();
+            $("#mainSVG").empty();
+            render_topics(discussion_id)
+            render_discourse(discussion_id)
+
+            var myNode = document.getElementById("textbox");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+
+            did = discussion_id
+
+            console.log(did)
+
+            comment_id_list = []
+
+            metrics.coverage = 0
+            metrics.visit = 0
+            metrics.distribution = 0
+            metrics.depth = 0
+
+            // discourses_array.question = 0
+            // discourses_array.answer = 0
+            // discourses_array.announcement = 0
+            // discourses_array.elaboration = 0
+            // discourses_array.appreciation = 0
+            // discourses_array.agreement = 0
+            // discourses_array.disagreement = 0
+            // discourses_array.negativereaction = 0
+            // discourses_array.humor = 0
+            // discourses_array.other = 0
+
+            discourses_array.Positive = 0
+            discourses_array.Negative = 0
+            discourses_array.Neutral = 0
+
+            filter = ""
+            text_filter = ""
+
+            explored_list = []
+
+            for (var i in full_data[did].comments) {
+                unexplored_list.push(full_data[did].comments[i].comment)
+            }
+
+            dc_array = new Array(full_data[did].comments.length)
+            console.log(dc_array)
+            refresh_move("coverageBar")
+            refresh_move("distributionBar")
+            refresh_move("visitBar")
+
+            render_text(text_filter)
+
+
+        });
+    });
+
+    $(document).on('click', '.topicbtn', function () {
+        console.log($(this)[0].innerText)
+        filter = "topic"
+        render_text($(this)[0].innerText)
+
+        console.log($(this)[0].innerText)
+
+        myHilitor = new Hilitor("textbox");
+        myHilitor.apply($(this)[0].innerText);
+    });
+
+    $(document).on('click', '.discbtn', function () {
+        console.log($(this)[0].innerText)
+        filter = "disc"
+        render_text($(this)[0].innerText)
+    });
+
+    function comment_interact(id) {
+        var text = ""
+        console.log("inside comment intr --", id)
+        for (var i in full_data[did].comments) {
+            if (full_data[did].comments[i].comment_id.toString() == id) {
+                text = full_data[did].comments[i].comment
+                console.log(text)
+                if (!dc_array[i]) {
+                    dc_array[i] = 1
+                    discourses_array[full_data[did].comments[i].discourse] += 1
+                }
+                comment_id_list.push(full_data[did].comments[i].comment_id)
+                document.getElementById("comment_" + full_data[did].comments[i].comment_id).setAttribute(
+                    "style",
+                    "background-color: #E0F9C9")
+            }
+        }
+
+        explored_list.push(text)
+
+        for (var i in unexplored_list) {
+            if (unexplored_list[i] == text) {
+                unexplored_list.splice(i, 1)
+            }
+        }
+
+        get_distribution()
+        get_coverage(full_data[did].comments)
+        get_visit()
+    }
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $('#textbox').scrollTop();
+        var docViewBottom = docViewTop + $('#textbox').height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    function do_pagination() {
+
+        if (document.getElementById("paginatepage")) {
+            var myNode = document.getElementById("paginatepage");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+
+            $('#textbox').unbind().removeData();
+        }
+
+        $('#textbox').paginate({
+            scope: $('div'), // targets all div elements
+            autoScroll: true,
+            perPage: 100
+        })
+
+        $('#textbox').animate({
+            scrollTop: "0"
+        }, 1000)
+    }
+
+
+    $(document).on('click', '.commentText', function () {
+        // console.log($(this)[0].innerText)
+        // comment_interact($(this)[0].innerText)
+        comment_interact($(this)[0].id.substring(8))
+        document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
+    });
+
+    $(document).on('mouseover', '.topicbtn, .discbtn, .commentText', function () {
+        time_start = Date.now();
+        // console.log($(this)[0].innerText, start)
+    });
+
+    $(document).on('mouseout', '.topicbtn, .discbtn, .commentText', function () {
+        time_end = Date.now();
+        var elapsed_time = ((time_end - time_start) / 1000)
+        // console.log(elapsed_time, $(this)[0].innerText)
+        if (this.className == 'commentText' && elapsed_time > 2) {
+            comment_interact($(this)[0].id.substring(8))
+        }
+        document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
+                0]
+            .innerText
+    });
+
+    $(document).on('mousemove', function () {
+        document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
+    });
+
+    $('#textbox').on('scroll', function () {
+        var x = document.getElementById("textbox").childNodes
+
+        var ids = $('#textbox .commentText').map(function () {
+            return $(this).attr('id');
+        }).get();
+        for (var i in ids) {
+            if ((isScrolledIntoView("#" + ids[i]))) {
+                // console.log(ids[i])
+            }
+        }
+    });
+</script>
