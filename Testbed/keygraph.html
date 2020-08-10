@@ -107,7 +107,12 @@
 
     <div id="discbox" style="display:flex; flex-direction: row; align-items: center; margin:10px"></div>
 
-    <div id="textbox" style="margin: 10px; width: 960px; height: 300px; overflow-y:auto"></div>
+    <div id="alltextbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
+        <div id="textboxparent" style="display:flex; flex-direction: column; align-items: center; margin:10px">
+            <div id="textbox" style="margin: 10px; width: 960px; height: 300px; overflow-y:auto"></div>
+        </div>
+        <div id="serenbox" style="margin: 10px; width: 0px; height: 300px; overflow-y:auto;"></div>
+    </div>
 
     <div id="metricsbox" class="container" style="width:600px">
         <div class="w3-light-grey">
@@ -129,7 +134,7 @@
         <div id="timing" style="margin-left: 10px"></div>
     </div>
 
-    <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div>
+    <!-- <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div> -->
 
 
 </div>
@@ -301,7 +306,18 @@
     text_filter = "null"
     filter = ""
     did = null
+    selected_id_ngram = ""
+    prev_selected_id_ngram = ""
     dc_array = []
+    explored_list = []
+    unexplored_list = []
+    comment_id_list = []
+    for (var i = 0; i < 30; i++) {
+        explored_list[i] = []
+        unexplored_list[i] = []
+        dc_array[i] = []
+        comment_id_list[i] = []
+    }
 
     // discourses_array = {
     //     "question": 0,
@@ -318,25 +334,22 @@
 
     myHilitor = ""
 
-    discourses_array = {
-        "Positive": 0,
-        "Negative": 0,
-        "Neutral": 0,
+    discourses_array = []
+    metrics = []
+
+    for (var i = 0; i < 30; i++) {
+        discourses_array[i] = {
+            "Positive": 0,
+            "Negative": 0,
+            "Neutral": 0,
+        }
+
+        metrics[i] = {
+            "coverage": 0,
+            "visit": 0,
+            "distribution": 0,
+        }
     }
-
-    disc_array = {
-
-    }
-
-    metrics = {
-        "coverage": 0,
-        "visit": 0,
-        "distribution": 0,
-        "depth": 0
-    }
-
-    explored_list = []
-    unexplored_list = []
 
     // d3.json("mat_data_cc.json", function (error, data) {
     //     if (error) throw error;
@@ -349,8 +362,8 @@
         console.log(full_data)
     })
 
-    function render_topics(topic_id) {
-        proposal_data = full_data[topic_id]
+    function render_topics(discussion_id) {
+        proposal_data = full_data[discussion_id]
         // console.log(proposal_data)
         var myNode = document.getElementById("topicbox");
         while (myNode.firstChild) {
@@ -369,7 +382,8 @@
         for (var i in proposal_data.ngrams) {
             console.log(proposal_data.ngrams[i].ngram)
             var divbutton = document.createElement("div")
-            var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" style="margin:5px">' +
+            var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" id="ngram_' + i +
+                '\" style="margin:5px">' +
                 proposal_data.ngrams[i].ngram + '</button>'
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
@@ -387,7 +401,8 @@
         for (var i in proposal_data.discourses) {
             // console.log(proposal_data.discourses[i].discourse_name)
             var divbutton = document.createElement("div")
-            var buttonHTML = '<button type="button" class="btn btn-success discbtn" style="margin:5px">' +
+            var buttonHTML = '<button type="button" class="btn btn-success discbtn" id="discourse_' +
+                i + '\" style="margin:5px">' +
                 proposal_data.discourses[i].discourse_name + ': ' + proposal_data.discourses[i].count + '</button>'
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
@@ -422,7 +437,7 @@
                 //     myNode.appendChild(divSum)
                 // }
 
-                var tokens = proposal_data.comments[i].comment.split(" ");
+                var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
                 if ((tokens.includes(text_filter.split(" ")[0]) || tokens.includes(text_filter.split(" ")[1]))) {
                     // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
@@ -440,7 +455,7 @@
                     divSum.innerHTML = divHTML;
                     myNode.appendChild(divSum)
 
-                    if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                    if (comment_id_list[did].includes(proposal_data.comments[i].comment_id)) {
                         console.log("here")
                         document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                             "style",
@@ -479,7 +494,7 @@
                     divSum.innerHTML = divHTML;
                     myNode.appendChild(divSum)
 
-                    if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                    if (comment_id_list[did].includes(proposal_data.comments[i].comment_id)) {
                         console.log("here")
                         document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                             "style",
@@ -499,7 +514,7 @@
                 divSum.innerHTML = divHTML;
                 myNode.appendChild(divSum)
 
-                if (comment_id_list.includes(proposal_data.comments[i].comment_id)) {
+                if (comment_id_list[did].includes(proposal_data.comments[i].comment_id)) {
                     console.log("here")
                     document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                         "style",
@@ -516,11 +531,11 @@
         var width = 0
 
         if (bar_id == "coverageBar") {
-            width = metrics.coverage
+            width = metrics[did].coverage
         } else if (bar_id == "distributionBar") {
-            width = metrics.distribution
+            width = metrics[did].distribution
         } else {
-            width = metrics.visit
+            width = metrics[did].visit
         }
 
         // console.log(width, max_len)
@@ -536,30 +551,39 @@
             }
 
             if (bar_id == "coverageBar") {
-                metrics.coverage = width
+                metrics[did].coverage = width
             } else if (bar_id == "distributionBar") {
-                metrics.distribution = width
+                metrics[did].distribution = width
             } else {
-                metrics.visit = width
+                metrics[did].visit = width
             }
         }
     }
 
     function refresh_move(bar_id) {
         var elem = document.getElementById(bar_id);
-        elem.style.width = '0%';
-        elem.innerHTML = "";
+        // elem.style.width = '0%';
+        // elem.innerHTML = "";
+        if (bar_id == "coverageBar") {
+            width = metrics[did].coverage
+        } else if (bar_id == "distributionBar") {
+            width = metrics[did].distribution
+        } else {
+            width = metrics[did].visit
+        }
+        elem.style.width = width + '%';
+        elem.innerHTML = width * 1 + '%';
     }
 
     function get_visit() {
         var cnt = 0
-        for (var i in dc_array) {
-            if (dc_array[i] == 1) {
+        for (var i in dc_array[did]) {
+            if (dc_array[did][i] == 1) {
                 cnt = cnt + 1
             }
         }
-        console.log((cnt / dc_array.length) * 100)
-        move("visitBar", (cnt / dc_array.length) * 100);
+        console.log((cnt / dc_array[did].length) * 100)
+        move("visitBar", (cnt / dc_array[did].length) * 100);
     }
 
     function get_distribution() {
@@ -579,7 +603,7 @@
 
         for (var i in proposal_disc) {
             if (proposal_disc[i].count > 0) {
-                perc_per_discourse += (discourses_array[proposal_disc[i].discourse_name] / proposal_disc[i]
+                perc_per_discourse += (discourses_array[did][proposal_disc[i].discourse_name] / proposal_disc[i]
                         .count) *
                     active_cnt
 
@@ -598,14 +622,14 @@
         //     }
         // }
 
-        // console.log(Array.from(new Set(explored_list)), Array.from(new Set(unexplored_list)))
+        console.log(explored_list[did], unexplored_list[did])
 
         $.ajax({
             type: "POST",
             url: "http://mjasim.pythonanywhere.com/",
             data: JSON.stringify({
-                explored: explored_list,
-                unexplored: unexplored_list
+                explored: explored_list[did],
+                unexplored: unexplored_list[did]
             }),
             contentType: 'application/json;charset=UTF-8',
             success: function (data, status) {
@@ -614,6 +638,8 @@
                 while (myNode.firstChild) {
                     myNode.removeChild(myNode.firstChild);
                 }
+
+                myNode.setAttribute("style", "margin: 10px; width: 400px; height: 300px; overflow-y:auto;")
 
                 divSum = document.createElement("div")
                 var divHTML = '<div class="serenText" id="comment_' + '0' + '">' + '--' + data[1][0]
@@ -627,7 +653,7 @@
                 divSum.innerHTML = divHTML;
                 myNode.appendChild(divSum)
 
-                move("coverageBar", ((explored_list.length + data[0].length) / disc_comments
+                move("coverageBar", ((explored_list[did].length + data[0].length) / disc_comments
                         .length) *
                     100);
             }
@@ -656,14 +682,18 @@
 
             did = discussion_id
 
+            selected_id_ngram = ""
+            prev_selected_id_ngram = ""
+
+            selected_id_disc = ""
+            prev_selected_id_disc = ""
+
             console.log(did)
 
-            comment_id_list = []
-
-            metrics.coverage = 0
-            metrics.visit = 0
-            metrics.distribution = 0
-            metrics.depth = 0
+            // metrics.coverage = 0
+            // metrics.visit = 0
+            // metrics.distribution = 0
+            // metrics.depth = 0
 
             // discourses_array.question = 0
             // discourses_array.answer = 0
@@ -676,37 +706,61 @@
             // discourses_array.humor = 0
             // discourses_array.other = 0
 
-            discourses_array.Positive = 0
-            discourses_array.Negative = 0
-            discourses_array.Neutral = 0
+            // discourses_array.positive = 0
+            // discourses_array.negative = 0
+            // discourses_array.neutral = 0
 
             filter = ""
             text_filter = ""
 
-            explored_list = []
+            // explored_list = []
 
             for (var i in full_data[did].comments) {
-                unexplored_list.push(full_data[did].comments[i].comment)
+                unexplored_list[did].push(full_data[did].comments[i].comment)
             }
 
-            dc_array = new Array(full_data[did].comments.length)
-            console.log(dc_array)
+            if (dc_array[did].length < 1) {
+                dc_array[did] = new Array(full_data[did].comments.length)
+            }
+
+            console.log("dc_array", dc_array[did])
+
             refresh_move("coverageBar")
             refresh_move("distributionBar")
             refresh_move("visitBar")
 
             render_text(text_filter)
-
-
         });
     });
 
     $(document).on('click', '.topicbtn', function () {
         console.log($(this)[0].innerText)
         filter = "topic"
-        render_text($(this)[0].innerText)
 
-        console.log($(this)[0].innerText)
+        selected_id_ngram = $(this)[0].id
+        if (selected_id_disc) {
+            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
+            selected_id_disc = ""
+            prev_selected_id_disc = ""
+        }
+
+        console.log(selected_id_ngram, prev_selected_id_ngram)
+
+        if (prev_selected_id_ngram == selected_id_ngram) {
+            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
+            selected_id_ngram = ""
+            prev_selected_id_ngram = ""
+            render_text("")
+        } else {
+            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick black")
+            if (prev_selected_id_ngram) {
+                document.getElementById(prev_selected_id_ngram).setAttribute("style",
+                    "border: solid thick white")
+            }
+            prev_selected_id_ngram = selected_id_ngram
+            render_text($(this)[0].innerText)
+            console.log($(this)[0].innerText)
+        }
 
         myHilitor = new Hilitor("textbox");
         myHilitor.apply($(this)[0].innerText);
@@ -715,7 +769,31 @@
     $(document).on('click', '.discbtn', function () {
         console.log($(this)[0].innerText)
         filter = "disc"
-        render_text($(this)[0].innerText)
+
+        selected_id_disc = $(this)[0].id
+        if (selected_id_ngram) {
+            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
+            selected_id_ngram = ""
+            prev_selected_id_ngram = ""
+        }
+
+        console.log(selected_id_disc, prev_selected_id_disc)
+
+        if (prev_selected_id_disc == selected_id_disc) {
+            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
+            selected_id_disc = ""
+            prev_selected_id_disc = ""
+            render_text("")
+        } else {
+            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick black")
+            if (prev_selected_id_disc) {
+                document.getElementById(prev_selected_id_disc).setAttribute("style",
+                    "border: solid thick white")
+            }
+            prev_selected_id_disc = selected_id_disc
+            render_text($(this)[0].innerText)
+            console.log($(this)[0].innerText)
+        }
     });
 
     function comment_interact(id) {
@@ -725,22 +803,22 @@
             if (full_data[did].comments[i].comment_id.toString() == id) {
                 text = full_data[did].comments[i].comment
                 console.log(text)
-                if (!dc_array[i]) {
-                    dc_array[i] = 1
-                    discourses_array[full_data[did].comments[i].discourse] += 1
+                if (!dc_array[did][i]) {
+                    dc_array[did][i] = 1
+                    discourses_array[did][full_data[did].comments[i].discourse] += 1
                 }
-                comment_id_list.push(full_data[did].comments[i].comment_id)
+                comment_id_list[did].push(full_data[did].comments[i].comment_id)
                 document.getElementById("comment_" + full_data[did].comments[i].comment_id).setAttribute(
                     "style",
                     "background-color: #E0F9C9")
             }
         }
 
-        explored_list.push(text)
+        explored_list[did].push(text)
 
-        for (var i in unexplored_list) {
-            if (unexplored_list[i] == text) {
-                unexplored_list.splice(i, 1)
+        for (var i in unexplored_list[did]) {
+            if (unexplored_list[did][i] == text) {
+                unexplored_list[did].splice(i, 1)
             }
         }
 
