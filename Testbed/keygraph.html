@@ -23,6 +23,11 @@
         background-color: lightgray;
         cursor: pointer;
     }
+
+    .serenText:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
 </style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!-- Latest compiled and minified CSS -->
@@ -236,7 +241,7 @@
         // }
 
         for (var i in proposal_data.ngrams) {
-            console.log(proposal_data.ngrams[i].ngram)
+            // console.log(proposal_data.ngrams[i].ngram)
             var divbutton = document.createElement("div")
             var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" id="ngram_' + i +
                 '\" style="margin:5px">' +
@@ -266,7 +271,6 @@
     }
 
     function render_text(text_filter) {
-        console.log("here")
         // if (disc_filter) {
         //     text_filter = text_filter.substring(0, text_filter.indexOf(':'))
         // }
@@ -411,6 +415,31 @@
         do_pagination()
     }
 
+    function render_serenbox(data) {
+        var myNode = document.getElementById("serenbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        divSum = document.createElement("div")
+        var divHTML = '<div class="serenText" id="seren_comment_' + data[1][0].id +
+            '" style=" margin-bottom: 10px">' + '>>' +
+            data[1][0]
+            .text +
+            '</div>' +
+            '<div class="serenText" id="seren_comment_' + data[1][1].id + '" style="margin-bottom: 10px">' +
+            '>> ' +
+            data[1][1].text +
+            '</div>' +
+            '<div class="serenText" id="seren_comment_' + data[1][2].id + '" style="margin-bottom: 10px">' +
+            '>> ' +
+            data[1][2].text +
+            '</div>';
+
+        divSum.innerHTML = divHTML;
+        myNode.appendChild(divSum)
+    }
+
     function move(bar_id, max_len) {
         var elem = document.getElementById(bar_id);
         var width = 0
@@ -530,28 +559,8 @@
             contentType: 'application/json;charset=UTF-8',
             success: function (data, status) {
                 console.log(data, status);
-                var myNode = document.getElementById("serenbox");
-                while (myNode.firstChild) {
-                    myNode.removeChild(myNode.firstChild);
-                }
 
-                divSum = document.createElement("div")
-                var divHTML = '<div class="serenText" id="comment_' + '0' +
-                    '"style=" margin-bottom: 10px">' + '>>' +
-                    data[1][0]
-                    .text +
-                    '</div>' +
-                    '<div class="serenText" id="comment_' + '1' + '"style="margin-bottom: 10px">' +
-                    '>> ' +
-                    data[1][1].text +
-                    '</div>' +
-                    '<div class="serenText" id="comment_' + '2' + '" style="margin-bottom: 10px">' +
-                    '>> ' +
-                    data[1][2].text +
-                    '</div>';
-
-                divSum.innerHTML = divHTML;
-                myNode.appendChild(divSum)
+                render_serenbox(data);
 
                 move("coverageBar", ((explored_list[did].length + data[0].length) / disc_comments
                         .length) *
@@ -617,14 +626,17 @@
             // explored_list = []
 
             for (var i in full_data[did].comments) {
-                unexplored_list[did].push(full_data[did].comments[i].comment)
+                unexplored_list[did].push({
+                    "id": full_data[did].comments[i].comment_id,
+                    "text": full_data[did].comments[i].comment
+                })
             }
 
             if (dc_array[did].length < 1) {
                 dc_array[did] = new Array(full_data[did].comments.length)
             }
 
-            console.log("dc_array", dc_array[did])
+            // console.log("dc_array", dc_array[did])
 
             refresh_move("coverageBar")
             refresh_move("distributionBar")
@@ -734,16 +746,22 @@
                     discourses_array[did][full_data[did].comments[i].discourse] += 1
                 }
                 comment_id_list[did].push(full_data[did].comments[i].comment_id)
-                document.getElementById("comment_" + full_data[did].comments[i].comment_id).setAttribute(
-                    "style",
-                    "background-color: #E0F9C9")
+                if (document.getElementById("comment_" + full_data[did].comments[i].comment_id)) {
+                    document.getElementById("comment_" + full_data[did].comments[i].comment_id).setAttribute(
+                        "style",
+                        "background-color: #E0F9C9")
+                }
             }
         }
 
-        explored_list[did].push(text)
+        // explored_list[did].push(text)
+        explored_list[did].push({
+            "id": id,
+            "text": text
+        })
 
         for (var i in unexplored_list[did]) {
-            if (unexplored_list[did][i] == text) {
+            if (unexplored_list[did][i].text == text) {
                 unexplored_list[did].splice(i, 1)
             }
         }
@@ -785,11 +803,13 @@
         }, 1000)
     }
 
-
     $(document).on('click', '.commentText', function () {
-        // console.log($(this)[0].innerText)
-        // comment_interact($(this)[0].innerText)
         comment_interact($(this)[0].id.substring(8))
+        // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
+    });
+
+    $(document).on('click', '.serenText', function () {
+        comment_interact($(this)[0].id.substring(14))
         // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
     });
 
