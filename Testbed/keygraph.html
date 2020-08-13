@@ -74,7 +74,7 @@
     </div> -->
 
 <!-- Amazon -->
-<div class="container" style="display:flex; flex-direction: column; align-items: center;">
+<div style="display:flex; flex-direction: column; align-items: center;">
     <div id="header" style="margin: 10px">
         <div class="w3-content">
             <div class="row">
@@ -103,39 +103,49 @@
     </div>
 
 
-    <div id="topicbox" style="display:flex; flex-direction: row; align-items: center; margin:10px"></div>
+    <div id="topicbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:10px">
+    </div>
 
-    <div id="discbox" style="display:flex; flex-direction: row; align-items: center; margin:10px"></div>
+    <div id="discbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:10px">
+    </div>
 
-    <div id="alltextbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
-        <div id="textboxparent" style="display:flex; flex-direction: column; align-items: center; margin:10px">
-            <div id="textbox" style="margin: 10px; width: 960px; height: 300px; overflow-y:auto"></div>
+    <div id="alltextbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:10px">
+        <div id="textboxparent"
+            style="display:flex; flex-direction: column; flex-wrap: wrap; align-items: center; margin:10px">
+            <div id="textbox" style="margin: 10px; max-width: 80%; height: 40vh; overflow-y:auto"></div>
         </div>
-        <div id="serenbox" style="margin: 10px; width: 0px; height: 300px; overflow-y:auto;"></div>
+        <div id="serenbox" style="margin: 10px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
     </div>
 
     <div id="metricsbox" class="container" style="width:600px">
-        <div class="w3-light-grey">
-            <div id="coverageBar" class="w3-container w3-green w3-center"
-                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        <div style="border: solid thin lightgrey;">
+            <div id="visitBar" class="w3-container w3-center" style="height:24px; width:0%; background-color: #b3e5fc;">
+            </div>
         </div>
-        <div class="w3-light-grey">
-            <div id="visitBar" class="w3-container w3-blue w3-center"
-                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        <p id="vistext">Visit - You have looked at 0% comments</p>
+        <div style="border: solid thin lightgrey;">
+            <div id="coverageBar" class="w3-container w3-center"
+                style="height:24px; width:0%; background-color: #c8e6c9; "></div>
         </div>
-        <div class="w3-light-grey">
-            <div id="distributionBar" class="w3-container w3-red w3-center"
-                style="height:24px; width:0%; margin-bottom: 10px"></div>
+        <p id="covtext">Coverage - You know the contents of 0% comments</p>
+        <div style="border: solid thin lightgrey;">
+            <div id="distributionBar" class="w3-container w3-center"
+                style="height:24px; width:0%; background-color: #ffcdd2;">
+            </div>
         </div>
+        <p id="disttext">Distribution - You haven't looked at any positive, negative, or neutral comments</p>
     </div>
 
-    <div id="topicbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
+    <div id="dice">
+        <img src="dice.png" style="width: 50px; height:50px; margin:10px">
+    </div>
+
+    <!-- <div id="cordbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
         <div id="coordinate" style="margin-right: 10px"></div>
         <div id="timing" style="margin-left: 10px"></div>
-    </div>
+    </div> -->
 
     <!-- <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div> -->
-
 
 </div>
 
@@ -143,168 +153,13 @@
 <script type="text/javascript" src="hilitor.js"></script>
 <script src="jquery.paginate.js"></script>
 
-<!-- <script>
-    function draw_topics(topic_id) {
-        var svg = d3.select("svg"),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
-        radius = 6;
-
-        var color = d3.scaleOrdinal(d3.schemeCategory20);
-
-        var simulation = d3.forceSimulation()
-            // .force("link", d3.forceLink().id(function(d) { return d.id; }))
-            // .force("link", d3.forceLink().distance(function(d) {return d.id;}).strength(0.1))
-            .force("link", d3.forceLink().id(function (d, i) {
-                return d.id;
-            }).distance(60).strength(1))
-            .force("charge", d3.forceManyBody().strength(-12))
-            .force("center", d3.forceCenter(width / 2, height / 2));
-
-        d3.json("cc_fd_graph.json", function (error, graph) {
-            if (error) throw error;
-
-            graph = graph[parseInt(topic_id)]
-
-            console.log(graph)
-
-            var link = svg.append("g")
-                .attr("class", "links")
-                .selectAll("line")
-                .data(graph.links)
-                .enter().append("line")
-                .attr("stroke-width", function (d) {
-                    return Math.sqrt(d.value);
-                });
-
-            var node = svg.append("g")
-                .attr("class", "nodes")
-                .selectAll("g")
-                .data(graph.nodes)
-                .enter().append("g")
-
-            var circles = node.append("circle")
-                .attr("r", 6)
-                .attr("fill", function (d) {
-                    return color(d.group);
-                })
-                .call(d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended));
-
-            var lables = node.append("text")
-                .text(function (d) {
-                    return d.label;
-                })
-                .attr('x', 6)
-                .attr('y', 3)
-                .style("font-size", "11pt")
-
-            node.append("title")
-                .text(function (d) {
-                    return d.label;
-                })
-
-            node.on("click", function (d) {
-                d3.json("cc_sent.json", function (error, full_data) {
-                    if (error) throw error;
-                    comms = []
-                    console.log(d.label, "clicked", full_data)
-                    for (var i in full_data) {
-                        if (full_data[i].comment.includes(d.label)) {
-                            var show_comm = {
-                                "text": full_data[i].comment,
-                                "sent": full_data[i].sentiment
-                            }
-                            comms.push(show_comm)
-                        }
-                    }
-
-                    var myNode = document.getElementById("textbox");
-                    while (myNode.firstChild) {
-                        myNode.removeChild(myNode.firstChild);
-                    }
-
-                    for (var i in comms) {
-                        divSum = document.createElement("div")
-                        var divHTML =
-                            '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
-                            '<span ' +
-                            'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
-                            comms[i].sent + '</span>' + "\xa0\xa0\xa0" +
-                            comms[i].text +
-                            '</div>'
-
-                        divSum.innerHTML = divHTML;
-                        myNode.appendChild(divSum)
-                    }
-
-                })
-            });
-
-            simulation
-                .nodes(graph.nodes)
-                .on("tick", ticked);
-
-            simulation.force("link")
-                .links(graph.links);
-
-            function ticked() {
-
-                node.attr("cx", function (d) {
-                        return d.x = Math.max(radius, Math.min(width - radius, d.x));
-                    })
-                    .attr("cy", function (d) {
-                        return d.y = Math.max(radius, Math.min(height - radius, d.y));
-                    });
-
-                link
-                    .attr("x1", function (d) {
-                        return d.source.x;
-                    })
-                    .attr("y1", function (d) {
-                        return d.source.y;
-                    })
-                    .attr("x2", function (d) {
-                        return d.target.x;
-                    })
-                    .attr("y2", function (d) {
-                        return d.target.y;
-                    });
-
-                node
-                    .attr("transform", function (d) {
-                        return "translate(" + d.x + "," + d.y + ")";
-                    })
-            }
-        });
-
-        function dragstarted(d) {
-            if (!d3.event.active) simulation.alphaTarget(0.05).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-        }
-
-        function dragged(d) {
-            d.fx = d3.event.x;
-            d.fy = d3.event.y;
-        }
-
-        function dragended(d) {
-            if (!d3.event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-        }
-    }
-</script> -->
-
 <script>
     time_start = 0
     time_end = 0
     full_data = null;
     text_filter = "null"
-    filter = ""
+    topic_filter = ""
+    disc_filter = ""
     did = null
     selected_id_ngram = ""
     prev_selected_id_ngram = ""
@@ -312,6 +167,7 @@
     explored_list = []
     unexplored_list = []
     comment_id_list = []
+    dice_trigger = 0
     for (var i = 0; i < 30; i++) {
         explored_list[i] = []
         unexplored_list[i] = []
@@ -403,26 +259,55 @@
             var divbutton = document.createElement("div")
             var buttonHTML = '<button type="button" class="btn btn-success discbtn" id="discourse_' +
                 i + '\" style="margin:5px">' +
-                proposal_data.discourses[i].discourse_name + ': ' + proposal_data.discourses[i].count + '</button>'
+                proposal_data.discourses[i].discourse_name + '</button>'
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
     }
 
     function render_text(text_filter) {
-        if (filter == "disc") {
-            text_filter = text_filter.substring(0, text_filter.indexOf(':'))
-        }
+        console.log("here")
+        // if (disc_filter) {
+        //     text_filter = text_filter.substring(0, text_filter.indexOf(':'))
+        // }
 
         proposal_data = full_data[did]
-        console.log(proposal_data, filter, text_filter)
+        console.log(proposal_data, disc_filter, topic_filter, text_filter)
         var myNode = document.getElementById("textbox");
         while (myNode.firstChild) {
             myNode.removeChild(myNode.firstChild);
         }
 
         for (var i in proposal_data.comments) {
-            if (filter == "topic") {
+
+            if (topic_filter && disc_filter) {
+                var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
+
+                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1])) &&
+                    disc_filter == proposal_data.comments[i].discourse) {
+
+                    divSum = document.createElement("div")
+
+                    var divHTML =
+                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<span ' +
+                        ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10 px;\">' +
+                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
+                        proposal_data.comments[i].comment + '</p> </div>'
+                    divSum.innerHTML = divHTML;
+                    myNode.appendChild(divSum)
+
+                    if (comment_id_list[did].includes(proposal_data.comments[i].comment_id)) {
+                        console.log("here")
+                        document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
+                            "style",
+                            "background-color: #E0F9C9")
+                    }
+                }
+
+
+            } else if (topic_filter && !disc_filter) {
                 // if (text_filter == proposal_data.comments[i].topic_phrase) {
                 //     divSum = document.createElement("div")
 
@@ -439,13 +324,13 @@
 
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
-                if ((tokens.includes(text_filter.split(" ")[0]) || tokens.includes(text_filter.split(" ")[1]))) {
+                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1]))) {
                     // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
 
                     divSum = document.createElement("div")
 
                     var divHTML =
-                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
                         '<span ' +
                         ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius: 10px;\">' +
                         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
@@ -476,15 +361,15 @@
                 //     divSum.innerHTML = divHTML;
                 //     myNode.appendChild(divSum)
                 // }
-            } else if (filter == "disc") {
-                if (text_filter == proposal_data.comments[i].discourse) {
+            } else if (disc_filter && !topic_filter) {
+                if (disc_filter == proposal_data.comments[i].discourse) {
                     divSum = document.createElement("div")
                     // var divHTML =
                     //     '<div class="commentText" style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                     //     proposal_data.comments[i].comment + '</div>'
 
                     var divHTML =
-                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
                         '<span ' +
                         'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
                         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
@@ -501,10 +386,10 @@
                             "background-color: #E0F9C9")
                     }
                 }
-            } else if (filter == "") {
+            } else if (!text_filter) {
                 divSum = document.createElement("div")
                 var divHTML =
-                    '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                    '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
                     '<span ' +
                     'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
                     proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
@@ -547,15 +432,21 @@
             } else {
                 width = width + 1;
                 elem.style.width = width + '%';
-                elem.innerHTML = width * 1 + '%';
+                elem.innerHTML = '<b>' + ' ' + width * 1 + '%'
+                '</b>';
             }
 
             if (bar_id == "coverageBar") {
                 metrics[did].coverage = width
+                document.getElementById("covtext").innerHTML = 'Coverage - You know the content of ' + width * 1 +
+                    '% comments';
             } else if (bar_id == "distributionBar") {
                 metrics[did].distribution = width
+                document.getElementById("disttext").innerHTML = 'Distribution - ' + width * 1 + '%';
             } else {
                 metrics[did].visit = width
+                document.getElementById("vistext").innerHTML = 'Visit - You have looked at ' + width * 1 +
+                    '% comments';
             }
         }
     }
@@ -566,13 +457,18 @@
         // elem.innerHTML = "";
         if (bar_id == "coverageBar") {
             width = metrics[did].coverage
+            document.getElementById("covtext").innerHTML = 'Coverage - You know the content of ' + width * 1 +
+                '% comments';
         } else if (bar_id == "distributionBar") {
             width = metrics[did].distribution
+            document.getElementById("disttext").innerHTML = 'Distribution ' + width * 1 + '%';
         } else {
             width = metrics[did].visit
+            document.getElementById("vistext").innerHTML = 'Visit - You have looked at ' + width * 1 +
+                '% comments';
         }
+
         elem.style.width = width + '%';
-        elem.innerHTML = width * 1 + '%';
     }
 
     function get_visit() {
@@ -639,15 +535,19 @@
                     myNode.removeChild(myNode.firstChild);
                 }
 
-                myNode.setAttribute("style", "margin: 10px; width: 400px; height: 300px; overflow-y:auto;")
-
                 divSum = document.createElement("div")
-                var divHTML = '<div class="serenText" id="comment_' + '0' + '">' + '--' + data[1][0]
+                var divHTML = '<div class="serenText" id="comment_' + '0' +
+                    '"style=" margin-bottom: 10px">' + '>>' +
+                    data[1][0]
                     .text +
                     '</div>' +
-                    '<div class="serenText" id="comment_' + '1' + '">' + '--' + data[1][1].text +
+                    '<div class="serenText" id="comment_' + '1' + '"style="margin-bottom: 10px">' +
+                    '>> ' +
+                    data[1][1].text +
                     '</div>' +
-                    '<div class="serenText" id="comment_' + '2' + '">' + '--' + data[1][2].text +
+                    '<div class="serenText" id="comment_' + '2' + '" style="margin-bottom: 10px">' +
+                    '>> ' +
+                    data[1][2].text +
                     '</div>';
 
                 divSum.innerHTML = divHTML;
@@ -710,7 +610,8 @@
             // discourses_array.negative = 0
             // discourses_array.neutral = 0
 
-            filter = ""
+            topic_filter = ""
+            disc_filter = ""
             text_filter = ""
 
             // explored_list = []
@@ -735,22 +636,28 @@
 
     $(document).on('click', '.topicbtn', function () {
         console.log($(this)[0].innerText)
-        filter = "topic"
+        topic_filter = $(this)[0].innerText
 
         selected_id_ngram = $(this)[0].id
-        if (selected_id_disc) {
-            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
-            selected_id_disc = ""
-            prev_selected_id_disc = ""
-        }
+        // if (selected_id_disc) {
+        //     document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
+        //     selected_id_disc = ""
+        //     prev_selected_id_disc = ""
+        // }
 
-        console.log(selected_id_ngram, prev_selected_id_ngram)
+        console.log(selected_id_ngram, prev_selected_id_ngram, selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_ngram == selected_id_ngram) {
             document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
-            render_text("")
+            topic_filter = ""
+            if (selected_id_disc) {
+                console.log("discsdics - ", $("#" + selected_id_disc)[0].innerText)
+                render_text($("#" + selected_id_disc)[0].innerText)
+            } else {
+                render_text("")
+            }
         } else {
             document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick black")
             if (prev_selected_id_ngram) {
@@ -758,24 +665,25 @@
                     "border: solid thick white")
             }
             prev_selected_id_ngram = selected_id_ngram
-            render_text($(this)[0].innerText)
             console.log($(this)[0].innerText)
-        }
+            render_text($(this)[0].innerText)
 
-        myHilitor = new Hilitor("textbox");
-        myHilitor.apply($(this)[0].innerText);
+            myHilitor = new Hilitor("textbox");
+            myHilitor.apply(topic_filter);
+        }
     });
 
     $(document).on('click', '.discbtn', function () {
         console.log($(this)[0].innerText)
-        filter = "disc"
+        disc_filter = $(this)[0].innerText
+        console.log("click", disc_filter)
 
         selected_id_disc = $(this)[0].id
-        if (selected_id_ngram) {
-            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
-            selected_id_ngram = ""
-            prev_selected_id_ngram = ""
-        }
+        // if (selected_id_ngram) {
+        //     document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
+        //     selected_id_ngram = ""
+        //     prev_selected_id_ngram = ""
+        // }
 
         console.log(selected_id_disc, prev_selected_id_disc)
 
@@ -783,7 +691,19 @@
             document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
             selected_id_disc = ""
             prev_selected_id_disc = ""
-            render_text("")
+
+            disc_filter = ""
+            if (selected_id_ngram) {
+                render_text($("#" + selected_id_ngram)[0].innerText)
+            } else {
+                render_text("")
+            }
+
+            if (topic_filter) {
+                myHilitor = new Hilitor("textbox");
+                myHilitor.apply(topic_filter);
+            }
+
         } else {
             document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick black")
             if (prev_selected_id_disc) {
@@ -793,7 +713,13 @@
             prev_selected_id_disc = selected_id_disc
             render_text($(this)[0].innerText)
             console.log($(this)[0].innerText)
+
+            if (topic_filter) {
+                myHilitor = new Hilitor("textbox");
+                myHilitor.apply(topic_filter);
+            }
         }
+
     });
 
     function comment_interact(id) {
@@ -864,7 +790,7 @@
         // console.log($(this)[0].innerText)
         // comment_interact($(this)[0].innerText)
         comment_interact($(this)[0].id.substring(8))
-        document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
+        // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
     });
 
     $(document).on('mouseover', '.topicbtn, .discbtn, .commentText', function () {
@@ -879,13 +805,29 @@
         if (this.className == 'commentText' && elapsed_time > 2) {
             comment_interact($(this)[0].id.substring(8))
         }
-        document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
-                0]
-            .innerText
+        // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
+        //         0]
+        //     .innerText
     });
 
-    $(document).on('mousemove', function () {
-        document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
+    // $(document).on('mousemove', function () {
+    //     document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
+    // });
+
+    $(document).on('click', "#dice", function () {
+        if (dice_trigger == 0 && document.getElementById("serenbox").hasChildNodes()) {
+            dice_trigger = 1
+            document.getElementById("serenbox").setAttribute("style",
+                "margin: 10px; max-width: 40%; height: 40vh; overflow-y:auto;")
+            document.getElementById("textbox").setAttribute("style",
+                "margin: 10px; max-width: 40%; height: 40vh; overflow-y:auto;")
+        } else {
+            dice_trigger = 0
+            document.getElementById("serenbox").setAttribute("style",
+                "margin: 10px; width: 0px; height: 0px; overflow-y:auto;")
+            document.getElementById("textbox").setAttribute("style",
+                "margin: 10px; max-width: 80%; height: 40vh; overflow-y:auto;")
+        }
     });
 
     $('#textbox').on('scroll', function () {
