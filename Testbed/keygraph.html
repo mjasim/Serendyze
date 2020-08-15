@@ -29,15 +29,29 @@
         cursor: pointer;
     }
 
+    .topicbtn:hover {
+        background-color: lightgray !important;
+        cursor: pointer !important;
+    }
+
+    .discbtn:hover {
+        /* background-color: lightgray !important; */
+        cursor: pointer;
+    }
+
     .loader {
-        border: 8px solid #f3f3f3;
+        border: 8px solid #b3e5fc;
         border-radius: 50%;
-        border-top: 8px solid #3498db;
+        border-top: 8px solid black;
         width: 8px;
         height: 8px;
         -webkit-animation: spin 2s linear infinite;
         /* Safari */
         animation: spin 2s linear infinite;
+    }
+
+    .metbar:hover {
+        cursor: pointer;
     }
 
     /* Safari */
@@ -111,6 +125,30 @@
     </div> -->
 
 <!-- Amazon -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <a class="navbar-brand" href="#">
+        <img src="dice.png" width="30" height="30" alt="">
+        Dice
+    </a>
+    <button class="navbar-toggler py-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon py-0"></span>
+    </button>
+
+    <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto py-0">
+            <li class="nav-item active py-0">
+                <a class="nav-link py-0" href="#">User Guide<span class="sr-only py-0">(current)</span></a>
+            </li>
+            <li class="nav-item py-0">
+                <a class="nav-link py-0" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
 <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto;">
     <div id="header" style="margin: 5px">
         <div class="w3-content">
@@ -135,14 +173,16 @@
         </div>
     </div>
 
-    <div id="topicbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:5px">
+    <div id="topicbox"
+        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 70%">
     </div>
 
-    <div id="discbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:5px">
+    <div id="discbox"
+        style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width: 70%">
     </div>
 
     <div id="alltextbox"
-        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width:90%">
+        style="display:flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; margin:5px; width:90%">
         <div id="textboxparent"
             style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
             <div id="textboxheader" style="width:90%; border:solid thin lightgray">
@@ -151,10 +191,10 @@
             <div id="textbox" style="margin: 10px; max-width: 90%; height: 40vh; overflow-y:auto"></div>
         </div>
         <div id="serenboxparent"
-            style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:0px; width:0px; height:0px">
-            <div id="serenboxheader" style="display:flex; flex-direction: row; flex-wrap: wrap; width:0px">
+            style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
+            <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
                 <div id="serenheader"></div>
-                <div class="loader" id="serenloading" style="margin: 3px; display: none;"></div>
+                <div class="loader" id="serenloading" style="margin: 3px; margin-left: 5px; display: none;"></div>
             </div>
             <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
         </div>
@@ -163,7 +203,7 @@
     <div id="metricsbox"
         style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:5px; width:90%">
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-            <div style="border: solid thin lightgrey; width:100%">
+            <div class="metbar" id="visitback" style="border: solid thin lightgrey; width:100%">
                 <div id="visitBar" style="height:24px; width:0%; background-color: #b3e5fc;">
                 </div>
             </div>
@@ -171,7 +211,7 @@
         </div>
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-            <div style="border: solid thin lightgrey; width:100%">
+            <div class="metbar" id="coverback" style="border: solid thin lightgrey; width:100%">
                 <div id="coverageBar" style="height:24px; width:0%; background-color: #c8e6c9;">
                 </div>
             </div>
@@ -179,7 +219,7 @@
         </div>
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-            <div style="border: solid thin lightgrey; width:100%">
+            <div class="metbar" id="distback" style="border: solid thin lightgrey; width:100%">
                 <div id="distributionBar" style="height:24px; width:0%; background-color: #ffcdd2;">
                 </div>
             </div>
@@ -187,7 +227,7 @@
         </div>
     </div>
 
-    <div id="dice">
+    <div id="dice" title="Get suggestion">
         <img src="dice.png" style="width: 40px; height:40px; margin:5px;">
     </div>
 
@@ -217,6 +257,7 @@
     dc_array = []
     explored_list = []
     unexplored_list = []
+    covered_list = []
     comment_id_list = []
     dice_trigger = 0
     for (var i = 0; i < 30; i++) {
@@ -224,7 +265,11 @@
         unexplored_list[i] = []
         dc_array[i] = []
         comment_id_list[i] = []
+        covered_list[i] = []
     }
+
+    selected_id_metric = ""
+    prev_selected_id_metric = ""
 
     // discourses_array = {
     //     "question": 0,
@@ -289,9 +334,12 @@
         for (var i in proposal_data.ngrams) {
             // console.log(proposal_data.ngrams[i].ngram)
             var divbutton = document.createElement("div")
-            var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" id="ngram_' + i +
-                '\" style="margin:5px">' +
-                proposal_data.ngrams[i].ngram + '</button>'
+            var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
+                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px">' +
+                proposal_data.ngrams[i].ngram + '</div>' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
+                proposal_data.ngrams[i].ngram +
+                '\" style="width: 0%; height: 5px; background-color:red; display:none"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -306,11 +354,30 @@
         }
 
         for (var i in proposal_data.discourses) {
+
+            var sent_color = "lightgray"
+            var sent_text = "black"
+
+            console.log("discbtn", proposal_data.discourses[i].discourse_name)
+
+            if (proposal_data.discourses[i].discourse_name == "Positive") {
+                sent_color = "white"
+            } else if (proposal_data.discourses[i].discourse_name == "Negative") {
+                sent_color = "black"
+                sent_text = "white"
+            }
+
             // console.log(proposal_data.discourses[i].discourse_name)
             var divbutton = document.createElement("div")
-            var buttonHTML = '<button type="button" class="btn btn-success discbtn" id="discourse_' +
-                i + '\" style="margin:5px">' +
-                proposal_data.discourses[i].discourse_name + '</button>'
+            var buttonHTML = '<div class= "discbtn" id="discourse_' +
+                i +
+                '\" style="margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                sent_color + '; color: ' + sent_text +
+                '\">' +
+                proposal_data.discourses[i].discourse_name + '</div>' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
+                proposal_data.discourses[i].discourse_name +
+                '\" style="width: 0%; height: 5px; background-color:red; display:none"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -321,6 +388,8 @@
         //     text_filter = text_filter.substring(0, text_filter.indexOf(':'))
         // }
 
+        var count = 0
+
         proposal_data = full_data[did]
         console.log(proposal_data, disc_filter, topic_filter, text_filter)
         var myNode = document.getElementById("textbox");
@@ -330,18 +399,32 @@
 
         for (var i in proposal_data.comments) {
 
+            var sent_color = "lightgray"
+            var sent_text = "black"
+
             if (topic_filter && disc_filter) {
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
                 if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1])) &&
                     disc_filter == proposal_data.comments[i].discourse) {
 
+                    count += 1
+
                     divSum = document.createElement("div")
+
+                    if (proposal_data.comments[i].discourse == "Positive") {
+                        sent_color = "white"
+                    } else if (proposal_data.comments[i].discourse == "Negative") {
+                        sent_color = "black"
+                        sent_text = "white"
+                    }
 
                     var divHTML =
                         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10 px;\">' +
+                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
+                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        '\">' +
                         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
                         proposal_data.comments[i].comment + '</p> </div>'
@@ -352,7 +435,7 @@
                         console.log("here")
                         document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                             "style",
-                            "background-color: #E0F9C9")
+                            "background-color: #b3e5fc")
                     }
                 }
 
@@ -377,16 +460,26 @@
                 if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1]))) {
                     // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
 
+                    count += 1
+
                     divSum = document.createElement("div")
 
+                    if (proposal_data.comments[i].discourse == "Positive") {
+                        sent_color = "white"
+                    } else if (proposal_data.comments[i].discourse == "Negative") {
+                        sent_color = "black"
+                        sent_text = "white"
+                    }
+
                     var divHTML =
-                        '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
+                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius: 10px;\">' +
+                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
+                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        '\">' +
                         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
-                        proposal_data.comments[i].comment +
-                        '</p></div>'
+                        proposal_data.comments[i].comment + '</p> </div>'
                     divSum.innerHTML = divHTML;
                     myNode.appendChild(divSum)
 
@@ -394,7 +487,7 @@
                         console.log("here")
                         document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                             "style",
-                            "background-color: #E0F9C9")
+                            "background-color: #b3e5fc")
                     }
                 }
 
@@ -413,19 +506,30 @@
                 // }
             } else if (disc_filter && !topic_filter) {
                 if (disc_filter == proposal_data.comments[i].discourse) {
+
+                    count += 1
+
+                    if (proposal_data.comments[i].discourse == "Positive") {
+                        sent_color = "white"
+                    } else if (proposal_data.comments[i].discourse == "Negative") {
+                        sent_color = "black"
+                        sent_text = "white"
+                    }
+
                     divSum = document.createElement("div")
                     // var divHTML =
                     //     '<div class="commentText" style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                     //     proposal_data.comments[i].comment + '</div>'
 
                     var divHTML =
-                        '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
+                        '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
+                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        '\">' +
                         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
-                        proposal_data.comments[i].comment +
-                        '</p></div>'
+                        proposal_data.comments[i].comment + '</p> </div>'
                     divSum.innerHTML = divHTML;
                     myNode.appendChild(divSum)
 
@@ -433,19 +537,30 @@
                         console.log("here")
                         document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                             "style",
-                            "background-color: #E0F9C9")
+                            "background-color: #b3e5fc")
                     }
                 }
             } else if (!text_filter) {
+
+                count += 1
+
+                if (proposal_data.comments[i].discourse == "Positive") {
+                    sent_color = "white"
+                } else if (proposal_data.comments[i].discourse == "Negative") {
+                    sent_color = "black"
+                    sent_text = "white"
+                }
+
                 divSum = document.createElement("div")
                 var divHTML =
-                    '<div style=\"margin:3px; display:flex; flex-direction: row;  align-items: flex-start\">' +
+                    '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                     '<span ' +
-                    'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
+                    ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
+                    'background-color: ' + sent_color + '; color: ' + sent_text +
+                    '\">' +
                     proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
                     '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
-                    proposal_data.comments[i].comment +
-                    '</p></div>'
+                    proposal_data.comments[i].comment + '</p> </div>'
                 divSum.innerHTML = divHTML;
                 myNode.appendChild(divSum)
 
@@ -453,11 +568,14 @@
                     console.log("here")
                     document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
                         "style",
-                        "background-color: #E0F9C9")
+                        "background-color: #b3e5fc")
                 }
             }
         }
 
+        console.log(count)
+
+        document.getElementById("textboxheader").textContent = "Comments: " + count
         do_pagination()
     }
 
@@ -469,21 +587,44 @@
 
         divSum = document.createElement("div")
         var divHTML = '<div class="serenText" id="seren_comment_' + data[1][0].id +
-            '" style=" margin-bottom: 10px">' + '>>' +
+            '" style=" margin-bottom: 10px">' + '&#8226; ' +
             data[1][0]
             .text +
             '</div>' +
             '<div class="serenText" id="seren_comment_' + data[1][1].id + '" style="margin-bottom: 10px">' +
-            '>> ' +
+            '&#8226; ' +
             data[1][1].text +
             '</div>' +
             '<div class="serenText" id="seren_comment_' + data[1][2].id + '" style="margin-bottom: 10px">' +
-            '>> ' +
+            '&#8226; ' +
             data[1][2].text +
+            '</div>' +
+            '<div class="serenText" id="seren_comment_' + data[1][3].id + '" style="margin-bottom: 10px">' +
+            '&#8226; ' +
+            data[1][3].text +
+            '</div>' +
+            '<div class="serenText" id="seren_comment_' + data[1][4].id + '" style="margin-bottom: 10px">' +
+            '&#8226; ' +
+            data[1][4].text +
             '</div>';
 
         divSum.innerHTML = divHTML;
         myNode.appendChild(divSum)
+    }
+
+    function tinymove(bar_id, max_len) {
+        var elem = document.getElementById(bar_id);
+        var width = 0
+        var id = setInterval(frame, 10);
+
+        function frame() {
+            if (width >= max_len) {
+                clearInterval(id);
+            } else {
+                width = width + 1;
+                elem.style.width = width + '%';
+            }
+        }
     }
 
     function move(bar_id, max_len) {
@@ -575,7 +716,7 @@
         }
         active_cnt = 100 / active_cnt
 
-        console.log(active_cnt)
+        // console.log(active_cnt)
 
         for (var i in proposal_disc) {
             if (proposal_disc[i].count > 0) {
@@ -583,7 +724,7 @@
                         .count) *
                     active_cnt
 
-                console.log(perc_per_discourse)
+                // console.log(perc_per_discourse)
             }
         }
         move("distributionBar", perc_per_discourse);
@@ -598,7 +739,7 @@
         //     }
         // }
 
-        console.log(explored_list[did], unexplored_list[did])
+        // console.log(explored_list[did], unexplored_list[did])
 
         $.ajax({
             type: "POST",
@@ -609,23 +750,35 @@
             }),
             contentType: 'application/json;charset=UTF-8',
             success: function (data, status) {
-                console.log(data, status);
+                // console.log(data, status);
+
+                var covered_ids = []
+
+                for (var i in covered_list[did]) {
+                    covered_ids.push(covered_list[did][i].id)
+                }
+
+                // console.log(covered_ids)
 
                 render_serenbox(data);
 
-                move("coverageBar", ((explored_list[did].length + data[0].length) / disc_comments
+                for (var i in data[0]) {
+                    // console.log(data[0][i].id, covered_ids)
+                    if (!covered_ids.includes(data[0][i].id.toString())) {
+                        covered_list[did].push({
+                            "id": data[0][i].id.toString(),
+                            "text": data[0][i].text
+                        })
+                    }
+                }
+
+                // console.log(explored_list[did], covered_list[did], data[0])
+
+                move("coverageBar", ((covered_list[did].length) / disc_comments
                         .length) *
                     100);
             }
         });
-
-        // $.post("http://mjasim.pythonanywhere.com/", JSON.stringify({
-        //         query: text,
-        //         comments: comments
-        //     }),
-        //     function (data, status) {
-        //         console.log(data, status);
-        //     });
     }
 
     $(document).ready(function () {
@@ -711,7 +864,9 @@
         console.log(selected_id_ngram, prev_selected_id_ngram, selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_ngram == selected_id_ngram) {
-            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
+            document.getElementById(selected_id_ngram).setAttribute("style",
+                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px;"
+            )
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
             topic_filter = ""
@@ -722,10 +877,13 @@
                 render_text("")
             }
         } else {
-            document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick black")
+            document.getElementById(selected_id_ngram).setAttribute("style",
+                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+            )
             if (prev_selected_id_ngram) {
                 document.getElementById(prev_selected_id_ngram).setAttribute("style",
-                    "border: solid thick white")
+                    "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px;"
+                )
             }
             prev_selected_id_ngram = selected_id_ngram
             console.log($(this)[0].innerText)
@@ -741,6 +899,16 @@
         disc_filter = $(this)[0].innerText
         console.log("click", disc_filter)
 
+        var sent_color = "lightgray"
+        var sent_text = "black"
+        if (disc_filter == "Positive") {
+            sent_color = "white"
+        } else if (disc_filter == "Negative") {
+            sent_color = "black"
+            sent_text = "white"
+        }
+
+
         selected_id_disc = $(this)[0].id
         // if (selected_id_ngram) {
         //     document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
@@ -751,7 +919,11 @@
         console.log(selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_disc == selected_id_disc) {
-            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
+
+            var styletext =
+                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                sent_color + '; color: ' + sent_text;
+            document.getElementById(selected_id_disc).setAttribute("style", styletext)
             selected_id_disc = ""
             prev_selected_id_disc = ""
 
@@ -768,11 +940,28 @@
             }
 
         } else {
-            document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick black")
+            var styletext =
+                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px; background-color: ' +
+                sent_color + '; color: ' + sent_text;
+            document.getElementById(selected_id_disc).setAttribute("style", styletext)
+
             if (prev_selected_id_disc) {
-                document.getElementById(prev_selected_id_disc).setAttribute("style",
-                    "border: solid thick white")
+
+                var sent_color = "lightgray"
+                var sent_text = "black"
+                if (prev_selected_id_disc == "discourse_0") {
+                    sent_color = "white"
+                } else if (prev_selected_id_disc == "discourse_2") {
+                    sent_color = "black"
+                    sent_text = "white"
+                }
+
+                var styletext =
+                    'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                    sent_color + '; color: ' + sent_text;
+                document.getElementById(prev_selected_id_disc).setAttribute("style", styletext)
             }
+
             prev_selected_id_disc = selected_id_disc
             render_text($(this)[0].innerText)
             console.log($(this)[0].innerText)
@@ -795,21 +984,37 @@
                 if (!dc_array[did][i]) {
                     dc_array[did][i] = 1
                     discourses_array[did][full_data[did].comments[i].discourse] += 1
+                    comment_id_list[did].push(full_data[did].comments[i].comment_id)
+
+                    explored_list[did].push({
+                        "id": id,
+                        "text": text
+                    })
+
+                    covered_list[did].push({
+                        "id": id,
+                        "text": text
+                    })
                 }
-                comment_id_list[did].push(full_data[did].comments[i].comment_id)
+                // comment_id_list[did].push(full_data[did].comments[i].comment_id)
                 if (document.getElementById("comment_" + full_data[did].comments[i].comment_id)) {
                     document.getElementById("comment_" + full_data[did].comments[i].comment_id).setAttribute(
                         "style",
-                        "background-color: #E0F9C9")
+                        "background-color: #b3e5fc")
                 }
             }
         }
 
-        // explored_list[did].push(text)
-        explored_list[did].push({
-            "id": id,
-            "text": text
-        })
+        // // explored_list[did].push(text)
+        // explored_list[did].push({
+        //     "id": id,
+        //     "text": text
+        // })
+
+        // covered_list[did].push({
+        //     "id": id,
+        //     "text": text
+        // })
 
         for (var i in unexplored_list[did]) {
             if (unexplored_list[did][i].text == text) {
@@ -898,23 +1103,22 @@
     //     document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
     // });
 
-
-
     $(document).on('click', "#dice", function () {
         if (dice_trigger == 0 && document.getElementById("serenbox").hasChildNodes()) {
             dice_trigger = 1
             document.getElementById("serenboxparent").setAttribute("style",
-                "margin: 5px; max-width: 45%; height: 55vh;")
+                "display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; align-content: flex-start; margin: 5px; max-width: 45%; height: 55vh;"
+            )
 
             document.getElementById("serenbox").setAttribute("style",
-                "margin: 5px; max-width: 100%; height: 55vh; overflow-y:auto;")
+                "margin: 10px; max-width: 90%; height: 40vh; overflow-y:auto;")
 
             document.getElementById("textboxparent").setAttribute("style",
                 "display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin: 5px; max-width: 45%; height: 55vh;"
             )
 
             document.getElementById("serenboxheader").setAttribute("style",
-                "display:flex; flex-direction: row; flex-wrap: wrap; width: 100%; border: solid thin lightgray"
+                "display:flex; flex-direction: row; width: 90%; border: solid thin lightgray"
             )
 
             document.getElementById("serenheader").textContent = 'Suggested Comments'
@@ -928,10 +1132,10 @@
                 "margin: 0px; width: 0px; height: 0px;")
 
             document.getElementById("serenbox").setAttribute("style",
-                "margin: 0px; width: 0px; height: 0px; overflow-y:auto;")
+                "margin: 0px; width: 0px; height: 0px; overflow-y:auto")
 
             document.getElementById("serenboxheader").setAttribute("style",
-                "display:flex; flex-direction: row; flex-wrap: wrap; width: 0px;"
+                "display:flex; flex-direction: row; width: 0px;"
             )
 
             document.getElementById("serenheader").textContent = ''
@@ -962,6 +1166,126 @@
         for (var i in ids) {
             if ((isScrolledIntoView("#" + ids[i]))) {
                 // console.log(ids[i])
+            }
+        }
+    });
+
+
+    function calc_tiny_visit(category, tag, totalcount) {
+        var proposal_data = full_data[did]
+        var explored_ids = []
+        var met_count = 0
+
+        console.log(category, tag, totalcount)
+
+        for (var i in explored_list[did]) {
+            explored_ids.push(explored_list[did][i].id)
+        }
+
+        if (category == "ngram") {
+            for (var i in proposal_data.comments) {
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
+                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                        met_count += 1
+                    }
+                }
+            }
+            console.log(met_count)
+        } else if (category == "discourse") {
+            for (var i in proposal_data.comments) {
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                    .discourse ==
+                    tag) {
+                    met_count += 1
+                }
+            }
+        }
+
+        // console.log(tag, met_count, totalcount)
+        return ((met_count / totalcount) * 100)
+    }
+
+    $(document).on('click', '.metbar', function () {
+
+        if (did) {
+            var x_array = document.getElementsByClassName("tinybar")
+
+            var tinycolor = ""
+            var id = $(this)[0].id
+            selected_id_metric = id
+
+            if (prev_selected_id_metric == selected_id_metric) {
+                console.log("if", prev_selected_id_metric, selected_id_metric)
+                document.getElementById(selected_id_metric).setAttribute("style",
+                    "border: solid thin lightgrey; width:100%")
+
+                selected_id_metric = ""
+                prev_selected_id_metric = ""
+
+                for (var i = 0; i < 13; i++) {
+                    console.log("display check none")
+                    x_array[i].style.backgroundColor = "red"
+                    x_array[i].style.display = "none"
+                }
+
+            } else {
+                document.getElementById(selected_id_metric).setAttribute("style",
+                    "border: solid 2px goldenrod; width:100%")
+
+                console.log("else", prev_selected_id_metric, selected_id_metric)
+
+                for (var i = 0; i < 13; i++) {
+                    x_array[i].style.backgroundColor = tinycolor
+                    x_array[i].style.display = "block"
+                }
+
+                proposal_data = full_data[did]
+
+                var ngram_list = []
+                for (var i in proposal_data.ngrams) {
+                    ngram_list.push(proposal_data.ngrams[i].ngram)
+                }
+
+                if (id == "visitback") {
+                    tinycolor = "#b3e5fc"
+                } else if (id == "coverback") {
+                    tinycolor = "#c8e6c9"
+                } else if (id == "distback") {
+                    tinycolor = "#ffcdd2"
+                }
+
+                for (var i in ngram_list) {
+                    var totalcount = 0
+                    for (var j in proposal_data.comments) {
+                        var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
+
+                        if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
+                                tokens.includes(ngram_list[i].split(" ")[1]))) {
+                            totalcount += 1
+                        }
+                    }
+                    // IF VISIT
+                    var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
+                        totalcount)
+                    console.log(met_width)
+                    tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
+                }
+
+                for (var i in proposal_data.discourses) {
+                    var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i].discourse_name,
+                        proposal_data.discourses[i].count)
+                    console.log(met_width)
+                    tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
+                }
+
+                if (prev_selected_id_metric) {
+                    document.getElementById(prev_selected_id_metric).setAttribute("style",
+                        "border: solid thin lightgrey; width:100%"
+                    )
+                }
+
+                prev_selected_id_metric = selected_id_metric
             }
         }
     });
