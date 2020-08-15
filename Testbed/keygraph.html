@@ -139,14 +139,102 @@
     <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto py-0">
             <li class="nav-item active py-0">
-                <a class="nav-link py-0" href="#">User Guide<span class="sr-only py-0">(current)</span></a>
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#userModal">User Guide<span
+                        class="sr-only py-0">(current)</span></a>
             </li>
             <li class="nav-item py-0">
-                <a class="nav-link py-0" href="#">About</a>
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal">About</a>
             </li>
         </ul>
     </div>
 </nav>
+
+<div class="modal fade bd-example-modal-lg" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userModalLabel">Welcome to Dice</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Select a product from the dropdown, then explore product comments to make a purchase decision. You
+                    can mark comments as read by clicking on the comment.</p>
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div
+                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #b3e5fc;">
+                        </div>
+                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The Visit bar shows how
+                            many comments you interacted with.</div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div
+                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #c8e6c9;">
+                        </div>
+                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The Coverage bar shows how
+                            many comments you know about including comments that are
+                            similar to ones you interacted with.</div>
+                    </div>
+                    <div style=" display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div
+                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #ffcdd2;">
+                        </div>
+                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The
+                            Distribution bar shows
+                            how are you interacting with comments with different
+                            sentiment
+                            categories.</div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;; justify-content: flex-start;">
+                        <div style="display: flex; flex-direction: row; width: 100px; justify-content: center;"><img
+                                src="dice.png" style="width: 40px; height:40px; margin:5px;"></div>
+                        <div style="display: block; width: 900px; height: 50px; margin: 5px; padding: 10px;">Clicking
+                            Dice button will
+                            suggest you comments based your interactions with other
+                            comments
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="aboutModal" tabindex="-1" role="dialog"
+    aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutModalLabel">About</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Dice is a research project aimed to study how users explore short free-form text information online
+                    before making a decision. If you have any question about the project, contact:
+                    <address>
+                        <b>Mahmood Jasim</b><br>
+                        Graduate Researcher<br>
+                        College of Information and Computer Sciences<br>
+                        University of Massachusetts<br>
+                        Amherst, MA - 01002<br>
+                        Email: <a href="mailto:mjasim@cs.umass.edu">mjasim@cs.umass.edu</a><br>
+                    </address>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto;">
@@ -159,7 +247,8 @@
                         <option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>
                         <option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>
                         <option value="2">Sennheiser HD280PRO Headphones (old model)</option>
-                        <option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock</option>
+                        <option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock
+                        </option>
                         <option value="4">Sony MDR7506 Professional Large Diaphragm Headphone</option>
                         <option value="5">Sennheiser HD 202 II Professional Headphones (Black)</option>
                         <option value="6">Sony MDREX10LP/BLK In-Ear Headphones</option>
@@ -194,7 +283,8 @@
             style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
             <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
                 <div id="serenheader"></div>
-                <div class="loader" id="serenloading" style="margin: 3px; margin-left: 5px; display: none;"></div>
+                <div class="loader" id="serenloading" style="margin: 3px; margin-left: 5px; display: none;">
+                </div>
             </div>
             <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
         </div>
@@ -207,7 +297,7 @@
                 <div id="visitBar" style="height:24px; width:0%; background-color: #b3e5fc;">
                 </div>
             </div>
-            <div id="vistext">You have looked at 0% comments</div>
+            <div id="vistext">Visit: You looked at 0% comments</div>
         </div>
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
@@ -215,7 +305,7 @@
                 <div id="coverageBar" style="height:24px; width:0%; background-color: #c8e6c9;">
                 </div>
             </div>
-            <div id="covtext">You know the contents of 0% comments</div>
+            <div id="covtext">Coverage: You know about 0% comments</div>
         </div>
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
@@ -223,7 +313,7 @@
                 <div id="distributionBar" style="height:24px; width:0%; background-color: #ffcdd2;">
                 </div>
             </div>
-            <div id="disttext">You looked at 0% sentiments</div>
+            <div id="disttext">Distribution: You looked at 0% sentiments</div>
         </div>
     </div>
 
@@ -252,6 +342,7 @@
     topic_filter = ""
     disc_filter = ""
     did = null
+    prev_did = null
     selected_id_ngram = ""
     prev_selected_id_ngram = ""
     dc_array = []
@@ -337,7 +428,8 @@
             var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
                 '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px">' +
                 proposal_data.ngrams[i].ngram + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' +
+                '<div class="tinybar" id=\"met_' +
                 proposal_data.ngrams[i].ngram +
                 '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
             divbutton.innerHTML = buttonHTML;
@@ -375,7 +467,8 @@
                 sent_color + '; color: ' + sent_text +
                 '\">' +
                 proposal_data.discourses[i].discourse_name + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' +
+                '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
                 '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
             divbutton.innerHTML = buttonHTML;
@@ -405,7 +498,8 @@
             if (topic_filter && disc_filter) {
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
-                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1])) &&
+                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[
+                        1])) &&
                     disc_filter == proposal_data.comments[i].discourse) {
 
                     count += 1
@@ -457,7 +551,8 @@
 
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
-                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[1]))) {
+                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[
+                        1]))) {
                     // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
 
                     count += 1
@@ -654,14 +749,71 @@
 
             if (bar_id == "coverageBar") {
                 metrics[did].coverage = width
-                document.getElementById("covtext").innerHTML = 'Coverage - You know the content of ' + width * 1 +
+                document.getElementById("covtext").innerHTML = 'Coverage: You know about ' + width * 1 +
                     '% comments';
             } else if (bar_id == "distributionBar") {
                 metrics[did].distribution = width
-                document.getElementById("disttext").innerHTML = 'Distribution - ' + width * 1 + '%';
+
+                var proposal_data = full_data[did]
+                var explored_ids = []
+                for (var i in explored_list[did]) {
+                    explored_ids.push(explored_list[did][i].id)
+                }
+                var pos = 0
+                var neg = 0
+                var neut = 0
+
+                for (var i in proposal_data.comments) {
+                    if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                        if (proposal_data.comments[i].discourse == "Positive") {
+                            pos += 1
+                        } else if (proposal_data.comments[i].discourse == "Negative") {
+                            neg += 1
+                        } else {
+                            neut += 1
+                        }
+                    }
+                }
+                var total = pos + neg + neut
+                var items = [{
+                    "sent": "Positive",
+                    "count": pos
+                }, {
+                    "sent": "Negative",
+                    "count": neg
+                }, {
+                    "sent": "Neutral",
+                    "count": neut
+                }]
+                var total = pos + neg + neut
+                var sorted = items.sort(function (a, b) {
+                    return b.count - a.count
+                })
+
+                var fgroup = ((sorted[0].count / total) - (sorted[1].count / total)) * 100
+
+                if (fgroup > 10) {
+                    document.getElementById("disttext").innerHTML = 'Distribution: You mostly looked at ' +
+                        sorted[
+                            0]
+                        .sent + ' comments';
+                } else {
+                    var sgroup = ((sorted[1].count / total) - (sorted[2].count / total)) * 100
+                    if (sgroup > 10) {
+                        document.getElementById("disttext").innerHTML = 'Distribution: You mostly looked at ' +
+                            sorted[0]
+                            .sent + ' and ' + sorted[1]
+                            .sent + ' comments';
+                    } else {
+                        document.getElementById("disttext").innerHTML =
+                            'Distribution: You looked at all kinds of comments';
+                    }
+                }
+
+                // document.getElementById("disttext").innerHTML = 'Distribution: ' + width * 1 + '%';
             } else {
                 metrics[did].visit = width
-                document.getElementById("vistext").innerHTML = 'Visit - You have looked at ' + width * 1 +
+                document.getElementById("vistext").innerHTML = 'Visit: You looked at ' + width * 1 +
                     '% comments';
             }
         }
@@ -676,14 +828,15 @@
 
         if (bar_id == "coverageBar") {
             width = metrics[did].coverage
-            document.getElementById("covtext").innerHTML = 'Coverage - You know the content of ' + width * 1 +
+            document.getElementById("covtext").innerHTML = 'Coverage: You know about ' + width * 1 +
                 '% comments';
         } else if (bar_id == "distributionBar") {
             width = metrics[did].distribution
-            document.getElementById("disttext").innerHTML = 'Distribution ' + width * 1 + '%';
+            document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' + width * 1 +
+                '% sentiments';
         } else {
             width = metrics[did].visit
-            document.getElementById("vistext").innerHTML = 'Visit - You have looked at ' + width * 1 +
+            document.getElementById("vistext").innerHTML = 'Visit: You looked at ' + width * 1 +
                 '% comments';
         }
 
@@ -782,9 +935,33 @@
     }
 
     $(document).ready(function () {
-        $('#area').change(function () {
+        $('#area').on('change', function () {
             var discussion_id = $("#area").val();
-            $("#mainSVG").empty();
+
+            var orig_area_text = ["Koss Porta Pro On Ear Headphones with Case, Black / Silver",
+                "Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil",
+                "Sennheiser HD280PRO Headphones (old model)",
+                "Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock",
+                "Sony MDR7506 Professional Large Diaphragm Headphone",
+                "Sennheiser HD 202 II Professional Headphones (Black)",
+                "Sony MDREX10LP/BLK In-Ear Headphones",
+                "Bose QuietComfort 15 Acoustic Noise Cancelling Headphones",
+                "Bose QuietComfort 25 Acoustic Noise Cancelling Headphones",
+                "Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver"
+            ]
+
+            if (prev_did) {
+                var area_text = $('#area option[value=' + prev_did + ']').text()
+                console.log(area_text)
+                $('#area option[value=' + prev_did + ']').html(orig_area_text[prev_did] +
+                    ' - Visit: ' +
+                    '<div style="color: blue">' + metrics[prev_did].visit + '</div>' +
+                    '% Coverage: ' + '<div style="color: green">' + metrics[prev_did]
+                    .coverage + '</div>' + '% Distribution: ' +
+                    '<div style="color: red">' + metrics[prev_did].distribution +
+                    '%' + '</div>')
+            }
+
             render_topics(discussion_id)
             render_discourse(discussion_id)
 
@@ -847,6 +1024,8 @@
             refresh_move("visitBar")
 
             render_text(text_filter)
+
+            prev_did = did
         });
     });
 
@@ -971,7 +1150,6 @@
                 myHilitor.apply(topic_filter);
             }
         }
-
     });
 
     function comment_interact(id) {
@@ -1209,7 +1387,8 @@
             // console.log(met_count)
         } else if (category == "discourse") {
             for (var i in proposal_data.comments) {
-                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data
+                    .comments[i]
                     .discourse ==
                     tag) {
                     met_count += 1
@@ -1244,7 +1423,8 @@
             // console.log(met_count)
         } else if (category == "discourse") {
             for (var i in proposal_data.comments) {
-                if (covered_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                if (covered_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data
+                    .comments[i]
                     .discourse == tag) {
                     met_count += 1
                 }
@@ -1301,7 +1481,7 @@
         if (category == "ngram") {
             for (var i in proposal_data.comments) {
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
-                    console.log("found explored")
+                    // console.log("found explored")
                     var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
                     if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
                         if (proposal_data.comments[i].discourse == "Positive") {
@@ -1319,7 +1499,8 @@
 
         } else if (category == "discourse") {
             for (var i in proposal_data.comments) {
-                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data
+                    .comments[i]
                     .discourse ==
                     tag) {
                     met_count += 1
@@ -1398,17 +1579,20 @@
             for (var i in proposal_data.discourses) {
                 // IF VISIT
                 if (id == "visitback") {
-                    var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i].discourse_name,
+                    var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i]
+                        .discourse_name,
                         proposal_data.discourses[i].count)
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
                 } else if (id == "coverback") {
-                    var met_width = calc_tiny_cover("discourse", proposal_data.discourses[i].discourse_name,
+                    var met_width = calc_tiny_cover("discourse", proposal_data.discourses[i]
+                        .discourse_name,
                         proposal_data.discourses[i].count)
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
                 } else if (id == "distback") {
-                    var met_width = calc_tiny_dist("discourse", proposal_data.discourses[i].discourse_name,
+                    var met_width = calc_tiny_dist("discourse", proposal_data.discourses[i]
+                        .discourse_name,
                         proposal_data.discourses[i].count)
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
