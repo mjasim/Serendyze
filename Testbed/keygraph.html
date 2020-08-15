@@ -1235,6 +1235,14 @@
 
                 console.log("else", prev_selected_id_metric, selected_id_metric)
 
+                if (id == "visitback") {
+                    tinycolor = "#b3e5fc"
+                } else if (id == "coverback") {
+                    tinycolor = "#c8e6c9"
+                } else if (id == "distback") {
+                    tinycolor = "#ffcdd2"
+                }
+
                 for (var i = 0; i < 13; i++) {
                     x_array[i].style.backgroundColor = tinycolor
                     x_array[i].style.display = "block"
@@ -1243,16 +1251,9 @@
                 proposal_data = full_data[did]
 
                 var ngram_list = []
+
                 for (var i in proposal_data.ngrams) {
                     ngram_list.push(proposal_data.ngrams[i].ngram)
-                }
-
-                if (id == "visitback") {
-                    tinycolor = "#b3e5fc"
-                } else if (id == "coverback") {
-                    tinycolor = "#c8e6c9"
-                } else if (id == "distback") {
-                    tinycolor = "#ffcdd2"
                 }
 
                 for (var i in ngram_list) {
@@ -1265,7 +1266,7 @@
                             totalcount += 1
                         }
                     }
-                    // IF VISIT
+
                     var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
                         totalcount)
                     console.log(met_width)
