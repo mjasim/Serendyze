@@ -339,7 +339,7 @@
                 proposal_data.ngrams[i].ngram + '</div>' +
                 '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
                 proposal_data.ngrams[i].ngram +
-                '\" style="width: 0%; height: 5px; background-color:red; display:none"></div></div>';
+                '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -358,7 +358,7 @@
             var sent_color = "lightgray"
             var sent_text = "black"
 
-            console.log("discbtn", proposal_data.discourses[i].discourse_name)
+            // console.log("discbtn", proposal_data.discourses[i].discourse_name)
 
             if (proposal_data.discourses[i].discourse_name == "Positive") {
                 sent_color = "white"
@@ -377,7 +377,7 @@
                 proposal_data.discourses[i].discourse_name + '</div>' +
                 '<div style="margin:5px; padding-left:3px; padding-right:3px;">' + '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
-                '\" style="width: 0%; height: 5px; background-color:red; display:none"></div></div>';
+                '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -391,7 +391,7 @@
         var count = 0
 
         proposal_data = full_data[did]
-        console.log(proposal_data, disc_filter, topic_filter, text_filter)
+        // console.log(proposal_data, disc_filter, topic_filter, text_filter)
         var myNode = document.getElementById("textbox");
         while (myNode.firstChild) {
             myNode.removeChild(myNode.firstChild);
@@ -573,7 +573,7 @@
             }
         }
 
-        console.log(count)
+        // console.log(count)
 
         document.getElementById("textboxheader").textContent = "Comments: " + count
         do_pagination()
@@ -699,7 +699,7 @@
                 cnt = cnt + 1
             }
         }
-        console.log((cnt / dc_array[did].length) * 100)
+        // console.log((cnt / dc_array[did].length) * 100)
         move("visitBar", (cnt / dc_array[did].length) * 100);
     }
 
@@ -976,11 +976,24 @@
 
     function comment_interact(id) {
         var text = ""
-        console.log("inside comment intr --", id)
+        // console.log("inside comment intr --", id)
+
+        var covered_ids = []
+        for (var i in covered_list[did]) {
+            covered_ids.push(covered_list[did][i].id)
+        }
+
+        // if (!covered_ids.includes(data[0][i].id.toString())) {
+        //     covered_list[did].push({
+        //         "id": data[0][i].id.toString(),
+        //         "text": data[0][i].text
+        //     })
+        // }
+
         for (var i in full_data[did].comments) {
             if (full_data[did].comments[i].comment_id.toString() == id) {
                 text = full_data[did].comments[i].comment
-                console.log(text)
+                // console.log(text)
                 if (!dc_array[did][i]) {
                     dc_array[did][i] = 1
                     discourses_array[did][full_data[did].comments[i].discourse] += 1
@@ -991,10 +1004,12 @@
                         "text": text
                     })
 
-                    covered_list[did].push({
-                        "id": id,
-                        "text": text
-                    })
+                    if (!covered_ids.includes(id)) {
+                        covered_list[did].push({
+                            "id": id,
+                            "text": text
+                        })
+                    }
                 }
                 // comment_id_list[did].push(full_data[did].comments[i].comment_id)
                 if (document.getElementById("comment_" + full_data[did].comments[i].comment_id)) {
@@ -1060,7 +1075,7 @@
     }
 
     $(document).on('click', '.commentText', function () {
-        console.log(dice_trigger)
+        // console.log(dice_trigger)
         if (dice_trigger == 1) {
             document.getElementById("serenloading").style.display = "block"
             setTimeout(function () {
@@ -1176,7 +1191,7 @@
         var explored_ids = []
         var met_count = 0
 
-        console.log(category, tag, totalcount)
+        // console.log(category, tag, totalcount)
 
         for (var i in explored_list[did]) {
             explored_ids.push(explored_list[did][i].id)
@@ -1191,7 +1206,7 @@
                     }
                 }
             }
-            console.log(met_count)
+            // console.log(met_count)
         } else if (category == "discourse") {
             for (var i in proposal_data.comments) {
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
@@ -1206,7 +1221,117 @@
         return ((met_count / totalcount) * 100)
     }
 
-    $(document).on('click', '.metbar', function () {
+    function calc_tiny_cover(category, tag, totalcount) {
+        var proposal_data = full_data[did]
+        var covered_ids = []
+        var met_count = 0
+
+        // console.log(category, tag, totalcount)
+
+        for (var i in covered_list[did]) {
+            covered_ids.push(covered_list[did][i].id)
+        }
+
+        if (category == "ngram") {
+            for (var i in proposal_data.comments) {
+                if (covered_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
+                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                        met_count += 1
+                    }
+                }
+            }
+            // console.log(met_count)
+        } else if (category == "discourse") {
+            for (var i in proposal_data.comments) {
+                if (covered_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                    .discourse == tag) {
+                    met_count += 1
+                }
+            }
+        }
+
+        // console.log(tag, met_count, totalcount)
+        return ((met_count / totalcount) * 100)
+    }
+
+    function calc_tiny_dist(category, tag, totalcount) {
+        var proposal_data = full_data[did]
+        var explored_ids = []
+        var pos = 0
+        var neg = 0
+        var neut = 0
+        var tot_pos = 0
+        var tot_neg = 0
+        var tot_neut = 0
+        var met_count = 0
+        var met_return = 0
+
+        var active_cnt = 0
+        var perc_per_discourse = 0
+        var cnt = 0
+        proposal_disc = full_data[did].discourses
+        for (var i in proposal_disc) {
+            if (proposal_disc[i].count > 0) {
+                active_cnt += 1
+            }
+        }
+        active_cnt = 100 / active_cnt
+
+        for (var i in proposal_data.comments) {
+            var tot_tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
+            if ((tot_tokens.includes(tag.split(" ")[0]) || tot_tokens.includes(tag.split(" ")[1]))) {
+                // console.log("here")
+                if (proposal_data.comments[i].discourse == "Positive") {
+                    tot_pos += 1
+                } else if (proposal_data.comments[i].discourse == "Negative") {
+                    tot_neg += 1
+                } else {
+                    tot_neut += 1
+                }
+            }
+        }
+
+        // console.log(tag, tot_pos, tot_neg, tot_neut)
+
+        for (var i in explored_list[did]) {
+            explored_ids.push(explored_list[did][i].id)
+        }
+
+        if (category == "ngram") {
+            for (var i in proposal_data.comments) {
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                    console.log("found explored")
+                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
+                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                        if (proposal_data.comments[i].discourse == "Positive") {
+                            pos += 1
+                        } else if (proposal_data.comments[i].discourse == "Negative") {
+                            neg += 1
+                        } else {
+                            neut += 1
+                        }
+                    }
+                }
+            }
+
+            met_return = ((pos / tot_pos) + (neg / tot_neg) + (neut / tot_neut)) * active_cnt
+
+        } else if (category == "discourse") {
+            for (var i in proposal_data.comments) {
+                if (explored_ids.includes(proposal_data.comments[i].comment_id.toString()) && proposal_data.comments[i]
+                    .discourse ==
+                    tag) {
+                    met_count += 1
+                }
+            }
+            met_return = ((met_count / totalcount) * 100)
+        }
+        console.log(met_return)
+        return met_return
+    }
+
+    $(document).on('mouseover', '.metbar', function () {
 
         if (did) {
             var x_array = document.getElementsByClassName("tinybar")
@@ -1215,78 +1340,172 @@
             var id = $(this)[0].id
             selected_id_metric = id
 
-            if (prev_selected_id_metric == selected_id_metric) {
-                console.log("if", prev_selected_id_metric, selected_id_metric)
-                document.getElementById(selected_id_metric).setAttribute("style",
-                    "border: solid thin lightgrey; width:100%")
+            document.getElementById(selected_id_metric).setAttribute("style",
+                "border: solid 2px goldenrod; width:100%")
 
-                selected_id_metric = ""
-                prev_selected_id_metric = ""
+            proposal_data = full_data[did]
 
-                for (var i = 0; i < 13; i++) {
-                    console.log("display check none")
-                    x_array[i].style.backgroundColor = "red"
-                    x_array[i].style.display = "none"
+            var ngram_list = []
+
+            for (var i in proposal_data.ngrams) {
+                ngram_list.push(proposal_data.ngrams[i].ngram)
+            }
+
+            for (var i in ngram_list) {
+                var totalcount = 0
+                for (var j in proposal_data.comments) {
+                    var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
+
+                    if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
+                            tokens.includes(ngram_list[i].split(" ")[1]))) {
+                        totalcount += 1
+                    }
                 }
-
-            } else {
-                document.getElementById(selected_id_metric).setAttribute("style",
-                    "border: solid 2px goldenrod; width:100%")
-
-                console.log("else", prev_selected_id_metric, selected_id_metric)
-
+                // IF VISIT
                 if (id == "visitback") {
                     tinycolor = "#b3e5fc"
-                } else if (id == "coverback") {
-                    tinycolor = "#c8e6c9"
-                } else if (id == "distback") {
-                    tinycolor = "#ffcdd2"
-                }
-
-                for (var i = 0; i < 13; i++) {
-                    x_array[i].style.backgroundColor = tinycolor
-                    x_array[i].style.display = "block"
-                }
-
-                proposal_data = full_data[did]
-
-                var ngram_list = []
-
-                for (var i in proposal_data.ngrams) {
-                    ngram_list.push(proposal_data.ngrams[i].ngram)
-                }
-
-                for (var i in ngram_list) {
-                    var totalcount = 0
-                    for (var j in proposal_data.comments) {
-                        var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
-
-                        if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
-                                tokens.includes(ngram_list[i].split(" ")[1]))) {
-                            totalcount += 1
-                        }
+                    for (var j = 0; j < 13; j++) {
+                        x_array[j].style.backgroundColor = tinycolor
+                        x_array[j].style.visibility = "visible"
                     }
-
                     var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
                         totalcount)
-                    console.log(met_width)
+                    // console.log(met_width)
+                    tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
+                } else if (id == "coverback") {
+                    tinycolor = "#c8e6c9"
+                    for (var j = 0; j < 13; j++) {
+                        x_array[j].style.backgroundColor = tinycolor
+                        x_array[j].style.visibility = "visible"
+                    }
+                    var met_width = calc_tiny_cover("ngram",
+                        proposal_data.ngrams[i].ngram, totalcount)
+                    // console.log(met_width)
+                    tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
+                } else if (id == "distback") {
+                    tinycolor = "#ffcdd2"
+                    for (var j = 0; j < 13; j++) {
+                        x_array[j].style.backgroundColor = tinycolor
+                        x_array[j].style.visibility = "visible"
+                    }
+                    var met_width = calc_tiny_dist("ngram",
+                        proposal_data.ngrams[i].ngram, totalcount)
+                    // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 }
+            }
 
-                for (var i in proposal_data.discourses) {
+            for (var i in proposal_data.discourses) {
+                // IF VISIT
+                if (id == "visitback") {
                     var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i].discourse_name,
                         proposal_data.discourses[i].count)
-                    console.log(met_width)
+                    // console.log(met_width)
+                    tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
+                } else if (id == "coverback") {
+                    var met_width = calc_tiny_cover("discourse", proposal_data.discourses[i].discourse_name,
+                        proposal_data.discourses[i].count)
+                    // console.log(met_width)
+                    tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
+                } else if (id == "distback") {
+                    var met_width = calc_tiny_dist("discourse", proposal_data.discourses[i].discourse_name,
+                        proposal_data.discourses[i].count)
+                    // console.log(met_width)
                     tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
                 }
+            }
 
-                if (prev_selected_id_metric) {
-                    document.getElementById(prev_selected_id_metric).setAttribute("style",
-                        "border: solid thin lightgrey; width:100%"
-                    )
-                }
+            // if (prev_selected_id_metric == selected_id_metric) {
+            //     console.log("if", prev_selected_id_metric, selected_id_metric)
+            //     document.getElementById(selected_id_metric).setAttribute("style",
+            //         "border: solid thin lightgrey; width:100%")
 
-                prev_selected_id_metric = selected_id_metric
+            //     selected_id_metric = ""
+            //     prev_selected_id_metric = ""
+
+            //     for (var i = 0; i < 13; i++) {
+            //         console.log("display check none")
+            //         x_array[i].style.backgroundColor = "red"
+            //         x_array[i].style.visibility = "hidden"
+            //     }
+
+            // } else {
+            //     document.getElementById(selected_id_metric).setAttribute("style",
+            //         "border: solid 2px goldenrod; width:100%")
+
+            //     console.log("else", prev_selected_id_metric, selected_id_metric)
+
+            //     if (id == "visitback") {
+            //         tinycolor = "#b3e5fc"
+            //     } else if (id == "coverback") {
+            //         tinycolor = "#c8e6c9"
+            //     } else if (id == "distback") {
+            //         tinycolor = "#ffcdd2"
+            //     }
+
+            //     for (var i = 0; i < 13; i++) {
+            //         x_array[i].style.backgroundColor = tinycolor
+            //         x_array[i].style.visibility = "visible"
+            //     }
+
+            //     proposal_data = full_data[did]
+
+            //     var ngram_list = []
+
+            //     for (var i in proposal_data.ngrams) {
+            //         ngram_list.push(proposal_data.ngrams[i].ngram)
+            //     }
+
+            //     for (var i in ngram_list) {
+            //         var totalcount = 0
+            //         for (var j in proposal_data.comments) {
+            //             var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
+
+            //             if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
+            //                     tokens.includes(ngram_list[i].split(" ")[1]))) {
+            //                 totalcount += 1
+            //             }
+            //         }
+            //         // IF VISIT
+            //         var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
+            //             totalcount)
+            //         console.log(met_width)
+            //         tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
+            //     }
+
+            //     for (var i in proposal_data.discourses) {
+            //         // IF VISIT
+            //         var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i].discourse_name,
+            //             proposal_data.discourses[i].count)
+            //         console.log(met_width)
+            //         tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
+            //     }
+
+            //     if (prev_selected_id_metric) {
+            //         document.getElementById(prev_selected_id_metric).setAttribute("style",
+            //             "border: solid thin lightgrey; width:100%"
+            //         )
+            //     }
+
+            //     prev_selected_id_metric = selected_id_metric
+            // }
+        }
+    });
+
+    $(document).on('mouseout', '.metbar', function () {
+        if (did) {
+            var x_array = document.getElementsByClassName("tinybar")
+
+            var tinycolor = ""
+            var id = $(this)[0].id
+            selected_id_metric = id
+
+            document.getElementById(selected_id_metric).setAttribute("style",
+                "border: solid thin lightgray; width:100%")
+
+            for (var i = 0; i < 13; i++) {
+                x_array[i].style.backgroundColor = tinycolor
+                x_array[i].style.visibility = "hidden"
             }
         }
     });
