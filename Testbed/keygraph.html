@@ -127,7 +127,7 @@
 <!-- Amazon -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" onclick="reload_page()" title="Refresh Page and Start Over">
         <img src="dice.png" width="30" height="30" alt="">
         Dice
     </a>
@@ -139,11 +139,11 @@
     <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto py-0">
             <li class="nav-item active py-0">
-                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#userModal">User Guide<span
-                        class="sr-only py-0">(current)</span></a>
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#userModal" title="User Guide">User
+                    Guide<span class="sr-only py-0">(current)</span></a>
             </li>
             <li class="nav-item py-0">
-                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal">About</a>
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
             </li>
         </ul>
     </div>
@@ -291,7 +291,7 @@
     </div>
 
     <div id="metricsbox"
-        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:5px; width:90%">
+        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; margin:5px; width:90%">
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
             <div class="metbar" id="visitback" style="border: solid thin lightgrey; width:100%">
                 <div id="visitBar" style="height:24px; width:0%; background-color: #b3e5fc;">
@@ -317,7 +317,7 @@
         </div>
     </div>
 
-    <div id="dice" title="Get suggestion">
+    <div id="dice" title="Get suggested comments">
         <img src="dice.png" style="width: 40px; height:40px; margin:5px;">
     </div>
 
@@ -435,6 +435,11 @@
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
+    }
+
+    function reload_page() {
+        window.location.reload()
+        return false
     }
 
     function render_discourse(discussion_id) {
