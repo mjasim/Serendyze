@@ -331,6 +331,7 @@
 </div>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="interaction_log.js"></script>
 <script type="text/javascript" src="hilitor.js"></script>
 <script src="jquery.paginate.js"></script>
 
@@ -438,6 +439,7 @@
     }
 
     function reload_page() {
+        logInteraction('click,nav_dice_brand,reload');
         window.location.reload()
         return false
     }
@@ -943,6 +945,8 @@
         $('#area').on('change', function () {
             var discussion_id = $("#area").val();
 
+            // console.log(localStorage.userID_dice)
+
             var orig_area_text = ["Koss Porta Pro On Ear Headphones with Case, Black / Silver",
                 "Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil",
                 "Sennheiser HD280PRO Headphones (old model)",
@@ -976,6 +980,8 @@
             }
 
             did = discussion_id
+
+            logInteraction('click,product_' + did + ',select product from dropdown')
 
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
@@ -1048,6 +1054,7 @@
         console.log(selected_id_ngram, prev_selected_id_ngram, selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_ngram == selected_id_ngram) {
+            logInteraction('click,ngram_' + topic_filter + ',deselect an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
                 "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px;"
             )
@@ -1061,6 +1068,7 @@
                 render_text("")
             }
         } else {
+            logInteraction('click,ngram_' + topic_filter + ',select an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
                 "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px;"
             )
@@ -1103,7 +1111,7 @@
         console.log(selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_disc == selected_id_disc) {
-
+            logInteraction('click,sentiment_' + disc_filter + ',deselect a sentiment')
             var styletext =
                 'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text;
@@ -1124,6 +1132,7 @@
             }
 
         } else {
+            logInteraction('click,sentiment_' + disc_filter + ',select a sentiment')
             var styletext =
                 'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text;
@@ -1258,6 +1267,7 @@
     }
 
     $(document).on('click', '.commentText', function () {
+
         // console.log(dice_trigger)
         if (dice_trigger == 1) {
             document.getElementById("serenloading").style.display = "block"
@@ -1265,6 +1275,7 @@
                 document.getElementById("serenloading").style.display = "none"
             }, 4000)
         }
+        logInteraction('click,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
         comment_interact($(this)[0].id.substring(8))
         // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
     });
@@ -1277,19 +1288,34 @@
             }, 4000)
         }
 
+        logInteraction('click,serencomment_' + $(this)[0].id.substring(14) +
+            ',interact with a suggested comment')
         comment_interact($(this)[0].id.substring(14))
     });
 
-    $(document).on('mouseover', '.topicbtn, .discbtn, .commentText', function () {
+    $(document).on('mouseover', '.commentText', function () {
         time_start = Date.now();
         // console.log($(this)[0].innerText, start)
     });
 
-    $(document).on('mouseout', '.topicbtn, .discbtn, .commentText', function () {
+    $(document).on('mouseover', '.serenText', function () {
+        time_start = Date.now();
+        // console.log($(this)[0].innerText, start)
+    });
+
+    $(document).on('mouseout', '.commentText', function () {
         time_end = Date.now();
         var elapsed_time = ((time_end - time_start) / 1000)
         // console.log(elapsed_time, $(this)[0].innerText)
         if (this.className == 'commentText' && elapsed_time > 2) {
+            if (dice_trigger == 1) {
+                document.getElementById("serenloading").style.display = "block"
+                setTimeout(function () {
+                    document.getElementById("serenloading").style.display = "none"
+                }, 4000)
+            }
+
+            logInteraction('hover,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
             comment_interact($(this)[0].id.substring(8))
         }
         // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
@@ -1297,12 +1323,34 @@
         //     .innerText
     });
 
+    $(document).on('mouseout', '.serenText', function () {
+        time_end = Date.now();
+        var elapsed_time = ((time_end - time_start) / 1000)
+        // console.log(elapsed_time, $(this)[0].innerText)
+        if (this.className == 'serenText' && elapsed_time > 2) {
+            if (dice_trigger == 1) {
+                document.getElementById("serenloading").style.display = "block"
+                setTimeout(function () {
+                    document.getElementById("serenloading").style.display = "none"
+                }, 4000)
+            }
+
+            logInteraction('hover,comment_' + $(this)[0].id.substring(8) + ',interact with a suggested comment')
+            comment_interact($(this)[0].id.substring(14))
+        }
+        // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
+        // 0]
+        // .innerText
+    });
+
     // $(document).on('mousemove', function () {
     //     document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
     // });
 
     $(document).on('click', "#dice", function () {
+
         if (dice_trigger == 0 && document.getElementById("serenbox").hasChildNodes()) {
+            logInteraction('click,dice,get suggested comments')
             dice_trigger = 1
             document.getElementById("serenboxparent").setAttribute("style",
                 "display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; align-content: flex-start; margin: 5px; max-width: 45%; height: 55vh;"
@@ -1324,6 +1372,7 @@
             do_pagination()
 
         } else if (dice_trigger == 1 && document.getElementById("serenbox").hasChildNodes()) {
+            logInteraction('click,dice,remove suggested comments')
             dice_trigger = 0
 
             document.getElementById("serenboxparent").setAttribute("style",
@@ -1525,6 +1574,8 @@
             var tinycolor = ""
             var id = $(this)[0].id
             selected_id_metric = id
+
+            logInteraction('hover,bar_' + id + ',hovered on metric bar')
 
             document.getElementById(selected_id_metric).setAttribute("style",
                 "border: solid 2px goldenrod; width:100%")
