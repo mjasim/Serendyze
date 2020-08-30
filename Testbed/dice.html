@@ -735,6 +735,8 @@
             myNode.removeChild(myNode.firstChild);
         }
 
+        console.log(data)
+
         divSum = document.createElement("div")
         var divHTML = '<div class="serenText" id="seren_comment_' + data[1][0].id +
             '" style=" margin-bottom: 10px">' + '&#8226; ' +
@@ -1341,6 +1343,12 @@
     });
 
     $(document).on('click', '.serenText', function () {
+
+        id = $(this)[0].id
+        document.getElementById(id).setAttribute(
+            "style",
+            "background-color: #b3e5fc")
+
         if (dice_trigger == 1) {
             document.getElementById("serenloading").style.display = "block"
             setTimeout(function () {
@@ -1385,9 +1393,16 @@
 
     $(document).on('mouseout', '.serenText', function () {
         time_end = Date.now();
+
         var elapsed_time = ((time_end - time_start) / 1000)
         // console.log(elapsed_time, $(this)[0].innerText)
         if (this.className == 'serenText' && elapsed_time > 2) {
+
+            id = $(this)[0].id
+            document.getElementById(id).setAttribute(
+                "style",
+                "background-color: #b3e5fc")
+
             if (dice_trigger == 1) {
                 document.getElementById("serenloading").style.display = "block"
                 setTimeout(function () {
