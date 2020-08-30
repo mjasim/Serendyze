@@ -30,12 +30,14 @@
     }
 
     .topicbtn:hover {
-        background-color: lightgray !important;
+        /* background-color: #ff6 !important; */
+        border: solid 2px goldenrod !important;
         cursor: pointer !important;
     }
 
     .discbtn:hover {
-        /* background-color: lightgray !important; */
+        /* background-color: #ff6 !important; */
+        border: solid 2px goldenrod !important;
         cursor: pointer;
     }
 
@@ -88,6 +90,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="jquery.paginate.css">
 
 <!-- CCrit -->
@@ -139,8 +143,8 @@
     <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto py-0">
             <li class="nav-item active py-0">
-                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#userModal" title="User Guide">User
-                    Guide<span class="sr-only py-0">(current)</span></a>
+                <a class="nav-link py-0" href="#" onclick="gototutorial()" title="User Guide">Tutorial<span
+                        class="sr-only py-0">(current)</span></a>
             </li>
             <li class="nav-item py-0">
                 <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
@@ -149,7 +153,7 @@
     </div>
 </nav>
 
-<div class="modal fade bd-example-modal-lg" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel"
+<!-- <div class="modal fade bd-example-modal-lg" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -204,7 +208,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="modal fade bd-example-modal-lg" id="aboutModal" tabindex="-1" role="dialog"
     aria-labelledby="aboutModalLabel" aria-hidden="true">
@@ -234,8 +238,6 @@
         </div>
     </div>
 </div>
-</div>
-
 
 <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto;">
     <div id="header" style="margin: 5px">
@@ -440,12 +442,12 @@
             // console.log(proposal_data.ngrams[i].ngram)
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
-                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px">' +
+                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin lightgray; text-align: center; width: 200px">' +
                 proposal_data.ngrams[i].ngram + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px; height: 24px">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.ngrams[i].ngram +
-                '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
+                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-29px; left: 0;"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -467,30 +469,34 @@
 
         for (var i in proposal_data.discourses) {
 
-            var sent_color = "lightgray"
+            var sent_color = "white"
             var sent_text = "black"
 
-            // console.log("discbtn", proposal_data.discourses[i].discourse_name)
 
-            if (proposal_data.discourses[i].discourse_name == "Positive") {
-                sent_color = "white"
-            } else if (proposal_data.discourses[i].discourse_name == "Negative") {
-                sent_color = "black"
-                sent_text = "white"
-            }
+            // var sent_color = "lightgray"
+            // var sent_text = "black"
 
-            // console.log(proposal_data.discourses[i].discourse_name)
+            // // console.log("discbtn", proposal_data.discourses[i].discourse_name)
+
+            // if (proposal_data.discourses[i].discourse_name == "Positive") {
+            //     sent_color = "white"
+            // } else if (proposal_data.discourses[i].discourse_name == "Negative") {
+            //     sent_color = "black"
+            //     sent_text = "white"
+            // }
+
+            // console.log(proposal_data.discourses[i].discourse_name) // this works
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class= "discbtn" id="discourse_' +
                 i +
-                '\" style="margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                '\" style="margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin black; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text +
                 '\">' +
                 proposal_data.discourses[i].discourse_name + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px;">' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px; height: 24px">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
-                '\" style="width: 0%; height: 5px; background-color:red; visibility:hidden"></div></div>';
+                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-29px; left: 0;"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -512,8 +518,9 @@
 
         for (var i in proposal_data.comments) {
 
-            var sent_color = "lightgray"
-            var sent_text = "black"
+            // var sent_color = "white"
+            // var sent_text = "black"
+            var sent = ""
 
             if (topic_filter && disc_filter) {
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
@@ -526,20 +533,27 @@
 
                     divSum = document.createElement("div")
 
+                    // if (proposal_data.comments[i].discourse == "Positive") {
+                    //     sent_color = "white"
+                    // } else if (proposal_data.comments[i].discourse == "Negative") {
+                    //     sent_color = "black"
+                    //     sent_text = "white"
+                    // }
+
                     if (proposal_data.comments[i].discourse == "Positive") {
-                        sent_color = "white"
+                        sent = '<i class="fa fa-plus"></i>'
                     } else if (proposal_data.comments[i].discourse == "Negative") {
-                        sent_color = "black"
-                        sent_text = "white"
+                        sent = '<i class="fa fa-minus"></i>'
+                    } else {
+                        sent = '<i class="fa fa-circle-o"></i>'
                     }
 
                     var divHTML =
                         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
-                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        ' style=\"padding-left:10px; padding-right:10px;' +
                         '\">' +
-                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        sent + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
                         proposal_data.comments[i].comment + '</p> </div>'
                     divSum.innerHTML = divHTML;
@@ -579,20 +593,27 @@
 
                     divSum = document.createElement("div")
 
+                    // if (proposal_data.comments[i].discourse == "Positive") {
+                    //     sent_color = "white"
+                    // } else if (proposal_data.comments[i].discourse == "Negative") {
+                    //     sent_color = "black"
+                    //     sent_text = "white"
+                    // }
+
                     if (proposal_data.comments[i].discourse == "Positive") {
-                        sent_color = "white"
+                        sent = '<i class="fa fa-plus"></i>'
                     } else if (proposal_data.comments[i].discourse == "Negative") {
-                        sent_color = "black"
-                        sent_text = "white"
+                        sent = '<i class="fa fa-minus"></i>'
+                    } else {
+                        sent = '<i class="fa fa-circle-o"></i>'
                     }
 
                     var divHTML =
                         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
-                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        ' style=\"padding-left:10px; padding-right:10px; ' +
                         '\">' +
-                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        sent + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
                         proposal_data.comments[i].comment + '</p> </div>'
                     divSum.innerHTML = divHTML;
@@ -624,11 +645,19 @@
 
                     count += 1
 
+                    // if (proposal_data.comments[i].discourse == "Positive") {
+                    //     sent_color = "white"
+                    // } else if (proposal_data.comments[i].discourse == "Negative") {
+                    //     sent_color = "black"
+                    //     sent_text = "white"
+                    // }
+
                     if (proposal_data.comments[i].discourse == "Positive") {
-                        sent_color = "white"
+                        sent = '<i class="fa fa-plus"></i>'
                     } else if (proposal_data.comments[i].discourse == "Negative") {
-                        sent_color = "black"
-                        sent_text = "white"
+                        sent = '<i class="fa fa-minus"></i>'
+                    } else {
+                        sent = '<i class="fa fa-circle-o"></i>'
                     }
 
                     divSum = document.createElement("div")
@@ -639,10 +668,9 @@
                     var divHTML =
                         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
-                        ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
-                        'background-color: ' + sent_color + '; color: ' + sent_text +
+                        ' style=\"padding-left:10px; padding-right:10px;' +
                         '\">' +
-                        proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                        sent + '</span>' + "\xa0\xa0\xa0" +
                         '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
                         proposal_data.comments[i].comment + '</p> </div>'
                     divSum.innerHTML = divHTML;
@@ -659,21 +687,28 @@
 
                 count += 1
 
+                // if (proposal_data.comments[i].discourse == "Positive") {
+                //     sent_color = "white"
+                // } else if (proposal_data.comments[i].discourse == "Negative") {
+                //     sent_color = "black"
+                //     sent_text = "white"
+                // }
+
                 if (proposal_data.comments[i].discourse == "Positive") {
-                    sent_color = "white"
+                    sent = '<i class="fa fa-plus"></i>'
                 } else if (proposal_data.comments[i].discourse == "Negative") {
-                    sent_color = "black"
-                    sent_text = "white"
+                    sent = '<i class="fa fa-minus"></i>'
+                } else {
+                    sent = '<i class="fa fa-circle-o"></i>'
                 }
 
                 divSum = document.createElement("div")
                 var divHTML =
                     '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                     '<span ' +
-                    ' style=\"border: solid thin lightgray; padding-left:10px; padding-right:10px; border-radius:10px;' +
-                    'background-color: ' + sent_color + '; color: ' + sent_text +
+                    ' style=\"padding-left:10px; padding-right:10px;' +
                     '\">' +
-                    proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
+                    sent + '</span>' + "\xa0\xa0\xa0" +
                     '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
                     proposal_data.comments[i].comment + '</p> </div>'
                 divSum.innerHTML = divHTML;
@@ -990,8 +1025,6 @@
             selected_id_disc = ""
             prev_selected_id_disc = ""
 
-            console.log(did)
-
             // metrics.coverage = 0
             // metrics.visit = 0
             // metrics.distribution = 0
@@ -1037,6 +1070,29 @@
 
             render_text(text_filter)
 
+            if (dice_trigger == 1) {
+                dice_trigger = 0
+
+                document.getElementById("serenboxparent").setAttribute("style",
+                    "margin: 0px; width: 0px; height: 0px;")
+
+                document.getElementById("serenbox").setAttribute("style",
+                    "margin: 0px; width: 0px; height: 0px; overflow-y:auto")
+
+                document.getElementById("serenboxheader").setAttribute("style",
+                    "display:flex; flex-direction: row; width: 0px;"
+                )
+
+                document.getElementById("serenheader").textContent = ''
+
+                document.getElementById("textboxparent").setAttribute("style",
+                    "display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px;"
+                )
+                document.getElementById("textbox").setAttribute("style",
+                    "margin: 5px; max-width: 90%; height: 40vh; overflow-y:auto"
+                )
+            }
+
             prev_did = did
         });
     });
@@ -1057,7 +1113,7 @@
         if (prev_selected_id_ngram == selected_id_ngram) {
             logInteraction('click,ngram_' + topic_filter + ',deselect an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px;"
+                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin lightgray; text-align: center; width: 200px;"
             )
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
@@ -1071,11 +1127,11 @@
         } else {
             logInteraction('click,ngram_' + topic_filter + ',select an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
             )
             if (prev_selected_id_ngram) {
                 document.getElementById(prev_selected_id_ngram).setAttribute("style",
-                    "margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px;"
+                    "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin lightgray; text-align: center; width: 200px;"
                 )
             }
             prev_selected_id_ngram = selected_id_ngram
@@ -1092,14 +1148,17 @@
         disc_filter = $(this)[0].innerText
         console.log("click", disc_filter)
 
-        var sent_color = "lightgray"
+        var sent_color = "white"
         var sent_text = "black"
-        if (disc_filter == "Positive") {
-            sent_color = "white"
-        } else if (disc_filter == "Negative") {
-            sent_color = "black"
-            sent_text = "white"
-        }
+
+        // var sent_color = "lightgray"
+        // var sent_text = "black"
+        // if (disc_filter == "Positive") {
+        //     sent_color = "white"
+        // } else if (disc_filter == "Negative") {
+        //     sent_color = "black"
+        //     sent_text = "white"
+        // }
 
 
         selected_id_disc = $(this)[0].id
@@ -1114,7 +1173,7 @@
         if (prev_selected_id_disc == selected_id_disc) {
             logInteraction('click,sentiment_' + disc_filter + ',deselect a sentiment')
             var styletext =
-                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text;
             document.getElementById(selected_id_disc).setAttribute("style", styletext)
             selected_id_disc = ""
@@ -1135,23 +1194,23 @@
         } else {
             logInteraction('click,sentiment_' + disc_filter + ',select a sentiment')
             var styletext =
-                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid 2px goldenrod; text-align: center; width: 200px; background-color: ' +
+                'margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text;
             document.getElementById(selected_id_disc).setAttribute("style", styletext)
 
             if (prev_selected_id_disc) {
 
-                var sent_color = "lightgray"
-                var sent_text = "black"
-                if (prev_selected_id_disc == "discourse_0") {
-                    sent_color = "white"
-                } else if (prev_selected_id_disc == "discourse_2") {
-                    sent_color = "black"
-                    sent_text = "white"
-                }
+                // var sent_color = "lightgray"
+                // var sent_text = "black"
+                // if (prev_selected_id_disc == "discourse_0") {
+                //     sent_color = "white"
+                // } else if (prev_selected_id_disc == "discourse_2") {
+                //     sent_color = "black"
+                //     sent_text = "white"
+                // }
 
                 var styletext =
-                    'margin:5px; padding-left:3px; padding-right:3px; border-radius: 10px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
+                    'margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid thin lightgray; text-align: center; width: 200px; background-color: ' +
                     sent_color + '; color: ' + sent_text;
                 document.getElementById(prev_selected_id_disc).setAttribute("style", styletext)
             }
@@ -1605,7 +1664,8 @@
                 }
                 // IF VISIT
                 if (id == "visitback") {
-                    tinycolor = "#b3e5fc"
+                    // tinycolor = "#b3e5fc"
+                    tinycolor = "rgba(179, 229, 252, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.visibility = "visible"
@@ -1615,7 +1675,8 @@
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "coverback") {
-                    tinycolor = "#c8e6c9"
+                    // tinycolor = "#c8e6c9" 
+                    tinycolor = "rgba(200, 230, 201, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.visibility = "visible"
@@ -1625,7 +1686,8 @@
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "distback") {
-                    tinycolor = "#ffcdd2"
+                    // tinycolor = "#ffcdd2"
+                    tinycolor = "rgba(255, 205, 210, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.visibility = "visible"

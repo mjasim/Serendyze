@@ -44,6 +44,7 @@
             plugin.settings = $.extend({}, defaults, options);
 
             curPage = 1;
+
             items = $element.children(plugin.settings.scope);
             maxPage = Math.ceil(items.length / plugin.settings.perPage); //determines how many pages exist
 
@@ -62,13 +63,16 @@
 
             var hash = location.hash.match(/\#paginate\-(\d)/i);
 
-            //Check if URL has matching location hash
-            if (hash && plugin.settings.useHashLocation) {
-                plugin.switchPage(hash[1]);
-            } else {
-                plugin.switchPage(1); //go to initial page
-            }
+            // //Check if URL has matching location hash
+            // if (hash && plugin.settings.useHashLocation) {
+            //     plugin.switchPage(hash[1]);
+            //     console.log("hasehd", plugin.switchPage(hash[1]))
+            // } else {
+            //     console.log("not hasehd")
+            //     plugin.switchPage(1); //go to initial page
+            // }
 
+            plugin.switchPage(1); //go to initial page
         };
 
         /*
@@ -177,6 +181,8 @@
                 $('.paginate-' + paginateParent).data('paginate').settings.onPageClick();
 
                 page = $('.paginate-' + paginateParent).data('paginate').switchPage(page);
+
+                // console.log("page", page)
 
                 if (page) {
                     if (plugin.settings.useHashLocation)
