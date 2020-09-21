@@ -1524,10 +1524,16 @@
 
     function random_seren() {
         var random_idx = []
-        Math.seedrandom('0'); // seeding
-        for (var i = 0; i < 5; i++) {
-            random_idx.push(Math.floor(Math.random() * full_data[did].comments.length))
+        // Math.seedrandom(); // seeding
+        for (var cnt = 0; cnt < 5;) {
+            var idx = Math.floor(Math.random() * full_data[did].comments.length)
+            if (!random_idx.includes(idx)) {
+                cnt += 1
+                random_idx.push(idx)
+            }
         }
+
+        console.log(random_idx)
 
         var myNode = document.getElementById("serenbox");
         while (myNode.firstChild) {
@@ -1538,9 +1544,9 @@
         divSum = document.createElement("div")
         var divHTML = ''
         for (var i = 0; i < 5; i++) {
-            if (proposal_data.comments[i].discourse == "Positive") {
+            if (proposal_data.comments[random_idx[i]].discourse == "Positive") {
                 sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
-            } else if (proposal_data.comments[i].discourse == "Negative") {
+            } else if (proposal_data.comments[random_idx[i]].discourse == "Negative") {
                 sent = '<i class="fa fa-minus"></i>'
             } else {
                 sent = '<i class="fa fa-circle-o"></i>'
@@ -1550,8 +1556,8 @@
                 '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
                 '<span ' +
                 ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
-                '<div class="serenText" id="seren_comment_' + proposal_data.comments[i].comment_id + '">' +
-                proposal_data.comments[i].comment + '</div>' +
+                '<div class="serenText" id="seren_comment_' + proposal_data.comments[random_idx[i]].comment_id + '">' +
+                proposal_data.comments[random_idx[i]].comment + '</div>' +
                 '</div>'
             divSum.innerHTML = divHTML;
             myNode.appendChild(divSum)
