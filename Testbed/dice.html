@@ -14,6 +14,11 @@
         stroke-width: 1.5px;
     }
 
+    #dicetoggle:hover {
+        cursor: pointer;
+        opacity: 1.0
+    }
+
     text {
         font-family: sans-serif;
         font-size: 10px;
@@ -90,43 +95,13 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="jquery.paginate.css">
-
-<!-- CCrit -->
-<!-- 
-<div class="container" style="display:flex; flex-direction: column; align-items: center;">
-    <div id="header" style="margin: 10px">
-        <div class="w3-content">
-            <div class="row">
-                <div class="col-12">
-                    <select id="area" name="area">
-                        <option value="">Pick a Discussion</option>
-                        <option value="0">Building a Tower</option>
-                        <option value="1">Public Art</option>
-                        <option value="2">Roundabout</option>
-                        <option value="3">Huge Fountain</option>
-                        <option value="4">Interactive Art</option>
-                        <option value="5">El Parquecito</option>
-                        <option value="6">Pedestrian Destination</option>
-                        <option value="7">Promenade Real</option>
-                        <option value="8">Platform Connected with Bridges</option>
-                        <option value="9">Triangle Platform</option>
-                        <option value="10">Zipline</option>
-                        <option value="11">Transit Hub</option>
-                        <option value="12">Gateway</option>
-                        <option value="13">Connecing Past with Future</option>
-                        <option value="14">Cart before the Horse</option>
-                        <option value="15">Call the Area Something Else</option>
-                        <option value="16">The Diamond</option>
-                        <option value="17">The Lyre</option>
-                        <option value="18">EV / Barrio Market</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 <!-- Amazon -->
 
@@ -240,7 +215,7 @@
 </div>
 
 <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto;">
-    <div id="header" style="margin: 5px">
+    <div id="header" style="margin: 5px; display:flex; flex-direction: row;">
         <div class="w3-content">
             <div class="row">
                 <div class="col-12">
@@ -261,6 +236,10 @@
                     </select>
                 </div>
             </div>
+        </div>
+        <div id="dicetoggle"
+            style="width: 150px; height: 23px; background-color: red; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center; display: none">
+            Suggestion: Off
         </div>
     </div>
 
@@ -292,6 +271,7 @@
         </div>
     </div>
 
+
     <div id="metricsbox"
         style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; margin:5px; width:90%">
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
@@ -319,9 +299,9 @@
         </div>
     </div>
 
-    <div id="dice" title="Get suggested comments">
+    <!-- <div id="dice" title="Get suggested comments">
         <img src="dice.png" style="width: 40px; height:40px; margin:5px;">
-    </div>
+    </div> -->
 
     <!-- <div id="cordbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
         <div id="coordinate" style="margin-right: 10px"></div>
@@ -438,8 +418,13 @@
         //     myNode.appendChild(divbutton)
         // }
 
-        for (var i in proposal_data.ngrams) {
-            // console.log(proposal_data.ngrams[i].ngram)
+        console.log(proposal_data.ngrams)
+
+        var sorted_ngrams = proposal_data.ngrams.sort(function (a, b) {
+            return b.count - a.count
+        })
+
+        for (var i in sorted_ngrams) {
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
                 '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px">' +
@@ -447,7 +432,7 @@
                 '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px; height: 24px">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.ngrams[i].ngram +
-                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-29px; left: 0;"></div></div>';
+                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-30px; left: 0;"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -525,9 +510,15 @@
             if (topic_filter && disc_filter) {
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
-                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[
-                        1])) &&
-                    disc_filter == proposal_data.comments[i].discourse) {
+                if ((proposal_data.comments[i].comment.toLowerCase().includes(topic_filter.split(" ")[0]
+                        .toLowerCase()) && proposal_data.comments[i].comment.toLowerCase().includes(topic_filter
+                        .split(
+                            " ")[1]
+                        .toLowerCase())) && disc_filter == proposal_data.comments[i].discourse) {
+
+                    // if ((tokens.includes(topic_filter.split(" ")[0]) && tokens.includes(topic_filter.split(" ")[
+                    //         1])) &&
+                    //     disc_filter == proposal_data.comments[i].discourse) {
 
                     count += 1
 
@@ -583,11 +574,18 @@
                 //     myNode.appendChild(divSum)
                 // }
 
+
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
-                if ((tokens.includes(topic_filter.split(" ")[0]) || tokens.includes(topic_filter.split(" ")[
-                        1]))) {
-                    // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
+                // if ((tokens.includes(topic_filter.split(" ")[0].toLowerCase()) || tokens.includes(topic_filter.split(
+                //         " ")[1].toLowerCase()))) {
+                // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
+
+                if (proposal_data.comments[i].comment.toLowerCase().includes(topic_filter.split(" ")[0]
+                        .toLowerCase()) && proposal_data.comments[i].comment.toLowerCase().includes(topic_filter
+                        .split(
+                            " ")[1]
+                        .toLowerCase())) {
 
                     count += 1
 
@@ -704,13 +702,13 @@
 
                 divSum = document.createElement("div")
                 var divHTML =
-                    '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                    '<div style=\"margin:1px; margin-bottom: 10px; display:flex; flex-direction: row; align-items: flex-start\">' +
                     '<span ' +
-                    ' style=\"padding-left:10px; padding-right:10px;' +
+                    ' style=\"padding-left:5px; padding-right:5px;' +
                     '\">' +
-                    sent + '</span>' + "\xa0\xa0\xa0" +
-                    '<p class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
-                    proposal_data.comments[i].comment + '</p> </div>'
+                    sent + '</span>' + "\xa0" +
+                    '<div class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' +
+                    proposal_data.comments[i].comment + '</div> </div>'
                 divSum.innerHTML = divHTML;
                 myNode.appendChild(divSum)
 
@@ -737,9 +735,9 @@
 
         console.log(data)
 
-        var pos = 0
-        var neg = 0
-        var neut = 0
+        var pos = 1
+        var neg = 1
+        var neut = 1
 
 
         for (var i in explored_list[did]) {
@@ -752,34 +750,50 @@
                 neut += 1
         }
 
-        var pos_proportion = pos / explored_list[did].length
-        var neg_proportion = neg / explored_list[did].length
-        var neut_proportion = neut / explored_list[did].length
+        var coeffofvar = math.std([pos, neg, neut]) / math.mean([pos, neg, neut])
+        console.log(coeffofvar)
 
-        console.log("props ->", pos_proportion, neg_proportion, neut_proportion)
+        // var pos_proportion = pos / explored_list[did].length
+        // var neg_proportion = neg / explored_list[did].length
+        // var neut_proportion = neut / explored_list[did].length
+
+        // console.log("props ->", pos_proportion, neg_proportion, neut_proportion)
 
         var balanced_list = []
         for (var i in data[1]) {
-            var prop_selector = null
-            if (data[1][i].disc == "Positive")
-                prop_selector = pos_proportion
-            else if (data[1][i].disc == "Negative")
-                prop_selector = neg_proportion
-            else
-                prop_selector = neut_proportion
+            // var prop_selector = null
+            // if (data[1][i].disc == "Positive")
+            //     prop_selector = pos_proportion
+            // else if (data[1][i].disc == "Negative")
+            //     prop_selector = neg_proportion
+            // else
+            //     prop_selector = neut_proportion
 
-            console.log("prop-selector -> ", prop_selector)
+            // console.log("prop-selector -> ", prop_selector)
 
-            var score = 0.5 * (1 - prop_selector) + 0.5 * (1 - data[1][i].score)
-            var trigger = (0.5 * (1 - prop_selector)) > (0.5 * (1 - data[1][i].score)) ?
-                '<i class="fa fa-arrow-up" style="color:#ffcdd2; margin-left:5px"></i>' :
-                '<i class="fa fa-arrow-up" style="color:#c8e6c9; margin-left:5px"></i>'
+            // var score = 0.5 * (1 - prop_selector) + 0.5 * (1 - data[1][i].score)
+            var score = 0.5 * (coeffofvar) + 0.5 * (data[1][i].score)
+            // var sent_height = 0.5 * (1 - prop_selector) * 30
+            var sent_height = 0.5 * (coeffofvar) * 100
+            var sim_height = 0.5 * (data[1][i].score) * 100
+            var trigger_sent =
+                '<div style="flex:0 0 10px; align-self:flex-end; background-color:#ffcdd2;margin-bottom:5px;' +
+                'height:' +
+                sent_height +
+                'px;margin-left:3px"></div>'
+            var trigger_sim =
+                '<div style="flex: 0 0 10px; align-self:flex-end; background-color:#c8e6c9;margin-bottom:5px;' +
+                'height:' +
+                sim_height +
+                'px;margin-left:3px"></div>'
 
             balanced_list.push({
                 "id": data[1][i].id,
                 "text": data[1][i].text,
                 "score": score,
-                "trigger": trigger
+                "trigger_sent": trigger_sent,
+                "trigger_sim": trigger_sim,
+                "disc": data[1][i].disc
             })
         }
 
@@ -787,50 +801,50 @@
             return b.score - a.score
         })
 
-        console.log(sorted_balanced_list)
+        // console.log(sorted_balanced_list)
 
         divSum = document.createElement("div")
         var divHTML = ''
         var sent = ''
-        for (var i = 0; i < 5; i++) {
-            if (sorted_balanced_list[i].disc == "Positive") {
-                sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
-            } else if (sorted_balanced_list[i].disc == "Negative") {
-                sent = '<i class="fa fa-minus" style="margin-right:5px"></i>'
-            } else {
-                sent = '<i class="fa fa-circle-o" style="margin-right:5px"></i>'
+        var idx_list = []
+
+        console.log(sorted_balanced_list)
+
+        for (var cnt = 0; cnt < 5;) {
+            //serendipity
+            Math.seedrandom()
+            roll = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+            Math.seedrandom(roll.toString());
+            var idx = Math.floor(Math.random() * sorted_balanced_list.length)
+            if (idx_list.includes(idx)) {
+                continue;
             }
 
-            divHTML += '<div class="serenText" id="seren_comment_' + sorted_balanced_list[i].id +
-                '" style=" margin-bottom: 10px">' + sent + sorted_balanced_list[i]
-                .text + sorted_balanced_list[i].trigger +
-                '</div>'
-        }
+            cnt += 1
+            idx_list.push(idx)
+            console.log(roll, idx_list)
 
-        // var divHTML = '<div class="serenText" id="seren_comment_' + sorted_balanced_list[0].id +
-        //     '" style=" margin-bottom: 10px">' +
-        //     sorted_balanced_list[0]
-        //     .text + '&#8226; ' + sorted_balanced_list[0].trigger +
-        //     '</div>' +
-        //     '<div class="serenText" id="seren_comment_' + sorted_balanced_list[1].id +
-        //     '" style=" margin-bottom: 10px">' +
-        //     sorted_balanced_list[1]
-        //     .text + '&#8226; ' + sorted_balanced_list[1].trigger +
-        //     '</div>' +
-        //     '<div class="serenText" id="seren_comment_' + sorted_balanced_list[2].id +
-        //     '" style=" margin-bottom: 10px">' +
-        //     sorted_balanced_list[2]
-        //     .text + '&#8226; ' + sorted_balanced_list[2].trigger +
-        //     '</div>' +
-        //     '<div class="serenText" id="seren_comment_' + sorted_balanced_list[3].id +
-        //     '" style=" margin-bottom: 10px">' +
-        //     sorted_balanced_list[3]
-        //     .text + '&#8226; ' + sorted_balanced_list[3].trigger +
-        //     '</div>' + '<div class="serenText" id="seren_comment_' + sorted_balanced_list[4].id +
-        //     '" style=" margin-bottom: 10px">' +
-        //     sorted_balanced_list[4]
-        //     .text + '&#8226; ' + sorted_balanced_list[4].trigger +
-        //     '</div>';
+            if (sorted_balanced_list[idx].disc == "Positive") {
+                sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
+            } else if (sorted_balanced_list[idx].disc == "Negative") {
+                sent = '<i class="fa fa-minus"></i>'
+            } else {
+                sent = '<i class="fa fa-circle-o"></i>'
+            }
+
+            console.log(sorted_balanced_list[idx].trigger_sent, sorted_balanced_list[idx].trigger_sim)
+
+            divHTML +=
+                '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                '<span ' +
+                ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                '<div class="serenText" id="seren_comment_' + sorted_balanced_list[idx].id + '">' +
+                sorted_balanced_list[idx].text + '</div>' + sorted_balanced_list[idx].trigger_sent +
+                sorted_balanced_list[idx].trigger_sim +
+                '</div>'
+            divSum.innerHTML = divHTML;
+            myNode.appendChild(divSum)
+        }
 
         divSum.innerHTML = divHTML;
         myNode.appendChild(divSum)
@@ -1067,7 +1081,10 @@
         $('#area').on('change', function () {
             var discussion_id = $("#area").val();
 
-            // console.log(localStorage.userID_dice)
+            if (document.getElementById("dicetoggle").style.display == "none") {
+                document.getElementById("dicetoggle").style.display = "block"
+            }
+
 
             if (prev_did) {
                 var area_text = $('#area option[value=' + prev_did + ']').text()
@@ -1166,6 +1183,12 @@
                 document.getElementById("textbox").setAttribute("style",
                     "margin: 5px; max-width: 90%; height: 40vh; overflow-y:auto"
                 )
+
+                document.getElementById("dicetoggle").setAttribute("style",
+                    "width: 150px; height: 23px; background-color: red; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"
+                )
+
+                document.getElementById("dicetoggle").textContent = "Suggestion: Off"
             }
 
             prev_did = did
@@ -1486,7 +1509,8 @@
                 }, 4000)
             }
 
-            logInteraction('hover,comment_' + $(this)[0].id.substring(8) + ',interact with a suggested comment')
+            logInteraction('hover,comment_' + $(this)[0].id.substring(8) +
+                ',interact with a suggested comment')
             comment_interact($(this)[0].id.substring(14))
         }
         // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
@@ -1498,10 +1522,52 @@
     //     document.getElementById("coordinate").innerText = event.pageX + ", " + event.pageY
     // });
 
-    $(document).on('click', "#dice", function () {
+    function random_seren() {
+        var random_idx = []
+        Math.seedrandom('0'); // seeding
+        for (var i = 0; i < 5; i++) {
+            random_idx.push(Math.floor(Math.random() * full_data[did].comments.length))
+        }
 
-        if (dice_trigger == 0 && document.getElementById("serenbox").hasChildNodes()) {
+        var myNode = document.getElementById("serenbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        proposal_data = full_data[did]
+        divSum = document.createElement("div")
+        var divHTML = ''
+        for (var i = 0; i < 5; i++) {
+            if (proposal_data.comments[i].discourse == "Positive") {
+                sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
+            } else if (proposal_data.comments[i].discourse == "Negative") {
+                sent = '<i class="fa fa-minus"></i>'
+            } else {
+                sent = '<i class="fa fa-circle-o"></i>'
+            }
+
+            divHTML +=
+                '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                '<span ' +
+                ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                '<div class="serenText" id="seren_comment_' + proposal_data.comments[i].comment_id + '">' +
+                proposal_data.comments[i].comment + '</div>' +
+                '</div>'
+            divSum.innerHTML = divHTML;
+            myNode.appendChild(divSum)
+        }
+
+    }
+
+    $(document).on('click', "#dicetoggle", function () {
+
+        if (dice_trigger == 0) {
             logInteraction('click,dice,get suggested comments')
+
+            if (!document.getElementById("serenbox").hasChildNodes()) {
+                random_seren()
+            }
+
             dice_trigger = 1
             document.getElementById("serenboxparent").setAttribute("style",
                 "display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; align-content: flex-start; margin: 5px; max-width: 45%; height: 55vh;"
@@ -1520,9 +1586,15 @@
 
             document.getElementById("serenheader").textContent = 'Suggested Comments'
 
+            document.getElementById("dicetoggle").setAttribute("style",
+                "width: 150px; height: 23px; background-color: green; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"
+            )
+
+            document.getElementById("dicetoggle").textContent = "Suggestion: On"
+
             do_pagination()
 
-        } else if (dice_trigger == 1 && document.getElementById("serenbox").hasChildNodes()) {
+        } else if (dice_trigger == 1) {
             logInteraction('click,dice,remove suggested comments')
             dice_trigger = 0
 
@@ -1544,6 +1616,12 @@
             document.getElementById("textbox").setAttribute("style",
                 "margin: 5px; max-width: 90%; height: 40vh; overflow-y:auto"
             )
+
+            document.getElementById("dicetoggle").setAttribute("style",
+                "width: 150px; height: 23px; background-color: red; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"
+            )
+
+            document.getElementById("dicetoggle").textContent = "Suggestion: Off"
         }
 
         // <div id="alltextbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; margin:5px">
@@ -1746,10 +1824,16 @@
             for (var i in ngram_list) {
                 var totalcount = 0
                 for (var j in proposal_data.comments) {
+
                     var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
 
-                    if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
-                            tokens.includes(ngram_list[i].split(" ")[1]))) {
+                    // if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
+                    //         tokens.includes(ngram_list[i].split(" ")[1]))) {
+                    //     totalcount += 1
+                    // }
+                    if (proposal_data.comments[j].comment.toLowerCase().includes(ngram_list[i].split(" ")[0]
+                            .toLowerCase()) && proposal_data.comments[j].comment.toLowerCase().includes(
+                            ngram_list[i].split(" ")[1].toLowerCase())) {
                         totalcount += 1
                     }
                 }
