@@ -38,12 +38,14 @@
         /* background-color: #ff6 !important; */
         border: solid 2px goldenrod !important;
         cursor: pointer !important;
+        font-weight: bold !important;
     }
 
     .discbtn:hover {
         /* background-color: #ff6 !important; */
         border: solid 2px goldenrod !important;
         cursor: pointer;
+        font-weight: bold !important;
     }
 
     .loader {
@@ -238,13 +240,13 @@
             </div>
         </div>
         <div id="dicetoggle"
-            style="width: 150px; height: 23px; background-color: red; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center; display: none">
-            Suggestion: Off
+            style="width: 150px; height: 23px; background-color: green; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center; display: none">
+            Suggestion: On
         </div>
     </div>
 
     <div id="topicbox"
-        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 70%">
+        style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 70%; padding-bottom:10px">
     </div>
 
     <div id="discbox"
@@ -255,7 +257,7 @@
         style="display:flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; margin:5px; width:90%">
         <div id="textboxparent"
             style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
-            <div id="textboxheader" style="width:90%; border:solid thin lightgray">
+            <div id="textboxheader" style="width:90%; border:solid thin lightgray; display: none; font-weight:bold">
                 <span id="commentheader">Comments: 0</span>
             </div>
             <div id="textbox" style="margin: 10px; max-width: 90%; height: 40vh; overflow-y:auto"></div>
@@ -334,7 +336,7 @@
     unexplored_list = []
     covered_list = []
     comment_id_list = []
-    dice_trigger = 0
+    dice_trigger = 1
     for (var i = 0; i < 30; i++) {
         explored_list[i] = []
         unexplored_list[i] = []
@@ -424,18 +426,33 @@
             return b.count - a.count
         })
 
+        console.log("sortedsorted", sorted_ngrams)
+
         for (var i in sorted_ngrams) {
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
-                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px">' +
-                proposal_data.ngrams[i].ngram + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px; height: 24px">' +
+                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;">' +
+                sorted_ngrams[i].ngram + '</div>' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
                 '<div class="tinybar" id=\"met_' +
-                proposal_data.ngrams[i].ngram +
-                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-30px; left: 0;"></div></div>';
+                sorted_ngrams[i].ngram +
+                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0; z-index:-1"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
+
+        document.getElementById('topicbox').style.borderBottom = "solid thin black"
+
+        // for (var i in sorted_ngrams) {
+        //     var x_array = document.getElementsByClassName("tinybar")
+        //     console.log(x_array)
+        //     tinycolor = "lightgray"
+        //     for (var j = 0; j < 10; j++) {
+        //         x_array[j].style.backgroundColor = tinycolor
+        //         x_array[j].style.visibility = "visible"
+        //     }
+        //     tinymove("met_" + sorted_ngrams[i].ngram, sorted_ngrams[i].count)
+        // }
     }
 
     function reload_page() {
@@ -456,7 +473,15 @@
 
             var sent_color = "white"
             var sent_text = "black"
+            var sent = ""
 
+            if (proposal_data.discourses[i].discourse_name == "Positive") {
+                sent = '<i class="fa fa-plus" style="margin-right: 5px"></i>'
+            } else if (proposal_data.discourses[i].discourse_name == "Negative") {
+                sent = '<i class="fa fa-minus" style="margin-right: 5px"></i>'
+            } else {
+                sent = '<i class="fa fa-circle-o" style="margin-right: 5px"></i>'
+            }
 
             // var sent_color = "lightgray"
             // var sent_text = "black"
@@ -476,12 +501,12 @@
                 i +
                 '\" style="margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px black; text-align: center; width: 200px; background-color: ' +
                 sent_color + '; color: ' + sent_text +
-                '\">' +
+                '\">' + sent +
                 proposal_data.discourses[i].discourse_name + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px; height: 24px">' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
-                '\" style="width: 0%; height: 100%; background-color:red; visibility:visible; border-radius: 5px; position: absolute; top:-29px; left: 0;"></div></div>';
+                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-29px; left: 0; z-index:-1"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -506,8 +531,11 @@
             // var sent_color = "white"
             // var sent_text = "black"
             var sent = ""
+            var headertext = ""
 
             if (topic_filter && disc_filter) {
+                headertext = disc_filter + " comments with keyword \"" + topic_filter + "\": "
+
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
                 if ((proposal_data.comments[i].comment.toLowerCase().includes(topic_filter.split(" ")[0]
@@ -552,14 +580,14 @@
 
                     if (comment_id_list[did].includes(proposal_data.comments[i].comment_id)) {
                         console.log("here")
-                        document.getElementById("comment_" + proposal_data.comments[i].comment_id).setAttribute(
-                            "style",
-                            "background-color: #b3e5fc")
+                        document.getElementById("comment_" + proposal_data.comments[i].comment_id).style
+                            .backgroundColor = "#b3e5fc"
                     }
                 }
 
-
             } else if (topic_filter && !disc_filter) {
+
+                headertext = "Comments with keyword \"" + topic_filter + "\": "
                 // if (text_filter == proposal_data.comments[i].topic_phrase) {
                 //     divSum = document.createElement("div")
 
@@ -625,6 +653,8 @@
                     }
                 }
 
+
+
                 // if (text_filter == proposal_data.ngrams[i].ngram) {
                 //     divSum = document.createElement("div")
 
@@ -639,6 +669,8 @@
                 //     myNode.appendChild(divSum)
                 // }
             } else if (disc_filter && !topic_filter) {
+                headertext = disc_filter + " comments: "
+
                 if (disc_filter == proposal_data.comments[i].discourse) {
 
                     count += 1
@@ -681,8 +713,12 @@
                             "background-color: #b3e5fc")
                     }
                 }
+
+
+
             } else if (!text_filter) {
 
+                headertext = "Total comments: "
                 count += 1
 
                 // if (proposal_data.comments[i].discourse == "Positive") {
@@ -719,11 +755,13 @@
                         "background-color: #b3e5fc")
                 }
             }
+
+
         }
 
         // console.log(count)
 
-        document.getElementById("textboxheader").textContent = "Comments: " + count
+        document.getElementById("textboxheader").textContent = headertext + count
         do_pagination()
     }
 
@@ -838,10 +876,14 @@
                 '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
                 '<span ' +
                 ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
-                '<div class="serenText" id="seren_comment_' + sorted_balanced_list[idx].id + '">' +
-                sorted_balanced_list[idx].text + '</div>' + sorted_balanced_list[idx].trigger_sent +
+                '<div style="flex: 0 0 85%; padding-right:5px" class="serenText" id="seren_comment_' +
+                sorted_balanced_list[idx].id +
+                '">' +
+                sorted_balanced_list[idx].text + '</div>' +
+                '<div style="display:flex; flex-direction: row; align-self:center">' + sorted_balanced_list[idx]
+                .trigger_sent +
                 sorted_balanced_list[idx].trigger_sim +
-                '</div>'
+                '</div>' + '</div>'
             divSum.innerHTML = divHTML;
             myNode.appendChild(divSum)
         }
@@ -1085,6 +1127,9 @@
                 document.getElementById("dicetoggle").style.display = "block"
             }
 
+            if (document.getElementById("textboxheader").style.display == "none") {
+                document.getElementById("textboxheader").style.display = "block"
+            }
 
             if (prev_did) {
                 var area_text = $('#area option[value=' + prev_did + ']').text()
@@ -1162,33 +1207,10 @@
 
             render_text(text_filter)
 
+            console.log(dice_trigger)
             if (dice_trigger == 1) {
                 dice_trigger = 0
-
-                document.getElementById("serenboxparent").setAttribute("style",
-                    "margin: 0px; width: 0px; height: 0px;")
-
-                document.getElementById("serenbox").setAttribute("style",
-                    "margin: 0px; width: 0px; height: 0px; overflow-y:auto")
-
-                document.getElementById("serenboxheader").setAttribute("style",
-                    "display:flex; flex-direction: row; width: 0px;"
-                )
-
-                document.getElementById("serenheader").textContent = ''
-
-                document.getElementById("textboxparent").setAttribute("style",
-                    "display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px;"
-                )
-                document.getElementById("textbox").setAttribute("style",
-                    "margin: 5px; max-width: 90%; height: 40vh; overflow-y:auto"
-                )
-
-                document.getElementById("dicetoggle").setAttribute("style",
-                    "width: 150px; height: 23px; background-color: red; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"
-                )
-
-                document.getElementById("dicetoggle").textContent = "Suggestion: Off"
+                dice_toggle()
             }
 
             prev_did = did
@@ -1444,9 +1466,7 @@
     $(document).on('click', '.serenText', function () {
 
         id = $(this)[0].id
-        document.getElementById(id).setAttribute(
-            "style",
-            "background-color: #b3e5fc")
+        document.getElementById(id).style.backgroundColor = "#b3e5fc"
 
         if (dice_trigger == 1) {
             document.getElementById("serenloading").style.display = "block"
@@ -1565,8 +1585,7 @@
 
     }
 
-    $(document).on('click', "#dicetoggle", function () {
-
+    function dice_toggle() {
         if (dice_trigger == 0) {
             logInteraction('click,dice,get suggested comments')
 
@@ -1637,6 +1656,10 @@
         //     </div>
         //     <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
         // </div>
+    }
+
+    $(document).on('click', "#dicetoggle", function () {
+        dice_toggle()
     });
 
     $('#textbox').on('scroll', function () {
@@ -1668,7 +1691,7 @@
             for (var i in proposal_data.comments) {
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
                     var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
                         met_count += 1
                     }
                 }
@@ -1704,7 +1727,7 @@
             for (var i in proposal_data.comments) {
                 if (covered_ids.includes(proposal_data.comments[i].comment_id.toString())) {
                     var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
                         met_count += 1
                     }
                 }
@@ -1749,7 +1772,7 @@
 
         for (var i in proposal_data.comments) {
             var tot_tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-            if ((tot_tokens.includes(tag.split(" ")[0]) || tot_tokens.includes(tag.split(" ")[1]))) {
+            if ((tot_tokens.includes(tag.split(" ")[0]) && tot_tokens.includes(tag.split(" ")[1]))) {
                 // console.log("here")
                 if (proposal_data.comments[i].discourse == "Positive") {
                     tot_pos += 1
@@ -1772,7 +1795,7 @@
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
                     // console.log("found explored")
                     var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) || tokens.includes(tag.split(" ")[1]))) {
+                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
                         if (proposal_data.comments[i].discourse == "Positive") {
                             pos += 1
                         } else if (proposal_data.comments[i].discourse == "Negative") {
@@ -1846,10 +1869,11 @@
                 // IF VISIT
                 if (id == "visitback") {
                     // tinycolor = "#b3e5fc"
+
                     tinycolor = "rgba(179, 229, 252, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
-                        x_array[j].style.visibility = "visible"
+                        x_array[j].style.display = "block"
                     }
                     var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
                         totalcount)
@@ -1860,7 +1884,7 @@
                     tinycolor = "rgba(200, 230, 201, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
-                        x_array[j].style.visibility = "visible"
+                        x_array[j].style.display = "block"
                     }
                     var met_width = calc_tiny_cover("ngram",
                         proposal_data.ngrams[i].ngram, totalcount)
@@ -1871,7 +1895,7 @@
                     tinycolor = "rgba(255, 205, 210, 0.3)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
-                        x_array[j].style.visibility = "visible"
+                        x_array[j].style.display = "block"
                     }
                     var met_width = calc_tiny_dist("ngram",
                         proposal_data.ngrams[i].ngram, totalcount)
@@ -1980,21 +2004,21 @@
         }
     });
 
-    $(document).on('mouseout', '.metbar', function () {
-        if (did) {
-            var x_array = document.getElementsByClassName("tinybar")
+    // $(document).on('mouseout', '.metbar', function () {
+    //     if (did) {
+    //         var x_array = document.getElementsByClassName("tinybar")
 
-            var tinycolor = ""
-            var id = $(this)[0].id
-            selected_id_metric = id
+    //         var tinycolor = ""
+    //         var id = $(this)[0].id
+    //         selected_id_metric = id
 
-            document.getElementById(selected_id_metric).setAttribute("style",
-                "border: solid 2px lightgray; width:100%")
+    //         document.getElementById(selected_id_metric).setAttribute("style",
+    //             "border: solid 2px lightgray; width:100%")
 
-            for (var i = 0; i < 13; i++) {
-                x_array[i].style.backgroundColor = tinycolor
-                x_array[i].style.visibility = "hidden"
-            }
-        }
-    });
+    //         for (var i = 0; i < 13; i++) {
+    //             x_array[i].style.backgroundColor = tinycolor
+    //             x_array[i].style.display = "none"
+    //         }
+    //     }
+    // });
 </script>
