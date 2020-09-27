@@ -268,7 +268,7 @@
         <div id="serenboxparent"
             style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
             <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
-                <div id="serenheader"></div>
+                <div id="serenheader" style="font-weight:bold"></div>
                 <div id="serenloading" style="display: none;">
                     <img src="dice.gif" style="margin-left: 5px; height:20px; height: 20px">
                 </div>
@@ -290,7 +290,7 @@
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
             <div class="metbar" id="coverback" style="border: solid 2px lightgrey; width:100%">
-                <div id="coverageBar" style="height:24px; width:0%; background-color: #c8e6c9;">
+                <div id="coverageBar" style="height:24px; width:0%; background-color: #B39DDB;">
                 </div>
             </div>
             <div id="covtext">Coverage: You know about 0% comments</div>
@@ -298,7 +298,7 @@
 
         <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
             <div class="metbar" id="distback" style="border: solid 2px lightgrey; width:100%">
-                <div id="distributionBar" style="height:24px; width:0%; background-color: #ffcdd2;">
+                <div id="distributionBar" style="height:24px; width:0%; background-color: #FFAB91;">
                 </div>
             </div>
             <div id="disttext">Distribution: You looked at 0% sentiments</div>
@@ -431,7 +431,7 @@
                 '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
                 '<div class="tinybar" id=\"met_' +
                 sorted_ngrams[i].ngram +
-                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0; z-index:-1"></div></div>';
+                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0;"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -490,7 +490,7 @@
                 '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
-                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0; z-index:-1"></div></div>';
+                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0;"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -804,13 +804,13 @@
             var sim_height = sim_score * 100
             var trigger_sent =
                 '<div id="seren_sent_' + data[1][i].id +
-                '" style="flex:0 0 10px; align-self:flex-end; background-color:#ffcdd2;margin-bottom:5px;' +
+                '" style="flex:0 0 10px; align-self:flex-end; background-color:#FFAB91;margin-bottom:5px;' +
                 'height:' +
                 sent_height +
                 'px;margin-left:3px"' + 'title="Sentiment score=' + sent_height + '\"></div>'
             var trigger_sim =
                 '<div id="seren_sim_' + data[1][i].id +
-                '" style="flex: 0 0 10px; align-self:flex-end; background-color:#c8e6c9;margin-bottom:5px;' +
+                '" style="flex: 0 0 10px; align-self:flex-end; background-color:#B39DDB;margin-bottom:5px;' +
                 'height:' +
                 sim_height.toString() +
                 'px;margin-left:3px"' + 'title="Similarity score=' + sim_height.toString() + '\"></div>'
@@ -851,12 +851,11 @@
             roll = Math.floor(Math.random() * (6 - 1 + 1) + 1)
             Math.seedrandom(roll.toString());
             var idx = Math.floor(Math.random() * sorted_balanced_list.length)
-            if (idx_list.includes(idx) || (sorted_balanced_list[idx].sent_score + sorted_balanced_list[idx]
-                    .sim_score) < 0.3) {
+            if (idx_list.includes(idx)) {
                 continue;
             }
 
-            console.log(sorted_balanced_list[idx])
+            // console.log(sorted_balanced_list[idx])
 
             cnt += 1
             idx_list.push(idx)
@@ -933,6 +932,7 @@
                 metrics[did].coverage = width
                 document.getElementById("covtext").innerHTML = 'Coverage: You know about ' + width * 1 +
                     '% comments';
+
             } else if (bar_id == "distributionBar") {
                 metrics[did].distribution = width
 
@@ -975,14 +975,13 @@
                 var fgroup = ((sorted[0].count / total) - (sorted[1].count / total)) * 100
 
                 if (fgroup > 10) {
-                    document.getElementById("disttext").innerHTML = 'Distribution: You mostly looked at ' +
-                        sorted[
-                            0]
+                    document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' +
+                        sorted[0]
                         .sent + ' comments';
                 } else {
                     var sgroup = ((sorted[1].count / total) - (sorted[2].count / total)) * 100
                     if (sgroup > 10) {
-                        document.getElementById("disttext").innerHTML = 'Distribution: You mostly looked at ' +
+                        document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' +
                             sorted[0]
                             .sent + ' and ' + sorted[1]
                             .sent + ' comments';
@@ -1761,7 +1760,17 @@
             }
         }
 
-        // console.log(tag, tot_pos, tot_neg, tot_neut)
+        if (tot_pos == 0) {
+            tot_pos = 1
+        }
+        if (tot_neg == 0) {
+            tot_neg = 1
+        }
+        if (tot_neut == 0) {
+            tot_neut = 1
+        }
+
+        console.log(tag, tot_pos, tot_neg, tot_neut)
 
         for (var i in explored_list[did]) {
             explored_ids.push(explored_list[did][i].id)
@@ -1845,19 +1854,20 @@
                 if (id == "visitback") {
                     // tinycolor = "#b3e5fc"
 
-                    tinycolor = "rgba(179, 229, 252, 1.0)"
-                    tinycolor = "black"
+                    tinycolor = "rgba(179, 229, 252, 0.7)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
                     for (var j = 0; j < 10; j++) {
-                        y_array[j].style.opacity = "0.7"
+                        // y_array[j].style.opacity = "0.7"
+                        y_array[j].style.fontWeight = "bold"
                     }
 
                     for (var j = 0; j < 3; j++) {
-                        z_array[j].style.opacity = "0.7"
+                        // z_array[j].style.opacity = "0.7"
+                        z_array[j].style.fontWeight = "bold"
                     }
 
                     var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
@@ -1865,19 +1875,21 @@
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "coverback") {
-                    // tinycolor = "#c8e6c9" 
-                    tinycolor = "rgba(200, 230, 201, 1.0)"
+                    // tinycolor = "#B39DDB"
+                    tinycolor = "rgba(179, 157, 209, 0.7)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
                     for (var j = 0; j < 10; j++) {
-                        y_array[j].style.opacity = "0.5"
+                        // y_array[j].style.opacity = "0.7"
+                        y_array[j].style.fontWeight = "bold"
                     }
 
                     for (var j = 0; j < 3; j++) {
-                        z_array[j].style.opacity = "0.7"
+                        // z_array[j].style.opacity = "0.7"
+                        z_array[j].style.fontWeight = "bold"
                     }
 
                     var met_width = calc_tiny_cover("ngram",
@@ -1885,19 +1897,21 @@
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "distback") {
-                    // tinycolor = "#ffcdd2"
-                    tinycolor = "rgba(255, 205, 210, 1.0)"
+                    // tinycolor = "#FFAB91"
+                    tinycolor = "rgba(255, 171, 145, 0.7)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
                     for (var j = 0; j < 10; j++) {
-                        y_array[j].style.opacity = "0.5"
+                        // y_array[j].style.opacity = "0.7"
+                        y_array[j].style.fontWeight = "bold"
                     }
 
                     for (var j = 0; j < 3; j++) {
-                        z_array[j].style.opacity = "0.7"
+                        // z_array[j].style.opacity = "0.7"
+                        z_array[j].style.fontWeight = "bold"
                     }
 
                     var met_width = calc_tiny_dist("ngram",
@@ -1935,6 +1949,8 @@
     $(document).on('mouseout', '.metbar', function () {
         if (did) {
             var x_array = document.getElementsByClassName("tinybar")
+            var y_array = document.getElementsByClassName("topicbtn")
+            var z_array = document.getElementsByClassName("discbtn")
 
             var tinycolor = ""
             var id = $(this)[0].id
@@ -1947,6 +1963,17 @@
                 x_array[i].style.backgroundColor = tinycolor
                 x_array[i].style.display = "none"
             }
+
+            for (var j = 0; j < 10; j++) {
+                // y_array[j].style.opacity = "0.7"
+                y_array[j].style.fontWeight = "normal"
+            }
+
+            for (var j = 0; j < 3; j++) {
+                // z_array[j].style.opacity = "0.7"
+                z_array[j].style.fontWeight = "normal"
+            }
+
         }
     });
 </script>
