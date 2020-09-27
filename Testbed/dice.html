@@ -48,16 +48,15 @@
         font-weight: bold !important;
     }
 
-    .loader {
+    /* .loader {
         border: 10px solid #b3e5fc;
         border-radius: 50%;
         border-top: 10px solid black;
         width: 10px;
         height: 10px;
         -webkit-animation: spin 2s linear infinite;
-        /* Safari */
         animation: spin 2s linear infinite;
-    }
+    } */
 
     .metbar:hover {
         cursor: pointer;
@@ -104,6 +103,10 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="jquery.paginate.css">
+
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<script src="https://unpkg.com/tippy.js@6"></script> -->
 
 <!-- Amazon -->
 
@@ -266,7 +269,8 @@
             style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
             <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
                 <div id="serenheader"></div>
-                <div class="loader" id="serenloading" style="margin: 3px; margin-left: 5px; display: none;">
+                <div id="serenloading" style="display: none;">
+                    <img src="dice.gif" style="margin-left: 5px; height:20px; height: 20px">
                 </div>
             </div>
             <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
@@ -411,15 +415,6 @@
             myNode.removeChild(myNode.firstChild);
         }
 
-        // for (var i in proposal_data.topics) {
-        //     // console.log(proposal_data.topics[i].topic_phrase)
-        //     var divbutton = document.createElement("div")
-        //     var buttonHTML = '<button type="button" class="btn btn-warning topicbtn" style="margin:5px">' +
-        //         proposal_data.topics[i].topic_phrase + '</button>'
-        //     divbutton.innerHTML = buttonHTML;
-        //     myNode.appendChild(divbutton)
-        // }
-
         console.log(proposal_data.ngrams)
 
         var sorted_ngrams = proposal_data.ngrams.sort(function (a, b) {
@@ -442,17 +437,6 @@
         }
 
         document.getElementById('topicbox').style.borderBottom = "solid thin black"
-
-        // for (var i in sorted_ngrams) {
-        //     var x_array = document.getElementsByClassName("tinybar")
-        //     console.log(x_array)
-        //     tinycolor = "lightgray"
-        //     for (var j = 0; j < 10; j++) {
-        //         x_array[j].style.backgroundColor = tinycolor
-        //         x_array[j].style.visibility = "visible"
-        //     }
-        //     tinymove("met_" + sorted_ngrams[i].ngram, sorted_ngrams[i].count)
-        // }
     }
 
     function reload_page() {
@@ -506,7 +490,7 @@
                 '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
                 '<div class="tinybar" id=\"met_' +
                 proposal_data.discourses[i].discourse_name +
-                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-29px; left: 0; z-index:-1"></div></div>';
+                '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0; z-index:-1"></div></div>';
             divbutton.innerHTML = buttonHTML;
             myNode.appendChild(divbutton)
         }
@@ -755,11 +739,7 @@
                         "background-color: #b3e5fc")
                 }
             }
-
-
         }
-
-        // console.log(count)
 
         document.getElementById("textboxheader").textContent = headertext + count
         do_pagination()
@@ -779,7 +759,7 @@
 
 
         for (var i in explored_list[did]) {
-            console.log(explored_list[did][i].disc)
+            // console.log(explored_list[did][i].disc)
             if (explored_list[did][i].disc == "Positive")
                 pos += 1
             else if (explored_list[did][i].disc == "Negative")
@@ -789,46 +769,57 @@
         }
 
         var coeffofvar = math.std([pos, neg, neut]) / math.mean([pos, neg, neut])
-        console.log(coeffofvar)
+        console.log("coeff", coeffofvar)
 
-        // var pos_proportion = pos / explored_list[did].length
-        // var neg_proportion = neg / explored_list[did].length
-        // var neut_proportion = neut / explored_list[did].length
+        var pos_proportion = pos / explored_list[did].length
+        var neg_proportion = neg / explored_list[did].length
+        var neut_proportion = neut / explored_list[did].length
 
         // console.log("props ->", pos_proportion, neg_proportion, neut_proportion)
 
         var balanced_list = []
         for (var i in data[1]) {
-            // var prop_selector = null
-            // if (data[1][i].disc == "Positive")
-            //     prop_selector = pos_proportion
-            // else if (data[1][i].disc == "Negative")
-            //     prop_selector = neg_proportion
-            // else
-            //     prop_selector = neut_proportion
+            var prop_selector = null
+            if (data[1][i].disc == "Positive")
+                prop_selector = pos_proportion
+            else if (data[1][i].disc == "Negative")
+                prop_selector = neg_proportion
+            else
+                prop_selector = neut_proportion
 
             // console.log("prop-selector -> ", prop_selector)
 
+            if (coeffofvar < 1) {
+                var sent_score = 0.5 * (coeffofvar)
+            } else {
+                var sent_score = 0.5 * (1 - prop_selector)
+            }
+
+            var sim_score = 0.5 * (1 - data[1][i].score)
+
             // var score = 0.5 * (1 - prop_selector) + 0.5 * (1 - data[1][i].score)
-            var score = 0.5 * (coeffofvar) + 0.5 * (data[1][i].score)
+            // var score = 0.5 * (coeffofvar) + 0.5 * (1 - data[1][i].score)
             // var sent_height = 0.5 * (1 - prop_selector) * 30
-            var sent_height = 0.5 * (coeffofvar) * 100
-            var sim_height = 0.5 * (data[1][i].score) * 100
+            var sent_height = sent_score * 100
+            var sim_height = sim_score * 100
             var trigger_sent =
-                '<div style="flex:0 0 10px; align-self:flex-end; background-color:#ffcdd2;margin-bottom:5px;' +
+                '<div id="seren_sent_' + data[1][i].id +
+                '" style="flex:0 0 10px; align-self:flex-end; background-color:#ffcdd2;margin-bottom:5px;' +
                 'height:' +
                 sent_height +
-                'px;margin-left:3px"></div>'
+                'px;margin-left:3px"' + 'title="Sentiment score=' + sent_height + '\"></div>'
             var trigger_sim =
-                '<div style="flex: 0 0 10px; align-self:flex-end; background-color:#c8e6c9;margin-bottom:5px;' +
+                '<div id="seren_sim_' + data[1][i].id +
+                '" style="flex: 0 0 10px; align-self:flex-end; background-color:#c8e6c9;margin-bottom:5px;' +
                 'height:' +
-                sim_height +
-                'px;margin-left:3px"></div>'
+                sim_height.toString() +
+                'px;margin-left:3px"' + 'title="Similarity score=' + sim_height.toString() + '\"></div>'
 
             balanced_list.push({
                 "id": data[1][i].id,
                 "text": data[1][i].text,
-                "score": score,
+                "sent_score": sent_score,
+                "sim_score": sim_score,
                 "trigger_sent": trigger_sent,
                 "trigger_sim": trigger_sim,
                 "disc": data[1][i].disc
@@ -846,7 +837,13 @@
         var sent = ''
         var idx_list = []
 
-        console.log(sorted_balanced_list)
+        var sentsent = 0
+        var simsim = 0
+        for (var x in sorted_balanced_list) {
+            sentsent += sorted_balanced_list[x].sent_score
+            simsim += sorted_balanced_list[x].sim_score
+        }
+        console.log(sentsent / sorted_balanced_list.length, simsim / sorted_balanced_list.length)
 
         for (var cnt = 0; cnt < 5;) {
             //serendipity
@@ -854,23 +851,23 @@
             roll = Math.floor(Math.random() * (6 - 1 + 1) + 1)
             Math.seedrandom(roll.toString());
             var idx = Math.floor(Math.random() * sorted_balanced_list.length)
-            if (idx_list.includes(idx)) {
+            if (idx_list.includes(idx) || (sorted_balanced_list[idx].sent_score + sorted_balanced_list[idx]
+                    .sim_score) < 0.3) {
                 continue;
             }
 
+            console.log(sorted_balanced_list[idx])
+
             cnt += 1
             idx_list.push(idx)
-            console.log(roll, idx_list)
 
             if (sorted_balanced_list[idx].disc == "Positive") {
-                sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
+                sent = '<i class="fa fa-plus"></i>'
             } else if (sorted_balanced_list[idx].disc == "Negative") {
                 sent = '<i class="fa fa-minus"></i>'
             } else {
                 sent = '<i class="fa fa-circle-o"></i>'
             }
-
-            console.log(sorted_balanced_list[idx].trigger_sent, sorted_balanced_list[idx].trigger_sim)
 
             divHTML +=
                 '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
@@ -1222,18 +1219,13 @@
         topic_filter = $(this)[0].innerText
 
         selected_id_ngram = $(this)[0].id
-        // if (selected_id_disc) {
-        //     document.getElementById(selected_id_disc).setAttribute("style", "border: solid thick white")
-        //     selected_id_disc = ""
-        //     prev_selected_id_disc = ""
-        // }
 
         console.log(selected_id_ngram, prev_selected_id_ngram, selected_id_disc, prev_selected_id_disc)
 
         if (prev_selected_id_ngram == selected_id_ngram) {
             logInteraction('click,ngram_' + topic_filter + ',deselect an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
             )
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
@@ -1247,11 +1239,11 @@
         } else {
             logInteraction('click,ngram_' + topic_filter + ',select an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
             )
             if (prev_selected_id_ngram) {
                 document.getElementById(prev_selected_id_ngram).setAttribute("style",
-                    "margin:5px; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+                    "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
                 )
             }
             prev_selected_id_ngram = selected_id_ngram
@@ -1271,22 +1263,7 @@
         var sent_color = "white"
         var sent_text = "black"
 
-        // var sent_color = "lightgray"
-        // var sent_text = "black"
-        // if (disc_filter == "Positive") {
-        //     sent_color = "white"
-        // } else if (disc_filter == "Negative") {
-        //     sent_color = "black"
-        //     sent_text = "white"
-        // }
-
-
         selected_id_disc = $(this)[0].id
-        // if (selected_id_ngram) {
-        //     document.getElementById(selected_id_ngram).setAttribute("style", "border: solid thick white")
-        //     selected_id_ngram = ""
-        //     prev_selected_id_ngram = ""
-        // }
 
         console.log(selected_id_disc, prev_selected_id_disc)
 
@@ -1472,7 +1449,7 @@
             document.getElementById("serenloading").style.display = "block"
             setTimeout(function () {
                 document.getElementById("serenloading").style.display = "none"
-            }, 3000)
+            }, 3500)
         }
 
         logInteraction('click,serencomment_' + $(this)[0].id.substring(14) +
@@ -1526,7 +1503,7 @@
                 document.getElementById("serenloading").style.display = "block"
                 setTimeout(function () {
                     document.getElementById("serenloading").style.display = "none"
-                }, 4000)
+                }, 3500)
             }
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) +
@@ -1690,8 +1667,8 @@
         if (category == "ngram") {
             for (var i in proposal_data.comments) {
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
-                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
+                    if ((proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[0]) &&
+                            proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[1]))) {
                         met_count += 1
                     }
                 }
@@ -1708,7 +1685,7 @@
             }
         }
 
-        // console.log(tag, met_count, totalcount)
+        console.log(category, tag, met_count, totalcount)
         return ((met_count / totalcount) * 100)
     }
 
@@ -1726,8 +1703,8 @@
         if (category == "ngram") {
             for (var i in proposal_data.comments) {
                 if (covered_ids.includes(proposal_data.comments[i].comment_id.toString())) {
-                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
+                    if ((proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[0]) &&
+                            proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[1]))) {
                         met_count += 1
                     }
                 }
@@ -1771,8 +1748,8 @@
         active_cnt = 100 / active_cnt
 
         for (var i in proposal_data.comments) {
-            var tot_tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-            if ((tot_tokens.includes(tag.split(" ")[0]) && tot_tokens.includes(tag.split(" ")[1]))) {
+            if ((proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[0]) &&
+                    proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[1]))) {
                 // console.log("here")
                 if (proposal_data.comments[i].discourse == "Positive") {
                     tot_pos += 1
@@ -1794,8 +1771,8 @@
             for (var i in proposal_data.comments) {
                 if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
                     // console.log("found explored")
-                    var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-                    if ((tokens.includes(tag.split(" ")[0]) && tokens.includes(tag.split(" ")[1]))) {
+                    if ((proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[0]) &&
+                            proposal_data.comments[i].comment.toLowerCase().includes(tag.split(" ")[1]))) {
                         if (proposal_data.comments[i].discourse == "Positive") {
                             pos += 1
                         } else if (proposal_data.comments[i].discourse == "Negative") {
@@ -1832,6 +1809,8 @@
 
         if (did) {
             var x_array = document.getElementsByClassName("tinybar")
+            var y_array = document.getElementsByClassName("topicbtn")
+            var z_array = document.getElementsByClassName("discbtn")
 
             var tinycolor = ""
             var id = $(this)[0].id
@@ -1856,10 +1835,6 @@
 
                     var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
 
-                    // if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
-                    //         tokens.includes(ngram_list[i].split(" ")[1]))) {
-                    //     totalcount += 1
-                    // }
                     if (proposal_data.comments[j].comment.toLowerCase().includes(ngram_list[i].split(" ")[0]
                             .toLowerCase()) && proposal_data.comments[j].comment.toLowerCase().includes(
                             ngram_list[i].split(" ")[1].toLowerCase())) {
@@ -1870,33 +1845,61 @@
                 if (id == "visitback") {
                     // tinycolor = "#b3e5fc"
 
-                    tinycolor = "rgba(179, 229, 252, 0.3)"
+                    tinycolor = "rgba(179, 229, 252, 1.0)"
+                    tinycolor = "black"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
+
+                    for (var j = 0; j < 10; j++) {
+                        y_array[j].style.opacity = "0.7"
+                    }
+
+                    for (var j = 0; j < 3; j++) {
+                        z_array[j].style.opacity = "0.7"
+                    }
+
                     var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
                         totalcount)
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "coverback") {
                     // tinycolor = "#c8e6c9" 
-                    tinycolor = "rgba(200, 230, 201, 0.3)"
+                    tinycolor = "rgba(200, 230, 201, 1.0)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
+
+                    for (var j = 0; j < 10; j++) {
+                        y_array[j].style.opacity = "0.5"
+                    }
+
+                    for (var j = 0; j < 3; j++) {
+                        z_array[j].style.opacity = "0.7"
+                    }
+
                     var met_width = calc_tiny_cover("ngram",
                         proposal_data.ngrams[i].ngram, totalcount)
                     // console.log(met_width)
                     tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
                 } else if (id == "distback") {
                     // tinycolor = "#ffcdd2"
-                    tinycolor = "rgba(255, 205, 210, 0.3)"
+                    tinycolor = "rgba(255, 205, 210, 1.0)"
                     for (var j = 0; j < 13; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
+
+                    for (var j = 0; j < 10; j++) {
+                        y_array[j].style.opacity = "0.5"
+                    }
+
+                    for (var j = 0; j < 3; j++) {
+                        z_array[j].style.opacity = "0.7"
+                    }
+
                     var met_width = calc_tiny_dist("ngram",
                         proposal_data.ngrams[i].ngram, totalcount)
                     // console.log(met_width)
@@ -1926,99 +1929,24 @@
                     tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
                 }
             }
-
-            // if (prev_selected_id_metric == selected_id_metric) {
-            //     console.log("if", prev_selected_id_metric, selected_id_metric)
-            //     document.getElementById(selected_id_metric).setAttribute("style",
-            //         "border: solid thin lightgrey; width:100%")
-
-            //     selected_id_metric = ""
-            //     prev_selected_id_metric = ""
-
-            //     for (var i = 0; i < 13; i++) {
-            //         console.log("display check none")
-            //         x_array[i].style.backgroundColor = "red"
-            //         x_array[i].style.visibility = "hidden"
-            //     }
-
-            // } else {
-            //     document.getElementById(selected_id_metric).setAttribute("style",
-            //         "border: solid 2px goldenrod; width:100%")
-
-            //     console.log("else", prev_selected_id_metric, selected_id_metric)
-
-            //     if (id == "visitback") {
-            //         tinycolor = "#b3e5fc"
-            //     } else if (id == "coverback") {
-            //         tinycolor = "#c8e6c9"
-            //     } else if (id == "distback") {
-            //         tinycolor = "#ffcdd2"
-            //     }
-
-            //     for (var i = 0; i < 13; i++) {
-            //         x_array[i].style.backgroundColor = tinycolor
-            //         x_array[i].style.visibility = "visible"
-            //     }
-
-            //     proposal_data = full_data[did]
-
-            //     var ngram_list = []
-
-            //     for (var i in proposal_data.ngrams) {
-            //         ngram_list.push(proposal_data.ngrams[i].ngram)
-            //     }
-
-            //     for (var i in ngram_list) {
-            //         var totalcount = 0
-            //         for (var j in proposal_data.comments) {
-            //             var tokens = proposal_data.comments[j].comment.toLowerCase().split(" ");
-
-            //             if ((tokens.includes(ngram_list[i].split(" ")[0]) ||
-            //                     tokens.includes(ngram_list[i].split(" ")[1]))) {
-            //                 totalcount += 1
-            //             }
-            //         }
-            //         // IF VISIT
-            //         var met_width = calc_tiny_visit("ngram", proposal_data.ngrams[i].ngram,
-            //             totalcount)
-            //         console.log(met_width)
-            //         tinymove("met_" + proposal_data.ngrams[i].ngram, met_width)
-            //     }
-
-            //     for (var i in proposal_data.discourses) {
-            //         // IF VISIT
-            //         var met_width = calc_tiny_visit("discourse", proposal_data.discourses[i].discourse_name,
-            //             proposal_data.discourses[i].count)
-            //         console.log(met_width)
-            //         tinymove("met_" + proposal_data.discourses[i].discourse_name, met_width)
-            //     }
-
-            //     if (prev_selected_id_metric) {
-            //         document.getElementById(prev_selected_id_metric).setAttribute("style",
-            //             "border: solid thin lightgrey; width:100%"
-            //         )
-            //     }
-
-            //     prev_selected_id_metric = selected_id_metric
-            // }
         }
     });
 
-    // $(document).on('mouseout', '.metbar', function () {
-    //     if (did) {
-    //         var x_array = document.getElementsByClassName("tinybar")
+    $(document).on('mouseout', '.metbar', function () {
+        if (did) {
+            var x_array = document.getElementsByClassName("tinybar")
 
-    //         var tinycolor = ""
-    //         var id = $(this)[0].id
-    //         selected_id_metric = id
+            var tinycolor = ""
+            var id = $(this)[0].id
+            selected_id_metric = id
 
-    //         document.getElementById(selected_id_metric).setAttribute("style",
-    //             "border: solid 2px lightgray; width:100%")
+            document.getElementById(selected_id_metric).setAttribute("style",
+                "border: solid 2px lightgray; width:100%")
 
-    //         for (var i = 0; i < 13; i++) {
-    //             x_array[i].style.backgroundColor = tinycolor
-    //             x_array[i].style.display = "none"
-    //         }
-    //     }
-    // });
+            for (var i = 0; i < 13; i++) {
+                x_array[i].style.backgroundColor = tinycolor
+                x_array[i].style.display = "none"
+            }
+        }
+    });
 </script>
