@@ -14,7 +14,7 @@ function logInteraction(str) {
         var utcDate = dt.toUTCString();
         str = userID + "," + utcDate + ',' + str + '\n';
 
-        console.log(str)
+        // console.log(str)
         request = new XMLHttpRequest();
         request.open("POST", "interaction_log.php?q=" + userID, true);
         //request.setRequestHeader("Content-type", "application/json");
