@@ -74,7 +74,7 @@ function Hilitor(id, tag) {
   this.getRegex = function () {
     var retval = matchRegExp.toString();
     retval = retval.replace(/(^\/(\\b)?|\(|\)|(\\b)?\/i$)/g, "");
-    retval = retval.replace(/\|/g, " ");
+    retval = retval.replace(/\|/g, "");
     return retval;
   };
 
