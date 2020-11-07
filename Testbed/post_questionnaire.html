@@ -636,7 +636,11 @@
 
             </form>
 
-            <div style="display: flex; width: 100%; align-items: center; justify-content: center;">
+            <div
+                style="display: flex; flex-direction: column; width: 100%; align-items: center; justify-content: center;">
+                <div id="endloading" style="display: none;">Saving Input. Please don't close the window.
+                    <img src="hg.gif" style="margin-left: 5px; margin-top:-5px; height:20px; height: 20px">
+                </div>
                 <div id="save" title="Save"
                     style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 200px; height: 30px; border-radius: 20px; border: solid thin lightgray; text-align: center; margin: 20px;">
                     Save
@@ -820,7 +824,11 @@
                 }
                 end_time = Date.now()
                 logInteraction('post_q' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
-                window.open('outro.html', '_self')
+                document.getElementById("endloading").style.display = "block"
+                setTimeout(function () {
+                    document.getElementById("endloading").style.display = "none"
+                    window.open('outro.html', '_self')
+                }, 7000)
             }
         });
     });
