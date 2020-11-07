@@ -95,6 +95,8 @@
 
 <link rel="stylesheet" href="jquery.paginate.css">
 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 <!-- Amazon -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
@@ -213,7 +215,9 @@
     <div>
         <h3>Objective and Tutorial</h3>
 
-        <p>This tutorial introduces the study objectives and various functionalities of the tool. You can access this
+        <p>This tutorial introduces the study objectives and various functionalities of this tool called <b>DICE</b>.
+            You can
+            access this
             tutorial anytime from the
             navigation bar.</p>
 
@@ -223,10 +227,14 @@
             refresh the page unless you want to start over.</p>
 
         <h3>Study Objective:</h3>
-        <p> Thoroughly explore the product reviews and decide which particular headphone you would like to purchase.
-            After you have made the final decision, click the finish button at the bottom. A questionnaire will follow
-            that will ask you a few questions about your decision-making process. Once you finish the study, click the
-            finish button at the bottom.
+        <p> We started off with a few questions. The next step for you is to thoroughly explore the product reviews and
+            decide which particular
+            headphone you would refer to someone.
+            <b>After you have made the final decision, click the finalize button at the top right of the navigation
+                bar</b>. A
+            post study questionnaire will follow
+            that will ask you a few questions about your decision-making process. Once you have answered all questions,
+            proceed to M-Turn and finish the study.
         </p>
 
         <h3>Tutorial</h3>
@@ -238,67 +246,82 @@
         <h5>Interface Features:</h5>
         <p>The interface has the following features:</p>
         <ul>
-            <li><b>Most Frequent Terms:</b> These are the most frequent terms present in the review comments.</li>
-            <li><b>Sentiment Categories:</b> These categories represent different sentiments present in the review
-                comments. </li>
-            <li><b>List of comments:</b> The list provides the comments alongwith their associated sentiments </li>
+            <li><b>Keywords:</b> These are the most frequent keyword pairs that are present in the review comments.</li>
+            <li><b>Sentiments:</b> These categories represent different sentiments present in the review comments.</li>
             <li><b>Exploration metrics:</b> These metrics (Visit, Coverage, and Distribution) provide you with tracking
-                information based on your exploration of the review comments.</li>
-            <li><b>Toggle comment suggestion:</b> Use the dice icon toggle comment suggestions from the comments you
-                have yet to explore, on or off.</li>
+                information based on your exploration of the review comments. <i class="fa fa-square fa-sm"
+                    style="margin-right: 2px; color:#81d4fa" aria-hidden="true"></i> Visit information
+                shows the amount of comments you have interacted with directly by clicking or hoveriing over them for 3
+                seconds.
+                <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i> Coverage
+                information
+                shows
+                the amount of comments you have covered implicitly, including the comments that are very
+                similar
+                and redundant to the ones you have previously interacted with. Finally, <i class="fa fa-square fa-sm"
+                    style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i> Distribution information
+                shows the proportion of comment sentiments you have directly interacted
+                with.</li>
+            <li><b>List of comments:</b> The list provides the comments alongwith their associated sentiments </li>
+            <li><b>List of suggested comments:</b> The list provides the comments suggested based on your interaction
+                with other comments.
+            </li>
         </ul>
 
         <img src="interface_options.png"
-            style="width:70%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:100%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
 
         <h5>Filtering comments:</h5>
-        <p>Select the most frequent terms and sentiment categories to filter the review comments accordingly. You can
-            use a frequent term and a sentiment at the same time. If you select the most frequent terms, they will be
+        <p>Select the keywords and sentiments to filter the review comments accordingly. You can
+            use a keyword pair and a sentiment at the same time. If you select keyword pair, they will be
             highlighted in the comments where they appear.</p>
 
         <img src="filtering.png"
-            style="width:60%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
         <h5>Interacting with the comments:</h5>
-        <p>You can select or hover on a comment for 3 seconds to mark it as read. The tool will keep a record
+        <p><b>You can select or hover on a comment for 3 seconds to mark it as read</b>. DICE will keep a record
             of your progress and track the comments
             you are interacting with. </p>
 
         <img src="comment_interact.png"
-            style="width:70%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
 
         <h5>Exploration metrics:</h5>
-        <p>The exploration bars provide information on how you have been exploring the comments. The are three metrics
+        <p>The exploration Mmetric bars provide information on how you have been exploring the comments. The are three
+            metrics
             bars.</p>
 
-        <p><b>Visit: </b>Visit presents the number of comments you have marked as read by clicking or hovering on it for
-            more than three seconds. It essentially tells you how many comments you have already looked at. In the
-            example below, you have looked at 29% comments.</p>
+        <p><b>Visit: </b>Visit presents the number of comments you have read and marked as read by clicking or hovering
+            on it for
+            more than 3 seconds. It essentially tells you how many comments you have already looked at. In the
+            example below, you have read 34% comments.</p>
 
         <img src="visit.png"
-            style="width:50%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:40%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
 
-        <p><b>Coverage: </b>Coverage presents the number of comments you have knowledge about based on your interactions
+        <p><b>Coverage: </b>Coverage presents the amount of comments you have knowledge about based on your interactions
             with comments. Oftentimes, there are comments that are similar and redundant to the comments you have
             already read. Essentially, it tells you how many redundant comments you implicitely have knowledge on. In
-            the example below, you have covered 36% comments despite visiting or reading 29% comments. The extra 7% (37%
+            the example below, you have covered 52% comments despite visiting or reading 34% comments. The extra 18%
+            (52%
             -
-            29%) comments are similar and redundant to the comments you have read already.</p>
+            34%) comments are similar and redundant to the comments you have read already.</p>
 
         <img src="coverage.png"
-            style="width:50%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:40%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
 
         <p><b>Distribution: </b>Distribution presents what kind of sentiments you have been exploring. It essentially
             tells you whether you are focusing on comments with similar sentiments or your are exploring all sentiments
-            comprehensively. In the example below, you have covered 27% of sentiments and been mostly looking at
-            positive comments. </p>
+            comprehensively. In the example below, you have covered 35% of sentiments and have been reading all 3 kinds
+            of comments. </p>
 
         <img src="distribution.png"
-            style="width:50%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:40%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
         <p>
             Hovering over any of the metric bar will show the comment exploration progresses corresponding to the most
@@ -310,22 +333,30 @@
             style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
         <h5>Suggested comments</h5>
-        <p> Depending on your exploration history (the comments you have been interacting with, the tool will provide
-            you with suggested comments from the yet unexplored comments. Use the dice icon to toggle the suggestions on
+        <p> Depending on your exploration history (the comments you have been interacting with, DICE will provide
+            you with suggested comments from the the comments that you have not visited yet. You can use the checkbox
+            beside the product selection dropdown to toggle the suggestions on
             or off. You can also interact with the suggested comments similar to regular comments. You can click or
-            hover on the suggested comments to mark them as read. Once you interact with regular comments or suggested
-            comments with the suggested comments window open, the tool will provide you with newly suggested comments
-            based on your interactions.)
+            hover on the suggested comments for 3 seconds to mark them as read. Once you interact with regular comments
+            or suggested comments with the suggested comments window open, DICE will provide you with newly
+            suggested comments based on your interactions. <b> Suggesting comments takes some time. Please wait until
+                the wait spinner (<img src="hg.gif" style="height:15px; width: 15px;"></img>) stops moving completely
+                before marking another comment as read to get new suggestions.</b> The metric arrows tell you how the
+            metrics will increase if you read and mark the associated suggested comments. The larger the bar, the larger
+            the increase in the associated metric.
         </p>
 
         <img src="dice toggle.png"
-            style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+            style="width:90%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+
+        <h5>That concludes our tutorial. Remember, you can access this tutorial at any time by clicking on the Tutorial
+            button in the navigation bar.</h5>
     </div>
 
     <div id="proceed" title="Proceed"
         style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 200px; height: 30px; border-radius: 20px; border: solid thin lightgray; text-align: center; margin: 20px;"
-        onclick="gotostudy()">
-        Proceed
+        onclick="gotoStudy()">
+        Proceed to Study
     </div>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -334,7 +365,7 @@
     <script src="jquery.paginate.js"></script>
 
     <script>
-        function gotostudy() {
+        function gotoStudy() {
             window.open('dice.html', "_self")
         }
 

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+
+    #proceed:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white
+    }
+
+    .ui-tooltip {
+        max-width: 300px !important;
+        background-color: white;
+        border: solid thin lightgray;
+        border-radius: 10px;
+    }
+
+    text {
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    .commentText:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+
+    .serenText:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+
+    .topicbtn:hover {
+        /* background-color: #ff6 !important; */
+        border: solid 2px goldenrod !important;
+        cursor: pointer !important;
+        font-weight: bold !important;
+    }
+
+    .discbtn:hover {
+        /* background-color: #ff6 !important; */
+        border: solid 2px goldenrod !important;
+        cursor: pointer;
+        font-weight: bold !important;
+    }
+
+    /* .loader {
+        border: 10px solid #81d4fa;
+        border-radius: 50%;
+        border-top: 10px solid black;
+        width: 10px;
+        height: 10px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    } */
+
+    .metbar:hover {
+        cursor: pointer;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="jquery.paginate.css">
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <a class="navbar-brand" href="#" onclick="reload_page()" title="Refresh Page and Start Over">
+        <img src="dice.png" width="30" height="30" alt="">
+        DICE
+    </a>
+    <button class="navbar-toggler py-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon py-0"></span>
+    </button>
+
+    <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto py-0">
+            <!-- <li class="nav-item active py-0">
+                <a class="nav-link py-0" href="#" onclick="gototutorial()" title="User Guide">Tutorial<span
+                        class="sr-only py-0">(current)</span></a>
+            </li> -->
+            <li class=" nav-item py-0">
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="modal fade bd-example-modal-lg" id="aboutModal" tabindex="-1" role="dialog"
+    aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutModalLabel">About</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Dice is a research project aimed to study how users explore short free-form text information online
+                    before making a decision. If you have any question about the project, contact:
+                    <address>
+                        <b>Mahmood Jasim</b><br>
+                        Graduate Researcher<br>
+                        College of Information and Computer Sciences<br>
+                        University of Massachusetts<br>
+                        Amherst, MA - 01002<br>
+                        Email: <a href="mailto:mjasim@cs.umass.edu">mjasim@cs.umass.edu</a><br>
+                    </address>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body onload="checkLoad()">
+
+    <div class="container" id="post_parent" display:flex; flex-direction: column; justify-content: flex-start;
+        align-items: center; overflow-y: auto;>
+
+        <h3 style="padding-left: 15px; padding-right: 15px;">Pre Study Questionnaire</h3>
+        <p style="padding-left: 15px; padding-right: 15px;">Please answer the following questions to the best of your
+            abilities. You must answer all questions.</p>
+
+        <div class=" preContainer" id="pre_container">
+            <form class="needs-validation" novalidate id="demo_form">
+                <div class="form-group column">
+                    <label for="q1Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q1. How frequently do
+                            you
+                            purchase products online?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q1Select" required>
+                            <option value="">Pick an option</option>
+                            <option value="0">Less than 1 product per month on average</option>
+                            <option value="1">1 to 5 products per month on average</option>
+                            <option value="2">6 to 10 products per month on average</option>
+                            <option value="3">11 to 15 products per month on average
+                            </option>
+                            <option value="4">16 or more products per month on average</option>
+                            <option value="5">I have never pudchased anything online</option>
+                            </option>
+                        </select>
+                        <div class="invalidFeedback" id="q1Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q2Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q2. How many products
+                            do
+                            you browse before deciding to buy a product online?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q2Select" required>
+                            <option value="">Pick an option</option>
+                            <option value="0">I buy the first product I see</option>
+                            <option value="1">1 to 5 products on average</option>
+                            <option value="2">6 to 10 products on average</option>
+                            <option value="3">11 to 15 products on average
+                            </option>
+                            <option value="4">16 to 20 products on average</option>
+                            <option value="5">More than 20 products on average</option>
+                            </option>
+                        </select>
+                        <div class="invalidFeedback" id="q2Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q3Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q3. Do you read user
+                            reviews of products before deciding to buy a product online?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q3Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q3SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q3YesTime" style="display: none">
+                    <label for="q3YesTimeSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How long do you
+                            usually spend reading user reviews?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q3YesTimeSelect" required>
+                            <option value="">Pick an option</option>
+                            <option value="0">Less than 5 minutes on average</option>
+                            <option value="1">5 to 15 minutes on average</option>
+                            <option value="2">15 to 30 minutes on average</option>
+                            <option value="3">30 to 45 minutes on average
+                            </option>
+                            <option value="4">45 to 60 minutes on average</option>
+                            <option value="5">more than 60 minutes on average</option>
+                            </option>
+                        </select>
+                        <div class="invalidFeedback" id="q3YesTimeFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q3YesDecision" style="display: none">
+                    <label for="q3YesDecisionSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How much
+                            does
+                            reading user reviews impact your decision to buy a product online?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q3YesDecisionSelect" required>
+                            <option value="">Pick an option</option>
+                            <option value="0">No impact at all</option>
+                            <option value="1">It impacts my decisions a little</option>
+                            <option value="2">It moderately impacts my decision</option>
+                            <option value="3">It significantly impacts my decision
+                            </option>
+                            <option value="4">I am completely dependent on user reviews</option>
+                            </option>
+                        </select>
+                        <div class="invalidFeedback" id="q3YesDecisionFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q4Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q4. Would you recommend
+                            an
+                            online product to someone based on the user reviews?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q4Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                            <option>Maybe</option>option>
+                        </select>
+                        <div class="invalidFeedback" id="q4Feedback">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div style="display: flex; width: 100%; align-items: center; justify-content: center;">
+                <div id="proceed" title="Proceed to Tutorial"
+                    style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 200px; height: 30px; border-radius: 20px; border: solid thin lightgray; text-align: center; margin: 20px;">
+                    Proceed to Tutorial
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="interaction_log.js"></script>
+
+<script>
+    start_time = null
+    end_time = null
+
+    function checkLoad() {
+        console.log("pre-questionnaire loaded")
+        start_time = Date.now()
+    }
+
+    function gototutorial() {
+        window.open('tutorial.html', "_self")
+    }
+
+    function reload_page() {
+        logInteraction('click,nav_dice_brand,reload');
+        window.location.reload()
+        return false
+    }
+</script>
+
+
+<script>
+    var x = "";
+
+    function validate_form(formId, feedbackId, feedbackMessage) {
+        // console.log(formId);
+        var value = "";
+        if (document.getElementById(formId).checkValidity()) {
+            document.getElementById(feedbackId).innerHTML = "";
+            value = $("#" + formId).val();
+            // console.log(value);
+        } else {
+            document.getElementById(feedbackId).innerHTML = '<i class="fa fa-info-circle" style="color:red"></i>' +
+                "\xa0" +
+                feedbackMessage;
+            x = x + 1;
+        }
+        return value;
+    }
+
+    $(document).ready(function () {
+        $('#proceed').click(function () {
+
+            x = parseInt(0);
+
+            localStorage.setItem("preq1", validate_form("q1Select", "q1Feedback",
+                "Please select an option"));
+
+            localStorage.setItem("preq2", validate_form("q2Select", "q2Feedback",
+                "Please provide an option"));
+
+            localStorage.setItem("preq3Select", validate_form("q3Select", "q3SelectFeedback",
+                "Please select an option"));
+
+            if (validate_form("q3Select", "q3SelectFeedback", "Please select an option") == "Yes") {
+                localStorage.setItem("preq3YesTimeSelect", validate_form("q3YesTimeSelect",
+                    "q3YesTimeFeedback",
+                    "Please select an option"
+                ));
+            }
+
+            if (validate_form("q3Select", "q3SelectFeedback", "Please select an option") == "Yes") {
+                localStorage.setItem("preq3YesDecisionSelect", validate_form("q3YesDecisionSelect",
+                    "q3YesDecisionFeedback",
+                    "Please select an option"
+                ));
+            }
+
+            localStorage.setItem("preq4", validate_form("q4Select", "q4Feedback",
+                "Please select an option"));
+
+            if (x == 0) {
+                console.log("locallength", localStorage.length)
+                for (var l in localStorage) {
+                    if (l.toString().includes("pre")) {
+                        console.log(l)
+                        logInteraction('pre_q' + ',' + l + ',' + localStorage.getItem(l));
+                    }
+                }
+                end_time = Date.now()
+                logInteraction('pre_q' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
+
+                window.open('tutorial.html', "_self")
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q1Select').change(function () {
+            document.getElementById("q1Feedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q2Select').change(function () {
+            document.getElementById("q2Feedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q3Select').change(function () {
+            document.getElementById("q3SelectFeedback").innerHTML = "";
+            var temp = $("#q3Select").val();
+            if (temp == "Yes") {
+                document.getElementById("q3YesTime").setAttribute("style", "display:block");
+                document.getElementById("q3YesDecision").setAttribute("style", "display:block");
+            } else {
+                document.getElementById("q3YesTime").setAttribute("style", "display:none");
+                document.getElementById("q3YesDecision").setAttribute("style", "display:none");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q3YesTimeSelect').change(function () {
+            document.getElementById("q3YesTimeFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q3YesDecisionSelect').change(function () {
+            document.getElementById("q3YesDecisionFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q4Select').change(function () {
+            document.getElementById("q4Feedback").innerHTML = "";
+        });
+    });
+</script>

@@ -110,10 +110,10 @@
 
     <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto py-0">
-            <li class="nav-item active py-0">
+            <!-- <li class="nav-item active py-0">
                 <a class="nav-link py-0" href="#" onclick="gototutorial()" title="User Guide">Tutorial<span
                         class="sr-only py-0">(current)</span></a>
-            </li>
+            </li> -->
             <li class="nav-item py-0">
                 <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
             </li>
@@ -230,16 +230,21 @@
         <p>Any person who is at least 18 years of age may participate in this research study.</p>
 
         <h5>What will I be asked to do and how much time will it take?</h5>
-        <p>If you agree to take part in this study, you will be asked to study product-related comments posted online
+        <p>If you agree to take part in this study, you will begin by answering a few question about your online
+            activities. Then, you will be asked to thoroughly read user reviews posted
+            online
             and
             make a
-            decision about which product to purchase out of ten products. After you make a decision, you will be
+            decision about which product you will refer someone to purchase out of ten products. <b>You have to read the
+                user reviews well enough to refer the best product. To do so, you must spend at least 1 minute on each
+                product.</b>After you make a
+            decision, you will be
             provided
             with a
             questionnaire that asks you about how or why you made the decision. We expect it will take you approximately
             60
             minutes
-            to finish the study.</p>
+            to finish the complete study.</p>
 
         <h5>Will being in this research study help me in any way?</h5>
         <p>You may not directly benefit from this research; however, we hope that your participation in the study
@@ -259,7 +264,7 @@
             risks
             by
             assigning
-            you a random 6 digit ID that will not be connected to your Mechanical Turk account. The data will be stored
+            you a random 8 digit ID that will not be connected to your Mechanical Turk account. The data will be stored
             electronically on a secure, password-protected machine. Only the research team will have access to the data.
         </p>
 
@@ -267,7 +272,8 @@
         <p>You will be paid $10.00 for participating in this study. Answering all post-decision-making questions is
             required and
             sufficient for payment. We ask that you answer each question
-            to the best of your ability, but the content of your answers will not affect your payment.</p>
+            to the best of your ability, but the content of your answers will not affect your payment. <b>However, you
+                will need to spend at least 1 minute on each product and answer all the question asked.</b></p>
 
         <h5>What happens if I say yes, but I change my mind later?</h5>
         <p>You do not have to be in this study if you do not want to. If you agree to be in the study, but later
@@ -295,7 +301,7 @@
 
     <div id="consent" title="Proceed"
         style="width: 200px; height: 30px; border-radius: 20px; border: solid thin lightgray; text-align: center; margin: 20px;"
-        onclick="gototutorial()">
+        onclick="gotoPre()">
         I agree
     </div>
 </div>
@@ -306,8 +312,8 @@
 <script src="jquery.paginate.js"></script>
 
 <script>
-    function gototutorial() {
-        window.open('tutorial.html', "_self")
+    function gotoPre() {
+        window.open('pre_questionnaire.html', "_self")
     }
 
     function reload_page() {

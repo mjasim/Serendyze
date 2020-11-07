@@ -14,6 +14,12 @@
         stroke-width: 1.5px;
     }
 
+    #proceedtopost:hover {
+        background-color: black !important;
+        color: white;
+        cursor: pointer;
+    }
+
     /* #dicetoggle:hover {
         cursor: pointer;
         opacity: 1.0
@@ -90,6 +96,7 @@
         }
     }
 </style>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -153,6 +160,11 @@
                 <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
             </li>
         </ul>
+        <div id="proceedtopost" class="my-2 my-sm-0"
+            style="background-color: white; border:solid thin black; border-radius: 20px;padding-left:10px; padding-right: 10px;"
+            onclick="gotoPost()">Finalize
+            Decision and
+            Proceed</div>
     </div>
 </nav>
 
@@ -242,12 +254,14 @@
     </div>
 </div>
 
-<div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto; background-color: white;">
-    <div id="header" style="margin: 5px; display:flex; flex-direction: row;">
-        <div class="w3-content">
-            <div class="row">
-                <div class="col-12" id="dropdown_options">
-                    <!-- <select id="area" name="area">
+<body onload="checkLoad()">
+
+    <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto; background-color: white;">
+        <div id="header" style="margin: 5px; display:flex; flex-direction: row;">
+            <div class="w3-content">
+                <div class="row">
+                    <div class="col-12" id="dropdown_options">
+                        <!-- <select id="area" name="area">
                         <option value="">Pick a Product</option>
                         <option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>
                         <option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>
@@ -263,7 +277,7 @@
                         </option>
                     </select> -->
 
-                    <!-- <select id="area" name="area">
+                        <!-- <select id="area" name="area">
                         <option value="">Pick a Discussion Topic</option>
                         <option value="0">Sustainable Design and Production</option>
                         <option value="1">Collection and Management</option>
@@ -272,115 +286,121 @@
                         <option value="4">On the Ground Action</option>
                         <option value="5">Tell Us More</option>
                     </select> -->
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <div id="dicetoggle"
+            <!-- <div id="dicetoggle"
             style="width: 150px; height: 23px; background-color: green; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center; display: none">
             Suggestion: On
         </div> -->
-        <div id="dicetoggle" style="margin-left:5px; display:none">
-            <input type="checkbox" id="dicecheck" name="dicecheck" value="on" checked>
-            <label for="dicecheck"> Show Suggestions</label>
+            <div id="dicetoggle" style="margin-left:30px; visibility:hidden">
+                <input type="checkbox" id="dicecheck" name="dicecheck" value="on" checked>
+                <label for="dicecheck"> Show Suggestions</label>
+            </div>
         </div>
-    </div>
 
-    <div id="topicparent" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width:100%; visibility:
+        <div id="topicparent" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width:100%; visibility:
         hidden; background-color: #f5f8fa;">
-        <div id="topicinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
+            <div id="topicinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
             text-align: center; padding-left:20px;">
-            <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
-                title="These are most frequent word pairs that appear in the comments. Click the words to filter relevant comments"></i>Keywords
+                <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
+                    title="These are most frequent word pairs that appear in the comments. Click the words to filter relevant comments"></i>Keywords
+            </div>
+            <div id="topicbox"
+                style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 90%; padding-bottom:10px">
+            </div>
         </div>
-        <div id="topicbox"
-            style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 90%; padding-bottom:10px">
-        </div>
-    </div>
 
-    <div id="discparent" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%;
+        <div id="discparent" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%;
         visibility: hidden; background-color: white;">
-        <div id="discinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
+            <div id="discinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
             text-align: center; padding-left: 20px;">
-            <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
-                title="Click on the sentiments to filter the comments by Positive, Neutral, or Negative comments"></i>Sentiments
-        </div>
-        <div id="discbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;
+                <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
+                    title="Click on the sentiments to filter the comments by Positive, Neutral, or Negative comments"></i>Sentiments
+            </div>
+            <div id="discbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;
             align-items: center; margin:5px; width: 90%">
+            </div>
         </div>
-    </div>
 
-    <div id="metparent" style="display: flex; flex-direction: row; justify-content: center; width: 100%; border-bottom: solid thin
+        <div id="metparent" style="display: flex; flex-direction: row; justify-content: center; width: 100%; border-bottom: solid thin
         lightgray; visibility: hidden; background-color: #f5f8fa;">
-        <div id="metinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
+            <div id="metinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
             text-align: center; padding-left: 20px;">
-            <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
-                title="There metrics bars show how much of the data you have interacted with. Hover on the bars to know more"></i>Metrics
-        </div>
-        <div id="metricsbox"
-            style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; margin:5px; width:90%">
-            <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-                <div class="metbar" id="visitback" style="border: solid 2px lightgrey; width:100%"
-                    title="This bar shows the amount of comments you have directly interacted with. Keep interacting with the comments to increase your comment Visit">
-                    <div id="visitBar" style="height:24px; width:0%; background-color: #81d4fa;">
+                <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
+                    title="There metrics bars show how much of the data you have interacted with. Hover on the bars to know more"></i>Metrics
+            </div>
+            <div id="metricsbox"
+                style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; margin:5px; width:90%">
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
+                    <div class="metbar" id="visitback" style="border: solid 2px lightgrey; width:100%"
+                        title="This bar shows the amount of comments you have directly interacted with. Keep interacting with the comments to increase your comment Visit">
+                        <div id="visitBar" style="height:24px; width:0%; background-color: #81d4fa;">
+                        </div>
+                    </div>
+                    <div id="vistext"><i class="fa fa-square fa-sm" style="margin-right: 2px; color:#81d4fa"
+                            aria-hidden="true"></i>Visit:
+                        You read 0% comments</div>
+                </div>
+
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
+                    <div class="metbar" id="coverback" style="border: solid 2px lightgrey; width:100%"
+                        title="This bar shows the amount of comments you have covered implicitely, including the comments that are very similar and redundant to the ones you have already interacted with. Keep interacting with the comments to increase your comment Coverage">
+                        <div id="coverageBar" style="height:24px; width:0%; background-color: #B39DDB;">
+                        </div>
+                    </div>
+                    <div id="covtext"><i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                            aria-hidden="true"></i>Coverage: You know about 0% comments
                     </div>
                 </div>
-                <div id="vistext">Visit:
-                    You looked at 0% comments</div>
-            </div>
 
-            <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-                <div class="metbar" id="coverback" style="border: solid 2px lightgrey; width:100%"
-                    title="This bar shows the amount of comments you have covered implicitely, including the comments that are very similar and redundant to the ones you have already interacted with. Keep interacting with the comments to increase your comment Coverage">
-                    <div id="coverageBar" style="height:24px; width:0%; background-color: #B39DDB;">
-                    </div>
-                </div>
-                <div id="covtext">Coverage: You know about 0% comments</div>
-            </div>
-
-            <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-                <div class="metbar" id="distback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the proportion of comment sentiments you have directly interacted with. Keep interacting with comments with different kinds of sentiments
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
+                    <div class="metbar" id="distback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the proportion of comment sentiments you have directly interacted with. Keep interacting with comments with different kinds of sentiments
                     to increase your comment Distribution">
-                    <div id="distributionBar" style="height:24px; width:0%; background-color: #FFAB91;">
+                        <div id="distributionBar" style="height:24px; width:0%; background-color: #FFAB91;">
+                        </div>
+                    </div>
+                    <div id="disttext"><i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                            aria-hidden="true"></i>Distribution: You read 0%
+                        sentiments</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alltextbox"
+            style="display:flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; margin:5px; width:100%">
+            <div id="textboxparent"
+                style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
+                <div id="textboxheader" style="width:95%; border:solid thin lightgray; display: none; font-weight:bold">
+                    <span id="commentheader">Comments: 0</span>
+                </div>
+                <div id="textbox" style="margin: 10px; max-width: 100%; height: 40vh; overflow-y:auto"></div>
+            </div>
+            <div id="serenboxparent"
+                style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
+                <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
+                    <div id="serenheader" style="font-weight:bold"></div>
+                    <div id="serenloading" style="display: none;">
+                        <img src="hg.gif" style="margin-left: 5px; margin-top:-5px; height:20px; height: 20px">
                     </div>
                 </div>
-                <div id="disttext">Distribution: You looked at 0% sentiments</div>
+                <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
             </div>
         </div>
-    </div>
 
-    <div id="alltextbox"
-        style="display:flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; margin:5px; width:100%">
-        <div id="textboxparent"
-            style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
-            <div id="textboxheader" style="width:95%; border:solid thin lightgray; display: none; font-weight:bold">
-                <span id="commentheader">Comments: 0</span>
-            </div>
-            <div id="textbox" style="margin: 10px; max-width: 100%; height: 40vh; overflow-y:auto"></div>
-        </div>
-        <div id="serenboxparent"
-            style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin:0px; width:0px; height:0px">
-            <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
-                <div id="serenheader" style="font-weight:bold"></div>
-                <div id="serenloading" style="display: none;">
-                    <img src="dice.gif" style="margin-left: 5px; height:20px; height: 20px">
-                </div>
-            </div>
-            <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
-        </div>
-    </div>
-
-    <!-- <div id="dice" title="Get suggested comments">
+        <!-- <div id="dice" title="Get suggested comments">
         <img src="dice.png" style="width: 40px; height:40px; margin:5px;">
     </div> -->
 
-    <!-- <div id="cordbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
+        <!-- <div id="cordbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
         <div id="coordinate" style="margin-right: 10px"></div>
         <div id="timing" style="margin-left: 10px"></div>
     </div> -->
 
-    <!-- <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div> -->
+        <!-- <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div> -->
 
-</div>
+    </div>
+</body>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="interaction_log.js"></script>
@@ -388,6 +408,20 @@
 <script src="jquery.paginate.js"></script>
 
 <script>
+    start_time = null
+    end_time = null
+
+    function checkLoad() {
+        console.log("pre-questionnaire loaded")
+        start_time = Date.now()
+    }
+
+    function gotoPost() {
+        end_time = Date.now()
+        logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
+        window.open('post_questionnaire.html', "_self")
+    }
+
     seren_log = {
         "seren_interact": 0,
         "seren_sent_cnt": 0,
@@ -450,7 +484,8 @@
         console.log(full_data)
 
         orig_area_text = ["Pick a Discussion Topic", "Sustainable Design and Production",
-            "Collection and Management", "Sustainable Lifestyle and Education", "Research and Innovation",
+            "Collection and Management", "Sustainable Lifestyle and Education",
+            "Research and Innovation",
             "On the Ground Action", "Tell Us More"
         ]
     })
@@ -579,7 +614,7 @@
             }
         }
 
-        document.getElementById("dicetoggle").style.display = "none"
+        document.getElementById("dicetoggle").style.visibility = "hidden"
         document.getElementById("topicparent").style.visibility = "hidden"
         document.getElementById("discparent").style.visibility = "hidden"
         document.getElementById("metparent").style.visibility = "hidden"
@@ -1049,20 +1084,46 @@
             //     'px;margin-left:3px"' + 'title="Coverage increase - ' + sim_height.toFixed(3).toString() +
             //     ' points' + '\"><img src="sim_up.png"></img></div>'
 
+            var sent_arrow_img = ""
+            "sent_up.png"
+            var sim_arrow_img = ""
+            "sim_up.png"
+
+            if (sent_height > 0 && sent_height <= 10) {
+                sent_arrow_img = "sent_up_10.png"
+            } else if (sent_height > 10 && sent_height <= 20) {
+                sent_arrow_img = "sent_up_20.png"
+            } else if (sent_height > 20 && sent_height <= 30) {
+                sent_arrow_img = "sent_up_30.png"
+            } else if (sent_height > 30) {
+                sent_arrow_img = "sent_up_40.png"
+            }
+
+            if (sim_height > 0 && sim_height <= 10) {
+                sim_arrow_img = "sim_up_10.png"
+            } else if (sim_height > 10 &&
+                sim_height <= 20) {
+                sim_arrow_img = "sim_up_20.png"
+            } else if (sim_height > 20 && sim_height <= 30) {
+                sim_arrow_img = "sim_up_30.png"
+            } else if (sim_height > 30) {
+                sim_arrow_img = "sim_up_40.png"
+            }
+
             var trigger_sent =
-                '<img src="sent_up.png" id="seren_sent_' + data[1][i].id +
+                '<img src="' + sent_arrow_img + '" id="seren_sent_' + data[1][i].id +
                 '" style="margin-bottom:5px;' +
                 'height:' +
                 sent_height.toString() +
-                'px;width: 15px; margin-left:3px"' + ' title="Distribution increase - ' + sent_height.toFixed(3)
+                'px;width: 15px; margin-left:3px"' + ' title="Distribution increase: ' + sent_height.toFixed(3)
                 .toString() +
                 ' points' + '\"></img>'
             var trigger_sim =
-                '<img src="sim_up.png" id="seren_sim_' + data[1][i].id +
+                '<img src="' + sim_arrow_img + '" id="seren_sim_' + data[1][i].id +
                 '" style="margin-bottom:5px;' +
                 'height:' +
                 sim_height.toString() +
-                'px; width: 15px; margin-left:3px"' + ' title="Coverage increase - ' + sim_height.toFixed(3)
+                'px; width: 15px; margin-left:3px"' + ' title="Coverage increase: ' + sim_height.toFixed(3)
                 .toString() +
                 ' points' + '\"></img>'
 
@@ -1188,7 +1249,9 @@
 
             if (bar_id == "coverageBar") {
                 metrics[did].coverage = width
-                document.getElementById("covtext").innerHTML = 'Coverage: You know about ' + width * 1 +
+                document.getElementById("covtext").innerHTML =
+                    '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i>' +
+                    'Coverage: You know about ' + width * 1 +
                     '% comments';
 
             } else if (bar_id == "distributionBar") {
@@ -1233,26 +1296,33 @@
                 var fgroup = ((sorted[0].count / total) - (sorted[1].count / total)) * 100
 
                 if (fgroup > 10) {
-                    document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' +
+                    document.getElementById("disttext").innerHTML =
+                        '<i class="fa fa-square fa-sm" style="margin-right:2px; color:#FFAB91" aria-hidden="true"></i>' +
+                        'Distribution: You read ' +
                         sorted[0]
                         .sent + ' comments';
                 } else {
                     var sgroup = ((sorted[1].count / total) - (sorted[2].count / total)) * 100
                     if (sgroup > 10) {
-                        document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' +
+                        document.getElementById("disttext").innerHTML =
+                            '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i>' +
+                            'Distribution: You read ' +
                             sorted[0]
                             .sent + ' and ' + sorted[1]
                             .sent + ' comments';
                     } else {
                         document.getElementById("disttext").innerHTML =
-                            'Distribution: You looked at all kinds of comments';
+                            '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i>' +
+                            'Distribution: You read all kinds of comments';
                     }
                 }
 
                 // document.getElementById("disttext").innerHTML = 'Distribution: ' + width * 1 + '%';
             } else {
                 metrics[did].visit = width
-                document.getElementById("vistext").innerHTML = 'Visit: You looked at ' + width * 1 +
+                document.getElementById("vistext").innerHTML =
+                    '<i class="fa fa-square fa-xs" style="margin-right:3px; color:#81d4fa" aria-hidden="true"></i>' +
+                    'Visit: You read ' + width * 1 +
                     '% comments';
             }
         }
@@ -1267,15 +1337,21 @@
 
         if (bar_id == "coverageBar") {
             width = metrics[did].coverage
-            document.getElementById("covtext").innerHTML = 'Coverage: You know about ' + width * 1 +
+            document.getElementById("covtext").innerHTML =
+                '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i>' +
+                'Coverage: You know about ' + width * 1 +
                 '% comments';
         } else if (bar_id == "distributionBar") {
             width = metrics[did].distribution
-            document.getElementById("disttext").innerHTML = 'Distribution: You looked at ' + width * 1 +
+            document.getElementById("disttext").innerHTML =
+                '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i>' +
+                'Distribution: You read ' + width * 1 +
                 '% sentiments';
         } else {
             width = metrics[did].visit
-            document.getElementById("vistext").innerHTML = 'Visit: You looked at ' + width * 1 +
+            document.getElementById("vistext").innerHTML =
+                '<i class="fa fa-square fa-sm" style="margin-right:3px; color:#81d4fa" aria-hidden="true"></i>' +
+                'Visit: You read ' + width * 1 +
                 '% comments';
         }
 
@@ -1377,8 +1453,8 @@
         $(document).on('change', '#area', function () {
             var discussion_id = $("#area").val();
 
-            if (document.getElementById("dicetoggle").style.display == "none") {
-                document.getElementById("dicetoggle").style.display = "block"
+            if (document.getElementById("dicetoggle").style.visibility == "hidden") {
+                document.getElementById("dicetoggle").style.visibility = "visible"
             }
 
             if (document.getElementById("textboxheader").style.display == "none") {
@@ -1721,7 +1797,7 @@
             document.getElementById("serenloading").style.display = "block"
             setTimeout(function () {
                 document.getElementById("serenloading").style.display = "none"
-            }, 3000)
+            }, 4000)
         }
         logInteraction('click,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
         comment_interact($(this)[0].id.substring(8))
@@ -1809,7 +1885,7 @@
                 document.getElementById("serenloading").style.display = "block"
                 setTimeout(function () {
                     document.getElementById("serenloading").style.display = "none"
-                }, 3500)
+                }, 4000)
             }
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) +
@@ -1893,7 +1969,7 @@
                 "display:flex; flex-direction: row; width: 950%; border: solid thin lightgray"
             )
 
-            document.getElementById("serenheader").textContent = 'Suggested Comments'
+            document.getElementById("serenheader").textContent = 'Suggested comments'
 
             // document.getElementById("dicetoggle").setAttribute("style",
             //     "width: 150px; height: 23px; background-color: green; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"

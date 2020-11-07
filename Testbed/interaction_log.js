@@ -14,7 +14,7 @@ function logInteraction(str) {
         var utcDate = dt.toUTCString();
         str = userID + "," + utcDate + ',' + str + '\n';
 
-        // console.log(str)
+        console.log(str)
         request = new XMLHttpRequest();
         request.open("POST", "interaction_log.php?q=" + userID, true);
         //request.setRequestHeader("Content-type", "application/json");
@@ -26,7 +26,7 @@ function makeRandomId() {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    for (var i = 0; i < 7; i++)
+    for (var i = 0; i < 8; i++)
         text += possible.charAt(Math.floor(Math.random() * possible.length));
 
     return text;
