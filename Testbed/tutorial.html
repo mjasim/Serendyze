@@ -115,8 +115,9 @@
                 <a class="nav-link py-0" href="#" onclick="gototutorial()" title="User Guide">Tutorial<span
                         class="sr-only py-0">(current)</span></a>
             </li>
-            <li class="nav-item py-0">
-                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About</a>
+            <li class="nav-item active py-1">
+                <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About<span
+                        class="sr-only py-0">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -227,14 +228,14 @@
             refresh the page unless you want to start over.</p>
 
         <h3>Study Objective:</h3>
-        <p> We started off with a few questions. The next step for you is to thoroughly explore the product reviews and
+        <p> In this step of the study you will thoroughly explore the product reviews from 3 headphones and
             decide which particular
             headphone you would refer to someone.
             <b>After you have made the final decision, click the finalize button at the top right of the navigation
                 bar</b>. A
             post study questionnaire will follow
             that will ask you a few questions about your decision-making process. Once you have answered all questions,
-            proceed to M-Turn and finish the study.
+            proceed to M-Turk and finish the study.
         </p>
 
         <h3>Tutorial</h3>
@@ -251,7 +252,7 @@
             <li><b>Exploration metrics:</b> These metrics (Visit, Coverage, and Distribution) provide you with tracking
                 information based on your exploration of the review comments. <i class="fa fa-square fa-sm"
                     style="margin-right: 2px; color:#81d4fa" aria-hidden="true"></i> Visit information
-                shows the amount of comments you have interacted with directly by clicking or hoveriing over them for 3
+                shows the amount of comments you have interacted with directly by clicking or hovering over them for 3
                 seconds.
                 <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i> Coverage
                 information
@@ -262,7 +263,7 @@
                     style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i> Distribution information
                 shows the proportion of comment sentiments you have directly interacted
                 with.</li>
-            <li><b>List of comments:</b> The list provides the comments alongwith their associated sentiments </li>
+            <li><b>List of comments:</b> The list provides the comments alongwith their associated sentiments.</li>
             <li><b>List of suggested comments:</b> The list provides the comments suggested based on your interaction
                 with other comments.
             </li>
@@ -280,8 +281,16 @@
         <img src="filtering.png"
             style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
+        <p>You can also use the search option in the navigation bar to search for any keyword of your choice. The
+            keyword you searched will be
+            highlighted in the comments where they appear.</p>
+
+        <img src="filtering_search.png"
+            style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+
+
         <h5>Interacting with the comments:</h5>
-        <p><b>You can select or hover on a comment for 3 seconds to mark it as read</b>. DICE will keep a record
+        <p><b>You can select or hover on a comment for a while to mark it as read</b>. DICE will keep a record
             of your progress and track the comments
             you are interacting with. </p>
 
@@ -324,12 +333,22 @@
             style="width:40%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
         <p>
-            Hovering over any of the metric bar will show the comment exploration progresses corresponding to the most
+            Hovering over any of the metric bars will show the comment exploration progress corresponding to the most
             frequent
             terms and sentiments.
         </p>
 
         <img src="metrics_hover.png"
+            style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
+
+        <p>
+            Clicking on any of the metric bars will filter the comments and only show the comment associated with your
+            selection. In the following example, only the Coverage metric bar is selected. The comments are filtered
+            accordingly and only comments that are
+            covered are shown.
+        </p>
+
+        <img src="metrics_click.png"
             style="width:80%; align-items: center; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"></img>
 
         <h5>Suggested comments</h5>
@@ -342,7 +361,8 @@
             suggested comments based on your interactions. <b> Suggesting comments takes some time. Please wait until
                 the wait spinner (<img src="hg.gif" style="height:15px; width: 15px;"></img>) stops moving completely
                 before marking another comment as read to get new suggestions.</b> The metric arrows tell you how the
-            metrics will increase if you read and mark the associated suggested comments. The larger the bar, the larger
+            metrics will increase if you read and mark the associated suggested comments. The larger the arrow, the
+            larger
             the increase in the associated metric.
         </p>
 

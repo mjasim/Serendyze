@@ -178,7 +178,8 @@
         <div class=" postContainer" id="post_container">
             <form class="needs-validation" novalidate id="demo_form">
                 <div class="form-group column">
-                    <label for="q1Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q1. Which product would
+                    <label for="q1Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q1. From the products
+                            you have seen in this study, which product would
                             you
                             refer to others?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
@@ -187,15 +188,6 @@
                             <option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>
                             <option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>
                             <option value="2">Sennheiser HD280PRO Headphones (old model)</option>
-                            <option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock
-                            </option>
-                            <option value="4">Sony MDR7506 Professional Large Diaphragm Headphone</option>
-                            <option value="5">Sennheiser HD 202 II Professional Headphones (Black)</option>
-                            <option value="6">Sony MDREX10LP/BLK In-Ear Headphones</option>
-                            <option value="7">Bose QuietComfort 15 Acoustic Noise Cancelling Headphones</option>
-                            <option value="8">Bose QuietComfort 25 Acoustic Noise Cancelling Headphones</option>
-                            <option value="9">Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver
-                            </option>
                         </select>
                         <div class="invalidFeedback" id="q1Feedback">
                         </div>
@@ -234,33 +226,31 @@
                             apply)</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Price">Price</label>
+                            <label><input type="checkbox" value="Price" id="c31">Price</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Audio_Quality">Audio Quality</label>
+                            <label><input type="checkbox" value="Audio_Quality" id="c32">Audio Quality</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Durability">Durability</label>
+                            <label><input type="checkbox" value="Aesthetics" id="c33">Aesthetics</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Aesthetics">Aesthetics</label>
+                            <label><input type="checkbox" value="Comfort" id="c34">Comfort</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Comfort">Comfort</label>
+                            <label><input type="checkbox" value="Longevity" id="c35">Longevity</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Longevity">Longevity</label>
+                            <label><input type="checkbox" value="Color" id="c36">Color</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" value="Color">Color</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Functionality">Functionality</label>
+                            <label><input type="checkbox" value="Functionality" id="c37">Functionality</label>
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" value="Other" id="q3OtherCheck">Other</label>
                         </div>
                     </div>
+                    <div class="invalidFeedback" id="q3checkFeedback"></div>
                 </div>
 
                 <div class="form-group column" id="q3OtherExtension" style="display: none">
@@ -282,7 +272,7 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q4Select" required>
                             <option value="">Please select an option</option>
-                            <option>Not confident at all</option>
+                            <option>Not confident</option>
                             <option>Slightly confident</option>
                             <option>Moderately confident</option>
                             <option>Highly confident</option>
@@ -325,7 +315,7 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q6Select" required>
                             <option value="">Please select an option</option>
-                            <option>Not useful at all</option>
+                            <option>Not useful</option>
                             <option>Somewhat useful</option>
                             <option>Neutral</option>
                             <option>Useful</option>
@@ -515,7 +505,7 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q12Select" required>
                             <option value="">Please select an option</option>
-                            <option>Not useful at all</option>
+                            <option>Not useful</option>
                             <option>Somewhat useful</option>
                             <option>Neutral</option>
                             <option>Useful</option>
@@ -550,6 +540,27 @@
                     </div>
                 </div>
 
+                <div class="form-group column" id="q13YesOften" style="display:none">
+                    <label for="q13YesOftenSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>
+                            How often did you
+                            use
+                            the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q13YesOftenSelect" required>
+                            <option value="">Please select an option</option>
+                            <option>Barely</option>
+                            <option>Somewhat often</option>
+                            <option>Often</option>
+                            <option>Very often</option>
+                            <option>Exclusively</option>
+                        </select>
+                        <div class="invalidFeedback" id="q13YesOftenFeedback">
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="form-group column" id="q13No" style="display: none;">
                     <label for="q13NoText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Why didn't you use the
                             suggested comments?</b></label>
@@ -560,7 +571,7 @@
                     </div>
                 </div>
 
-                <div class="form-group column">
+                <!-- <div class="form-group column">
                     <label for="q14Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q14. How often did you
                             use
                             the
@@ -577,29 +588,55 @@
                         <div class="invalidFeedback" id="q14Feedback">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form-group column">
-                    <label for="q15Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q15. Did the suggested
+                    <label for="q14Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q14. Did the suggested
                             comments impact your decision?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <select class="form-control" id="q15Select" required>
+                        <select class="form-control" id="q14Select" required>
                             <option value="">Please select an option</option>
                             <option>Yes</option>
                             <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q14SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q14Yes" style="display: none">
+                    <label for="q14YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please explain how
+                            did
+                            the suggested comments impact your decision?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q14YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q14YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q15Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>
+                            Q15. Select one other product you learned about today (except the one you decided to
+                            refer)</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q15Select" required>
+                            <option value="">Please select a product</option>
+                            <option value="0">Koss Porta Pro</option>
+                            <option value="1">Sony MDRV6 Studio</option>
+                            <option value="2">Bose QuietComfort 25</option>
                         </select>
                         <div class="invalidFeedback" id="q15SelectFeedback">
                         </div>
                     </div>
                 </div>
 
-                <div class="form-group column" id="q15Yes" style="display: none">
-                    <label for="q15YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please explain how
-                            did
-                            the suggested comments impact your decision?</b></label>
+                <div class="form-group column" id="q15Pick" style="display: none">
+                    <label for="q15PickText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>In your own words,
+                            write down what you learned about this product.</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q15YesText" placeholder="" required>
-                        <div class="invalidFeedback" id="q15YesFeedback">
+                        <input type="text" class="form-control" id="q15PickText" placeholder="" required>
+                        <div class="invalidFeedback" id="q15PickFeedback">
                         </div>
                     </div>
                 </div>
@@ -627,10 +664,27 @@
                 </div>
 
                 <div class="form-group column">
-                    <label for="q18Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q18. Other
+                    <label for="q18Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q18. "I would like to
+                            use DICE in future when making purchasing decisions".</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q18Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Strongly disagree</option>
+                            <option>Disagree</option>
+                            <option>Neutral</option>
+                            <option>Agree</option>
+                            <option>Strongly Agree</option>
+                        </select>
+                        <div class="invalidFeedback" id="q18Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q19Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q19. Other
                             comments:</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q18Text" placeholder="">
+                        <input type="text" class="form-control" id="q19Text" placeholder="">
                     </div>
                 </div>
 
@@ -675,6 +729,14 @@
 
 <script>
     var x = "";
+
+    function check_3_checkbox() {
+        var checklist = []
+        for (var i = 0; i < 7; i++)
+            if ($("#c3" + i).is(":checked")) {
+                checklist.push($("#c3" + i).val())
+            } return checklist
+    }
 
     function validate_form(formId, feedbackId, feedbackMessage) {
         // console.log(formId);
@@ -788,18 +850,31 @@
                 ));
             }
 
-            localStorage.setItem("postq14", validate_form("q12Select", "q12Feedback",
+            if (validate_form("q13Select", "q13SelectFeedback", "Please select an option") ==
+                "Yes") {
+                localStorage.setItem("postq13YesOften", validate_form("q13YesOftenSelect",
+                    "q13YesOftenFeedback",
+                    "Please select an option"));
+            }
+
+            // localStorage.setItem("postq14", validate_form("q14Select", "q14Feedback",
+            //     "Please select an option"));
+
+            localStorage.setItem("postq14Select", validate_form("q14Select", "q14SelectFeedback",
                 "Please select an option"));
+
+            if (validate_form("q14Select", "q14SelectFeedback", "Please select an option") ==
+                "Yes") {
+                localStorage.setItem("postq14YesText", validate_form("q14YesText", "q14YesFeedback",
+                    "Please explain how did the suggested comments impact your decision"
+                ));
+            }
 
             localStorage.setItem("postq15Select", validate_form("q15Select", "q15SelectFeedback",
                 "Please select an option"));
 
-            if (validate_form("q15Select", "q15SelectFeedback", "Please select an option") ==
-                "Yes") {
-                localStorage.setItem("postq15YesText", validate_form("q15YesText", "q15YesFeedback",
-                    "Please explain how did the suggested comments impact your decision"
-                ));
-            }
+            localStorage.setItem("postq15PickText", validate_form("q15PickText", "q15PickFeedback",
+                "Please provide an answer"));
 
             localStorage.setItem("postq16", validate_form("q16Text", "q16Feedback",
                 "Please provide an answer"));
@@ -807,13 +882,31 @@
             localStorage.setItem("postq17", validate_form("q17Text", "q17Feedback",
                 "Please provide an answer"));
 
-            localStorage.setItem("postq18", $("#q18Text").val());
+            localStorage.setItem("postq18", validate_form("q18Select", "q18Feedback",
+                "Please select an option"));
+
+            localStorage.setItem("postq19", $("#q19Text").val());
 
             console.log("x = ", x)
 
             // for (var l in localStorage) {
             //     console.log('post_q' + ',' + l + ',' + localStorage.getItem(l));
             // }
+
+            var checklist = check_3_checkbox()
+            if (checklist.length > 0) {
+                var checkstring = ""
+                for (var i in checklist) {
+                    checkstring = checkstring + "-" + checklist[i]
+                }
+                localStorage.setItem("post3checkString", checkstring)
+            } else {
+                document.getElementById("q3checkFeedback").innerHTML =
+                    '<i class="fa fa-info-circle" style="color:red"></i>' +
+                    "\xa0" +
+                    "Please select at least one option";
+                x = x + 1
+            }
 
             if (x == 0) {
                 console.log("locallength", localStorage.length)
@@ -1013,10 +1106,12 @@
             console.log(temp)
             if (temp == "Yes") {
                 document.getElementById("q13Yes").setAttribute("style", "display:block");
+                document.getElementById("q13YesOften").setAttribute("style", "display:block");
                 document.getElementById("q13No").setAttribute("style", "display:none");
             } else {
                 document.getElementById("q13No").setAttribute("style", "display:block");
                 document.getElementById("q13Yes").setAttribute("style", "display:none");
+                document.getElementById("q13YesOften").setAttribute("style", "display:none");
             }
         });
     });
@@ -1034,32 +1129,51 @@
     });
 
     $(document).ready(function () {
+        $('#q13YesOftenSelect').change(function () {
+            document.getElementById("q13YesOftenFeedback").innerHTML = "";
+        });
+    });
+
+    // $(document).ready(function () {
+    //     $('#q14Select').change(function () {
+    //         document.getElementById("q14Feedback").innerHTML = "";
+    //     });
+    // });
+
+    $(document).ready(function () {
         $('#q14Select').change(function () {
-            document.getElementById("q14Feedback").innerHTML = "";
+            document.getElementById("q14SelectFeedback").innerHTML = "";
+            var temp = $("#q14Select").val();
+            if (temp == "Yes") {
+                document.getElementById("q14Yes").setAttribute("style", "display:block");
+            } else {
+                document.getElementById("q14Yes").setAttribute("style", "display:none");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q14YesText').change(function () {
+            document.getElementById("q14YesFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q14NoText').change(function () {
+            document.getElementById("q14NoFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
         $('#q15Select').change(function () {
             document.getElementById("q15SelectFeedback").innerHTML = "";
-            var temp = $("#q15Select").val();
-            if (temp == "Yes") {
-                document.getElementById("q15Yes").setAttribute("style", "display:block");
-            } else {
-                document.getElementById("q15Yes").setAttribute("style", "display:none");
-            }
+            document.getElementById("q15Pick").setAttribute("style", "display:block");
         });
     });
 
     $(document).ready(function () {
-        $('#q15YesText').change(function () {
-            document.getElementById("q15YesFeedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q15NoText').change(function () {
-            document.getElementById("q15NoFeedback").innerHTML = "";
+        $('#q15PickText').change(function () {
+            document.getElementById("q15PickFeedback").innerHTML = "";
         });
     });
 
@@ -1072,6 +1186,12 @@
     $(document).ready(function () {
         $('#q17Text').change(function () {
             document.getElementById("q17Feedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q18Select').change(function () {
+            document.getElementById("q18Feedback").innerHTML = "";
         });
     });
 </script>

@@ -169,7 +169,7 @@
             </form>
         </ul>
         <div id="proceedtopost" class="my-2 my-sm-0"
-            style="background-color: white; border:solid thin black; border-radius: 20px;padding-left:10px; padding-right: 10px;"
+            style="background-color: white; border:solid thin black; border-radius: 20px;padding-left:10px; padding-right: 10px; display: none;"
             onclick="gotoPost()">Finalize
             Decision and
             Proceed</div>
@@ -714,6 +714,7 @@
     }
 
     function render_search() {
+        logInteraction('click,search_' + search_filter + ',search a keyword')
         if (did) {
             var search_filter = document.getElementById("navSearch").value.toLowerCase()
 
@@ -1346,9 +1347,11 @@
                     '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i>' +
                     'Coverage: You know about ' + width * 1 +
                     '% comments';
+                localStorage.setItem("coverageBar", width.toString())
 
             } else if (bar_id == "distributionBar") {
                 metrics[did].distribution = width
+                localStorage.setItem("distributionBar", width.toString())
 
                 var proposal_data = full_data[did]
                 var explored_ids = []
@@ -1413,6 +1416,7 @@
                 // document.getElementById("disttext").innerHTML = 'Distribution: ' + width * 1 + '%';
             } else {
                 metrics[did].visit = width
+                localStorage.setItem("visitBar", width.toString())
                 document.getElementById("vistext").innerHTML =
                     '<i class="fa fa-square fa-xs" style="margin-right:3px; color:#81d4fa" aria-hidden="true"></i>' +
                     'Visit: You read ' + width * 1 +
@@ -1611,6 +1615,14 @@
 
             selected_id_disc = ""
             prev_selected_id_disc = ""
+
+            if (document.getElementById("proceedtopost")) {
+                document.getElementById("proceedtopost").style.display = "block"
+                finalize_text = orig_area_text[did].split(" ")
+                console.log(finalize_text)
+                document.getElementById("proceedtopost").innerText = "Finalize " + finalize_text[
+                    0] + " " + finalize_text[1] + " " + finalize_text[2] + " and Proceed"
+            }
 
             // metrics.coverage = 0
             // metrics.visit = 0
