@@ -178,18 +178,16 @@
         <div class=" preContainer" id="pre_container">
             <form class="needs-validation" novalidate id="demo_form">
                 <div class="form-group column">
-                    <label for="q1Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q1. How frequently do
-                            you
-                            purchase products online per month on average?</b></label>
+                    <label for="q1Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q1. How many products
+                            do you buy online per month?
+                        </b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q1Select" required>
                             <option value="">Pick an option</option>
                             <option value="0">I have never pudchased anything online</option>
-                            <option value="1">Less than 1 product</option>
-                            <option value="2">1 to 10 products</option>
-                            <option value="3">11 to 20 products</option>
-                            <option value="4">21 to 30 products</option>
-                            <option value="5">More than 30 products</option>
+                            <option value="1">1 to 5 products</option>
+                            <option value="2">6 to 10 products</option>
+                            <option value="3">More than 10 products</option>
                         </select>
                         <div class="invalidFeedback" id="q1Feedback">
                         </div>
@@ -197,44 +195,32 @@
                 </div>
 
                 <div class="form-group column">
-                    <label for="q2Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q2. Do you browse
-                            different products before deciding to purchase a product online?</b></label>
+                    <label for="q2Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q2. Recall a time when
+                            you bought a product online which was important to you. How many different products did you
+                            browse before deciding what to buy?
+                        </b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q2Select" required>
-                            <option value="">Please select an option</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                        </select>
-                        <div class="invalidFeedback" id="q2SelectFeedback">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group column" id="q2Count" style="display: none">
-                    <label for="q2CountSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Recall a time when
-                            you purchased a new product which was important to you. How many
-                            products did you browse before making your purchase decision?</b></label>
-                    <div class="col-lg-12 col-m-12 col-sm-12">
-                        <select class="form-control" id="q2CountSelect" required>
                             <option value="">Pick an option</option>
-                            <option value="0">1 to 10 products</option>
-                            <option value="1">11 to 20 products</option>
-                            <option value="2">21 to 30 products</option>
-                            <option value="3">More than 30 products on average</option>
+                            <option value="0">I have never pudchased anything online</option>
+                            <option value="1">1 to 5 products</option>
+                            <option value="2">6 to 10 products</option>
+                            <option value="3">More than 10 products</option>
                         </select>
-                        <div class="invalidFeedback" id="q2CountFeedback">
+                        <div class="invalidFeedback" id="q2Feedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q3Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q3. Do you read user
-                            reviews of products before deciding to purchase a product online?</b></label>
+                    <label for="q3Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q3. Recall a time when
+                            you bought a product online which was important to you. Did you read user reviews of
+                            products before deciding to buy that product?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q3Select" required>
                             <option value="">Please select an option</option>
-                            <option>Yes</option>
                             <option>No</option>
+                            <option>Yes</option>
                         </select>
                         <div class="invalidFeedback" id="q3SelectFeedback">
                         </div>
@@ -242,18 +228,15 @@
                 </div>
 
                 <div class="form-group column" id="q3YesTime" style="display: none">
-                    <label for="q3YesTimeSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Recall a time
-                            when
-                            you purchased a new product which was important to you. How long did you
-                            spend reading user reviews before making your purchase decision?</b></label>
+                    <label for="q3YesTimeSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How long did you
+                            spend reading user reviews before deciding to buy the product??</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q3YesTimeSelect" required>
                             <option value="">Pick an option</option>
-                            <option value="0">Less than 15 minutes</option>
-                            <option value="1">15 to 30 minutes</option>
-                            <option value="2">30 to 45 minutes</option>
-                            <option value="3">45 to 60 minutes</option>
-                            <option value="4">More than 60 minutes</option>
+                            <option value="0">Less than 10 minutes</option>
+                            <option value="1">10 to 20 minutes</option>
+                            <option value="2">20 to 30 minutes</option>
+                            <option value="3">More than 30 minutes</option>
                         </select>
                         <div class="invalidFeedback" id="q3YesTimeFeedback">
                         </div>
@@ -266,12 +249,12 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q3YesDecisionSelect" required>
                             <option value="">Pick an option</option>
-                            <option value="0">I only read the negative reviews</option>
-                            <option value="1">I only read the positive reviews</option>
-                            <option value="2">I start with negative reviews and then read the positive ones</option>
-                            <option value="3">I start with positive reviews and then read the negative ones
+                            <option value="0">Only read the negative reviews</option>
+                            <option value="1">Only read the positive reviews</option>
+                            <option value="2">Started with negative reviews and then read the positive ones</option>
+                            <option value="3">Started with positive reviews and then read the negative ones
                             </option>
-                            <option value="4">I don't follow any particular order</option>
+                            <option value="4">Did not follow any particular order</option>
                             <option value="5">Other strategy</option>
                         </select>
                         <div class="invalidFeedback" id="q3YesDecisionFeedback">
@@ -288,12 +271,12 @@
 
                 <div class="form-group column">
                     <label for="q4Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q4. Does reading user
-                            reviews impact your decision to purchase a product online?</b></label>
+                            reviews impact your decision to buy a product online?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q4Select" required>
                             <option value="">Please select an option</option>
-                            <option>Yes</option>
                             <option>No</option>
+                            <option>Yes</option>
                         </select>
                         <div class="invalidFeedback" id="q4SelectFeedback">
                         </div>
@@ -307,10 +290,9 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q4YesImpactSelect" required>
                             <option value="">Pick an option</option>
-                            <option value="0">It has little impact on my decision</option>
-                            <option value="1">It moderately impacts my decision</option>
-                            <option value="2">It significantly impacts my decision
-                            </option>
+                            <option value="0">A little</option>
+                            <option value="1">Moderate</option>
+                            <option value="2">Significant</option>
                             <option value="3">I am completely dependent on user reviews</option>
                             </option>
                         </select>
@@ -326,8 +308,8 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q5Select" required>
                             <option value="">Please select an option</option>
-                            <option value="0">Yes</option>
-                            <option value="1">No</option>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
                             <option value="2">Other</option>
                         </select>
                         <div class="invalidFeedback" id="q5Feedback">
@@ -348,8 +330,8 @@
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q6Select" required>
                             <option value="">Please select an option</option>
-                            <option>Yes</option>
                             <option>No</option>
+                            <option>Yes</option>
                         </select>
                         <div class="invalidFeedback" id="q6SelectFeedback">
                         </div>
@@ -390,13 +372,69 @@
                 </div>
 
                 <div class="form-group column" id="q6OtherExtension" style="display: none">
-                    <label for="q6OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please write down
-                            what
-                            other
-                            headphone brands do you prefer</b></label>
+                    <label for="q6OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>What other headphone
+                            brands do you prefer?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <input type="text" class="form-control" id="q6OtherText" placeholder="" required>
                         <div class="invalidFeedback" id="q6TextFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q7Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q7. Do you have any
+                            feature preferences for headphones?
+                        </b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q7Select" required>
+                            <option value="">Please select an option</option>
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                        <div class="invalidFeedback" id="q7SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q7extension" style="display: none">
+                    <label for="q7Check" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Which of the following
+                            features do you prefer? (Select all that
+                            apply)</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Price" id="c70">Price</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Audio_quality" id="c71">Audio Quality</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Aesthatics" id="c72">Aesthatics</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Comfort" id="c73">Comfort</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Longevity" id="c74">Longevity</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Color" id="c75">Color</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Functionality" id="c76">Functionality</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Other" id="q7OtherCheck">Other</label>
+                        </div>
+                    </div>
+                    <div class="invalidFeedback" id="q7checkFeedback"></div>
+                </div>
+
+                <div class="form-group column" id="q7OtherExtension" style="display: none">
+                    <label for="q7OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>What other features
+                            do you prefer?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q7OtherText" placeholder="" required>
+                        <div class="invalidFeedback" id="q7TextFeedback">
                         </div>
                     </div>
                 </div>
@@ -442,11 +480,20 @@
 <script>
     var x = "";
 
-    function check_checkbox() {
+    function check_checkbox_6() {
         var checklist = []
         for (var i = 0; i < 7; i++)
             if ($("#c6" + i).is(":checked")) {
                 checklist.push($("#c6" + i).val())
+            }
+        return checklist
+    }
+
+    function check_checkbox_7() {
+        var checklist = []
+        for (var i = 0; i < 7; i++)
+            if ($("#c7" + i).is(":checked")) {
+                checklist.push($("#c7" + i).val())
             }
         return checklist
     }
@@ -475,15 +522,8 @@
             localStorage.setItem("preq1", validate_form("q1Select", "q1Feedback",
                 "Please select an option"));
 
-            localStorage.setItem("preq2", validate_form("q2Select", "q2SelectFeedback",
+            localStorage.setItem("preq2", validate_form("q2Select", "q2Feedback",
                 "Please provide an option"));
-
-            if (validate_form("q2Select", "q2SelectFeedback", "Please select an option") == "Yes") {
-                localStorage.setItem("preq2CountSelect", validate_form("q2CountSelect",
-                    "q2CountFeedback",
-                    "Please select an option"
-                ));
-            }
 
             localStorage.setItem("preq3Select", validate_form("q3Select", "q3SelectFeedback",
                 "Please select an option"));
@@ -549,7 +589,7 @@
             }
 
             if (validate_form("q6Select", "q6SelectFeedback", "Please select an option") == "Yes") {
-                var checklist = check_checkbox()
+                var checklist = check_checkbox_6()
                 if (checklist.length > 0) {
                     var checkstring = ""
                     for (var i in checklist) {
@@ -559,6 +599,37 @@
                 } else {
                     if (!$("#q6OtherCheck").is(":checked")) {
                         document.getElementById("q6checkFeedback").innerHTML =
+                            '<i class="fa fa-info-circle" style="color:red"></i>' +
+                            "\xa0" +
+                            "Please select at least one option";
+                        x = x + 1
+                    }
+                }
+            }
+
+            localStorage.setItem("preq7Select", validate_form("q7Select", "q7SelectFeedback",
+                "Please select an option"));
+
+            if (validate_form("q7Select", "q7SelectFeedback", "Please select an option") == "Yes") {
+                if ($("#q7OtherCheck").is(":checked")) {
+                    localStorage.setItem("preq7OtherText", validate_form("q7OtherText",
+                        "q7TextFeedback",
+                        "Please write down your feature preference"
+                    ));
+                }
+            }
+
+            if (validate_form("q7Select", "q7SelectFeedback", "Please select an option") == "Yes") {
+                var checklist = check_checkbox_7()
+                if (checklist.length > 0) {
+                    var checkstring = ""
+                    for (var i in checklist) {
+                        checkstring = checkstring + "-" + checklist[i]
+                    }
+                    localStorage.setItem("preq7checkString", checkstring)
+                } else {
+                    if (!$("#q7OtherCheck").is(":checked")) {
+                        document.getElementById("q7checkFeedback").innerHTML =
                             '<i class="fa fa-info-circle" style="color:red"></i>' +
                             "\xa0" +
                             "Please select at least one option";
@@ -595,14 +666,7 @@
 
     $(document).ready(function () {
         $('#q2Select').change(function () {
-            document.getElementById("q2SelectFeedback").innerHTML = "";
-            var temp = $("#q2Select").val();
-            // console.log(temp)
-            if (temp == "Yes") {
-                document.getElementById("q2Count").setAttribute("style", "display:block");
-            } else {
-                document.getElementById("q2Count").setAttribute("style", "display:none");
-            }
+            document.getElementById("q2Feedback").innerHTML = "";
         });
     });
 
@@ -617,12 +681,6 @@
                 document.getElementById("q3YesTime").setAttribute("style", "display:none");
                 document.getElementById("q3YesDecision").setAttribute("style", "display:none");
             }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q2CountSelect').change(function () {
-            document.getElementById("q2CountFeedback").innerHTML = "";
         });
     });
 
@@ -721,6 +779,35 @@
     $(document).ready(function () {
         $('#q6OtherText').change(function () {
             document.getElementById("q6TextFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q7Select').change(function () {
+            document.getElementById("q7SelectFeedback").innerHTML = "";
+            var temp = $("#q7Select").val();
+            if (temp == "Yes") {
+                document.getElementById("q7extension").setAttribute("style", "display:block");
+            } else {
+                document.getElementById("q7extension").setAttribute("style", "display:none");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q7OtherCheck').on("change", function () {
+            if ($(this).is(":checked")) {
+                console.log("yes")
+                document.getElementById("q7OtherExtension").style.display = "block"
+            } else if ($(this).is(":not(:checked)")) {
+                document.getElementById("q7OtherExtension").style.display = "none"
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q7OtherText').change(function () {
+            document.getElementById("q7TextFeedback").innerHTML = "";
         });
     });
 </script>
