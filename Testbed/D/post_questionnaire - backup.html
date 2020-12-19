@@ -194,64 +194,73 @@
                     </div>
                 </div>
 
-                <div class="form-group column" id="q2extension" style="display: block">
-                    <label for="q2Check" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q2. Which features were
-                            most influential for your decision?
-                            (Select all that
-                            apply)</b></label>
+                <div class="form-group column">
+                    <label for="q2Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q2. Why would you refer
+                            this
+                            particular product?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Price" id="c21">Price</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Audio_Quality" id="c22">Audio Quality</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Aesthetics" id="c23">Aesthetics</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Comfort" id="c24">Comfort</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Longevity" id="c25">Longevity</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Color" id="c26">Color</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Functionality" id="c27">Functionality</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Other" id="q2OtherCheck">Other</label>
-                        </div>
-                    </div>
-                    <div class="invalidFeedback" id="q2checkFeedback"></div>
-                </div>
-
-                <div class="form-group column" id="q2OtherExtension" style="display: none">
-                    <label for="q2OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>What other features
-                            were most influential for your decision?</b></label>
-                    <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q2OtherText" placeholder="" required>
-                        <div class="invalidFeedback" id="q2TextFeedback">
+                        <input type="text" class="form-control" id="q2Text" placeholder="" required>
+                        <div class="invalidFeedback" id="q2Feedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q3Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q3. How confident are
-                            you
-                            that you have read enough comments to make your decision?</b></label>
+                    <label for="q3Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q3. Did you have any
+                            feature
+                            preferences before starting to read the product comments?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q3Select" required>
                             <option value="">Please select an option</option>
-                            <option>Not confident</option>
-                            <option>Slightly confident</option>
-                            <option>Moderately confident</option>
-                            <option>Highly confident</option>
-                            <option>Completely confident</option>
+                            <option>Yes</option>
+                            <option>No</option>
                         </select>
-                        <div class="invalidFeedback" id="q3Feedback">
+                        <div class="invalidFeedback" id="q3SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q3extension" style="display: none">
+                    <label for="q3Check" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Which of the following
+                            features did you consider before starting to read the product comments? (Select all that
+                            apply)</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Price" id="c31">Price</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Audio_Quality" id="c32">Audio Quality</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Aesthetics" id="c33">Aesthetics</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Comfort" id="c34">Comfort</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Longevity" id="c35">Longevity</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Color" id="c36">Color</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Functionality" id="c37">Functionality</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Other" id="q3OtherCheck">Other</label>
+                        </div>
+                    </div>
+                    <div class="invalidFeedback" id="q3checkFeedback"></div>
+                </div>
+
+                <div class="form-group column" id="q3OtherExtension" style="display: none">
+                    <label for="q3OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please write down
+                            what
+                            other
+                            features you considered before starting to read the product comments</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q3OtherText" placeholder="" required>
+                        <div class="invalidFeedback" id="q3TextFeedback">
                         </div>
                     </div>
                 </div>
@@ -259,11 +268,11 @@
                 <div class="form-group column">
                     <label for="q4Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q4. How confident are
                             you
-                            that you have made the right decision?</b></label>
+                            that you have read enough comments to make your decision?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q4Select" required>
                             <option value="">Please select an option</option>
-                            <option>Not confident at all</option>
+                            <option>Not confident</option>
                             <option>Slightly confident</option>
                             <option>Moderately confident</option>
                             <option>Highly confident</option>
@@ -274,120 +283,391 @@
                     </div>
                 </div>
 
-                <div class="form-group column" id="q5extension" style="display: none">
-                    <label for="q5Check" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q5. What features can
-                            you recall about the product you chose from the comments you read? (Select all that
-                            apply)</b></label>
+                <div class="form-group column">
+                    <label for="q5Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q5. How confident are
+                            you
+                            that you have made the right decision?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Price" id="c51">Price</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Audio_Quality" id="c52">Audio Quality</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Aesthetics" id="c53">Aesthetics</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Comfort" id="c54">Comfort</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Longevity" id="c55">Longevity</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Color" id="c56">Color</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Functionality" id="c57">Functionality</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Other" id="q5OtherCheck">Other</label>
-                        </div>
-                    </div>
-                    <div class="invalidFeedback" id="q5checkFeedback"></div>
-                </div>
-
-                <div class="form-group column" id="q5OtherExtension" style="display: none">
-                    <label for="q5OtherText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>What other
-                            features you can recall?</b></label>
-                    <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q5OtherText" placeholder="" required>
-                        <div class="invalidFeedback" id="q5TextFeedback">
+                        <select class="form-control" id="q5Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Not confident at all</option>
+                            <option>Slightly confident</option>
+                            <option>Moderately confident</option>
+                            <option>Highly confident</option>
+                            <option>Completely confident</option>
+                        </select>
+                        <div class="invalidFeedback" id="q5Feedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q6Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>
-                            Q6. Select one other headphone you learned about today (except the one you decided to
-                            refer)</b></label>
+                    <label for="q6Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q6. Rank the usefulness
+                            of
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage information for reading the reviews. <i class="fa fa-square fa-sm"
+                                style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i> Coverage information
+                            shows
+                            the amount of comments you have covered implicitly, including the comments that are very
+                            similar
+                            and redundant to the ones you have previously interacted with.</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
                         <select class="form-control" id="q6Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Not useful</option>
+                            <option>Somewhat useful</option>
+                            <option>Neutral</option>
+                            <option>Useful</option>
+                            <option>Very useful</option>
+                        </select>
+                        <div class="invalidFeedback" id="q6Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q7Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q7. Did you use the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage
+                            information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q7Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q7SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q7Yes" style="display: none">
+                    <label for="q7YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How did you use the <i
+                                class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage
+                            information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q7YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q7YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q7No" style="display: none;">
+                    <label for="q7NoText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Why didn't you use the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage
+                            information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q7NoText" placeholder="" required>
+                        <div class="invalidFeedback" id="q7NoFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q8Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q8. Did you find the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage
+                            information distracting?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q8Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q8SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q8Yes" style="display: none">
+                    <label for="q8YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please explain how did
+                            you
+                            find the <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB"
+                                aria-hidden="true"></i>
+                            Coverage
+                            information distracting?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q8YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q8YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q9Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q9. Rank the usefulness
+                            of
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution information for reading the reviews. <i class="fa fa-square fa-sm"
+                                style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i>Distribution information
+                            shows the proportion of comment sentiments you have directly interacted
+                            with.</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q9Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Not useful at all</option>
+                            <option>Somewhat useful</option>
+                            <option>Neutral</option>
+                            <option>Useful</option>
+                            <option>Very useful</option>
+                        </select>
+                        <div class="invalidFeedback" id="q9Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q10Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q10. Did you use the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution
+                            information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q10Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q10SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q10Yes" style="display: none">
+                    <label for="q10YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How did you use the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution
+                            information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q10YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q10YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q10No" style="display: none;">
+                    <label for="q10NoText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Why didn't you use the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution information?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q10NoText" placeholder="" required>
+                        <div class="invalidFeedback" id="q10NoFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q11Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q11. Did you find the
+                            <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution
+                            information distracting?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q11Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q11SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q11Yes" style="display: none">
+                    <label for="q11YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please explain how
+                            did
+                            you
+                            find the <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
+                                aria-hidden="true"></i>
+                            Distribution
+                            information distracting?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q11YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q11YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q12Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q12. Rank the
+                            usefulness
+                            of the
+                            suggested comments.</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q12Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Not useful</option>
+                            <option>Somewhat useful</option>
+                            <option>Neutral</option>
+                            <option>Useful</option>
+                            <option>Very useful</option>
+                        </select>
+                        <div class="invalidFeedback" id="q12Feedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q13Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q13. Did you use the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q13Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q13SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q13Yes" style="display: none">
+                    <label for="q13YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>How did you use the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q13YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q13YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q13YesOften" style="display:none">
+                    <label for="q13YesOftenSelect" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>
+                            How often did you
+                            use
+                            the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q13YesOftenSelect" required>
+                            <option value="">Please select an option</option>
+                            <option>Barely</option>
+                            <option>Somewhat often</option>
+                            <option>Often</option>
+                            <option>Very often</option>
+                            <option>Exclusively</option>
+                        </select>
+                        <div class="invalidFeedback" id="q13YesOftenFeedback">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group column" id="q13No" style="display: none;">
+                    <label for="q13NoText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Why didn't you use the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q13NoText" placeholder="" required>
+                        <div class="invalidFeedback" id="q13NoFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group column">
+                    <label for="q14Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q14. How often did you
+                            use
+                            the
+                            suggested comments?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q14Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Not at all</option>
+                            <option>Somewhat often</option>
+                            <option>Often</option>
+                            <option>Very often</option>
+                            <option>I only used the suggested comments</option>
+                        </select>
+                        <div class="invalidFeedback" id="q14Feedback">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="form-group column">
+                    <label for="q14Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q14. Did the suggested
+                            comments impact your decision?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q14Select" required>
+                            <option value="">Please select an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="invalidFeedback" id="q14SelectFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column" id="q14Yes" style="display: none">
+                    <label for="q14YesText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Please explain how
+                            did
+                            the suggested comments impact your decision?</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <input type="text" class="form-control" id="q14YesText" placeholder="" required>
+                        <div class="invalidFeedback" id="q14YesFeedback">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group column">
+                    <label for="q15Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>
+                            Q15. Select one other product you learned about today (except the one you decided to
+                            refer)</b></label>
+                    <div class="col-lg-12 col-m-12 col-sm-12">
+                        <select class="form-control" id="q15Select" required>
                             <option value="">Please select a product</option>
                             <option value="0">Koss Porta Pro</option>
                             <option value="1">Sony MDRV6 Studio</option>
                             <option value="2">Bose QuietComfort 25</option>
                         </select>
-                        <div class="invalidFeedback" id="q6SelectFeedback">
+                        <div class="invalidFeedback" id="q15SelectFeedback">
                         </div>
                     </div>
                 </div>
 
-                <div class="form-group column" id="q6Pick" style="display: none">
-                    <label for="q6PickText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>In your own words,
-                            write down what you learned about this headphone.</b></label>
+                <div class="form-group column" id="q15Pick" style="display: none">
+                    <label for="q15PickText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>In your own words,
+                            write down what you learned about this product.</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q6PickText" placeholder="" required>
-                        <div class="invalidFeedback" id="q6PickFeedback">
+                        <input type="text" class="form-control" id="q15PickText" placeholder="" required>
+                        <div class="invalidFeedback" id="q15PickFeedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q7Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q7. What do you like
+                    <label for="q16Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q16. What do you like
                             about
                             DICE?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q7Text" placeholder="" required>
-                        <div class="invalidFeedback" id="q7Feedback">
+                        <input type="text" class="form-control" id="q16Text" placeholder="" required>
+                        <div class="invalidFeedback" id="q16Feedback">
                         </div>
                     </div>
                 </div>
 
 
                 <div class="form-group column">
-                    <label for="q8Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q8. What do you dislike
+                    <label for="q17Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q17. What do you dislike
                             about DICE?</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q8Text" placeholder="" required>
-                        <div class="invalidFeedback" id="q8Feedback">
+                        <input type="text" class="form-control" id="q17Text" placeholder="" required>
+                        <div class="invalidFeedback" id="q17Feedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q9Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q9. What additional
-                            features do you think could be useful to improve your experience of reading
-                            comments?</b></label>
-                    <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q9Text" placeholder="">
-                    </div>
-                </div>
-
-                <div class="form-group column">
-                    <label for="q10Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q10. What additional
-                            features do you think could be useful to help you make the decision?
-                        </b></label>
-                    <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q10Text" placeholder="">
-                    </div>
-                </div>
-
-                <div class="form-group column">
-                    <label for="q11Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q11. "I would like to
+                    <label for="q18Select" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q18. "I would like to
                             use DICE in future when making purchasing decisions".</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <select class="form-control" id="q11Select" required>
+                        <select class="form-control" id="q18Select" required>
                             <option value="">Please select an option</option>
                             <option>Strongly disagree</option>
                             <option>Disagree</option>
@@ -395,16 +675,16 @@
                             <option>Agree</option>
                             <option>Strongly Agree</option>
                         </select>
-                        <div class="invalidFeedback" id="q11Feedback">
+                        <div class="invalidFeedback" id="q18Feedback">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group column">
-                    <label for="q12Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q12. Other
+                    <label for="q19Text" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Q19. Other
                             comments:</b></label>
                     <div class="col-lg-12 col-m-12 col-sm-12">
-                        <input type="text" class="form-control" id="q12Text" placeholder="">
+                        <input type="text" class="form-control" id="q19Text" placeholder="">
                     </div>
                 </div>
 
