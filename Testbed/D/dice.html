@@ -1356,7 +1356,7 @@
                 metrics[did].coverage = width
                 document.getElementById("covtext").innerHTML =
                     '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i>' +
-                    'Coverage: You know about ' + width * 1 +
+                    'Coverage: You know about ' + covered_list[did].length + '(' + width * 1 + ')' +
                     '% comments';
                 localStorage.setItem("coverageBar", width.toString())
 
@@ -1430,7 +1430,7 @@
                 localStorage.setItem("visitBar", width.toString())
                 document.getElementById("vistext").innerHTML =
                     '<i class="fa fa-square fa-xs" style="margin-right:3px; color:#81d4fa" aria-hidden="true"></i>' +
-                    'Visit: You read ' + width * 1 +
+                    'Visit: You read ' + explored_list[did].length + '(' + width * 1 + ')' +
                     '% comments';
             }
         }
