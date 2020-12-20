@@ -432,7 +432,7 @@
                     </div>
                 </div>
 
-                <div class="form-group column" id="q10No" style="display: none;">
+                <div class="form-group column" id="q9No" style="display: none;">
                     <label for="q9NoText" class="col-lg-12 col-m-12 col-sm-12 col-form-label"><b>Why didn't you use the
                             <i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
                                 aria-hidden="true"></i>
@@ -677,11 +677,19 @@
 <script>
     var x = "";
 
-    function check_3_checkbox() {
+    function check_2_checkbox() {
         var checklist = []
         for (var i = 0; i < 7; i++)
-            if ($("#c3" + i).is(":checked")) {
-                checklist.push($("#c3" + i).val())
+            if ($("#c2" + i).is(":checked")) {
+                checklist.push($("#c2" + i).val())
+            } return checklist
+    }
+
+    function check_13_checkbox() {
+        var checklist = []
+        for (var i = 0; i < 7; i++)
+            if ($("#c13" + i).is(":checked")) {
+                checklist.push($("#c13" + i).val())
             } return checklist
     }
 
@@ -709,40 +717,58 @@
             localStorage.setItem("postq1", validate_form("q1Select", "q1Feedback",
                 "Please select a product"));
 
-            localStorage.setItem("postq2", validate_form("q2Text", "q2Feedback",
-                "Please provide an answer"));
-
-            localStorage.setItem("postq3Select", validate_form("q3Select", "q3SelectFeedback",
-                "Please select an option"));
-
-            if (validate_form("q3Select", "q3SelectFeedback", "Please select an option") == "Yes") {
-                localStorage.setItem("postq3OtherText", validate_form("q3OtherText",
-                    "q3TextFeedback",
-                    "Please write down the features you considered before reading product comments"
+            if ($("#q2OtherCheck").is(":checked")) {
+                localStorage.setItem("post2OtherText", validate_form("q2OtherText",
+                    "q2TextFeedback",
+                    "Please write down which features were most influenctial for your decision"
                 ));
             }
+
+            var checklist = check_2_checkbox()
+            if (checklist.length > 0) {
+                var checkstring = ""
+                for (var i in checklist) {
+                    checkstring = checkstring + "-" + checklist[i]
+                }
+                localStorage.setItem("post2checkString", checkstring)
+            } else {
+                if (!$("#q2OtherCheck").is(":checked")) {
+                    document.getElementById("q2checkFeedback").innerHTML =
+                        '<i class="fa fa-info-circle" style="color:red"></i>' +
+                        "\xa0" +
+                        "Please select at least one option";
+                    x = x + 1
+                }
+            }
+
+            if (checklist.length > 0 || $("#q2OtherCheck").is(":checked")) {
+                document.getElementById("q2checkFeedback").style.display = "none"
+            }
+
+            localStorage.setItem("postq3", validate_form("q3Select", "q3Feedback",
+                "Please select an option"));
 
             localStorage.setItem("postq4", validate_form("q4Select", "q4Feedback",
                 "Please select an option"));
 
-            localStorage.setItem("postq5", validate_form("q4Select", "q5Feedback",
+            localStorage.setItem("postq5Select", validate_form("q5Select", "q5SelectFeedback",
                 "Please select an option"));
+
+            if (validate_form("q5Select", "q5SelectFeedback", "Please select an option") == "Yes") {
+                localStorage.setItem("postq5YesText", validate_form("q5YesText", "q5YesFeedback",
+                    "Please write down how did you use the Coverage Information"
+                ));
+            } else {
+                localStorage.setItem("postq5NoText", validate_form("q5NoText", "q5NoFeedback",
+                    "Please write down why didn't you use the Coverage Information"
+                ));
+            }
 
             localStorage.setItem("postq6", validate_form("q6Select", "q6Feedback",
                 "Please select an option"));
 
-            localStorage.setItem("postq7Select", validate_form("q7Select", "q7SelectFeedback",
+            localStorage.setItem("postq7", validate_form("q7Select", "q7Feedback",
                 "Please select an option"));
-
-            if (validate_form("q7Select", "q7SelectFeedback", "Please select an option") == "Yes") {
-                localStorage.setItem("postq7YesText", validate_form("q7YesText", "q7YesFeedback",
-                    "Please write down how did you use the Coverage Information"
-                ));
-            } else {
-                localStorage.setItem("postq7NoText", validate_form("q7NoText", "q7NoFeedback",
-                    "Please write down why didn't you use the Coverage Information"
-                ));
-            }
 
             localStorage.setItem("postq8Select", validate_form("q8Select", "q8SelectFeedback",
                 "Please select an option"));
@@ -753,107 +779,83 @@
                 ));
             }
 
-            localStorage.setItem("postq9", validate_form("q9Select", "q9Feedback",
+            localStorage.setItem("postq9Select", validate_form("q9Select", "q9SelectFeedback",
                 "Please select an option"));
 
-            localStorage.setItem("postq10Select", validate_form("q10Select", "q10SelectFeedback",
-                "Please select an option"));
-
-            if (validate_form("q10Select", "q10SelectFeedback", "Please select an option") ==
+            if (validate_form("q9Select", "q9SelectFeedback", "Please select an option") ==
                 "Yes") {
-                localStorage.setItem("postq10YesText", validate_form("q10YesText", "q10YesFeedback",
+                localStorage.setItem("postq9YesText", validate_form("q9YesText", "q9YesFeedback",
                     "Please write down how did you use the Distribution Information"
                 ));
             } else {
-                localStorage.setItem("postq10NoText", validate_form("q10NoText", "q10NoFeedback",
+                localStorage.setItem("postq9NoText", validate_form("q9NoText", "q9NoFeedback",
                     "Please write down why didn't you use the Distribution Information"
                 ));
             }
 
-            localStorage.setItem("postq11Select", validate_form("q11Select", "q11SelectFeedback",
+            localStorage.setItem("postq10Select", validate_form("q10Select", "q10Feedback",
                 "Please select an option"));
 
-            if (validate_form("q11Select", "q11SelectFeedback", "Please select an option") ==
+            localStorage.setItem("postq11Select", validate_form("q11Select", "q11Feedback",
+                "Please select an option"));
+
+            if (validate_form("q12Select", "q12SelectFeedback", "Please select an option") ==
                 "Yes") {
-                localStorage.setItem("postq11YesText", validate_form("q11YesText", "q11YesFeedback",
+                localStorage.setItem("postq12YesText", validate_form("q12YesText", "q12YesFeedback",
                     "Please explain how did you find the Distribution information distracting"
                 ));
             }
 
-            localStorage.setItem("postq12", validate_form("q12Select", "q12Feedback",
-                "Please select an option"));
-
-            localStorage.setItem("postq13Select", validate_form("q13Select", "q13SelectFeedback",
-                "Please select an option"));
-
-            if (validate_form("q13Select", "q13SelectFeedback", "Please select an option") ==
-                "Yes") {
-                localStorage.setItem("postq13YesText", validate_form("q13YesText", "q13YesFeedback",
-                    "Please write down how did you use the suggested comments"
+            if ($("#q13OtherCheck").is(":checked")) {
+                localStorage.setItem("post13OtherText", validate_form("q13OtherText",
+                    "q13TextFeedback",
+                    "Please write down what other features you can recall about the product you chose"
                 ));
+            }
+
+            var checklist = check_13_checkbox()
+            if (checklist.length > 0) {
+                var checkstring = ""
+                for (var i in checklist) {
+                    checkstring = checkstring + "-" + checklist[i]
+                }
+                localStorage.setItem("post13checkString", checkstring)
             } else {
-                localStorage.setItem("postq13NoText", validate_form("q13NoText", "q13NoFeedback",
-                    "Please write down why didn't you use the suggested comments"
-                ));
+                if (!$("#q13OtherCheck").is(":checked")) {
+                    document.getElementById("q13checkFeedback").innerHTML =
+                        '<i class="fa fa-info-circle" style="color:red"></i>' +
+                        "\xa0" +
+                        "Please select at least one option";
+                    x = x + 1
+                }
             }
 
-            if (validate_form("q13Select", "q13SelectFeedback", "Please select an option") ==
-                "Yes") {
-                localStorage.setItem("postq13YesOften", validate_form("q13YesOftenSelect",
-                    "q13YesOftenFeedback",
-                    "Please select an option"));
+            if (checklist.length > 0 || $("#q13OtherCheck").is(":checked")) {
+                document.getElementById("q13checkFeedback").style.display = "none"
             }
-
-            // localStorage.setItem("postq14", validate_form("q14Select", "q14Feedback",
-            //     "Please select an option"));
 
             localStorage.setItem("postq14Select", validate_form("q14Select", "q14SelectFeedback",
                 "Please select an option"));
 
-            if (validate_form("q14Select", "q14SelectFeedback", "Please select an option") ==
-                "Yes") {
-                localStorage.setItem("postq14YesText", validate_form("q14YesText", "q14YesFeedback",
-                    "Please explain how did the suggested comments impact your decision"
-                ));
-            }
+            localStorage.setItem("postq14PickText", validate_form("q14PickText", "q14PickFeedback",
+                "Please provide an answer"));
 
-            localStorage.setItem("postq15Select", validate_form("q15Select", "q15SelectFeedback",
-                "Please select an option"));
-
-            localStorage.setItem("postq15PickText", validate_form("q15PickText", "q15PickFeedback",
+            localStorage.setItem("postq15", validate_form("q15Text", "q15Feedback",
                 "Please provide an answer"));
 
             localStorage.setItem("postq16", validate_form("q16Text", "q16Feedback",
                 "Please provide an answer"));
 
-            localStorage.setItem("postq17", validate_form("q17Text", "q17Feedback",
-                "Please provide an answer"));
-
-            localStorage.setItem("postq18", validate_form("q18Select", "q18Feedback",
+            localStorage.setItem("postq17", validate_form("q17Select", "q17Feedback",
                 "Please select an option"));
 
-            localStorage.setItem("postq19", $("#q19Text").val());
+            localStorage.setItem("postq18", $("#q18Text").val());
 
             console.log("x = ", x)
 
             // for (var l in localStorage) {
             //     console.log('post_q' + ',' + l + ',' + localStorage.getItem(l));
             // }
-
-            var checklist = check_3_checkbox()
-            if (checklist.length > 0) {
-                var checkstring = ""
-                for (var i in checklist) {
-                    checkstring = checkstring + "-" + checklist[i]
-                }
-                localStorage.setItem("post3checkString", checkstring)
-            } else {
-                document.getElementById("q3checkFeedback").innerHTML =
-                    '<i class="fa fa-info-circle" style="color:red"></i>' +
-                    "\xa0" +
-                    "Please select at least one option";
-                x = x + 1
-            }
 
             if (x == 0) {
                 console.log("locallength", localStorage.length)
@@ -880,37 +882,25 @@
     });
 
     $(document).ready(function () {
-        $('#q2Text').change(function () {
-            document.getElementById("q2Feedback").innerHTML = "";
+        $('#q2OtherCheck').on("change", function () {
+            if ($(this).is(":checked")) {
+                console.log("yes")
+                document.getElementById("q2OtherExtension").style.display = "block"
+            } else if ($(this).is(":not(:checked)")) {
+                document.getElementById("q2OtherExtension").style.display = "none"
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q2OtherText').change(function () {
+            document.getElementById("q2TextFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
         $('#q3Select').change(function () {
-            document.getElementById("q3SelectFeedback").innerHTML = "";
-            var temp = $("#q3Select").val();
-            if (temp == "Yes") {
-                document.getElementById("q3extension").setAttribute("style", "display:block");
-            } else {
-                document.getElementById("q3extension").setAttribute("style", "display:none");
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q3OtherCheck').on("change", function () {
-            if ($(this).is(":checked")) {
-                console.log("yes")
-                document.getElementById("q3OtherExtension").style.display = "block"
-            } else if ($(this).is(":not(:checked)")) {
-                document.getElementById("q3OtherExtension").style.display = "none"
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q3OtherText').change(function () {
-            document.getElementById("q3TextFeedback").innerHTML = "";
+            document.getElementById("q3Feedback").innerHTML = "";
         });
     });
 
@@ -922,7 +912,28 @@
 
     $(document).ready(function () {
         $('#q5Select').change(function () {
-            document.getElementById("q5Feedback").innerHTML = "";
+            document.getElementById("q5SelectFeedback").innerHTML = "";
+            var temp = $("#q5Select").val();
+            console.log(temp)
+            if (temp == "Yes") {
+                document.getElementById("q5Yes").setAttribute("style", "display:block");
+                document.getElementById("q5No").setAttribute("style", "display:none");
+            } else {
+                document.getElementById("q5No").setAttribute("style", "display:block");
+                document.getElementById("q5Yes").setAttribute("style", "display:none");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q5YesText').change(function () {
+            document.getElementById("q5YesFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q5NoText').change(function () {
+            document.getElementById("q5NoFeedback").innerHTML = "";
         });
     });
 
@@ -934,28 +945,7 @@
 
     $(document).ready(function () {
         $('#q7Select').change(function () {
-            document.getElementById("q7SelectFeedback").innerHTML = "";
-            var temp = $("#q7Select").val();
-            console.log(temp)
-            if (temp == "Yes") {
-                document.getElementById("q7Yes").setAttribute("style", "display:block");
-                document.getElementById("q7No").setAttribute("style", "display:none");
-            } else {
-                document.getElementById("q7No").setAttribute("style", "display:block");
-                document.getElementById("q7Yes").setAttribute("style", "display:none");
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q7YesText').change(function () {
-            document.getElementById("q7YesFeedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q7NoText').change(function () {
-            document.getElementById("q7NoFeedback").innerHTML = "";
+            document.getElementById("q7Feedback").innerHTML = "";
         });
     });
 
@@ -985,142 +975,100 @@
 
     $(document).ready(function () {
         $('#q9Select').change(function () {
-            document.getElementById("q9Feedback").innerHTML = "";
+            document.getElementById("q9SelectFeedback").innerHTML = "";
+            var temp = $("#q9Select").val();
+            console.log(temp)
+            if (temp == "Yes") {
+                document.getElementById("q9Yes").setAttribute("style", "display:block");
+                document.getElementById("q9No").setAttribute("style", "display:none");
+            } else {
+                document.getElementById("q9No").setAttribute("style", "display:block");
+                document.getElementById("q9Yes").setAttribute("style", "display:none");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q9YesText').change(function () {
+            document.getElementById("q9YesFeedback").innerHTML = "";
+        });
+    });
+
+    $(document).ready(function () {
+        $('#q9NoText').change(function () {
+            document.getElementById("q9NoFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
         $('#q10Select').change(function () {
-            document.getElementById("q10SelectFeedback").innerHTML = "";
-            var temp = $("#q10Select").val();
-            console.log(temp)
-            if (temp == "Yes") {
-                document.getElementById("q10Yes").setAttribute("style", "display:block");
-                document.getElementById("q10No").setAttribute("style", "display:none");
-            } else {
-                document.getElementById("q10No").setAttribute("style", "display:block");
-                document.getElementById("q10Yes").setAttribute("style", "display:none");
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q10YesText').change(function () {
-            document.getElementById("q10YesFeedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q10NoText').change(function () {
-            document.getElementById("q10NoFeedback").innerHTML = "";
+            document.getElementById("q10Feedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
         $('#q11Select').change(function () {
-            document.getElementById("q11SelectFeedback").innerHTML = "";
-            var temp = $("#q11Select").val();
-            if (temp == "Yes") {
-                document.getElementById("q11Yes").setAttribute("style", "display:block");
-            } else {
-                document.getElementById("q11Yes").setAttribute("style", "display:none");
-            }
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q11YesText').change(function () {
-            document.getElementById("q11YesFeedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q11NoText').change(function () {
-            document.getElementById("q11NoFeedback").innerHTML = "";
+            document.getElementById("q11Feedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
         $('#q12Select').change(function () {
-            document.getElementById("q12Feedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q13Select').change(function () {
-            document.getElementById("q13SelectFeedback").innerHTML = "";
-            var temp = $("#q13Select").val();
-            console.log(temp)
+            document.getElementById("q12SelectFeedback").innerHTML = "";
+            var temp = $("#q12Select").val();
             if (temp == "Yes") {
-                document.getElementById("q13Yes").setAttribute("style", "display:block");
-                document.getElementById("q13YesOften").setAttribute("style", "display:block");
-                document.getElementById("q13No").setAttribute("style", "display:none");
+                document.getElementById("q12Yes").setAttribute("style", "display:block");
             } else {
-                document.getElementById("q13No").setAttribute("style", "display:block");
-                document.getElementById("q13Yes").setAttribute("style", "display:none");
-                document.getElementById("q13YesOften").setAttribute("style", "display:none");
+                document.getElementById("q12Yes").setAttribute("style", "display:none");
             }
         });
     });
 
     $(document).ready(function () {
-        $('#q13YesText').change(function () {
-            document.getElementById("q13YesFeedback").innerHTML = "";
+        $('#q12YesText').change(function () {
+            document.getElementById("q12YesFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
-        $('#q13NoText').change(function () {
-            document.getElementById("q13NoFeedback").innerHTML = "";
+        $('#q12NoText').change(function () {
+            document.getElementById("q12NoFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
-        $('#q13YesOftenSelect').change(function () {
-            document.getElementById("q13YesOftenFeedback").innerHTML = "";
+        $('#q13OtherCheck').on("change", function () {
+            if ($(this).is(":checked")) {
+                console.log("yes")
+                document.getElementById("q13OtherExtension").style.display = "block"
+            } else if ($(this).is(":not(:checked)")) {
+                document.getElementById("q13OtherExtension").style.display = "none"
+            }
         });
     });
 
-    // $(document).ready(function () {
-    //     $('#q14Select').change(function () {
-    //         document.getElementById("q14Feedback").innerHTML = "";
-    //     });
-    // });
+    $(document).ready(function () {
+        $('#q13OtherText').change(function () {
+            document.getElementById("q13TextFeedback").innerHTML = "";
+        });
+    });
 
     $(document).ready(function () {
         $('#q14Select').change(function () {
             document.getElementById("q14SelectFeedback").innerHTML = "";
-            var temp = $("#q14Select").val();
-            if (temp == "Yes") {
-                document.getElementById("q14Yes").setAttribute("style", "display:block");
-            } else {
-                document.getElementById("q14Yes").setAttribute("style", "display:none");
-            }
+            document.getElementById("q14Pick").setAttribute("style", "display:block");
         });
     });
 
     $(document).ready(function () {
-        $('#q14YesText').change(function () {
-            document.getElementById("q14YesFeedback").innerHTML = "";
+        $('#q14PickText').change(function () {
+            document.getElementById("q14PickFeedback").innerHTML = "";
         });
     });
 
     $(document).ready(function () {
-        $('#q14NoText').change(function () {
-            document.getElementById("q14NoFeedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q15Select').change(function () {
-            document.getElementById("q15SelectFeedback").innerHTML = "";
-            document.getElementById("q15Pick").setAttribute("style", "display:block");
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q15PickText').change(function () {
-            document.getElementById("q15PickFeedback").innerHTML = "";
+        $('#q15Text').change(function () {
+            document.getElementById("q15Feedback").innerHTML = "";
         });
     });
 
@@ -1131,14 +1079,8 @@
     });
 
     $(document).ready(function () {
-        $('#q17Text').change(function () {
+        $('#q17Select').change(function () {
             document.getElementById("q17Feedback").innerHTML = "";
-        });
-    });
-
-    $(document).ready(function () {
-        $('#q18Select').change(function () {
-            document.getElementById("q18Feedback").innerHTML = "";
         });
     });
 </script>
