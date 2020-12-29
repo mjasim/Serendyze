@@ -115,7 +115,7 @@
                 <a class="nav-link py-0" href="#" onclick="gototutorial()"
                     title="Open Tutorial in a new window">Tutorial<span class="sr-only py-0">(current)</span></a>
             </li>
-            <li class="nav-item active py-1">
+            <li class="nav-item active py-0">
                 <a class="nav-link py-0" href="#" data-toggle="modal" data-target="#aboutModal" title="About">About<span
                         class="sr-only py-0">(current)</span></a>
             </li>
@@ -325,24 +325,25 @@
         onclick="gotoStudy()">
         Proceed to Study <i class="fa fa-arrow-right" style="margin-left:10px" aria-hidden="true"></i>
     </div>
+</div>
 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="interaction_log.js"></script>
-    <script type="text/javascript" src="hilitor.js"></script>
-    <script src="jquery.paginate.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="interaction_log.js"></script>
+<script type="text/javascript" src="hilitor.js"></script>
+<script src="jquery.paginate.js"></script>
 
-    <script>
-        function gotoStudy() {
-            window.open('dice.html', "_self")
-        }
+<script>
+    function gotoStudy() {
+        window.open('dice.html', "_self")
+    }
 
-        function gototutorial() {
-            window.open('tutorial.html', "_self")
-        }
+    function gototutorial() {
+        window.open('tutorial.html', "_self")
+    }
 
-        function reload_page() {
-            logInteraction('click,nav_dice_brand,reload');
-            window.location.reload()
-            return false
-        }
-    </script>
+    function reload_page() {
+        logInteraction('click,nav_dice_brand,reload');
+        window.location.reload()
+        return false
+    }
+</script>
