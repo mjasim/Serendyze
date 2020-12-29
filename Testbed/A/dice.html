@@ -265,7 +265,7 @@
             <div id="topicinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
             text-align: center; padding-left:20px;">
                 <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
-                    title="These are most frequent word pairs that appear in the comments. Click the words to filter relevant comments"></i>Keywords
+                    title="These are most frequent word pairs that appear in the reviews. Click the words to filter relevant reviews"></i>Keywords
             </div>
             <div id="topicbox"
                 style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 90%; padding-bottom:10px">
@@ -277,7 +277,7 @@
             <div id="discinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
             text-align: center; padding-left: 20px;">
                 <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray"
-                    title="Click on the sentiments to filter the comments by Positive, Neutral, or Negative comments"></i>Sentiments
+                    title="Click on the sentiments to filter the reviews by Positive, Neutral, or Negative reviews"></i>Sentiments
             </div>
             <div id="discbox" style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;
             align-items: center; margin:5px; width: 90%">
@@ -333,7 +333,7 @@
             <div id="textboxparent"
                 style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
                 <div id="textboxheader" style="width:95%; border:solid thin lightgray; display: none; font-weight:bold">
-                    <span id="commentheader">Comments: 0</span>
+                    <span id="commentheader">Reviews: 0</span>
                 </div>
                 <div id="textbox" style="margin: 10px; max-width: 100%; height: 45vh; overflow-y:auto"></div>
             </div>
@@ -374,6 +374,9 @@
 
     function checkLoad() {
         console.log("dice loaded")
+        alert(
+            "Refreshing the page will result in losing all progress. Please do not refresh the page unless you want to start over."
+        )
         start_time = Date.now()
     }
 
@@ -688,7 +691,7 @@
                 var sent = ""
                 var headertext = ""
 
-                headertext = "Comments with searched keyword \"" + document.getElementById("navSearch").value +
+                headertext = "Reviews with searched keyword \"" + document.getElementById("navSearch").value +
                     "\": "
 
                 if (proposal_data.comments[i].comment.toLowerCase().includes(search_filter)) {
@@ -816,7 +819,7 @@
             var headertext = ""
 
             if (topic_filter && disc_filter) {
-                headertext = disc_filter + " comments with keyword \"" + topic_filter + "\": "
+                headertext = disc_filter + " reviews with keyword \"" + topic_filter + "\": "
 
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
 
@@ -998,7 +1001,7 @@
 
             } else if (!text_filter) {
 
-                headertext = "Total comments: "
+                headertext = "Total reviews: "
                 count += 1
 
                 // if (proposal_data.comments[i].discourse == "Positive") {
@@ -1851,9 +1854,9 @@
             }
         }
 
-        get_distribution()
-        get_coverage(full_data[did].comments)
-        get_visit()
+        // get_distribution()
+        // get_coverage(full_data[did].comments)
+        // get_visit()
     }
 
     function isScrolledIntoView(elem) {
@@ -1898,7 +1901,7 @@
         //     }, 4000)
         // }
         logInteraction('click,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
-        comment_interact($(this)[0].id.substring(8))
+        // comment_interact($(this)[0].id.substring(8))
         // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
     });
 
@@ -1934,7 +1937,7 @@
 
         logInteraction('click,serencomment_' + $(this)[0].id.substring(14) +
             ',interact with a suggested comment')
-        comment_interact($(this)[0].id.substring(14))
+        // comment_interact($(this)[0].id.substring(14))
     });
 
     $(document).on('mouseover', '.commentText', function () {
@@ -1962,7 +1965,7 @@
             // }
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
-            comment_interact($(this)[0].id.substring(8))
+            // comment_interact($(this)[0].id.substring(8))
         }
     });
 
@@ -1988,7 +1991,7 @@
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) +
                 ',interact with a suggested comment')
-            comment_interact($(this)[0].id.substring(14))
+            // comment_interact($(this)[0].id.substring(14))
         }
         // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
         // 0]
@@ -2517,17 +2520,17 @@
                     if (id == "visitback") {
                         met_comment_list = explored_list[did]
                         met_color = 'style=\"background-color: #81d4fa\"'
-                        met_header = "Comments interacted with: "
+                        met_header = "Reviews interacted with: "
                         met_bar = "Visit - "
                     } else if (id == "distback") {
                         met_comment_list = explored_list[did]
                         met_color = 'style=\"background-color: #FFAB91\"'
-                        met_header = "Sentiments in comments interacted with: "
+                        met_header = "Sentiments in reviews interacted with: "
                         met_bar = "Distribution - "
                     } else {
                         met_comment_list = covered_list[did]
                         met_color = 'style=\"background-color: #B39DDB\"'
-                        met_header = "comments covered: "
+                        met_header = "reviews covered: "
                         met_bar = "Coverage - "
                     }
 
@@ -2544,7 +2547,7 @@
                         console.log("metbar", topic_filter, disc_filter)
 
                         if (topic_filter && disc_filter) {
-                            met_header = disc_filter + " comments interacted with keyword \"" + topic_filter +
+                            met_header = disc_filter + " reviews interacted with keyword \"" + topic_filter +
                                 "\": "
 
                             var tokens = met_comment_list[i].text.toLowerCase().split(" ");
@@ -2570,7 +2573,7 @@
                                 myNode.appendChild(divSum)
                             }
                         } else if (topic_filter && !disc_filter) {
-                            met_header = "comments with keyword \"" + topic_filter + "\": "
+                            met_header = "reviews with keyword \"" + topic_filter + "\": "
                             var tokens = met_comment_list[i].text.toLowerCase().split(" ");
                             if ((met_comment_list[i].text.toLowerCase().includes(topic_filter.split(
                                         " ")[0].toLowerCase()) && met_comment_list[i].text
