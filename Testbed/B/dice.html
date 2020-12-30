@@ -733,6 +733,30 @@
 
     function render_search() {
         logInteraction('click,search_' + search_filter + ',search a keyword')
+
+        if (selected_id_ngram) {
+            document.getElementById(selected_id_ngram).setAttribute("style",
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+            )
+        }
+        if (prev_selected_id_ngram) {
+            document.getElementById(prev_selected_id_ngram).setAttribute("style",
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+            )
+        }
+
+        if (selected_id_disc) {
+            document.getElementById(selected_id_disc).setAttribute("style",
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+            )
+        }
+        if (prev_selected_id_disc) {
+            document.getElementById(prev_selected_id_disc).setAttribute("style",
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+            )
+        }
+
+
         if (did && document.getElementById("navSearch").value.toLowerCase()) {
             var search_filter = document.getElementById("navSearch").value.toLowerCase()
 
@@ -790,6 +814,9 @@
             myHilitor = new Hilitor("textbox");
             myHilitor.setMatchType("open");
             myHilitor.apply(search_filter);
+        } else if (did && !document.getElementById("navSearch").value.toLowerCase()) {
+            text_filter = ""
+            render_text(text_filter)
         }
     }
 
