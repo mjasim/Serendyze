@@ -437,11 +437,13 @@
     }
 
     function gotoPost() {
-        end_time = Date.now()
-        logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
+        logInteraction('study' + ',' + 'visit' + ',' + explored_list[did].length.toString());
+
         var finalize_text = orig_area_text[did]
         if (confirm("Confirm " + finalize_text + "?") == true) {
             window.open('post_questionnaire.html', "_self")
+            end_time = Date.now()
+            logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
         }
     }
 

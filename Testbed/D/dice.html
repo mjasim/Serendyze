@@ -439,10 +439,14 @@
     }
 
     function gotoPost() {
-        end_time = Date.now()
-        logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
+
+        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].visit.toString());
+        logInteraction('study' + ',' + 'coverage' + ',' + metrics[did].coverage.toString());
+        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].distribution.toString());
         var finalize_text = orig_area_text[did]
         if (confirm("Confirm " + finalize_text + "?") == true) {
+            end_time = Date.now()
+            logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
             window.open('post_questionnaire.html', "_self")
         }
     }
