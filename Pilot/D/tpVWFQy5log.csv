@@ -1,0 +1,151 @@
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq7OtherText,coolness
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq2,1
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq5OtherText,reco
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq3YesDecisionSelect,0
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq6Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq4YesImpactSelect,1
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq6checkString,-JBL-Sennheiser
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq1,0
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq6OtherText,jumbo jumbo
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq7checkString,-Price
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq4,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq3YesTimeSelect,0
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq3Select,No
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq5Select,1
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,preq7Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:57:59 GMT,pre_q,totaltime,23025s
+tpVWFQy5,Thu, 31 Dec 2020 04:02:47 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Thu, 31 Dec 2020 04:02:47 GMT,click,dice,get suggested comments
+tpVWFQy5,Thu, 31 Dec 2020 04:02:47 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:02:48 GMT,hover,bar_visitback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:02:48 GMT,click,comment_394,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:02:53 GMT,click,comment_502,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:02:53 GMT,hover,comment_502,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:02:58 GMT,click,comment_470,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:02:58 GMT,hover,comment_470,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:09 GMT,click,comment_186,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:09 GMT,hover,comment_186,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:17 GMT,click,comment_473,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:18 GMT,hover,comment_473,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:19 GMT,hover,bar_visitback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:19 GMT,click,ngram_great sound,select an ngram
+tpVWFQy5,Thu, 31 Dec 2020 04:03:20 GMT,click,ngram_great sound,deselect an ngram
+tpVWFQy5,Thu, 31 Dec 2020 04:03:21 GMT,click,sentiment_Positive,select a sentiment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:22 GMT,click,sentiment_Positive,deselect a sentiment
+tpVWFQy5,Thu, 31 Dec 2020 04:03:23 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:23 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:23 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:23 GMT,hover,bar_visitback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:24 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:24 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:24 GMT,click,bar_coverback,clicked on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:25 GMT,click,bar_coverback,clicked on metric bar
+tpVWFQy5,Thu, 31 Dec 2020 04:03:28 GMT,study,visit,2
+tpVWFQy5,Thu, 31 Dec 2020 04:03:28 GMT,study,coverage,9
+tpVWFQy5,Thu, 31 Dec 2020 04:03:28 GMT,study,visit,2
+tpVWFQy5,Thu, 31 Dec 2020 04:03:29 GMT,study,totaltime,43403s
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq14PickText,sdasda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq7Select,Neutral
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq5NoText,sadasdad
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq8YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post5checkString,-Color
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq4,Moderately confident
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq16Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq5YesText,ffff
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq22,Disagree
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq13,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq23,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq14Select,Not useful
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq11Select,Slightly easy
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq6PickText,asda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post5OtherText,reco
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq9YesText,sdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq15Select,Not useful
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq17,Disagree
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq13Select,No
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq15YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq9,asdasda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq9Select,No
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq5Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq3Select,No
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq6,Not useful at all
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq19PickText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq19Select,0
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq6Select,Slightly useful
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq3,Slightly confident
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq12,sdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq11YesText,asdad
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq14,Neutral
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post10checkString,-Audio_Quality-Aesthetics
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq5,Not confident at all
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq11PickText,sfsdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq13YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq2,asd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post2OtherText,xo
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq10,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq16YesText,sdf
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq7,Not easy at all
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq16,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post2checkString,-Price-Audio_Quality
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq1,0
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq20,asda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq7YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq9NoText,jjj
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq8Select,No
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq11,Disagree
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post13checkString,-Aesthetics-Comfort
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq10YesText,asdads
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq8,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq21,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,post18checkString,-Comfort-Longevity
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq15,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq12YesText,asda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq17YesText,asdasdasda
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq13NoText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq18,asd
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,postq10Select,Somewhat useful
+tpVWFQy5,Thu, 31 Dec 2020 04:04:14 GMT,post_q,totaltime,44999s
+tpVWFQy5,Mon, 04 Jan 2021 21:30:10 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:10 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:12 GMT,click,comment_394,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:30:15 GMT,click,comment_502,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:30:18 GMT,click,comment_470,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:30:18 GMT,hover,comment_470,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:30:19 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:30:22 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:22 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:23 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:30:36 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:30:37 GMT,click,product_2,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:37 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:39 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:39 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:41 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:41 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:46 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:46 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:49 GMT,click,product_2,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:49 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:30:51 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:30:51 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:34:34 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:34:34 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:34:34 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:34:37 GMT,click,comment_394,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:34:37 GMT,hover,comment_394,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:34:43 GMT,click,comment_502,interact with a comment
+tpVWFQy5,Mon, 04 Jan 2021 21:34:46 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:34:48 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:34:48 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:34:49 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:34:58 GMT,click,serencomment_1227,interact with a suggested comment
+tpVWFQy5,Mon, 04 Jan 2021 21:35:02 GMT,click,product_2,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:35:02 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:35:02 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:35:04 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:35:05 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:35:05 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:35:07 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Mon, 04 Jan 2021 21:35:07 GMT,click,dice,get suggested comments
+tpVWFQy5,Mon, 04 Jan 2021 21:35:07 GMT,hover,bar_coverback,hovered on metric bar
+tpVWFQy5,Mon, 04 Jan 2021 21:35:08 GMT,hover,bar_coverback,hovered on metric bar

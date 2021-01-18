@@ -1,0 +1,326 @@
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq3Select,Yes
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq5Select,1
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq7Select,Yes
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq1,2
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq3YesDecisionSelect,2
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq7checkString,-Price-Audio_quality-Comfort-Longevity-Functionality
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq4,Yes
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq6Select,No
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq3YesTimeSelect,3
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq4YesImpactSelect,2
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,preq2,3
+mWuPR59b,Sat, 09 Jan 2021 01:39:26 GMT,pre_q,totaltime,173531s
+mWuPR59b,Sat, 09 Jan 2021 01:44:55 GMT,click,product_0,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:44:55 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:44:56 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:45:00 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:45:02 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:45:03 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:45:04 GMT,hover,comment_130,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:10 GMT,hover,comment_489,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:18 GMT,hover,comment_465,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:20 GMT,hover,comment_186,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:34 GMT,hover,comment_148,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:40 GMT,hover,comment_253,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:45:49 GMT,hover,comment_53,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:00 GMT,hover,comment_309,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:02 GMT,hover,comment_37,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:04 GMT,hover,comment_58,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:06 GMT,hover,comment_509,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:10 GMT,hover,comment_280,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:11 GMT,hover,comment_175,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:16 GMT,hover,comment_331,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:19 GMT,hover,comment_522,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:21 GMT,hover,comment_543,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:26 GMT,hover,comment_481,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:34 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:46:38 GMT,click,product_1,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:46:38 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:46:38 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:46:41 GMT,hover,comment_813,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:44 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:46:46 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:46:47 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:46:53 GMT,hover,comment_869,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:46:55 GMT,hover,comment_643,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:06 GMT,hover,comment_1122,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:13 GMT,hover,comment_789,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:15 GMT,hover,comment_790,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:20 GMT,hover,comment_989,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:24 GMT,hover,comment_1244,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:27 GMT,click,sentiment_Negative,deselect a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:47:31 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:47:32 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:47:35 GMT,hover,comment_643,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:37 GMT,hover,comment_796,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:42 GMT,click,comment_693,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:45 GMT,hover,comment_693,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:47:52 GMT,hover,comment_640,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:03 GMT,hover,comment_599,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:12 GMT,hover,comment_1124,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:21 GMT,hover,comment_1204,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:24 GMT,hover,comment_825,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:28 GMT,hover,comment_884,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:30 GMT,hover,comment_1200,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:33 GMT,hover,comment_623,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:36 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:36 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:37 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:42 GMT,click,product_2,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:48:42 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:48:43 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:44 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:44 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:45 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:48:46 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:48:52 GMT,hover,comment_1646,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:48:57 GMT,hover,comment_1537,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:02 GMT,hover,comment_1430,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:07 GMT,hover,comment_1357,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:13 GMT,hover,comment_1443,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:27 GMT,hover,comment_1298,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:32 GMT,hover,comment_1629,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:34 GMT,hover,comment_1671,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:38 GMT,hover,comment_1393,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:49 GMT,hover,comment_1567,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:51 GMT,hover,comment_1458,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:54 GMT,hover,comment_1354,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:49:55 GMT,hover,comment_1558,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:00 GMT,hover,comment_1708,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:04 GMT,hover,comment_1311,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:14 GMT,hover,comment_1560,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:19 GMT,hover,comment_1545,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:29 GMT,hover,comment_1319,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:31 GMT,hover,comment_1416,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:41 GMT,hover,comment_1288,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:45 GMT,hover,comment_1459,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:47 GMT,hover,comment_1306,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:52 GMT,hover,comment_1336,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:50:57 GMT,hover,comment_1657,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:01 GMT,hover,comment_1523,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:02 GMT,hover,comment_1496,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:08 GMT,hover,comment_1548,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:09 GMT,hover,comment_1455,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:12 GMT,hover,comment_1711,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:15 GMT,hover,comment_1721,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:25 GMT,hover,comment_1529,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:27 GMT,hover,comment_1525,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:27 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:51:35 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:51:35 GMT,click,product_0,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:51:38 GMT,hover,comment_368,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:40 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:51:40 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:51:41 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:51:45 GMT,hover,comment_543,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:51:59 GMT,hover,comment_481,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:05 GMT,hover,comment_494,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:08 GMT,hover,comment_253,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:15 GMT,hover,comment_465,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:17 GMT,hover,comment_313,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:19 GMT,hover,comment_98,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:20 GMT,hover,comment_757,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:22 GMT,hover,comment_539,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:26 GMT,hover,comment_435,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:28 GMT,hover,comment_435,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:29 GMT,hover,comment_419,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:31 GMT,hover,comment_435,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:37 GMT,hover,comment_528,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:39 GMT,hover,comment_485,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:43 GMT,hover,comment_426,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:46 GMT,hover,comment_10,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:50 GMT,hover,comment_277,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:53 GMT,hover,comment_498,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:57 GMT,hover,comment_613,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:52:58 GMT,hover,comment_272,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:00 GMT,hover,comment_295,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:01 GMT,hover,comment_30,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:03 GMT,hover,comment_295,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:03 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:09 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:53:09 GMT,click,product_1,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:53:10 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:13 GMT,hover,comment_907,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:13 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:13 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:16 GMT,hover,comment_938,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:18 GMT,hover,comment_1244,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:21 GMT,hover,comment_1266,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:22 GMT,hover,comment_1019,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:23 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:23 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:53:24 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:53:26 GMT,hover,comment_643,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:28 GMT,hover,comment_761,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:39 GMT,click,comment_1267,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:41 GMT,hover,comment_1267,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:51 GMT,hover,comment_1034,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:53:59 GMT,hover,comment_1065,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:02 GMT,hover,comment_1107,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:06 GMT,hover,comment_1076,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:10 GMT,hover,comment_804,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:17 GMT,hover,comment_1165,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:21 GMT,hover,comment_844,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:35 GMT,hover,comment_655,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:51 GMT,hover,comment_1283,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:55 GMT,hover,comment_944,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:56 GMT,hover,comment_1077,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:54:59 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:03 GMT,click,ngram_ear pads,select an ngram
+mWuPR59b,Sat, 09 Jan 2021 01:55:05 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:11 GMT,hover,comment_1124,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:13 GMT,hover,comment_879,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:15 GMT,hover,comment_1077,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:18 GMT,hover,comment_1087,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:23 GMT,hover,comment_1051,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:27 GMT,hover,comment_814,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:29 GMT,hover,comment_1051,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:29 GMT,hover,comment_mment_829,interact with a suggested comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:29 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:34 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:55:34 GMT,click,product_0,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:55:34 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:38 GMT,hover,comment_382,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:40 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:40 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:40 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:55:41 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:44 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:49 GMT,click,search_undefined,search a keyword
+mWuPR59b,Sat, 09 Jan 2021 01:55:50 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:55:52 GMT,hover,comment_740,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:55:53 GMT,hover,comment_41,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:03 GMT,hover,comment_740,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:04 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:08 GMT,click,search_undefined,search a keyword
+mWuPR59b,Sat, 09 Jan 2021 01:56:09 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:12 GMT,hover,comment_561,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:19 GMT,hover,comment_57,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:19 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:20 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:22 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:22 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:23 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:24 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:30 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:56:30 GMT,click,product_2,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:56:31 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:32 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:32 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:38 GMT,hover,comment_1454,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:40 GMT,hover,comment_1537,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:41 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:41 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:41 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:41 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:56:43 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:56:46 GMT,hover,comment_1537,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:50 GMT,hover,comment_1653,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:54 GMT,hover,comment_1332,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:56:56 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:00 GMT,click,product_0,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:57:00 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:57:01 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:03 GMT,hover,comment_576,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:07 GMT,hover,comment_503,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:09 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:10 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:57:11 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:13 GMT,hover,comment_186,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:16 GMT,hover,comment_354,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:28 GMT,hover,comment_236,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:31 GMT,hover,comment_323,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:31 GMT,click,comment_182,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:32 GMT,hover,comment_182,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:34 GMT,hover,comment_126,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:35 GMT,click,comment_51,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:38 GMT,hover,comment_51,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:40 GMT,click,comment_395,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:42 GMT,hover,comment_395,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:42 GMT,click,comment_461,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:43 GMT,hover,comment_461,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:44 GMT,hover,comment_613,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:46 GMT,hover,comment_528,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:48 GMT,click,comment_343,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:48 GMT,hover,comment_343,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:57:48 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:51 GMT,click,product_1,select product from dropdown
+mWuPR59b,Sat, 09 Jan 2021 01:57:51 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:57:53 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:53 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:53 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:54 GMT,click,sentiment_Negative,select a sentiment
+mWuPR59b,Sat, 09 Jan 2021 01:57:54 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:57:58 GMT,hover,comment_643,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:02 GMT,hover,comment_962,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:05 GMT,hover,comment_1112,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:08 GMT,hover,comment_846,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:14 GMT,hover,comment_919,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:16 GMT,hover,comment_643,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:21 GMT,hover,comment_666,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:31 GMT,hover,comment_677,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:36 GMT,click,comment_680,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:37 GMT,hover,comment_680,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:38 GMT,click,comment_733,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:40 GMT,hover,comment_733,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:47 GMT,click,comment_1139,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:48 GMT,hover,comment_1139,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:48 GMT,click,comment_866,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:49 GMT,hover,comment_866,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:52 GMT,hover,comment_962,interact with a comment
+mWuPR59b,Sat, 09 Jan 2021 01:58:55 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:58:55 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:58:55 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:58:55 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:58:59 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:58:59 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:03 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:03 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:05 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:07 GMT,hover,bar_distback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:09 GMT,hover,comment_mment_110,interact with a suggested comment
+mWuPR59b,Sat, 09 Jan 2021 01:59:21 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:22 GMT,hover,bar_coverback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:23 GMT,hover,bar_visitback,hovered on metric bar
+mWuPR59b,Sat, 09 Jan 2021 01:59:24 GMT,click,dice,remove suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:59:25 GMT,click,dice,get suggested comments
+mWuPR59b,Sat, 09 Jan 2021 01:59:36 GMT,study,visit,28
+mWuPR59b,Sat, 09 Jan 2021 01:59:36 GMT,study,visit,19
+mWuPR59b,Sat, 09 Jan 2021 01:59:36 GMT,study,coverage,59
+mWuPR59b,Sat, 09 Jan 2021 01:59:40 GMT,study,totaltime,887663s
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesStopText,Once I am comfortable that they are not giving me any surprising information
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq1,1
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq22,Neutral
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesSurpriseSelect,Yes
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq20,The suggested review portion
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq5NoText,Life is too short
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq9NoText,Again life is too short
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq14Select,Slightly useful
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesStrategyText,Only wanted to see whether I am missing something
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq23,
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq16Select,No
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq7,Neutral
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,post2checkString,-Audio_Quality-Longevity
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq10Select,Neutral
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesFractionSelect,A few
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13Select,Yes
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq4,Moderately confident
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq9Select,No
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq19Select,0
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq5Select,No
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq11Select,Neutral
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesSurpriseYesText,Most of them are positive
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,post18checkString,-Audio_Quality-Longevity
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq3,Moderately confident
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq15Select,Slightly useful
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq8Select,No
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq19PickText,Cheap but are more prone to breaking
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq21,To complex design
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq6,Neutral
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,postq13YesStartText,From the beginning
+mWuPR59b,Sat, 09 Jan 2021 02:04:34 GMT,post_q,totaltime,293076s

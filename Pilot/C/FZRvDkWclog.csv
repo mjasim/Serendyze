@@ -1,0 +1,158 @@
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq3YesDecisionSelect,5
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq4,Yes
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq5OtherText,It depends on the product.
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq2,2
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq3YesDecisionOtherText,By the default order they appear, then searching terms that often appear
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq3YesTimeSelect,2
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq3Select,Yes
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq4YesImpactSelect,2
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq1,1
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq7checkString,-Price-Audio_quality-Comfort-Longevity
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq6OtherText,Raycon
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq7Select,Yes
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq5Select,2
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,preq6Select,Yes
+FZRvDkWc,Wed, 06 Jan 2021 19:57:50 GMT,pre_q,totaltime,103812s
+FZRvDkWc,Wed, 06 Jan 2021 20:01:33 GMT,click,product_0,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:01:33 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:01:40 GMT,click,comment_394,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:41 GMT,hover,comment_394,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:42 GMT,click,comment_346,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:44 GMT,hover,comment_346,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:52 GMT,click,comment_502,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:54 GMT,hover,comment_502,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:55 GMT,click,comment_170,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:01:56 GMT,hover,comment_170,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:00 GMT,click,comment_470,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:01 GMT,hover,comment_470,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:02 GMT,hover,comment_130,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:06 GMT,click,comment_489,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:07 GMT,hover,comment_489,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:19 GMT,click,comment_615,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:21 GMT,hover,comment_615,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:22 GMT,click,comment_186,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:23 GMT,hover,comment_186,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:31 GMT,click,comment_465,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:34 GMT,hover,comment_465,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:39 GMT,hover,comment_473,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:50 GMT,click,comment_715,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:02:52 GMT,hover,comment_715,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:00 GMT,click,comment_311,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:01 GMT,hover,comment_311,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:05 GMT,click,comment_148,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:05 GMT,hover,comment_148,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:08 GMT,hover,comment_900,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:10 GMT,hover,comment_822,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:17 GMT,hover,comment_278,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:19 GMT,hover,comment_220,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:26 GMT,hover,comment_253,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:29 GMT,hover,comment_253,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:32 GMT,click,search_undefined,search a keyword
+FZRvDkWc,Wed, 06 Jan 2021 20:03:41 GMT,hover,comment_832,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:45 GMT,hover,comment_220,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:48 GMT,hover,comment_832,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:49 GMT,hover,comment_282,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:52 GMT,hover,comment_479,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:55 GMT,hover,comment_573,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:03:58 GMT,hover,comment_95,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:07 GMT,hover,comment_345,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:11 GMT,hover,comment_21,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:16 GMT,hover,comment_mment_698,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:18 GMT,hover,comment_mment_108,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:36 GMT,click,serencomment_303,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:36 GMT,hover,comment_mment_303,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:44 GMT,hover,comment_mment_788,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:45 GMT,hover,comment_mment_317,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:55 GMT,hover,comment_mment_373,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:04:56 GMT,hover,comment_mment_197,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:00 GMT,click,search_undefined,search a keyword
+FZRvDkWc,Wed, 06 Jan 2021 20:05:03 GMT,hover,comment_519,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:04 GMT,hover,comment_323,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:06 GMT,hover,comment_571,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:09 GMT,hover,comment_161,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:11 GMT,hover,comment_519,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:14 GMT,click,serencomment_110,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:15 GMT,hover,comment_mment_110,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:16 GMT,click,serencomment_949,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:17 GMT,hover,comment_mment_949,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:19 GMT,hover,comment_mment_949,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:22 GMT,click,serencomment_14,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:23 GMT,hover,comment_mment_14,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:28 GMT,click,serencomment_14,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:42 GMT,click,serencomment_37,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:42 GMT,hover,comment_mment_37,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:05:47 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:05:47 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:06:44 GMT,click,search_undefined,search a keyword
+FZRvDkWc,Wed, 06 Jan 2021 20:06:52 GMT,click,product_0,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:06:52 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:06:58 GMT,hover,comment_mment_124,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:07:00 GMT,click,search_undefined,search a keyword
+FZRvDkWc,Wed, 06 Jan 2021 20:11:03 GMT,hover,comment_mment_303,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:11:26 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:11:26 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:11:31 GMT,hover,comment_1521,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:11:40 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:11:40 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:11:42 GMT,click,product_0,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:11:42 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:13:25 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:13:25 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:13:29 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:13:29 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:13:32 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:13:32 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:13:33 GMT,click,comment_600,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:13:35 GMT,click,comment_789,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:13:37 GMT,hover,comment_789,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:13:41 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:13:41 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:13:56 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:13:56 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:14:00 GMT,click,search_undefined,search a keyword
+FZRvDkWc,Wed, 06 Jan 2021 20:14:55 GMT,click,product_0,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:14:55 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:14:56 GMT,click,comment_394,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:14:57 GMT,click,comment_346,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:14:57 GMT,hover,comment_346,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:14:59 GMT,click,comment_502,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:15:03 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:15:03 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:15:09 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:15:09 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:15:13 GMT,click,comment_1521,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:15:13 GMT,hover,comment_1521,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:15:15 GMT,click,comment_1358,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:15:17 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:15:17 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:16:09 GMT,click,comment_813,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:10 GMT,click,comment_956,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:10 GMT,click,comment_627,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:11 GMT,click,comment_784,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:12 GMT,click,comment_1126,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:14 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:16:14 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:16:16 GMT,hover,comment_1689,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:19 GMT,click,comment_1597,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:20 GMT,click,comment_1308,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:21 GMT,click,comment_1646,interact with a comment
+FZRvDkWc,Wed, 06 Jan 2021 20:16:23 GMT,click,product_1,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:16:23 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:22:07 GMT,click,product_2,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:22:07 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:22:17 GMT,click,serencomment_1593,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:18 GMT,hover,comment_mment_1593,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:20 GMT,click,serencomment_1387,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:21 GMT,hover,comment_mment_1387,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:24 GMT,click,serencomment_1462,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:24 GMT,hover,comment_mment_1462,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:31 GMT,click,serencomment_1367,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:31 GMT,hover,comment_mment_1367,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:38 GMT,hover,comment_mment_1370,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:44 GMT,hover,comment_mment_1396,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:45 GMT,hover,comment_mment_1370,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:46 GMT,hover,comment_mment_1367,interact with a suggested comment
+FZRvDkWc,Wed, 06 Jan 2021 20:22:52 GMT,click,product_0,select product from dropdown
+FZRvDkWc,Wed, 06 Jan 2021 20:22:52 GMT,click,dice,get suggested comments
+FZRvDkWc,Wed, 06 Jan 2021 20:24:06 GMT,study,visit,3
+FZRvDkWc,Wed, 06 Jan 2021 20:24:08 GMT,study,totaltime,555557s

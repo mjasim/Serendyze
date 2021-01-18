@@ -1,0 +1,99 @@
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq6Select,No
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,totaltime,122536s
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq1,1
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq2,1
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq5Select,2
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq4,Yes
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq3YesDecisionSelect,2
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq3YesTimeSelect,0
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq5OtherText,yes, only if I have a good experience using that product
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq7Select,No
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq4YesImpactSelect,2
+NnQcBpzf,Fri, 08 Jan 2021 17:25:36 GMT,pre_q,preq3Select,Yes
+NnQcBpzf,Fri, 08 Jan 2021 17:27:51 GMT,click,product_0,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:27:58 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:28:14 GMT,hover,comment_832,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:28:17 GMT,hover,comment_27,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:28:21 GMT,hover,comment_253,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:28:24 GMT,click,ngram_lifetime warranty,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:28:38 GMT,hover,comment_552,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:28:42 GMT,click,ngram_five stars,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:28:54 GMT,hover,comment_231,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:00 GMT,click,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:00 GMT,hover,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:01 GMT,click,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:02 GMT,click,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:02 GMT,click,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:03 GMT,click,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:07 GMT,hover,comment_828,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:10 GMT,click,comment_757,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:15 GMT,hover,comment_757,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:22 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:31 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:33 GMT,click,sentiment_Neutral,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:35 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:41 GMT,click,ngram_good sound,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:29:50 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:52 GMT,click,sentiment_Neutral,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:29:53 GMT,click,ngram_great sound,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:29:57 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:30:04 GMT,click,product_1,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:30:08 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:30:12 GMT,hover,comment_1244,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:30:21 GMT,click,ngram_five stars,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:30:33 GMT,hover,comment_756,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:30:34 GMT,click,ngram_years ago,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:30:36 GMT,click,ngram_years ago,deselect an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:30:37 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:30:42 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:30:44 GMT,click,ngram_five stars,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:30:47 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:31:02 GMT,study,visit,0
+NnQcBpzf,Fri, 08 Jan 2021 17:31:12 GMT,click,ngram_years ago,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:31:14 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:31:32 GMT,hover,comment_962,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:31:59 GMT,hover,comment_879,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:32:10 GMT,hover,comment_764,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:34:58 GMT,click,ngram_sony mdr,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:35:04 GMT,click,product_2,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:35:06 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:35:12 GMT,hover,comment_1319,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:35:13 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:35:16 GMT,click,sentiment_Neutral,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:35:18 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:35:22 GMT,click,ngram_noise cancelling,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:35:28 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:35:33 GMT,click,product_1,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:35:45 GMT,click,search_undefined,search a keyword
+NnQcBpzf,Fri, 08 Jan 2021 17:35:50 GMT,click,product_0,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:35:57 GMT,click,search_undefined,search a keyword
+NnQcBpzf,Fri, 08 Jan 2021 17:36:01 GMT,click,product_2,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:36:08 GMT,click,ngram_noise cancelling,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:36:10 GMT,hover,comment_1395,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 17:36:17 GMT,click,product_1,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:36:20 GMT,click,ngram_highly recommend,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:36:23 GMT,click,search_undefined,search a keyword
+NnQcBpzf,Fri, 08 Jan 2021 17:36:36 GMT,click,product_2,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:36:38 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:36:39 GMT,click,sentiment_Neutral,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:36:41 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 17:36:43 GMT,click,ngram_sound great,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:36:45 GMT,click,ngram_good sound,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:36:46 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 17:36:53 GMT,click,product_1,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 17:36:57 GMT,study,visit,0
+NnQcBpzf,Fri, 08 Jan 2021 17:36:59 GMT,study,totaltime,551941s
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq8,cant refresh
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,totaltime,277518s
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq4,Moderately confident
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq12,
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq6PickText,great sound quality
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq9,Reviews with pictures gives the sense of how the product look like in reality. Also there should be some expert reviews with some standard test metrics result for the product.
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq10,pictures
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq6Select,0
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq1,1
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq3,Slightly confident
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,post2checkString,-Audio_Quality
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq11,Neutral
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,postq7,easy to navigate
+NnQcBpzf,Fri, 08 Jan 2021 17:41:37 GMT,post_q,post5checkString,-Audio_Quality

@@ -1,0 +1,84 @@
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq3Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq3YesDecisionSelect,0
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq7Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq7checkString,-Comfort
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq7OtherText,coolness
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq2,1
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq4,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq5OtherText,reco
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq6checkString,-Sennheiser-Audio-Technica
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq3YesTimeSelect,0
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq1,1
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq6Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq6OtherText,jumbo 
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq5Select,0
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,preq4YesImpactSelect,0
+tpVWFQy5,Thu, 31 Dec 2020 03:23:15 GMT,pre_q,totaltime,17276s
+tpVWFQy5,Thu, 31 Dec 2020 03:28:50 GMT,click,product_0,select product from dropdown
+tpVWFQy5,Thu, 31 Dec 2020 03:28:50 GMT,click,dice,get suggested comments
+tpVWFQy5,Thu, 31 Dec 2020 03:28:52 GMT,click,product_1,select product from dropdown
+tpVWFQy5,Thu, 31 Dec 2020 03:28:52 GMT,click,dice,get suggested comments
+tpVWFQy5,Thu, 31 Dec 2020 03:28:54 GMT,click,comment_956,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 03:28:57 GMT,click,serencomment_829,interact with a suggested comment
+tpVWFQy5,Thu, 31 Dec 2020 03:28:57 GMT,hover,comment_mment_829,interact with a suggested comment
+tpVWFQy5,Thu, 31 Dec 2020 03:28:59 GMT,click,comment_784,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:01 GMT,click,comment_643,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:01 GMT,hover,comment_643,interact with a comment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:02 GMT,click,serencomment_1252,interact with a suggested comment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:03 GMT,click,sentiment_Positive,select a sentiment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:04 GMT,click,ngram_sound great,select an ngram
+tpVWFQy5,Thu, 31 Dec 2020 03:29:05 GMT,click,ngram_sound great,deselect an ngram
+tpVWFQy5,Thu, 31 Dec 2020 03:29:06 GMT,click,sentiment_Positive,deselect a sentiment
+tpVWFQy5,Thu, 31 Dec 2020 03:29:08 GMT,click,search_undefined,search a keyword
+tpVWFQy5,Thu, 31 Dec 2020 03:29:11 GMT,click,search_undefined,search a keyword
+tpVWFQy5,Thu, 31 Dec 2020 03:29:13 GMT,study,visit,5
+tpVWFQy5,Thu, 31 Dec 2020 03:29:14 GMT,study,totaltime,24971s
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq14PickText,sdasda
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq7Select,Neutral
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq5NoText,sadasdad
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq8YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post5checkString,-Color
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq4,Slightly confident
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq13,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post10checkString,-Audio_Quality-Aesthetics
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq14Select,1
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq6PickText,asda
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post5OtherText,reco
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq9YesText,sdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq15Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq17,Disagree
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq13Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq15YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq9,asdasda
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq9Select,No
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq5Select,No
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq11Select,1
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq6Select,Slightly useful
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq6,Slightly useful
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq3,Slightly confident
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq12,sdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq11YesText,asdad
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq14,Neutral
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq11,Disagree
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq5,Not confident at all
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq11PickText,sfsdfsdf
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq13YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq2,asd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post2OtherText,xo
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq10,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq18,asd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq7,Slightly easy
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq16,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post2checkString,-Audio_Quality-Aesthetics
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq1,0
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq7YesText,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq9NoText,jjj
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq8Select,Yes
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,post13checkString,-Aesthetics-Comfort
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq10YesText,asdads
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq8,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq15,asdasd
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq12YesText,asda
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq3Select,No
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,postq10Select,Somewhat useful
+tpVWFQy5,Thu, 31 Dec 2020 03:29:40 GMT,post_q,totaltime,25585s

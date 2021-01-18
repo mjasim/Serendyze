@@ -1,0 +1,75 @@
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq3Select,Yes
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq1,1
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq3YesDecisionSelect,4
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq5Select,0
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq7Select,No
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq4,Yes
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq6Select,No
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq2,1
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq4YesImpactSelect,1
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,preq3YesTimeSelect,0
+UcuHIXRj,Wed, 06 Jan 2021 15:55:58 GMT,pre_q,totaltime,735765s
+UcuHIXRj,Wed, 06 Jan 2021 16:38:24 GMT,click,product_0,select product from dropdown
+UcuHIXRj,Wed, 06 Jan 2021 16:38:24 GMT,click,dice,get suggested comments
+UcuHIXRj,Wed, 06 Jan 2021 16:38:27 GMT,hover,comment_394,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:33 GMT,hover,comment_346,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:36 GMT,hover,comment_502,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:39 GMT,hover,comment_170,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:42 GMT,hover,comment_470,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:46 GMT,hover,comment_382,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:48 GMT,hover,comment_489,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:50 GMT,hover,comment_615,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:55 GMT,hover,comment_512,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:38:58 GMT,hover,comment_715,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:04 GMT,hover,comment_882,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:07 GMT,click,ngram_price range,select an ngram
+UcuHIXRj,Wed, 06 Jan 2021 16:39:16 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:17 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:18 GMT,click,sentiment_Negative,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:23 GMT,click,ngram_price range,deselect an ngram
+UcuHIXRj,Wed, 06 Jan 2021 16:39:25 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:26 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:27 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:27 GMT,click,sentiment_Negative,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:29 GMT,click,product_1,select product from dropdown
+UcuHIXRj,Wed, 06 Jan 2021 16:39:29 GMT,click,dice,get suggested comments
+UcuHIXRj,Wed, 06 Jan 2021 16:39:32 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:33 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:34 GMT,click,sentiment_Negative,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:35 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:35 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:40 GMT,hover,comment_784,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:42 GMT,click,comment_956,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:43 GMT,hover,comment_956,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:43 GMT,click,comment_784,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:39:49 GMT,hover,comment_956,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:04 GMT,click,product_2,select product from dropdown
+UcuHIXRj,Wed, 06 Jan 2021 16:40:04 GMT,click,dice,get suggested comments
+UcuHIXRj,Wed, 06 Jan 2021 16:40:05 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:05 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:06 GMT,click,sentiment_Negative,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:07 GMT,click,sentiment_Positive,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:10 GMT,click,sentiment_Neutral,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:10 GMT,click,sentiment_Negative,select a sentiment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:24 GMT,hover,comment_1393,interact with a comment
+UcuHIXRj,Wed, 06 Jan 2021 16:40:27 GMT,click,product_1,select product from dropdown
+UcuHIXRj,Wed, 06 Jan 2021 16:40:27 GMT,click,dice,get suggested comments
+UcuHIXRj,Wed, 06 Jan 2021 16:40:30 GMT,study,visit,2
+UcuHIXRj,Wed, 06 Jan 2021 16:40:33 GMT,study,totaltime,135598s
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq1,1
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq12,Easy to scroll through many reviews and can filter by the categories I care about 
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq7Select,Easy
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq14,Disagree
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,post10checkString,-Price-Audio_Quality-Longevity
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq11PickText,Doesn't seem to last long
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq4,Slightly confident
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,post2OtherText,Ratio of positive to negative reviews
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq11Select,2
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq5Select,No
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq15,Feedback on pilot - found a positive review that was actually negative? "Good and bad, but mostly bad.. They sound great, but the earpad material disintegrates after a few months." Makes me wonder how DICE categorizes positive vs. negative reviews or maybe it was a mistake? - Cindy
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq3,Slightly confident
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq6Select,Not useful
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq13,I can't see an aggregated distribution of good/bad reviews
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq8Select,No
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,totaltime,227833s
+UcuHIXRj,Wed, 06 Jan 2021 16:44:21 GMT,post_q,postq5NoText,I don't usually weigh individual reviews heavily but want to look at overall reviews and ratio between good/bad reviews

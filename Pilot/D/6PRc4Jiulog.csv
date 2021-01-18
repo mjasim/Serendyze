@@ -1,0 +1,287 @@
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq3Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq1,1
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq3YesDecisionSelect,0
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq7checkString,-Price-Audio_quality-Comfort-Longevity-Functionality
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq4,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq2,2
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq5Select,1
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq6Select,No
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq7Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq4YesImpactSelect,2
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,totaltime,155720s
+6PRc4Jiu,Fri, 08 Jan 2021 10:12:29 GMT,pre_q,preq3YesTimeSelect,0
+6PRc4Jiu,Fri, 08 Jan 2021 10:52:33 GMT,click,product_0,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:52:33 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 10:52:41 GMT,hover,comment_mment_175,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:07 GMT,click,serencomment_110,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:17 GMT,click,serencomment_698,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:30 GMT,hover,comment_mment_108,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:31 GMT,click,serencomment_130,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:32 GMT,hover,comment_mment_130,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:34 GMT,hover,comment_mment_317,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:53:49 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:54:56 GMT,hover,comment_394,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:04 GMT,hover,comment_346,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:21 GMT,hover,comment_502,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:29 GMT,hover,comment_170,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:34 GMT,hover,comment_470,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:47 GMT,hover,comment_470,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:54 GMT,hover,comment_382,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:55:56 GMT,hover,comment_130,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:10 GMT,hover,comment_489,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:18 GMT,hover,comment_mment_443,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:20 GMT,hover,comment_mment_443,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:22 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:24 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:24 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:40 GMT,hover,comment_615,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:50 GMT,hover,comment_186,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:53 GMT,hover,comment_465,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:53 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:54 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:56:54 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:03 GMT,hover,comment_148,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:08 GMT,hover,comment_253,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:17 GMT,hover,comment_53,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:17 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:51 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:57:54 GMT,hover,comment_53,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:03 GMT,hover,comment_494,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:03 GMT,hover,comment_mment_197,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:12 GMT,hover,comment_494,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:16 GMT,hover,comment_58,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:25 GMT,hover,comment_309,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:32 GMT,hover,comment_37,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:36 GMT,hover,comment_509,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:37 GMT,hover,comment_175,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:46 GMT,hover,comment_280,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:58:52 GMT,click,serencomment_303,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:01 GMT,click,serencomment_788,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:10 GMT,click,serencomment_373,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:16 GMT,hover,comment_mment_14,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:16 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:17 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:19 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:20 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:20 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:23 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:24 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:24 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:24 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:24 GMT,click,sentiment_Positive,deselect a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:25 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:26 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:26 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:29 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:29 GMT,click,bar_distback,clicked on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:36 GMT,click,bar_distback,clicked on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:36 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:36 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:40 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:50 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:50 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 10:59:56 GMT,hover,comment_813,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:05 GMT,hover,comment_813,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:05 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:06 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:06 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:13 GMT,hover,comment_956,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:13 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:14 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:21 GMT,hover,comment_784,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:24 GMT,hover,comment_956,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:29 GMT,hover,comment_784,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:41 GMT,hover,comment_864,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:50 GMT,hover,comment_600,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:53 GMT,hover,comment_988,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:55 GMT,hover,comment_770,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:56 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:56 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:00:57 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:01:04 GMT,hover,comment_869,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:01:07 GMT,hover,comment_643,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:01:31 GMT,hover,comment_1122,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:03 GMT,hover,comment_1122,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:05 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:06 GMT,click,ngram_great price,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:06 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:13 GMT,hover,comment_761,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:18 GMT,click,comment_640,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:19 GMT,hover,comment_640,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:23 GMT,click,comment_944,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:24 GMT,hover,comment_944,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:25 GMT,click,serencomment_829,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:26 GMT,hover,comment_mment_829,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:28 GMT,hover,comment_mment_907,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:45 GMT,hover,comment_944,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:47 GMT,hover,comment_mment_729,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:55 GMT,hover,comment_mment_1152,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:56 GMT,hover,comment_mment_825,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:02:59 GMT,hover,comment_944,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:01 GMT,hover,comment_944,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:07 GMT,hover,comment_688,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:11 GMT,hover,comment_mment_970,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:15 GMT,click,product_2,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:15 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:03:16 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:20 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:23 GMT,click,product_0,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:23 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:26 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:37 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:38 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:38 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:08:57 GMT,hover,comment_186,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:01 GMT,hover,comment_465,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:04 GMT,hover,comment_mment_471,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:09 GMT,hover,comment_mment_108,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:14 GMT,hover,comment_346,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:14 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:15 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:16 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:22 GMT,hover,comment_489,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:26 GMT,hover,comment_186,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:34 GMT,hover,comment_148,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:09:38 GMT,hover,comment_253,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:15 GMT,hover,comment_53,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:16 GMT,hover,comment_494,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:19 GMT,hover,comment_58,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:25 GMT,hover,comment_509,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:26 GMT,hover,comment_175,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:28 GMT,hover,comment_280,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:30 GMT,hover,comment_mment_130,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:31 GMT,hover,comment_331,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:37 GMT,hover,comment_481,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:11:38 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:08 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:10 GMT,hover,comment_mment_317,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:14 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:14 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:15 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:15 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:16 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:16 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:18 GMT,click,sentiment_Negative,deselect a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:19 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:20 GMT,hover,comment_813,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:25 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:25 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:26 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:29 GMT,hover,comment_643,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:37 GMT,hover,comment_1122,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:43 GMT,click,comment_789,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:45 GMT,hover,comment_789,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:47 GMT,hover,comment_790,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:48 GMT,click,comment_790,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:50 GMT,hover,comment_790,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:15:52 GMT,hover,comment_989,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:00 GMT,click,comment_989,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:01 GMT,hover,comment_989,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:03 GMT,click,comment_1244,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:05 GMT,hover,comment_1244,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:11 GMT,hover,comment_1244,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:13 GMT,click,comment_1098,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:18 GMT,hover,comment_1098,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:19 GMT,click,comment_796,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:21 GMT,hover,comment_796,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:23 GMT,click,comment_693,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:24 GMT,hover,comment_693,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:28 GMT,hover,comment_mment_729,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:30 GMT,hover,comment_mment_829,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:33 GMT,hover,comment_mment_1152,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:37 GMT,click,product_2,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:37 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:38 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:42 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:45 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:16:45 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:04 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:08 GMT,click,product_0,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:08 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:11 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:13 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:15 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:18 GMT,hover,comment_186,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:22 GMT,click,product_2,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:22 GMT,click,dice,get suggested comments
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:22 GMT,hover,bar_visitback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:25 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:26 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:26 GMT,hover,bar_coverback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:33 GMT,hover,comment_1646,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:46 GMT,hover,comment_1537,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:49 GMT,hover,comment_1430,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:17:54 GMT,hover,comment_1357,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:05 GMT,hover,comment_1443,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:12 GMT,hover,comment_1298,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:16 GMT,hover,comment_1629,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:19 GMT,hover,comment_1671,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:23 GMT,hover,comment_1567,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:26 GMT,hover,comment_1567,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:28 GMT,hover,comment_1671,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:29 GMT,hover,comment_1458,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:30 GMT,hover,comment_1558,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:33 GMT,hover,comment_1311,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:37 GMT,hover,comment_1545,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:41 GMT,hover,comment_1319,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:44 GMT,hover,comment_1416,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:46 GMT,hover,comment_1288,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:18:53 GMT,hover,comment_1459,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:05 GMT,hover,comment_mment_1396,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:14 GMT,hover,comment_mment_1462,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:14 GMT,hover,comment_mment_1294,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:21 GMT,hover,comment_mment_1294,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:28 GMT,hover,comment_mment_1658,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:36 GMT,hover,comment_mment_1333,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:53 GMT,hover,comment_mment_1365,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:56 GMT,hover,comment_mment_1624,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:19:57 GMT,hover,comment_mment_1463,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:00 GMT,hover,comment_mment_1463,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:06 GMT,hover,comment_mment_1577,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:07 GMT,hover,comment_mment_1463,interact with a suggested comment
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:07 GMT,hover,bar_distback,hovered on metric bar
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:17 GMT,study,visit,10
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:17 GMT,study,coverage,71
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:17 GMT,study,visit,11
+6PRc4Jiu,Fri, 08 Jan 2021 11:20:18 GMT,study,totaltime,1670356s
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq22,Neutral
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13YesStartText,After making some of the negative reviews blue. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13YesStrategyText,I focused on negative sentiment sentences, and checked if something positive pops up in the suggested reviews section that can make me change my decision. However, in most of the cases I could not find anything that can change my decision. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,post5OtherText,It lasted for three years and still the user is somewhat happy.
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq12,
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,post5checkString,-Price-Audio_Quality
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq11,Neutral
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq16Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq4,Completely confident
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq10,Please refer to the disliking section for thinking about improvements.
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13YesFractionSelect,A few
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq16YesText,I was not sure how they were changing and when they were changing. I think the system should ask me for permission before changing. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq7,Easy
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq23,
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq21,Too much information and too many facets in one interface. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,post2checkString,-Price-Audio_Quality-Comfort-Longevity
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq1,1
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13YesSurpriseSelect,No
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq5YesText,I just used it for sanity check and when I was not confident, I tried to at least get 50% coverage. But, as I was not sure how they are computed, I just had to blindly rely on them.  
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13YesStopText,After I made a decision. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq9NoText,I couldn't understand how the feature was working. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq8Select,No
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq6Select,0
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq6PickText,It has bad build quality
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq14Select,Neutral
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq20,I liked the coverage. It could be kept simple with coverage and less evolving suggestions. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq15Select,Neutral
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq10Select,Not useful at all
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq13Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq9,+ and - for emotions could be color coded with red, and green, respectively. Please refer to the disliking section for thinking about improvements.
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq8,The interface lacks information. Basically, I buy things based on the amalgamation of product information, reviews, price etc. These are so interrelated in the decision making process that its difficult to get a holistic picture from only reivews.   when you are showing negative emotion sentences based on great price, every sentence has sort of positive emotion. It does not makes sense to have negative emotion sentences when the attribute is great price. The attribute could be price only.   The attributes are not consistent. For example, I heavily focus on price. But, price is unavailable for one of the headphones. I would have gone with the Sennheiser, but price is not there. So, I am going with Sony. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq9Select,No
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq5Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq11Select,Not easy at all
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,post18checkString,-Price-Audio_Quality-Comfort-Longevity
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq3,Completely confident
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq19Select,0
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq12YesText,As it didn't make sense to me, I found it distracting. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq19PickText,It has a bad build quality. 
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,postq6,Useful
+6PRc4Jiu,Fri, 08 Jan 2021 11:27:53 GMT,post_q,totaltime,453857s

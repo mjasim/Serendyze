@@ -1,0 +1,57 @@
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq3Select,Yes
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq5Select,2
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq5OtherText,Possibly, if they had told me they were looking for the product.
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq3YesDecisionSelect,4
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq7Select,No
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq6Select,No
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq2,3
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq3YesTimeSelect,0
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq4YesImpactSelect,2
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq4,Yes
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,totaltime,136032s
+4oBoCAGG,Fri, 01 Jan 2021 14:14:47 GMT,pre_q,preq1,1
+4oBoCAGG,Fri, 01 Jan 2021 14:20:29 GMT,click,product_1,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:20:34 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:37 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:38 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:42 GMT,click,product_0,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:20:44 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:46 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:47 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:51 GMT,click,sentiment_Positive,deselect a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:53 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:55 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:20:57 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:00 GMT,click,product_2,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:21:02 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:06 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:08 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:09 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:11 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:13 GMT,click,product_1,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:21:14 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:16 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:23 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:27 GMT,click,product_0,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:21:28 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:30 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:33 GMT,click,product_2,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:21:34 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:36 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:21:39 GMT,click,product_1,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:21:46 GMT,study,visit,0
+4oBoCAGG,Fri, 01 Jan 2021 14:21:49 GMT,study,totaltime,83963s
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq7,I like how the interface shows the count of reviews, and how it is easy to flip between the different options. Also, the interface is simple, which makes it aesthetically pleasing and not too overwhelming.
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq1,1
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq12,
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq11,Agree
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq4,Moderately confident
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,post5checkString,-Audio_Quality-Longevity
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq8,I can't think of anything I disliked.
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,post2OtherText,I thought that by sifting through the reviews based on keywords and features, I would only confuse myself.  It is very difficult to analyze things at that level, and it would be difficult to explain why I picked 'color' over 'comfort over 'aesthetics' when that's completely subjective to begin with. I decided to only look at the ratio of the sentiments of the reviews to see how satisfied other people were in general..
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq10,It would be nice to have some way to distinguish the most highly rated/upvoted reviews to see what reviews other people found helpful and accurate.
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq3,Not confident
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq9,It would be nice to have some way to distinguish the most highly rated/upvoted reviews to see what reviews other people found helpful and accurate.
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq6PickText,If I can recall correctly, this one had a high ratio of negative:positive reviews.  A bunch of people didn't really like it, and there was a moderate amount of neutral reviews.
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,postq6Select,2
+4oBoCAGG,Fri, 01 Jan 2021 14:33:14 GMT,post_q,totaltime,684343s

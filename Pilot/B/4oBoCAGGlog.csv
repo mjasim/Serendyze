@@ -1,0 +1,120 @@
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq3Select,Yes
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq3YesDecisionSelect,4
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq1,1
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq5OtherText,Possibly, if they had told me they were looking for the product.
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq7Select,No
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq4,Yes
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq2,3
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq5Select,1
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq6Select,No
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq4YesImpactSelect,1
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,preq3YesTimeSelect,0
+4oBoCAGG,Fri, 01 Jan 2021 14:45:05 GMT,pre_q,totaltime,55945s
+4oBoCAGG,Fri, 01 Jan 2021 14:49:15 GMT,click,product_0,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:49:15 GMT,click,dice,get suggested comments
+4oBoCAGG,Fri, 01 Jan 2021 14:49:18 GMT,hover,bar_visitback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:49:24 GMT,hover,comment_394,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:49:25 GMT,hover,comment_346,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:49:40 GMT,hover,comment_502,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:49:48 GMT,hover,comment_502,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:49:51 GMT,hover,comment_170,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:49:58 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:49:58 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:49:59 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:08 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:16 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:17 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:50:20 GMT,hover,comment_130,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:24 GMT,hover,comment_489,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:29 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:50:30 GMT,click,ngram_sound quality,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:50:33 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:50:34 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:38 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:50:40 GMT,click,ngram_great sound,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:50:43 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:07 GMT,hover,comment_613,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:07 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:08 GMT,click,ngram_comfortable wear,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:51:12 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:19 GMT,click,ngram_lifetime warranty,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:51:22 GMT,click,ngram_five stars,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:51:24 GMT,hover,bar_distback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:25 GMT,hover,bar_distback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:26 GMT,click,ngram_excellent sound,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:51:33 GMT,hover,bar_distback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:37 GMT,hover,comment_908,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:38 GMT,hover,comment_854,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:41 GMT,hover,comment_147,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:44 GMT,click,product_1,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:51:44 GMT,click,dice,get suggested comments
+4oBoCAGG,Fri, 01 Jan 2021 14:51:45 GMT,hover,bar_visitback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:49 GMT,hover,comment_813,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:51:50 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:51:56 GMT,click,ngram_ear pads,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:01 GMT,click,ngram_mdr v6,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:04 GMT,click,ngram_sony mdr,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:07 GMT,click,ngram_good sound,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:08 GMT,click,ngram_sound great,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:09 GMT,hover,bar_visitback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:11 GMT,hover,comment_956,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:13 GMT,hover,comment_743,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:14 GMT,hover,comment_971,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:14 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:14 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:18 GMT,click,ngram_sound great,deselect an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:52:19 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:21 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:24 GMT,hover,comment_643,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:24 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:26 GMT,click,product_2,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:52:26 GMT,click,dice,get suggested comments
+4oBoCAGG,Fri, 01 Jan 2021 14:52:31 GMT,hover,bar_visitback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:34 GMT,hover,comment_1521,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:38 GMT,hover,comment_1358,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:43 GMT,hover,comment_1646,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:45 GMT,hover,comment_1646,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:45 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:52:47 GMT,click,sentiment_Positive,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:48 GMT,click,sentiment_Negative,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:49 GMT,click,sentiment_Neutral,select a sentiment
+4oBoCAGG,Fri, 01 Jan 2021 14:52:51 GMT,click,ngram_much better,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:53:03 GMT,click,product_1,select product from dropdown
+4oBoCAGG,Fri, 01 Jan 2021 14:53:03 GMT,click,dice,get suggested comments
+4oBoCAGG,Fri, 01 Jan 2021 14:53:06 GMT,click,ngram_great price,select an ngram
+4oBoCAGG,Fri, 01 Jan 2021 14:53:08 GMT,hover,bar_coverback,hovered on metric bar
+4oBoCAGG,Fri, 01 Jan 2021 14:53:11 GMT,hover,comment_738,interact with a comment
+4oBoCAGG,Fri, 01 Jan 2021 14:53:12 GMT,study,visit,3
+4oBoCAGG,Fri, 01 Jan 2021 14:53:12 GMT,study,visit,3
+4oBoCAGG,Fri, 01 Jan 2021 14:53:12 GMT,study,coverage,14
+4oBoCAGG,Fri, 01 Jan 2021 14:53:14 GMT,study,totaltime,248398s
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq14PickText,At this point, after reading so many reviews, I can't even remember which reviews were for which product.  The more reviews I read, the more confused I became.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq5NoText,It's too confusing.  I don't really care what percentage of reviews I've seen unless it's truly an accurate representation of how all purchasers felt, which is impossible even if I read all reviews. Some people won't write reviews snd the more extreme reviews will stand out more in  my memory.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq12,
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq3,Slightly confident
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq11,Agree
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,post5checkString,-Audio_Quality-Longevity
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq17,Neutral
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq4,Not confident at all
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,post2OtherText,I thought that by sifting through the reviews based on keywords and features, I would only confuse myself.  It is very difficult to analyze things at that level, and it would be difficult to explain why I picked 'color' over 'comfort over 'aesthetics' when that's completely subjective to begin with. I decided to only look at the ratio of the sentiments of the reviews to see how satisfied other people were in general..
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq10,It would be nice to have some way to distinguish the most highly rated/upvoted reviews to see what reviews other people found helpful and accurate.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq16,The percentage bars, although interesting, unfortunately just confused me.  If it has to be explained what the difference between each of them is, it seems too complicated for me.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,post2checkString,-Price-Audio_Quality-Longevity
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq1,1
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq14Select,2
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq9NoText,Again, it's just confusing. Honestly, I just looked at the percentage of these, and that's all.  It didn't even really mean that much to me.  If I read 20% of comments, so what? That would make me more concerned that I am not picking the right one.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq8Select,No
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq6PickText,If I can recall correctly, this one had a high ratio of negative:positive reviews.  A bunch of people didn't really like it, and there was a moderate amount of neutral reviews.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,post13checkString,-Price-Audio_Quality-Longevity
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq7,Neutral
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq10Select,Neutral
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq9,It would be nice to have some way to distinguish the most highly rated/upvoted reviews to see what reviews other people found helpful and accurate.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq8,I can't think of anything I disliked.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq9Select,No
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq5Select,No
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq11Select,Neutral
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq15,The interface is simple and easy to use.
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq18,I much preferred interface A over interface B
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq6,Not useful at all
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,postq6Select,2
+4oBoCAGG,Fri, 01 Jan 2021 15:00:45 GMT,post_q,totaltime,450283s

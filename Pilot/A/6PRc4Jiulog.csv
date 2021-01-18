@@ -1,0 +1,97 @@
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq7Select,No
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq4,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq1,1
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq3Select,Yes
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq5Select,1
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq3YesDecisionSelect,0
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq6Select,No
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,totaltime,266757s
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq2,2
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq4YesImpactSelect,2
+6PRc4Jiu,Fri, 08 Jan 2021 09:49:29 GMT,pre_q,preq3YesTimeSelect,0
+6PRc4Jiu,Fri, 08 Jan 2021 09:52:58 GMT,click,product_0,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 09:53:46 GMT,click,ngram_sound quality,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:53:52 GMT,hover,comment_502,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:53:53 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:53:59 GMT,hover,comment_367,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:02 GMT,hover,comment_446,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:02 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:11 GMT,hover,comment_489,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:23 GMT,hover,comment_465,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:29 GMT,hover,comment_419,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:32 GMT,hover,comment_435,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:34 GMT,hover,comment_435,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:41 GMT,click,ngram_price range,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:54:54 GMT,hover,comment_281,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:56:49 GMT,click,ngram_great price,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:56:52 GMT,hover,comment_98,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:03 GMT,hover,comment_98,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:09 GMT,hover,comment_12,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:13 GMT,click,sentiment_Negative,deselect a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:17 GMT,hover,comment_470,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:20 GMT,hover,comment_311,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:20 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:27 GMT,hover,comment_613,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:57:30 GMT,hover,comment_12,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:58:26 GMT,hover,comment_613,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:58:47 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 09:58:55 GMT,click,ngram_great price,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:08 GMT,hover,comment_738,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:10 GMT,hover,comment_1263,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:11 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:13 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:16 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:28 GMT,hover,comment_761,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:38 GMT,hover,comment_640,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:38 GMT,click,ngram_highly recommend,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:41 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:44 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:49 GMT,click,ngram_ear pads,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 09:59:54 GMT,hover,comment_789,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:04 GMT,hover,comment_879,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:06 GMT,hover,comment_1077,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:16 GMT,click,ngram_sound quality,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:21 GMT,hover,comment_796,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:24 GMT,hover,comment_879,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:31 GMT,click,ngram_great price,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:32 GMT,click,ngram_good sound,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:37 GMT,click,product_2,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:40 GMT,click,ngram_noise cancelling,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:47 GMT,click,ngram_sound quality,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:49 GMT,click,ngram_noise cancelling,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:51 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:53 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:55 GMT,click,ngram_sound quality,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:55 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:00:57 GMT,click,sentiment_Positive,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:01:07 GMT,click,ngram_would recommend,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:01:49 GMT,hover,comment_1709,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:07 GMT,click,ngram_sennheiser hd,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:18 GMT,click,ngram_would recommend,select an ngram
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:24 GMT,hover,comment_1644,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:25 GMT,click,sentiment_Negative,select a sentiment
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:28 GMT,hover,comment_1567,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:02:32 GMT,hover,comment_1529,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:00 GMT,hover,comment_1567,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:09 GMT,click,product_2,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:11 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:14 GMT,click,product_0,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:17 GMT,hover,comment_394,interact with a comment
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:23 GMT,click,product_1,select product from dropdown
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:25 GMT,study,visit,0
+6PRc4Jiu,Fri, 08 Jan 2021 10:03:28 GMT,study,totaltime,633746s
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,post5checkString,-Price-Audio_Quality
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq11,Neutral
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq12,
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq7,The sentiment facet with extracted keywords was helpful. 
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq1,1
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,post5OtherText,It lasted for three years and still the user is somewhat happy.
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq8,The interface lacks information. Basically, I buy things based on the amalgamation of product information, reviews, price etc. These are so interrelated in the decision making process that its difficult to get a holistic picture from only reivews.   when you are showing negative emotion sentences based on great price, every sentence has sort of positive emotion. It does not makes sense to have negative emotion sentences when the attribute is great price. The attribute could be price only.   The attributes are not consistent. For example, I heavily focus on price. But, price is unavailable for one of the headphones. I would have gone with the Sennheiser, but price is not there. So, I am going with Sony. 
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq4,Highly confident
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq9,+ and - for emotions could be color coded with red, and green, respectively. Please refer to the disliking section for thinking about improvements.
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq10,Please refer to the disliking section for thinking about improvements.
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq3,Highly confident
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq6PickText,It has bad build quality
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,postq6Select,0
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,totaltime,244167s
+6PRc4Jiu,Fri, 08 Jan 2021 10:07:33 GMT,post_q,post2checkString,-Price-Audio_Quality-Longevity

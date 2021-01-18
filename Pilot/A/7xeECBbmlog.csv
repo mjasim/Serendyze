@@ -1,0 +1,12 @@
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq3Select,Yes
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq1,1
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq5Select,1
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq3YesDecisionSelect,3
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq7Select,No
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq4,Yes
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq6Select,No
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq2,1
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq3YesTimeSelect,0
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,totaltime,85132s
+7xeECBbm,Sat, 02 Jan 2021 03:03:05 GMT,pre_q,preq4YesImpactSelect,1
+7xeECBbm,Sat, 02 Jan 2021 03:05:12 GMT,click,product_0,select product from dropdown

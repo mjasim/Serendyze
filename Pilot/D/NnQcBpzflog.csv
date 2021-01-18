@@ -1,0 +1,57 @@
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq6Select,No
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,totaltime,53988s
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq1,1
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq2,1
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq5Select,1
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq7checkString,-Price-Audio_quality-Comfort-Longevity-Functionality
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq3YesTimeSelect,1
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq4,Yes
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq4YesImpactSelect,2
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq3YesDecisionSelect,2
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq3Select,Yes
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq5OtherText,yes, only if I have a good experience using that product
+NnQcBpzf,Fri, 08 Jan 2021 20:56:43 GMT,pre_q,preq7Select,Yes
+NnQcBpzf,Fri, 08 Jan 2021 21:02:05 GMT,click,product_0,select product from dropdown
+NnQcBpzf,Fri, 08 Jan 2021 21:02:05 GMT,click,dice,get suggested comments
+NnQcBpzf,Fri, 08 Jan 2021 21:02:09 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:02:15 GMT,hover,comment_502,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:17 GMT,hover,comment_422,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:22 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:02:24 GMT,click,ngram_great sound,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:27 GMT,click,ngram_sound quality,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:29 GMT,click,ngram_lifetime warranty,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:30 GMT,click,ngram_five stars,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:33 GMT,click,ngram_excellent sound,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:34 GMT,click,ngram_comfortable wear,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:35 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:44 GMT,hover,comment_mment_714,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:45 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:02:46 GMT,click,sentiment_Positive,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:49 GMT,click,sentiment_Neutral,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:51 GMT,click,ngram_price range,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:53 GMT,click,ngram_lifetime warranty,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:54 GMT,click,sentiment_Negative,select a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 21:02:55 GMT,click,ngram_great price,select an ngram
+NnQcBpzf,Fri, 08 Jan 2021 21:02:56 GMT,click,sentiment_Negative,deselect a sentiment
+NnQcBpzf,Fri, 08 Jan 2021 21:03:03 GMT,click,search_undefined,search a keyword
+NnQcBpzf,Fri, 08 Jan 2021 21:04:36 GMT,hover,comment_mment_443,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:41 GMT,click,comment_463,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:42 GMT,hover,comment_463,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:43 GMT,click,comment_221,interact with a comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:47 GMT,hover,comment_mment_698,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:47 GMT,click,serencomment_108,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:49 GMT,hover,comment_mment_108,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:50 GMT,hover,comment_mment_110,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:51 GMT,hover,comment_mment_317,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:53 GMT,click,serencomment_303,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:54 GMT,hover,comment_mment_303,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:54 GMT,click,serencomment_346,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:57 GMT,hover,comment_mment_303,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:59 GMT,hover,comment_mment_130,interact with a suggested comment
+NnQcBpzf,Fri, 08 Jan 2021 21:04:59 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:05:01 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:05:02 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:05:04 GMT,hover,bar_distback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:05:09 GMT,hover,bar_coverback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:10:32 GMT,hover,bar_distback,hovered on metric bar
+NnQcBpzf,Fri, 08 Jan 2021 21:10:32 GMT,hover,comment_mment_197,interact with a suggested comment
