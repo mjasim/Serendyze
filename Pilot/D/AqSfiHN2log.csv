@@ -1,0 +1,186 @@
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq3Select,Yes
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq1,1
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq3YesDecisionSelect,4
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq7checkString,-Price-Audio_quality-Comfort-Color
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq7Select,Yes
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq4,Yes
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq6Select,Yes
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq2,1
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq3YesTimeSelect,0
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq4YesImpactSelect,1
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,totaltime,197575s
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq5Select,1
+AqSfiHN2,Mon, 11 Jan 2021 00:40:05 GMT,pre_q,preq6checkString,-Sony
+AqSfiHN2,Mon, 11 Jan 2021 00:48:14 GMT,click,product_0,select product from dropdown
+AqSfiHN2,Mon, 11 Jan 2021 00:48:14 GMT,click,dice,get suggested comments
+AqSfiHN2,Mon, 11 Jan 2021 00:48:15 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:48:15 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:48:20 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:48:35 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:48:37 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:48:38 GMT,click,ngram_great sound,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:48:48 GMT,click,ngram_sound quality,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:48:57 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:49:01 GMT,click,ngram_great price,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:49:08 GMT,hover,comment_479,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:09 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:49:11 GMT,click,ngram_price range,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:49:19 GMT,hover,comment_368,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:28 GMT,hover,comment_427,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:35 GMT,hover,comment_427,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:36 GMT,click,ngram_comfortable wear,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:49:41 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:49:47 GMT,hover,comment_586,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:49 GMT,hover,comment_mment_908,interact with a suggested comment
+AqSfiHN2,Mon, 11 Jan 2021 00:49:59 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:50:02 GMT,click,ngram_lifetime warranty,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:06 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:10 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:13 GMT,click,ngram_five stars,deselect an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:14 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:50:17 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:50:19 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:20 GMT,click,ngram_five stars,deselect an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:22 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:23 GMT,click,sentiment_Positive,deselect a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:25 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:26 GMT,click,ngram_five stars,deselect an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:27 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:28 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:30 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:31 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:32 GMT,click,ngram_excellent sound,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:33 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:41 GMT,click,ngram_price range,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:43 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:44 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:50:49 GMT,click,ngram_five stars,deselect an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:50 GMT,click,ngram_comfortable wear,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:50:52 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:01 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:03 GMT,click,product_1,select product from dropdown
+AqSfiHN2,Mon, 11 Jan 2021 00:51:03 GMT,click,dice,get suggested comments
+AqSfiHN2,Mon, 11 Jan 2021 00:51:04 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:06 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:08 GMT,click,ngram_sound great,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:51:10 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:14 GMT,hover,comment_784,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:15 GMT,hover,comment_1126,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:19 GMT,click,comment_971,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:20 GMT,hover,comment_971,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:21 GMT,hover,comment_776,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:29 GMT,click,comment_1266,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:31 GMT,hover,comment_1266,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:32 GMT,click,comment_1178,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:33 GMT,hover,comment_1178,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:34 GMT,click,comment_1263,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:36 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:47 GMT,click,ngram_sound quality,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:51:49 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:52 GMT,hover,comment_856,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:54 GMT,click,comment_857,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:55 GMT,hover,comment_857,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:57 GMT,click,comment_1226,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:57 GMT,hover,comment_1226,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:57 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:51:58 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:51:58 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:02 GMT,hover,comment_879,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:03 GMT,click,comment_796,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:06 GMT,click,comment_1139,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:07 GMT,hover,comment_1139,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:09 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:11 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:11 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:11 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:13 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:13 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:13 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:16 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:20 GMT,click,ngram_five stars,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:52:21 GMT,click,ngram_highly recommend,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:52:25 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:26 GMT,click,comment_869,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:27 GMT,hover,comment_869,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:28 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:29 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:29 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:52:31 GMT,click,product_2,select product from dropdown
+AqSfiHN2,Mon, 11 Jan 2021 00:52:31 GMT,click,dice,get suggested comments
+AqSfiHN2,Mon, 11 Jan 2021 00:52:35 GMT,click,ngram_comfortable wear,select an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:52:39 GMT,click,comment_1689,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:39 GMT,hover,comment_1689,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:40 GMT,hover,comment_1345,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:42 GMT,click,comment_1689,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:43 GMT,click,comment_1689,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:44 GMT,hover,comment_1689,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:44 GMT,click,comment_1345,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:52 GMT,hover,comment_1304,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:54 GMT,hover,comment_1567,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:55 GMT,click,comment_1316,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:58 GMT,click,comment_1311,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:52:59 GMT,hover,comment_1311,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:00 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:02 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:09 GMT,hover,comment_1293,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:09 GMT,hover,bar_visitback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:11 GMT,click,ngram_comfortable wear,deselect an ngram
+AqSfiHN2,Mon, 11 Jan 2021 00:53:13 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:14 GMT,click,sentiment_Negative,deselect a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:14 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:18 GMT,hover,comment_1567,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:20 GMT,hover,comment_1646,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:22 GMT,hover,comment_1600,interact with a comment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:23 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:24 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:26 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:31 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:34 GMT,click,product_1,select product from dropdown
+AqSfiHN2,Mon, 11 Jan 2021 00:53:34 GMT,click,dice,get suggested comments
+AqSfiHN2,Mon, 11 Jan 2021 00:53:35 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:36 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:36 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:38 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:39 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:40 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:42 GMT,click,product_0,select product from dropdown
+AqSfiHN2,Mon, 11 Jan 2021 00:53:42 GMT,click,dice,get suggested comments
+AqSfiHN2,Mon, 11 Jan 2021 00:53:43 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:44 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:45 GMT,click,sentiment_Negative,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:51 GMT,click,sentiment_Neutral,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:52 GMT,click,sentiment_Positive,select a sentiment
+AqSfiHN2,Mon, 11 Jan 2021 00:53:53 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:55 GMT,hover,bar_distback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:56 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 00:53:58 GMT,study,visit,2
+AqSfiHN2,Mon, 11 Jan 2021 00:53:58 GMT,study,coverage,12
+AqSfiHN2,Mon, 11 Jan 2021 00:53:58 GMT,study,visit,2
+AqSfiHN2,Mon, 11 Jan 2021 00:54:00 GMT,study,totaltime,349659s
+AqSfiHN2,Mon, 11 Jan 2021 00:54:00 GMT,hover,bar_coverback,hovered on metric bar
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq22,Agree
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq5NoText,I selected the headphone based on some well-written reviews. So, I was not interested in that coverage tool.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq21,I can not select multiple keywords at the same time. For example, I want to select price, sound quality and comfortable wear at the same time. I think you can add a feature to remove a review from already read list as a user may click on a review by mistake.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq16Select,No
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq23,Typically, I look at the upvotes and downvotes for a review and sort reviews based on the upvotes. I read the top 5-10 reviews for both positive and negative sentiments. I missed that opportunity here. Also, reviews in an important website like tom's guide play a vital role in my decision. So, an integration with those trustworthy blog/website can be an interesting feature.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,post2checkString,-Price-Audio_Quality-Comfort
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq1,0
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq14Select,Neutral
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq9NoText,Because of usual habit. I just look at the tool. But, I decided to pick the product based on a few selected well-written positive and negative reviews.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq20,The UI is very simple and intuitive. I also liked the intelligent interactions. I need less time to gather required information about the product.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq8Select,No
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq15Select,Neutral
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq13Select,No
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq9Select,No
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq5Select,No
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq11Select,Very easy
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,post18checkString,-Price-Audio_Quality-Comfort
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq3,Moderately confident
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq19Select,1
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq6,Useful
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq19PickText,The reviews for this headphone are also highly positive. It has very good sound quality and audio quality. However, comfort is also a deciding factor for me. I could find enough information about this for this headphone. 
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq4,Moderately confident
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq7,Very easy
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq13NoText,Because I want to read diverse reviews. Suggested reviews for me is not helpful as those reviews are very similar to what I already read.
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,postq10Select,Neutral
+AqSfiHN2,Mon, 11 Jan 2021 01:21:10 GMT,post_q,totaltime,1627611s

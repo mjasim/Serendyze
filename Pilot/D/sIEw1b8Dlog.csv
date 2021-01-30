@@ -1,0 +1,187 @@
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq6Select,Yes
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,totaltime,147503s
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq1,2
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq6checkString,-Bose-Beats
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq5OtherText,Yes/No depending on how strong and genuine the reviews are.
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq7checkString,-Price-Audio_quality-Aesthetics-Color
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq4YesImpactSelect,2
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq2,3
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq4,Yes
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq3YesDecisionSelect,4
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq7Select,Yes
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq5Select,2
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq3YesTimeSelect,0
+sIEw1b8D,Tue, 12 Jan 2021 00:59:06 GMT,pre_q,preq3Select,Yes
+sIEw1b8D,Tue, 12 Jan 2021 01:08:08 GMT,click,product_0,select product from dropdown
+sIEw1b8D,Tue, 12 Jan 2021 01:08:08 GMT,click,dice,get suggested comments
+sIEw1b8D,Tue, 12 Jan 2021 01:08:10 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:08:11 GMT,hover,comment_346,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:08:42 GMT,hover,comment_394,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:09:10 GMT,click,serencomment_443,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:09:13 GMT,hover,comment_mment_698,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:09:21 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:09:23 GMT,click,ngram_sound quality,select an ngram
+sIEw1b8D,Tue, 12 Jan 2021 01:09:24 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:09:29 GMT,hover,comment_832,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:10:21 GMT,hover,comment_507,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:10:41 GMT,hover,comment_mment_130,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:10:44 GMT,hover,comment_mment_110,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:10:51 GMT,hover,comment_mment_528,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:10:58 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:00 GMT,click,sentiment_Negative,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:11:09 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:15 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:16 GMT,click,ngram_sound quality,deselect an ngram
+sIEw1b8D,Tue, 12 Jan 2021 01:11:17 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:17 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:18 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:25 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:26 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:11:28 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:35 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:38 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:11:44 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:11:45 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:11:46 GMT,hover,comment_mment_788,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:11:54 GMT,hover,comment_mment_197,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:17 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:18 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:22 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:24 GMT,click,sentiment_Negative,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:33 GMT,click,product_1,select product from dropdown
+sIEw1b8D,Tue, 12 Jan 2021 01:12:33 GMT,click,dice,get suggested comments
+sIEw1b8D,Tue, 12 Jan 2021 01:12:39 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:39 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:40 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:42 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:46 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:47 GMT,click,sentiment_Negative,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:12:49 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:49 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:49 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:12:55 GMT,hover,comment_869,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:11 GMT,hover,comment_989,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:17 GMT,hover,comment_1122,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:19 GMT,hover,comment_1098,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:22 GMT,hover,comment_796,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:43 GMT,hover,comment_761,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:13:45 GMT,hover,comment_955,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:01 GMT,hover,comment_884,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:17 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:14:19 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:19 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:14:25 GMT,hover,comment_1126,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:30 GMT,hover,comment_743,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:37 GMT,hover,comment_856,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:48 GMT,hover,comment_1172,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:50 GMT,hover,comment_669,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:14:56 GMT,hover,comment_1142,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:06 GMT,hover,comment_1226,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:08 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:15:08 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:22 GMT,hover,comment_864,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:24 GMT,hover,comment_784,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:28 GMT,hover,comment_864,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:29 GMT,hover,comment_mment_904,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:31 GMT,hover,comment_mment_643,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:15:54 GMT,hover,comment_mment_907,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:03 GMT,hover,comment_600,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:08 GMT,hover,comment_734,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:09 GMT,hover,comment_678,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:25 GMT,hover,comment_653,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:34 GMT,click,product_2,select product from dropdown
+sIEw1b8D,Tue, 12 Jan 2021 01:16:34 GMT,click,dice,get suggested comments
+sIEw1b8D,Tue, 12 Jan 2021 01:16:34 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:16:42 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:16:44 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:47 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:49 GMT,click,sentiment_Negative,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:50 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:16:50 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:16:51 GMT,click,sentiment_Positive,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:52 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:16:56 GMT,hover,comment_1597,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:16:58 GMT,hover,comment_1709,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:03 GMT,hover,comment_1302,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:05 GMT,hover,comment_1470,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:10 GMT,hover,comment_mment_1658,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:13 GMT,hover,comment_mment_1462,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:18 GMT,hover,comment_mment_1294,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:23 GMT,hover,comment_mment_1396,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:33 GMT,hover,comment_mment_1365,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:36 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:17:42 GMT,hover,comment_mment_1367,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:48 GMT,hover,comment_1678,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:53 GMT,hover,comment_1713,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:55 GMT,hover,comment_1628,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:17:58 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:04 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:05 GMT,hover,comment_mment_1521,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:11 GMT,hover,comment_1628,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:12 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:13 GMT,click,sentiment_Neutral,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:20 GMT,hover,comment_1600,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:22 GMT,hover,comment_1465,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:26 GMT,hover,comment_1440,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:28 GMT,hover,comment_1564,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:30 GMT,hover,comment_mment_1624,interact with a suggested comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:34 GMT,hover,comment_1564,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:36 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:38 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:40 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:40 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:41 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:45 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:46 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:46 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:46 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:48 GMT,hover,bar_visitback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:51 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:52 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:18:53 GMT,click,sentiment_Negative,select a sentiment
+sIEw1b8D,Tue, 12 Jan 2021 01:18:56 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:19:02 GMT,hover,comment_1430,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:19:15 GMT,hover,comment_1629,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:19:21 GMT,hover,comment_1671,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:19:31 GMT,hover,comment_1393,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:19:33 GMT,hover,comment_1567,interact with a comment
+sIEw1b8D,Tue, 12 Jan 2021 01:19:39 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:19:40 GMT,hover,bar_coverback,hovered on metric bar
+sIEw1b8D,Tue, 12 Jan 2021 01:19:45 GMT,click,product_1,select product from dropdown
+sIEw1b8D,Tue, 12 Jan 2021 01:19:45 GMT,click,dice,get suggested comments
+sIEw1b8D,Tue, 12 Jan 2021 01:19:48 GMT,study,visit,9
+sIEw1b8D,Tue, 12 Jan 2021 01:19:48 GMT,study,coverage,33
+sIEw1b8D,Tue, 12 Jan 2021 01:19:48 GMT,study,visit,11
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq8YesText,There were too many things going on overall. My problem is mostly not being used to searching products this way.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,totaltime,1885687s
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq22,Strongly Agree
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13Select,Yes
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq8Select,Yes
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13YesStartText,I went through the list of reviews on my own for a few minutes and then looked over to the suggestions.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq17YesText,One or two things caught my eye, e.g., Sennheiser is uncomfortable if you wear glasses and that was a big no for me.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13YesStopText,When I was done exploring
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq15Select,Useful
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq5NoText,I guess I am not used to reviewing products this way, because the metric is something completely new. It matters less to me how much I covered, rather I care about what the majority of people think about this product.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq21,I didn't dislike anything, rather I thought the metrics were a little overwhelming as a new user.  
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq23,Marking a review as read while hovering over it is a bit distracting, because often my cursor just happened to be over a review while scrolling and I wasn't necessarily planning on marking it. And a small FYI: I noticed at least two reviews of Koss Porta Pro that got mixed within Sony/Sennheiser (I can't recall which one exactly). Its a minor point though and I understand its just a pilot.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq11Select,Neutral
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq16Select,No
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13YesStrategyText,I mostly clicked on the suggested ones I found interesting/relevant to what I have in mind. 
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq3,Slightly confident
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq9Select,No
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq19Select,0
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq7,Neutral
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq9NoText,Sort of the same reasons mentioned above coverage. I don't typically think about proportion of review sentiments I personally have interacted with, I am more interested in knowing a summary of people's opinions/sentiments.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq20,I loved the keywords on top and the option of filtering reviews by keywords. I also liked the option to search for particular words and the sorting of reviews by positive, neutral, and negative.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13YesSurpriseSelect,No
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,post2checkString,-Price-Audio_Quality-Comfort-Longevity
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq5Select,No
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq10Select,Somewhat useful
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq19PickText,Under $50 headphones that perform reasonably well for the price, maybe not that long lasting though.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq6,Neutral
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq14Select,Useful
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq12YesText,Same as above, I take time in adapting to a new interface and DICE had a lot of new options at once.
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq1,1
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq4,Moderately confident
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,post18checkString,-Price-Audio_Quality-Comfort-Longevity
+sIEw1b8D,Tue, 12 Jan 2021 01:51:17 GMT,post_q,postq13YesFractionSelect,Some

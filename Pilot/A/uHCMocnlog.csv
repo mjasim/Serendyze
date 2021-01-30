@@ -1,0 +1,827 @@
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq1,1
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq3Select,Yes
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq4,Maybe
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq3YesDecisionSelect,3
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq2,1
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,preq3YesTimeSelect,1
+uHCMocn,Mon, 09 Nov 2020 20:18:48 GMT,pre_q,totaltime,97533s
+uHCMocn,Mon, 09 Nov 2020 20:29:38 GMT,click,product_3,select product from dropdown
+uHCMocn,Mon, 09 Nov 2020 20:29:38 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 09 Nov 2020 20:29:38 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 09 Nov 2020 20:29:41 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 09 Nov 2020 20:29:43 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 09 Nov 2020 20:29:43 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 09 Nov 2020 20:29:57 GMT,hover,comment_2068,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:13 GMT,hover,comment_2110,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:23 GMT,hover,comment_1809,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:39 GMT,hover,comment_2171,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:47 GMT,hover,comment_1863,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:50 GMT,hover,comment_2287,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:30:57 GMT,hover,comment_2067,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:31:00 GMT,hover,comment_1916,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:32:54 GMT,hover,comment_1878,interact with a comment
+uHCMocn,Mon, 09 Nov 2020 20:33:08 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq3Select,Yes
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq1,1
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq4,Yes
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq3YesDecisionSelect,0
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq2,0
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,totaltime,410234s
+uHCMocn,Mon, 09 Nov 2020 21:05:27 GMT,pre_q,preq3YesTimeSelect,1
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq3Select,Yes
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq4,Maybe
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq1,1
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq2,1
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq3YesDecisionSelect,3
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,preq3YesTimeSelect,2
+uHCMocn,Mon, 16 Nov 2020 16:08:39 GMT,pre_q,totaltime,38389s
+uHCMocn,Mon, 16 Nov 2020 16:08:55 GMT,click,product_8,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 16:08:55 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 16:09:15 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 16:09:16 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 16:09:19 GMT,hover,comment_5689,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:22 GMT,hover,comment_5378,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:27 GMT,hover,comment_5579,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:31 GMT,hover,comment_5586,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:34 GMT,hover,comment_5612,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:37 GMT,hover,comment_5816,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:46 GMT,hover,comment_5556,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:51 GMT,hover,comment_5556,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:55 GMT,hover,comment_5676,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:09:58 GMT,hover,comment_5825,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:10:01 GMT,hover,comment_5679,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:10:08 GMT,hover,comment_5518,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:10:12 GMT,hover,comment_5676,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:10:14 GMT,hover,comment_mment_5818,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 16:10:18 GMT,hover,comment_mment_5649,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 16:10:23 GMT,hover,comment_mment_5398,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 16:10:28 GMT,hover,comment_mment_5849,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 16:10:29 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 16:10:31 GMT,study,totaltime,108215s
+uHCMocn,Mon, 16 Nov 2020 16:10:46 GMT,click,product_3,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 16:10:46 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 16:10:47 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 16:11:22 GMT,hover,comment_799,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:11:22 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 16:11:24 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 16:11:25 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 16:11:28 GMT,hover,comment_802,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:11:43 GMT,hover,comment_mment_830,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 16:11:47 GMT,hover,comment_814,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:11:55 GMT,hover,comment_812,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 16:13:17 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 17:04:05 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:05 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:12 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 17:04:14 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:14 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:17 GMT,click,product_2,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:17 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:21 GMT,click,product_3,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:21 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:24 GMT,click,product_4,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:24 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:24 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 17:04:27 GMT,click,product_5,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:27 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:27 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 17:04:29 GMT,click,product_6,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:30 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:30 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 17:04:34 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:34 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:37 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:37 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:40 GMT,click,product_2,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:41 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:43 GMT,click,product_3,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:43 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:47 GMT,click,product_4,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 17:04:47 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 17:04:47 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:51:34 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:51:44 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 19:51:44 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 19:51:45 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:51:48 GMT,hover,comment_346,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:51:51 GMT,hover,comment_502,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:51:54 GMT,hover,comment_170,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:51:56 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:51:57 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:52:02 GMT,click,ngram_sound quality,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:52:07 GMT,hover,comment_465,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:52:10 GMT,hover,comment_253,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:52:27 GMT,hover,comment_419,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:52:35 GMT,hover,comment_mment_130,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 19:52:53 GMT,hover,comment_mment_443,interact with a suggested comment
+uHCMocn,Mon, 16 Nov 2020 19:53:16 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:53:16 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:53:17 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:53:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:53:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:53:39 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:53:44 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:54:09 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:54:11 GMT,click,sentiment_Negative,deselect a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:54:24 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:36 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:37 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:41 GMT,click,product_4,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 19:55:41 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 19:55:41 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:44 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:55:45 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:48 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:48 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:55:50 GMT,click,sentiment_Negative,deselect a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:55:55 GMT,click,product_7,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 19:55:55 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 19:55:55 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:55:56 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:55:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:03 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:06 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 16 Nov 2020 19:56:06 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 16 Nov 2020 19:56:08 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:56:13 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:17 GMT,click,ngram_years ago,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:56:24 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:28 GMT,hover,comment_988,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:56:29 GMT,click,ngram_good sound,select an ngram
+uHCMocn,Mon, 16 Nov 2020 19:56:30 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:31 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:32 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:56:32 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:35 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:36 GMT,click,ngram_good sound,deselect an ngram
+uHCMocn,Mon, 16 Nov 2020 19:56:36 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:56:44 GMT,hover,comment_869,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:56:50 GMT,hover,comment_643,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:56:53 GMT,hover,comment_1122,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:56:56 GMT,hover,comment_790,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:57:00 GMT,hover,comment_989,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:57:11 GMT,hover,comment_907,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:57:33 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:57:33 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:57:33 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:57:38 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:57:46 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:57:53 GMT,click,sentiment_Positive,select a sentiment
+uHCMocn,Mon, 16 Nov 2020 19:58:10 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:58:18 GMT,hover,comment_956,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:58:27 GMT,hover,comment_784,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:58:31 GMT,hover,comment_864,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:58:54 GMT,hover,comment_600,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:59:02 GMT,hover,comment_653,interact with a comment
+uHCMocn,Mon, 16 Nov 2020 19:59:02 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 16 Nov 2020 19:59:03 GMT,study,totaltime,447487s
+uHCMocn,Sat, 21 Nov 2020 14:48:12 GMT,click,product_2,select product from dropdown
+uHCMocn,Sat, 21 Nov 2020 14:48:12 GMT,click,dice,get suggested comments
+uHCMocn,Sat, 21 Nov 2020 14:48:13 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:48:38 GMT,hover,comment_1521,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:48:48 GMT,hover,comment_1358,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:48:53 GMT,hover,comment_1646,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:49:00 GMT,hover,comment_1308,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:49:22 GMT,click,serencomment_1396,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:49:26 GMT,click,serencomment_1624,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:49:31 GMT,click,serencomment_1367,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:49:36 GMT,click,serencomment_1365,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:49:39 GMT,click,serencomment_1370,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:50:14 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:50:17 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:50:23 GMT,click,search_undefined,search a keyword
+uHCMocn,Sat, 21 Nov 2020 14:50:31 GMT,click,search_undefined,search a keyword
+uHCMocn,Sat, 21 Nov 2020 14:50:40 GMT,click,search_undefined,search a keyword
+uHCMocn,Sat, 21 Nov 2020 14:50:47 GMT,click,product_0,select product from dropdown
+uHCMocn,Sat, 21 Nov 2020 14:50:47 GMT,click,dice,get suggested comments
+uHCMocn,Sat, 21 Nov 2020 14:50:48 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:14 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:18 GMT,hover,comment_170,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:21 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:23 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:26 GMT,hover,comment_346,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:26 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:51:27 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Sat, 21 Nov 2020 14:51:34 GMT,hover,comment_130,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:37 GMT,hover,comment_489,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:43 GMT,hover,comment_186,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:47 GMT,hover,comment_465,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:51:50 GMT,hover,comment_148,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:00 GMT,hover,comment_253,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:05 GMT,hover,comment_53,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:08 GMT,hover,comment_494,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:09 GMT,click,comment_58,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:10 GMT,hover,comment_58,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:10 GMT,click,comment_309,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:11 GMT,hover,comment_309,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:12 GMT,click,comment_37,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:12 GMT,hover,comment_37,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:13 GMT,click,comment_509,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:14 GMT,hover,comment_509,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:15 GMT,click,comment_175,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:17 GMT,hover,comment_175,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:17 GMT,click,comment_331,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:18 GMT,click,comment_280,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:19 GMT,hover,comment_280,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:20 GMT,click,comment_481,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:22 GMT,click,comment_522,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:24 GMT,hover,comment_522,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:26 GMT,click,comment_543,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:31 GMT,hover,comment_543,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:52:33 GMT,click,serencomment_698,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:52:38 GMT,click,serencomment_108,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:52:45 GMT,click,serencomment_110,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:52:50 GMT,click,serencomment_443,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:52:54 GMT,click,serencomment_303,interact with a suggested comment
+uHCMocn,Sat, 21 Nov 2020 14:52:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:52:58 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:21 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:21 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:28 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:29 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:29 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:30 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:31 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:32 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:32 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:41 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Sat, 21 Nov 2020 14:53:44 GMT,click,ngram_price range,select an ngram
+uHCMocn,Sat, 21 Nov 2020 14:53:48 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:48 GMT,click,comment_281,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:53:50 GMT,hover,comment_281,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:53:51 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:54 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:54 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:55 GMT,click,sentiment_Positive,select a sentiment
+uHCMocn,Sat, 21 Nov 2020 14:53:56 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:53:57 GMT,click,comment_470,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:53:58 GMT,click,comment_368,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:53:58 GMT,click,comment_24,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:53:59 GMT,click,comment_427,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:00 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:00 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:02 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:05 GMT,click,comment_552,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:06 GMT,click,comment_369,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:07 GMT,hover,comment_369,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:08 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:08 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:12 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:13 GMT,click,sentiment_Neutral,select a sentiment
+uHCMocn,Sat, 21 Nov 2020 14:54:13 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:14 GMT,click,comment_311,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:15 GMT,click,comment_428,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:15 GMT,click,comment_235,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:15 GMT,hover,comment_235,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:16 GMT,click,comment_78,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:16 GMT,click,comment_415,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:17 GMT,click,comment_585,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:19 GMT,click,comment_184,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 14:54:19 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:20 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:23 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:25 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:33 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:34 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:38 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:42 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:43 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:54:49 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 14:55:17 GMT,click,search_undefined,search a keyword
+uHCMocn,Sat, 21 Nov 2020 14:58:51 GMT,click,product_0,select product from dropdown
+uHCMocn,Sat, 21 Nov 2020 14:58:51 GMT,click,dice,get suggested comments
+uHCMocn,Sat, 21 Nov 2020 15:00:10 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:11 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:12 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:12 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:13 GMT,click,comment_346,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:13 GMT,hover,comment_346,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:14 GMT,click,comment_502,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:14 GMT,click,comment_170,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:15 GMT,click,comment_470,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:16 GMT,click,comment_382,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:17 GMT,click,comment_130,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:17 GMT,hover,comment_130,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:18 GMT,click,comment_394,interact with a comment
+uHCMocn,Sat, 21 Nov 2020 15:00:19 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:20 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:21 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:22 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:25 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:27 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:27 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:30 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:30 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:30 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:34 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:35 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:36 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:36 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:37 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:37 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:39 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:40 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:40 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Sat, 21 Nov 2020 15:00:41 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:37:24 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 20:37:24 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 20:37:25 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:37:29 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:37:42 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:37:45 GMT,click,comment_394,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:46 GMT,hover,comment_394,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:46 GMT,click,comment_346,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:47 GMT,click,comment_502,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:47 GMT,click,comment_170,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:48 GMT,click,comment_470,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:48 GMT,click,comment_382,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:51 GMT,click,comment_130,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:51 GMT,hover,comment_130,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:52 GMT,click,comment_512,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:53 GMT,click,comment_465,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:54 GMT,click,comment_186,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:54 GMT,click,comment_615,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:56 GMT,click,comment_473,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:57 GMT,hover,comment_473,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:37:58 GMT,click,comment_441,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:00 GMT,hover,comment_441,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:01 GMT,click,serencomment_698,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:38:01 GMT,hover,comment_mment_698,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:38:03 GMT,click,serencomment_443,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:38:04 GMT,click,comment_900,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:05 GMT,click,comment_822,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:06 GMT,click,comment_102,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:07 GMT,click,comment_278,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:08 GMT,click,comment_148,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:08 GMT,click,comment_311,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:38:09 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:38:09 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:38:09 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:38:09 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:38:10 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:38:15 GMT,click,search_undefined,search a keyword
+uHCMocn,Mon, 30 Nov 2020 20:38:28 GMT,click,search_undefined,search a keyword
+uHCMocn,Mon, 30 Nov 2020 20:41:42 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:41:45 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 20:41:45 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 20:41:52 GMT,click,product_2,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 20:41:52 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 20:41:54 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:46:56 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:46:56 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:47:06 GMT,click,search_undefined,search a keyword
+uHCMocn,Mon, 30 Nov 2020 20:47:08 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:53:35 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:38 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:40 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:41 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:42 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:43 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:45 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 20:53:47 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 20:53:47 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 20:53:55 GMT,click,comment_502,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:53:55 GMT,click,comment_470,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:53:56 GMT,click,serencomment_586,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:53:57 GMT,click,serencomment_714,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:53:58 GMT,click,comment_394,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:53:59 GMT,click,comment_382,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:00 GMT,click,comment_170,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:00 GMT,hover,comment_170,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:00 GMT,click,comment_346,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:01 GMT,click,comment_130,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:01 GMT,hover,comment_130,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:54:03 GMT,click,serencomment_412,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:54:03 GMT,click,serencomment_41,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:54:04 GMT,click,serencomment_35,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:55:18 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:55:33 GMT,hover,comment_382,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:56:37 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:56:53 GMT,click,serencomment_443,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:56:54 GMT,click,serencomment_110,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:56:54 GMT,hover,comment_mment_110,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:57:59 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:01 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:01 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:01 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:01 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:03 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:03 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:03 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:07 GMT,hover,comment_mment_317,interact with a suggested comment
+uHCMocn,Mon, 30 Nov 2020 20:58:18 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:18 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:29 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:30 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:30 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:31 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:32 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:32 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:33 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:33 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:34 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:34 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:34 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:39 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:39 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:39 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:40 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:40 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:40 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:40 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:43 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:45 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:58:59 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:10 GMT,hover,comment_470,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 20:59:40 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:41 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:42 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:43 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:43 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:47 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:48 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 20:59:49 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:27 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:28 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:45 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:45 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:46 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:47 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:00:50 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:17 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:24 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:01:57 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:06 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:06 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:06 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:06 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:16 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:16 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:17 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:17 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:18 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:02:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:06 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 21:05:06 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 21:05:07 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:16 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:17 GMT,click,ngram_sound great,select an ngram
+uHCMocn,Mon, 30 Nov 2020 21:05:19 GMT,click,comment_784,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:20 GMT,click,comment_1126,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:21 GMT,click,comment_956,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:22 GMT,click,comment_600,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:24 GMT,click,comment_971,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:24 GMT,hover,comment_971,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:25 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:37 GMT,click,comment_702,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:37 GMT,click,comment_1266,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:38 GMT,click,comment_796,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:39 GMT,click,comment_1178,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:40 GMT,hover,comment_1178,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:40 GMT,click,comment_1263,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:42 GMT,click,comment_1216,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:43 GMT,click,comment_955,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:44 GMT,click,comment_640,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:45 GMT,click,comment_1267,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:47 GMT,click,comment_930,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:47 GMT,click,comment_1241,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:50 GMT,click,comment_1204,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:05:51 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:51 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:52 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:53 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:05:59 GMT,hover,comment_1241,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:00 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:06:01 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:06:06 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:06:07 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:06:10 GMT,click,sentiment_Neutral,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:06:11 GMT,click,sentiment_Positive,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:06:12 GMT,click,sentiment_Neutral,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:06:16 GMT,click,sentiment_Neutral,deselect a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:06:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:06:21 GMT,click,comment_743,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:22 GMT,hover,comment_743,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:23 GMT,click,comment_776,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:23 GMT,click,comment_857,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:24 GMT,hover,comment_857,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:26 GMT,click,comment_710,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:27 GMT,click,comment_944,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:28 GMT,click,comment_1197,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:28 GMT,click,comment_1099,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:30 GMT,click,comment_1004,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:30 GMT,hover,comment_1004,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:06:30 GMT,click,comment_1236,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:03 GMT,hover,comment_1236,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:04 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:05 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:07:08 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:11 GMT,click,comment_655,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:12 GMT,click,comment_804,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:12 GMT,hover,comment_804,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:12 GMT,click,comment_623,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:14 GMT,click,comment_1200,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:15 GMT,click,comment_884,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:16 GMT,hover,comment_884,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:17 GMT,click,comment_1051,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:18 GMT,click,comment_733,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:18 GMT,hover,comment_733,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:19 GMT,click,comment_919,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:20 GMT,click,comment_688,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:21 GMT,click,comment_756,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:22 GMT,click,comment_661,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:25 GMT,click,comment_1008,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:26 GMT,hover,comment_1008,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:34 GMT,hover,comment_1267,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:34 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:35 GMT,click,ngram_five stars,select an ngram
+uHCMocn,Mon, 30 Nov 2020 21:07:38 GMT,click,sentiment_Negative,deselect a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:07:40 GMT,click,comment_978,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:41 GMT,hover,comment_978,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:41 GMT,click,comment_682,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:41 GMT,hover,comment_682,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:42 GMT,click,comment_990,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:42 GMT,click,comment_1243,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:43 GMT,click,comment_977,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:43 GMT,hover,comment_977,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:44 GMT,click,comment_766,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:44 GMT,hover,comment_766,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:44 GMT,click,comment_907,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:44 GMT,hover,comment_907,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:45 GMT,click,comment_813,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:45 GMT,hover,comment_813,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:07:47 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:48 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:49 GMT,click,sentiment_Positive,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:07:50 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:51 GMT,click,sentiment_Neutral,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:07:51 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:52 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:07:53 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 30 Nov 2020 21:08:04 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:04 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:04 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:06 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:08 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:32 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:32 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:35 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:45 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:45 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:08:46 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:00 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:02 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:11 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:13 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:14 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:27 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:40 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:44 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:09:45 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:10:17 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 21:10:17 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 21:10:19 GMT,click,nav_dice_brand,reload
+uHCMocn,Mon, 30 Nov 2020 21:10:23 GMT,click,product_1,select product from dropdown
+uHCMocn,Mon, 30 Nov 2020 21:10:23 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 30 Nov 2020 21:12:07 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:12:07 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 30 Nov 2020 21:12:09 GMT,click,comment_956,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:10 GMT,click,comment_813,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:10 GMT,hover,comment_813,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:11 GMT,click,comment_627,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:12 GMT,click,comment_784,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:13 GMT,click,comment_1126,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:16 GMT,click,comment_1073,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:17 GMT,click,comment_971,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:17 GMT,hover,comment_971,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:18 GMT,click,comment_988,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:19 GMT,click,comment_789,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:20 GMT,click,comment_770,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:21 GMT,click,comment_659,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:23 GMT,click,comment_869,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:24 GMT,click,comment_643,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:24 GMT,click,comment_864,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:25 GMT,click,comment_600,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:27 GMT,click,comment_743,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:27 GMT,click,comment_776,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:28 GMT,click,comment_856,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:30 GMT,click,comment_653,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:32 GMT,click,comment_790,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:32 GMT,click,comment_960,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:33 GMT,click,comment_981,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:36 GMT,click,comment_1038,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:36 GMT,hover,comment_1038,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:37 GMT,click,comment_734,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:37 GMT,hover,comment_734,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:38 GMT,click,comment_989,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:39 GMT,hover,comment_989,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:42 GMT,hover,comment_784,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:45 GMT,hover,comment_627,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:47 GMT,click,comment_1122,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:54 GMT,click,comment_1202,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:56 GMT,click,comment_907,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:56 GMT,hover,comment_907,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:57 GMT,click,comment_1010,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:58 GMT,hover,comment_1010,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:58 GMT,click,comment_857,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:59 GMT,hover,comment_857,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:59 GMT,click,comment_938,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:12:59 GMT,hover,comment_938,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:00 GMT,click,comment_1244,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:01 GMT,click,comment_678,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:02 GMT,click,comment_738,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:03 GMT,click,comment_1266,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:03 GMT,click,comment_1019,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:04 GMT,hover,comment_1019,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:07 GMT,click,comment_1098,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:07 GMT,click,comment_702,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:09 GMT,click,comment_1172,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:10 GMT,click,comment_1163,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:11 GMT,click,comment_624,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:11 GMT,hover,comment_624,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:11 GMT,click,comment_796,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:13 GMT,click,comment_1252,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:14 GMT,click,comment_1178,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:14 GMT,click,comment_1263,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:15 GMT,click,comment_968,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:15 GMT,click,comment_1216,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:19 GMT,click,comment_669,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:20 GMT,click,comment_761,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:22 GMT,click,comment_693,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:22 GMT,hover,comment_693,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:22 GMT,click,comment_1142,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:24 GMT,click,comment_955,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:25 GMT,click,comment_640,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:26 GMT,click,comment_648,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:27 GMT,click,comment_1267,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:27 GMT,click,comment_766,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:27 GMT,hover,comment_766,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:28 GMT,click,comment_1223,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:28 GMT,hover,comment_1223,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:29 GMT,click,comment_1273,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:30 GMT,click,comment_599,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:30 GMT,click,comment_1268,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:31 GMT,click,comment_1124,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:32 GMT,click,comment_1123,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:34 GMT,click,comment_930,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:36 GMT,click,comment_1034,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:37 GMT,click,comment_1241,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:37 GMT,click,comment_1204,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:39 GMT,click,comment_1226,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:39 GMT,click,comment_825,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:39 GMT,hover,comment_825,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:40 GMT,click,comment_656,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:42 GMT,click,comment_904,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:42 GMT,click,comment_852,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:43 GMT,click,comment_690,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:43 GMT,hover,comment_690,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:43 GMT,click,comment_1235,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:44 GMT,click,comment_1048,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:44 GMT,click,comment_778,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:46 GMT,click,comment_1007,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:46 GMT,click,comment_1199,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:48 GMT,click,comment_873,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:49 GMT,click,comment_783,interact with a comment
+uHCMocn,Mon, 30 Nov 2020 21:13:49 GMT,hover,comment_783,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq1,0
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq3YesDecisionSelect,2
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq2,No
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq3YesTimeSelect,0
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq4,No
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq6Select,No
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq2CountSelect,0
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq3Select,No
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq6checkString,-Bose-Sennheiser
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq6OtherText,
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq5Select,1
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,preq4YesImpactSelect,2
+uHCMocn,Mon, 07 Dec 2020 21:07:05 GMT,pre_q,totaltime,15242s
+uHCMocn,Mon, 07 Dec 2020 21:07:28 GMT,click,product_0,select product from dropdown
+uHCMocn,Mon, 07 Dec 2020 21:07:28 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 07 Dec 2020 21:07:33 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 07 Dec 2020 21:07:39 GMT,hover,comment_394,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:07:43 GMT,hover,comment_346,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:07:48 GMT,hover,comment_502,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:07:51 GMT,hover,comment_470,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:04 GMT,hover,comment_715,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:06 GMT,hover,comment_441,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:06 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 07 Dec 2020 21:09:07 GMT,click,ngram_good sound,select an ngram
+uHCMocn,Mon, 07 Dec 2020 21:09:08 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 07 Dec 2020 21:09:12 GMT,hover,comment_615,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:13 GMT,hover,comment_186,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:15 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 07 Dec 2020 21:09:16 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 07 Dec 2020 21:09:21 GMT,hover,comment_489,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:25 GMT,hover,comment_331,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:28 GMT,hover,comment_465,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:32 GMT,hover,comment_522,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:34 GMT,hover,comment_182,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:36 GMT,hover,comment_295,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:38 GMT,hover,comment_277,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:41 GMT,hover,comment_323,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:43 GMT,hover,comment_236,interact with a comment
+uHCMocn,Mon, 07 Dec 2020 21:09:43 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq1,2
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq4,Yes
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq2,Yes
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq6Select,Yes
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq3YesDecisionSelect,2
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq5OtherText,Not sure, depends on the product
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq2CountSelect,0
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq3YesTimeSelect,1
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq3Select,Yes
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq6checkString,-Bose
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq6OtherText,
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq5Select,2
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,totaltime,97180s
+uHCMocn,Mon, 18 Jan 2021 16:09:58 GMT,pre_q,preq4YesImpactSelect,2
+uHCMocn,Mon, 18 Jan 2021 16:16:51 GMT,click,product_2,select product from dropdown
+uHCMocn,Mon, 18 Jan 2021 16:16:51 GMT,click,dice,get suggested comments
+uHCMocn,Mon, 18 Jan 2021 16:16:51 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:16:52 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:16:52 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:16:52 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:16:57 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:16:59 GMT,click,sentiment_Negative,select a sentiment
+uHCMocn,Mon, 18 Jan 2021 16:17:01 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:17:05 GMT,hover,comment_1443,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:17:12 GMT,hover,comment_1357,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:17:18 GMT,hover,comment_1430,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:17:23 GMT,hover,comment_1537,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:17:32 GMT,hover,comment_mment_1547,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:17:46 GMT,hover,comment_mment_1659,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:17:51 GMT,hover,comment_mment_1525,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:17:59 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:18:14 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:18:26 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:18:28 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:18:28 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:24:41 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:24:42 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:24:43 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:24:44 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:55 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:55 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:56 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:56 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:56 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:57 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:57 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:26:59 GMT,click,sentiment_Negative,deselect a sentiment
+uHCMocn,Mon, 18 Jan 2021 16:27:04 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:04 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:04 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:04 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:08 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:08 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:09 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:12 GMT,hover,comment_1717,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:27:12 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:12 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:13 GMT,click,bar_visitback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:19 GMT,hover,comment_1430,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:27:19 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:21 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:24 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:25 GMT,click,bar_distback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:26 GMT,hover,bar_distback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:27 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:27 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:27 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:28 GMT,click,bar_coverback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:29 GMT,hover,bar_coverback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:29 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:29 GMT,hover,bar_visitback,hovered on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:30 GMT,click,bar_visitback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:31 GMT,click,bar_visitback,clicked on metric bar
+uHCMocn,Mon, 18 Jan 2021 16:27:42 GMT,hover,comment_1442,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:27:47 GMT,hover,comment_1530,interact with a comment
+uHCMocn,Mon, 18 Jan 2021 16:27:56 GMT,hover,comment_mment_1293,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:28:04 GMT,hover,comment_mment_1545,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:28:25 GMT,hover,comment_mment_1663,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:28:48 GMT,hover,comment_mment_1648,interact with a suggested comment
+uHCMocn,Mon, 18 Jan 2021 16:31:22 GMT,hover,bar_visitback,hovered on metric bar

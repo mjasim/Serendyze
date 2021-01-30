@@ -2,7 +2,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <style>
     .links line {
         stroke: #999;
@@ -61,39 +60,8 @@
         font-weight: bold !important;
     }
 
-    /* .loader {
-        border: 10px solid #81d4fa;
-        border-radius: 50%;
-        border-top: 10px solid black;
-        width: 10px;
-        height: 10px;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
-    } */
-
     .metbar:hover {
         cursor: pointer;
-    }
-
-    /* Safari */
-    @-webkit-keyframes spin {
-        0% {
-            -webkit-transform: rotate(0deg);
-        }
-
-        100% {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
     }
 </style>
 
@@ -176,63 +144,6 @@
     </div>
 </nav>
 
-<!-- <div class="modal fade bd-example-modal-lg" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="userModalLabel">Welcome to Dice</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Select a product from the dropdown, then explore product comments to make a purchase decision. You
-                    can mark comments as read by clicking on the comment.</p>
-                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
-                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
-                        <div
-                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #81d4fa;">
-                        </div>
-                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The Visit bar shows how
-                            many comments you interacted with.</div>
-                    </div>
-                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
-                        <div
-                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #c8e6c9;">
-                        </div>
-                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The Coverage bar shows how
-                            many comments you know about including comments that are
-                            similar to ones you interacted with.</div>
-                    </div>
-                    <div style=" display: flex; flex-direction: row; justify-content: flex-start;">
-                        <div
-                            style="display: block; width: 100px; height: 24px; margin: 5px; background-color: #ffcdd2;">
-                        </div>
-                        <div style="display: block; width: 900px; height: 50px; margin: 5px;">The
-                            Distribution bar shows
-                            how are you interacting with comments with different
-                            sentiment
-                            categories.</div>
-                    </div>
-                    <div style="display: flex; flex-direction: row;; justify-content: flex-start;">
-                        <div style="display: flex; flex-direction: row; width: 100px; justify-content: center;"><img
-                                src="dice.png" style="width: 40px; height:40px; margin:5px;"></div>
-                        <div style="display: block; width: 900px; height: 50px; margin: 5px; padding: 10px;">Clicking
-                            Dice button will
-                            suggest you comments based your interactions with other
-                            comments
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <div class="modal fade bd-example-modal-lg" id="aboutModal" tabindex="-1" role="dialog"
     aria-labelledby="aboutModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -265,12 +176,12 @@
 <body onload="checkLoad()">
 
     <div style="display:flex; flex-direction: column; align-items: center; overflow-y: auto; background-color: white;">
-        <div id="header" style="margin: 5px; display:flex; flex-direction: row;">
+        <div id="header" style="margin: 5px; display:flex; flex-direction: row; ">
 
-            <!-- <div id="dicetoggle" style="margin-right:50px; visibility:hidden">
+            <div id="dicetoggle" style="margin-right:50px; visibility:hidden">
                 <input type="checkbox" id="dicecheck" name="dicecheck" value="on" checked>
                 <label for="dicecheck"> Show Suggestions</label>
-            </div> -->
+            </div>
 
 
             <div class="w3-content">
@@ -281,15 +192,6 @@
                             <option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>
                             <option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>
                             <option value="2">Sennheiser HD280PRO Headphones (old model)</option>
-                            <!-- <option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock
-                            </option>
-                            <option value="4">Sony MDR7506 Professional Large Diaphragm Headphone</option>
-                            <option value="5">Sennheiser HD 202 II Professional Headphones (Black)</option>
-                            <option value="6">Sony MDREX10LP/BLK In-Ear Headphones</option>
-                            <option value="7">Bose QuietComfort 15 Acoustic Noise Cancelling Headphones</option>
-                            <option value="8">Bose QuietComfort 25 Acoustic Noise Cancelling Headphones</option>
-                            <option value="9">Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver
-                            </option> -->
                         </select>
 
                         <!-- <select id="area" name="area">
@@ -314,18 +216,19 @@
             </form>
             <button id="searchbutton" class="btn" type="button" onclick="render_search()"
                 style="display: inline-flex; justify-content: center; align-items: center; height: 24px; width: 10px; visibility: hidden;"><i
-                    class="fa fa-search" aria-hidden="true" style="color:lightgray;"></i></button>
+                    class="fa fa-search" aria-hidden="true" style="color:gray;"></i></button>
         </div>
 
         <div id="topicparent" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width:100%; visibility:
-        hidden; background-color: #f5f8fa;">
-            <div id="topicinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;width: 10%;
+        hidden; background-color: #f5f8fa; border-top: solid thin
+        lightgray;">
+            <div id="topicinfo" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 10%;
             text-align: center; padding-left:20px;">
                 <i class="fa fa-info-circle fa-lg" style="margin-right: 5px; color:gray" title="These are most frequent word pairs that appear in the reviews. Click the words to filter
                     relevant reviews"></i>Keywords
             </div>
             <div id="topicbox"
-                style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 90%; padding-bottom:10px">
+                style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin:5px; width: 90%;">
             </div>
         </div>
 
@@ -350,9 +253,9 @@
             </div>
             <div id="metricsbox"
                 style="display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; margin:5px; width:90%">
-                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin-top: 5px; margin-bottom: 5px; margin-left: 1%; margin-right: 1%;">
                     <div class="metbar" id="visitback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the amount of reviews you have directly interacted with. Keep interacting
-                        with the reviews to increase your comment Visit">
+                        with the reviews to increase your review Visit">
                         <div id="visitBar" style="height:24px; width:0%; background-color: #81d4fa;">
                         </div>
                     </div>
@@ -361,8 +264,8 @@
                         You read 0% reviews</div>
                 </div>
 
-                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-                    <div class="metbar" id="coverback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the amount of reviews you have covered implicitely, including the reviews
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin-top: 5px; margin-bottom: 5px; margin-left: 1%; margin-right: 1%;">
+                    <div class="metbar" id="coverback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the amount of reviews you have covered implicitly, including the reviews
                         that are very similar and redundant to the ones you have already interacted with. Keep
                         interacting with the reviews to increase your review Coverage">
                         <div id="coverageBar" style="height:24px; width:0%; background-color: #B39DDB;">
@@ -373,9 +276,8 @@
                     </div>
                 </div>
 
-                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin: 1%">
-                    <div class="metbar" id="distback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the proportion of review sentiments you have directly interacted with.
-                        Keep interacting with reviews with different kinds of sentiments
+                <!-- <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin-top: 5px; margin-bottom: 5px; margin-left: 1%; margin-right: 1%;">
+                    <div class="metbar" id="distback" style="border: solid 2px lightgrey; width:100%" title="This bar shows the proportion of review sentiments you have directly interacted with. Keep interacting with reviews with different kinds of sentiments
                     to increase your review Distribution">
                         <div id="distributionBar" style="height:24px; width:0%; background-color: #FFAB91;">
                         </div>
@@ -383,6 +285,25 @@
                     <div id="disttext"><i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91"
                             aria-hidden="true"></i>Distribution: You read 0%
                         sentiments</div>
+                </div> -->
+                
+                <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin-top: 5px; margin-bottom: 5px; margin-left: 1%; margin-right: 1%;">
+                    <div style="display: flex; flex-direction: row; align-items: center; width: 100%">
+                        <div class="sentbar" id="posbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of positive comments you have directly interacted with.">
+                            <div id="positiveBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-plus" style="margin: 0px 3px 0px 3px"></i>
+                            </div>
+                        </div>
+                        <div class="sentbar" id="neutbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of neutral comments you have directly interacted with.">
+                            <div id="neutralBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-minus" style="margin: 0px 3px 0px 3px"></i>
+                            </div>
+                        </div>
+                        <div class="sentbar" id="negbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of negative comments you have directly interacted with.">
+                            <div id="negativeBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-circle-o" style="margin: 0px 3px 0px 3px"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="disttext"><i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i> Distribution: You read 0% sentiments
+                    </div>
                 </div>
             </div>
         </div>
@@ -391,34 +312,15 @@
             style="display:flex; flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; margin:5px; width:100%">
             <div id="textboxparent"
                 style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; margin:5px; width:100%">
-                <div id="textboxheader" style="width:95%; border:solid thin lightgray; display: none; font-weight:bold">
-                    <span id="commentheader">Reviews: 0</span>
-                </div>
-                <div id="textbox" style="margin: 10px; max-width: 100%; height: 45vh; overflow-y:auto"></div>
-            </div>
-            <!-- <div id="serenboxparent"
-                style="display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center; margin:0px; width:0px; height:0px">
-                <div id="serenboxheader" style="display:flex; flex-direction: row; width:0px">
-                    <div id="serenheader" style="font-weight:bold"></div>
-                    <div id="serenloading" style="display: none;">
+                <div id="textboxheader" style="display: flex; flex-direction: row;">
+                    <div id="commentheader" style="font-weight:bold"></div>
+                    <div id="commentloading" style="display: none;">
                         <img src="images/hg.gif" style="margin-left: 5px; margin-top:-5px; height:20px; height: 20px">
                     </div>
                 </div>
-                <div id="serenbox" style="margin: 0px; max-width: 0px; height: 0px; overflow-y:auto;"></div>
-            </div> -->
+                <div id="textbox" style="margin: 10px; max-width: 100%; height: 45vh; overflow-y:auto"></div>
+            </div>
         </div>
-
-        <!-- <div id="dice" title="Get suggested comments">
-        <img src="dice.png" style="width: 40px; height:40px; margin:5px;">
-    </div> -->
-
-        <!-- <div id="cordbox" style="display:flex; flex-direction: row; align-items: center; margin:10px">
-        <div id="coordinate" style="margin-right: 10px"></div>
-        <div id="timing" style="margin-left: 10px"></div>
-    </div> -->
-
-        <!-- <div id="serenbox" style="margin: 10px; width: 960px; height: 150px; overflow-y:auto"></div> -->
-
     </div>
 </body>
 
@@ -440,15 +342,16 @@
     }
 
     function gotoPost() {
-        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].visit.toString());
-        logInteraction('study' + ',' + 'coverage' + ',' + metrics[did].coverage.toString());
-        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].distribution.toString());
+
+        logInteraction('study' + ',' + 'visit' + ',' + metrics[0].visit.toString() + ',' + metrics[1].visit.toString() + ',' + metrics[2].visit.toString());
+        logInteraction('study' + ',' + 'coverage' + ',' + metrics[0].coverage.toString() + ',' + metrics[1].coverage.toString() + ',' + metrics[2].coverage.toString());
+        logInteraction('study' + ',' + 'Distribution' + ',' + JSON.stringify(discourses_array[0]) + ',' + JSON.stringify(discourses_array[1]) + ',' + JSON.stringify(discourses_array[2]));
 
         var finalize_text = orig_area_text[did]
         if (confirm("Confirm " + finalize_text + "?") == true) {
-            window.open('post_questionnaire.html', "_self")
             end_time = Date.now()
             logInteraction('study' + ',' + 'totaltime' + ',' + (end_time - start_time) + 's');
+            window.open('post_questionnaire.html', "_self")
         }
     }
 
@@ -477,13 +380,15 @@
     unexplored_list = []
     covered_list = []
     comment_id_list = []
+    seren_id_list = []
     dice_trigger = 1
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 3; i++) {
         explored_list[i] = []
         unexplored_list[i] = []
         dc_array[i] = []
         comment_id_list[i] = []
         covered_list[i] = []
+        seren_id_list[i] = []
     }
 
     selected_id_metric = ""
@@ -497,7 +402,7 @@
     discourses_array = []
     metrics = []
 
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 3; i++) {
         discourses_array[i] = {
             "Positive": 0,
             "Negative": 0,
@@ -519,13 +424,6 @@
         orig_area_text = ["Koss Porta Pro On Ear Headphones with Case, Black / Silver",
             "Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil",
             "Sennheiser HD280PRO Headphones (old model)",
-            "Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock",
-            "Sony MDR7506 Professional Large Diaphragm Headphone",
-            "Sennheiser HD 202 II Professional Headphones (Black)",
-            "Sony MDREX10LP/BLK In-Ear Headphones",
-            "Bose QuietComfort 15 Acoustic Noise Cancelling Headphones",
-            "Bose QuietComfort 25 Acoustic Noise Cancelling Headphones",
-            "Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver"
         ]
     })
 
@@ -535,15 +433,6 @@
         '<option value="0">Koss Porta Pro On Ear Headphones with Case, Black / Silver</option>' +
         '<option value="1">Sony MDRV6 Studio Monitor Headphones with CCAW Voice Coil</option>' +
         '<option value="2">Sennheiser HD280PRO Headphones (old model)</option>'
-    // '<option value="3">Sennheiser RS120 On-Ear Wireless RF Headphones with Charging Dock' +
-    // '</option>' +
-    // '<option value="4">Sony MDR7506 Professional Large Diaphragm Headphone</option>' +
-    // '<option value="5">Sennheiser HD 202 II Professional Headphones (Black)</option>' +
-    // '<option value="6">Sony MDREX10LP/BLK In-Ear Headphones</option>' +
-    // '<option value="7">Bose QuietComfort 15 Acoustic Noise Cancelling Headphones</option>' +
-    // '<option value="8">Bose QuietComfort 25 Acoustic Noise Cancelling Headphones</option>' +
-    // '<option value="9">Bluedio T2s Bluetooth Headphones On Ear with Mic, 57mm Driver' +
-    // '</option>'
 
     document.getElementById("dropdown_options").innerHTML = dropdown_div
 
@@ -645,12 +534,14 @@
         unexplored_list = []
         covered_list = []
         comment_id_list = []
+        seren_id_list = []
         dice_trigger = 1
         for (var i = 0; i < 30; i++) {
             explored_list[i] = []
             unexplored_list[i] = []
             dc_array[i] = []
             comment_id_list[i] = []
+            seren_id_list[i] = []
             covered_list[i] = []
         }
         selected_id_metric = ""
@@ -676,11 +567,7 @@
         document.getElementById("discparent").style.visibility = "hidden"
         document.getElementById("metparent").style.visibility = "hidden"
         document.getElementById("textboxheader").style.display = "none"
-        // document.getElementById("serenboxheader").style.display = "none"
-        // document.getElementById("serenboxheader").style.display = "none"
-        // if (document.getElementById("paginatepage"))
-        //     document.getElementById("paginatepage").style.visibility = "hidden"
-
+        document.getElementById("serenboxheader").style.display = "none"
 
         var myNode = document.getElementById("topicbox");
         while (myNode.firstChild) {
@@ -719,12 +606,12 @@
 
         // console.log("sortedsorted", sorted_ngrams)
 
-        for (var i in sorted_ngrams) {
+        for (var i in sorted_ngrams.slice(0, 8)) {
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class="topicbtn" id="ngram_' + i +
-                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;">' +
+                '\" style="margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 140px;">' +
                 sorted_ngrams[i].ngram + '</div>' +
-                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 200px;">' +
+                '<div style="margin:5px; padding-left:3px; padding-right:3px; position: relative; width: 140px;">' +
                 '<div class="tinybar" id=\"met_' +
                 sorted_ngrams[i].ngram +
                 '\" style="width: 0%; height: 24px; background-color:red; display:none; border-radius: 5px; position: absolute; top:-30px; left: 0;"></div></div>';
@@ -740,12 +627,12 @@
 
         if (selected_id_ngram) {
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 140px;"
             )
         }
         if (prev_selected_id_ngram) {
             document.getElementById(prev_selected_id_ngram).setAttribute("style",
-                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 140px;"
             )
         }
 
@@ -759,7 +646,6 @@
                 "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
             )
         }
-
 
         if (did && document.getElementById("navSearch").value.toLowerCase()) {
             var search_filter = document.getElementById("navSearch").value.toLowerCase()
@@ -813,7 +699,7 @@
                     }
                 }
             }
-            document.getElementById("textboxheader").textContent = headertext + count
+            document.getElementById("commentheader").textContent = headertext + count
 
             myHilitor = new Hilitor("textbox");
             myHilitor.setMatchType("open");
@@ -824,7 +710,7 @@
         }
     }
 
-    $(function () {
+    $(document).ready(function(){
         $(document).tooltip();
     });
 
@@ -856,18 +742,6 @@
                 sent = '<i class="fa fa-circle-o" style="margin-right: 5px"></i>'
             }
 
-            // var sent_color = "lightgray"
-            // var sent_text = "black"
-
-            // // console.log("discbtn", proposal_data.discourses[i].discourse_name)
-
-            // if (proposal_data.discourses[i].discourse_name == "Positive") {
-            //     sent_color = "white"
-            // } else if (proposal_data.discourses[i].discourse_name == "Negative") {
-            //     sent_color = "black"
-            //     sent_text = "white"
-            // }
-
             // console.log(proposal_data.discourses[i].discourse_name) // this works
             var divbutton = document.createElement("div")
             var buttonHTML = '<div class= "discbtn" id="discourse_' +
@@ -888,10 +762,7 @@
     }
 
     function render_text(text_filter) {
-        // if (disc_filter) {
-        //     text_filter = text_filter.substring(0, text_filter.indexOf(':'))
-        // }
-
+        
         var count = 0
 
         proposal_data = full_data[did]
@@ -903,8 +774,6 @@
 
         for (var i in proposal_data.comments) {
 
-            // var sent_color = "white"
-            // var sent_text = "black"
             var sent = ""
             var headertext = ""
 
@@ -919,20 +788,9 @@
                             " ")[1]
                         .toLowerCase())) && disc_filter == proposal_data.comments[i].discourse) {
 
-                    // if ((tokens.includes(topic_filter.split(" ")[0]) && tokens.includes(topic_filter.split(" ")[
-                    //         1])) &&
-                    //     disc_filter == proposal_data.comments[i].discourse) {
-
                     count += 1
 
                     divSum = document.createElement("div")
-
-                    // if (proposal_data.comments[i].discourse == "Positive") {
-                    //     sent_color = "white"
-                    // } else if (proposal_data.comments[i].discourse == "Negative") {
-                    //     sent_color = "black"
-                    //     sent_text = "white"
-                    // }
 
                     if (proposal_data.comments[i].discourse == "Positive") {
                         sent = '<i class="fa fa-plus"></i>'
@@ -963,26 +821,8 @@
             } else if (topic_filter && !disc_filter) {
 
                 headertext = "Reviews with keyword \"" + topic_filter + "\": "
-                // if (text_filter == proposal_data.comments[i].topic_phrase) {
-                //     divSum = document.createElement("div")
-
-                //     var divHTML =
-                //         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
-                //         '<span ' +
-                //         'style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border-radius:10px;\">' +
-                //         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
-                //         '<div class="commentText" id="comment_' + i + '">' + proposal_data.comments[i].comment +
-                //         '</div></div>'
-                //     divSum.innerHTML = divHTML;
-                //     myNode.appendChild(divSum)
-                // }
-
-
+            
                 var tokens = proposal_data.comments[i].comment.toLowerCase().split(" ");
-
-                // if ((tokens.includes(topic_filter.split(" ")[0].toLowerCase()) || tokens.includes(topic_filter.split(
-                //         " ")[1].toLowerCase()))) {
-                // || (proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[0]) || proposal_data.comments[i].lemmas.includes(text_filter.split(" ")[1]))) 
 
                 if (proposal_data.comments[i].comment.toLowerCase().includes(topic_filter.split(" ")[0]
                         .toLowerCase()) && proposal_data.comments[i].comment.toLowerCase().includes(topic_filter
@@ -993,13 +833,6 @@
                     count += 1
 
                     divSum = document.createElement("div")
-
-                    // if (proposal_data.comments[i].discourse == "Positive") {
-                    //     sent_color = "white"
-                    // } else if (proposal_data.comments[i].discourse == "Negative") {
-                    //     sent_color = "black"
-                    //     sent_text = "white"
-                    // }
 
                     if (proposal_data.comments[i].discourse == "Positive") {
                         sent = '<i class="fa fa-plus"></i>'
@@ -1028,34 +861,12 @@
                     }
                 }
 
-
-
-                // if (text_filter == proposal_data.ngrams[i].ngram) {
-                //     divSum = document.createElement("div")
-
-                //     var divHTML =
-                //         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
-                //         '<span ' +
-                //         ' style=\"background-color:lightgray; padding-left:10px; padding-right:10px; border - radius: 10 px;\">' +
-                //         proposal_data.comments[i].discourse + '</span>' + "\xa0\xa0\xa0" +
-                //         '<div class="commentText" id="comment_' + proposal_data.comments[i].comment_id + '">' + proposal_data.comments[i].comment +
-                //         '</div></div>'
-                //     divSum.innerHTML = divHTML;
-                //     myNode.appendChild(divSum)
-                // }
             } else if (disc_filter && !topic_filter) {
                 headertext = disc_filter + " reviews: "
 
                 if (disc_filter == proposal_data.comments[i].discourse) {
 
                     count += 1
-
-                    // if (proposal_data.comments[i].discourse == "Positive") {
-                    //     sent_color = "white"
-                    // } else if (proposal_data.comments[i].discourse == "Negative") {
-                    //     sent_color = "black"
-                    //     sent_text = "white"
-                    // }
 
                     if (proposal_data.comments[i].discourse == "Positive") {
                         sent = '<i class="fa fa-plus"></i>'
@@ -1066,10 +877,7 @@
                     }
 
                     divSum = document.createElement("div")
-                    // var divHTML =
-                    //     '<div class="commentText" style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
-                    //     proposal_data.comments[i].comment + '</div>'
-
+                   
                     var divHTML =
                         '<div style=\"margin:3px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
@@ -1093,13 +901,6 @@
 
                 headertext = "Total reviews: "
                 count += 1
-
-                // if (proposal_data.comments[i].discourse == "Positive") {
-                //     sent_color = "white"
-                // } else if (proposal_data.comments[i].discourse == "Negative") {
-                //     sent_color = "black"
-                //     sent_text = "white"
-                // }
 
                 if (proposal_data.comments[i].discourse == "Positive") {
                     sent = '<i class="fa fa-plus"></i>'
@@ -1130,226 +931,254 @@
             }
         }
 
-        document.getElementById("textboxheader").textContent = headertext + count
-        // do_pagination()
+        document.getElementById("commentheader").textContent = headertext + count
     }
 
-    // function render_serenbox(data) {
-    //     var myNode = document.getElementById("serenbox");
-    //     while (myNode.firstChild) {
-    //         myNode.removeChild(myNode.firstChild);
-    //     }
+    function render_serenbox(data) {
+        // var myNode = document.getElementById("serenbox");
+        // while (myNode.firstChild) {
+        //     myNode.removeChild(myNode.firstChild);
+        // }
 
-    //     seren_suggest = []
+        seren_suggest = []
 
-    //     // console.log(data)
+        // console.log(data)
 
-    //     var pos = 1
-    //     var neg = 1
-    //     var neut = 1
+        var pos = 1
+        var neg = 1
+        var neut = 1
 
 
-    //     for (var i in explored_list[did]) {
-    //         // console.log(explored_list[did][i].disc)
-    //         if (explored_list[did][i].disc == "Positive")
-    //             pos += 1
-    //         else if (explored_list[did][i].disc == "Negative")
-    //             neg += 1
-    //         else
-    //             neut += 1
-    //     }
+        for (var i in explored_list[did]) {
+            // console.log(explored_list[did][i].disc)
+            if (explored_list[did][i].disc == "Positive")
+                pos += 1
+            else if (explored_list[did][i].disc == "Negative")
+                neg += 1
+            else
+                neut += 1
+        }
 
-    //     var coeffofvar = math.std([pos, neg, neut]) / math.mean([pos, neg, neut])
-    //     console.log("coeff", coeffofvar)
+        var coeffofvar = math.std([pos, neg, neut]) / math.mean([pos, neg, neut])
+        console.log("coeff", coeffofvar)
 
-    //     var pos_proportion = pos / explored_list[did].length
-    //     var neg_proportion = neg / explored_list[did].length
-    //     var neut_proportion = neut / explored_list[did].length
+        var pos_proportion = pos / explored_list[did].length
+        var neg_proportion = neg / explored_list[did].length
+        var neut_proportion = neut / explored_list[did].length
 
-    //     // console.log("props ->", pos_proportion, neg_proportion, neut_proportion)
+        // console.log("props ->", pos_proportion, neg_proportion, neut_proportion)
 
-    //     console.log(seren_log)
+        // console.log(seren_log)
 
-    //     var balanced_list = []
-    //     var sent_score = 0
-    //     var sim_score = 0
-    //     for (var i in data[1]) {
-    //         var prop_selector = null
-    //         if (data[1][i].disc == "Positive")
-    //             prop_selector = pos_proportion
-    //         else if (data[1][i].disc == "Negative")
-    //             prop_selector = neg_proportion
-    //         else
-    //             prop_selector = neut_proportion
+        var balanced_list = []
+        var sent_score = 0
+        var sim_score = 0
+        for (var i in data[1]) {
+            var prop_selector = null
+            if (data[1][i].disc == "Positive")
+                prop_selector = pos_proportion
+            else if (data[1][i].disc == "Negative")
+                prop_selector = neg_proportion
+            else
+                prop_selector = neut_proportion
 
-    //         // console.log("prop-selector -> ", prop_selector)
+            // console.log("prop-selector -> ", prop_selector)
 
-    //         if (coeffofvar < 1) {
-    //             if (seren_log.seren_sent_mod == 0) {
-    //                 sent_score = 0.5 * (coeffofvar)
-    //             } else {
-    //                 sent_score = seren_log.seren_sent_mod * (coeffofvar)
-    //             }
-    //         } else {
-    //             if (seren_log.seren_sent_mod == 0) {
-    //                 sent_score = 0.5 * (1 - prop_selector)
-    //             } else {
-    //                 sent_score = seren_log.seren_sent_mod * (1 - prop_selector)
-    //             }
-    //         }
+            if (coeffofvar < 1) {
+                if (seren_log.seren_sent_mod == 0) {
+                    sent_score = 0.5 * (coeffofvar)
+                } else {
+                    sent_score = seren_log.seren_sent_mod * (coeffofvar)
+                }
+            } else {
+                if (seren_log.seren_sent_mod == 0) {
+                    sent_score = 0.5 * (1 - prop_selector)
+                } else {
+                    sent_score = seren_log.seren_sent_mod * (1 - prop_selector)
+                }
+            }
 
-    //         if (seren_log.seren_sim_mod == 0) {
-    //             sim_score = 0.5 * (1 - data[1][i].score)
-    //         } else {
-    //             sim_score = seren_log.seren_sim_mod * (1 - data[1][i].score)
-    //         }
+            if (seren_log.seren_sim_mod == 0) {
+                sim_score = 0.5 * (1 - data[1][i].score)
+            } else {
+                sim_score = seren_log.seren_sim_mod * (1 - data[1][i].score)
+            }
 
-    //         // var score = 0.5 * (1 - prop_selector) + 0.5 * (1 - data[1][i].score)
-    //         // var score = 0.5 * (coeffofvar) + 0.5 * (1 - data[1][i].score)
-    //         // var sent_height = 0.5 * (1 - prop_selector) * 30
-    //         var sent_height = sent_score * 50
-    //         var sim_height = sim_score * 50
+            // var score = 0.5 * (1 - prop_selector) + 0.5 * (1 - data[1][i].score)
+            // var score = 0.5 * (coeffofvar) + 0.5 * (1 - data[1][i].score)
+            // var sent_height = 0.5 * (1 - prop_selector) * 30
+            var sent_height = sent_score * 50
+            var sim_height = sim_score * 50
 
-    //         // var trigger_sent =
-    //         //     '<div id="seren_sent_' + data[1][i].id +
-    //         //     '" style="flex:0 0 10px; align-self:flex-end; background-color:#FFAB91;margin-bottom:5px;' +
-    //         //     'height:' +
-    //         //     sent_height.toString() +
-    //         //     'px;margin-left:3px"' + 'title="Distribution increase - ' + sent_height.toFixed(3).toString() +
-    //         //     ' points' + '\"><img src="sent_up.png"></img></div>'
-    //         // var trigger_sim =
-    //         //     '<div id="seren_sim_' + data[1][i].id +
-    //         //     '" style="flex: 0 0 10px; align-self:flex-end; background-color:#B39DDB;margin-bottom:5px;' +
-    //         //     'height:' +
-    //         //     sim_height.toString() +
-    //         //     'px;margin-left:3px"' + 'title="Coverage increase - ' + sim_height.toFixed(3).toString() +
-    //         //     ' points' + '\"><img src="sim_up.png"></img></div>'
+            // var trigger_sent =
+            //     '<div id="seren_sent_' + data[1][i].id +
+            //     '" style="flex:0 0 10px; align-self:flex-end; background-color:#FFAB91;margin-bottom:5px;' +
+            //     'height:' +
+            //     sent_height.toString() +
+            //     'px;margin-left:3px"' + 'title="Distribution increase - ' + sent_height.toFixed(3).toString() +
+            //     ' points' + '\"><img src="sent_up.png"></img></div>'
+            // var trigger_sim =
+            //     '<div id="seren_sim_' + data[1][i].id +
+            //     '" style="flex: 0 0 10px; align-self:flex-end; background-color:#B39DDB;margin-bottom:5px;' +
+            //     'height:' +
+            //     sim_height.toString() +
+            //     'px;margin-left:3px"' + 'title="Coverage increase - ' + sim_height.toFixed(3).toString() +
+            //     ' points' + '\"><img src="sim_up.png"></img></div>'
 
-    //         var sent_arrow_img = ""
-    //         "images/sent_up.png"
-    //         var sim_arrow_img = ""
-    //         "images/sim_up.png"
+            var sent_arrow_img = ""
+            "images/sent_up.png"
+            var sim_arrow_img = ""
+            "images/sim_up.png"
 
-    //         if (sent_height > 0 && sent_height <= 10) {
-    //             sent_arrow_img = "images/sent_up_10.png"
-    //         } else if (sent_height > 10 && sent_height <= 20) {
-    //             sent_arrow_img = "images/sent_up_20.png"
-    //         } else if (sent_height > 20 && sent_height <= 30) {
-    //             sent_arrow_img = "images/sent_up_30.png"
-    //         } else if (sent_height > 30) {
-    //             sent_arrow_img = "images/sent_up_40.png"
-    //         }
+            if (sent_height > 0 && sent_height <= 10) {
+                sent_arrow_img = "images/sent_up_10.png"
+            } else if (sent_height > 10 && sent_height <= 20) {
+                sent_arrow_img = "images/sent_up_20.png"
+            } else if (sent_height > 20 && sent_height <= 30) {
+                sent_arrow_img = "images/sent_up_30.png"
+            } else if (sent_height > 30) {
+                sent_arrow_img = "images/sent_up_40.png"
+            }
 
-    //         if (sim_height > 0 && sim_height <= 10) {
-    //             sim_arrow_img = "images/sim_up_10.png"
-    //         } else if (sim_height > 10 &&
-    //             sim_height <= 20) {
-    //             sim_arrow_img = "images/sim_up_20.png"
-    //         } else if (sim_height > 20 && sim_height <= 30) {
-    //             sim_arrow_img = "images/sim_up_30.png"
-    //         } else if (sim_height > 30) {
-    //             sim_arrow_img = "images/sim_up_40.png"
-    //         }
+            if (sim_height > 0 && sim_height <= 10) {
+                sim_arrow_img = "images/sim_up_10.png"
+            } else if (sim_height > 10 &&
+                sim_height <= 20) {
+                sim_arrow_img = "images/sim_up_20.png"
+            } else if (sim_height > 20 && sim_height <= 30) {
+                sim_arrow_img = "images/sim_up_30.png"
+            } else if (sim_height > 30) {
+                sim_arrow_img = "images/sim_up_40.png"
+            }
 
-    //         var trigger_sent =
-    //             '<img src="' + sent_arrow_img + '" id="seren_sent_' + data[1][i].id +
-    //             '" style="margin-bottom:5px;' +
-    //             'height:' +
-    //             sent_height.toString() +
-    //             'px;width: 15px; margin-left:3px"' + ' title="Distribution increase: ' + sent_height.toFixed(3)
-    //             .toString() +
-    //             ' points' + '\"></img>'
-    //         var trigger_sim =
-    //             '<img src="' + sim_arrow_img + '" id="seren_sim_' + data[1][i].id +
-    //             '" style="margin-bottom:5px;' +
-    //             'height:' +
-    //             sim_height.toString() +
-    //             'px; width: 15px; margin-left:3px"' + ' title="Coverage increase: ' + sim_height.toFixed(3)
-    //             .toString() +
-    //             ' points' + '\"></img>'
+            var trigger_sent =
+                '<img src="' + sent_arrow_img + '" id="seren_sent_' + data[1][i].id +
+                '" style="margin-bottom:5px;' +
+                'height:' +
+                sent_height.toString() +
+                'px;width: 15px; margin-left:3px"' + ' title="Distribution increase: ' + sent_height.toFixed(3)
+                .toString() +
+                ' points' + '\"></img>'
+            var trigger_sim =
+                '<img src="' + sim_arrow_img + '" id="seren_sim_' + data[1][i].id +
+                '" style="margin-bottom:5px;' +
+                'height:' +
+                sim_height.toString() +
+                'px; width: 15px; margin-left:3px"' + ' title="Coverage increase: ' + sim_height.toFixed(3)
+                .toString() +
+                ' points' + '\"></img>'
 
-    //         balanced_list.push({
-    //             "id": data[1][i].id,
-    //             "text": data[1][i].text,
-    //             "sent_score": sent_score,
-    //             "sim_score": sim_score,
-    //             "trigger_sent": trigger_sent,
-    //             "trigger_sim": trigger_sim,
-    //             "disc": data[1][i].disc
-    //         })
-    //     }
+            balanced_list.push({
+                "id": data[1][i].id,
+                "text": data[1][i].text,
+                "sent_score": sent_score,
+                "sim_score": sim_score,
+                "trigger_sent": trigger_sent,
+                "trigger_sim": trigger_sim,
+                "disc": data[1][i].disc
+            })
+        }
 
-    //     var sorted_balanced_list = balanced_list.sort(function (a, b) {
-    //         return b.score - a.score
-    //     })
+        var sorted_balanced_list = balanced_list.sort(function (a, b) {
+            return b.score - a.score
+        })
 
-    //     // console.log(sorted_balanced_list)
+        // console.log(sorted_balanced_list)
 
-    //     divSum = document.createElement("div")
-    //     var divHTML = ''
-    //     var sent = ''
-    //     var idx_list = []
+        divSum = document.createElement("div")
+        var divHTML = ''
+        var sent = ''
+        var idx_list = []
 
-    //     var sentsent = 0
-    //     var simsim = 0
-    //     for (var x in sorted_balanced_list) {
-    //         sentsent += sorted_balanced_list[x].sent_score
-    //         simsim += sorted_balanced_list[x].sim_score
-    //     }
-    //     // console.log(sentsent / sorted_balanced_list.length, simsim / sorted_balanced_list.length)
+        var sentsent = 0
+        var simsim = 0
+        for (var x in sorted_balanced_list) {
+            sentsent += sorted_balanced_list[x].sent_score
+            simsim += sorted_balanced_list[x].sim_score
+        }
+        // console.log(sentsent / sorted_balanced_list.length, simsim / sorted_balanced_list.length)
 
-    //     // for (var cnt = 0; cnt < 5;) {
-    //     for (var idx = 0; idx < 5; idx++) {
-    //         // //serendipity
-    //         // Math.seedrandom()
-    //         // roll = Math.floor(Math.random() * (6 - 1 + 1) + 1)
-    //         // Math.seedrandom(roll.toString());
-    //         // var idx = Math.floor(Math.random() * sorted_balanced_list.length)
-    //         // if (idx_list.includes(idx)) {
-    //         //     continue;
-    //         // }
+        // for (var cnt = 0; cnt < 5;) {
+        for (var idx = 0; idx < 5; idx++) {
+            // //serendipity
+            // Math.seedrandom()
+            // roll = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+            // Math.seedrandom(roll.toString());
+            // var idx = Math.floor(Math.random() * sorted_balanced_list.length)
+            // if (idx_list.includes(idx)) {
+            //     continue;
+            // }
 
-    //         // // console.log(sorted_balanced_list[idx])
+            // // console.log(sorted_balanced_list[idx])
 
-    //         // cnt += 1
-    //         // idx_list.push(idx)
+            // cnt += 1
+            // idx_list.push(idx)
 
-    //         if (sorted_balanced_list[idx].disc == "Positive") {
-    //             sent = '<i class="fa fa-plus"></i>'
-    //         } else if (sorted_balanced_list[idx].disc == "Negative") {
-    //             sent = '<i class="fa fa-minus"></i>'
-    //         } else {
-    //             sent = '<i class="fa fa-circle-o"></i>'
-    //         }
+            if (sorted_balanced_list[idx].disc == "Positive") {
+                sent = '<i class="fa fa-plus"></i>'
+            } else if (sorted_balanced_list[idx].disc == "Negative") {
+                sent = '<i class="fa fa-minus"></i>'
+            } else {
+                sent = '<i class="fa fa-circle-o"></i>'
+            }
 
-    //         seren_suggest.push(sorted_balanced_list[idx])
+            seren_suggest.push(sorted_balanced_list[idx])
 
-    //         divHTML +=
-    //             '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
-    //             '<span ' +
-    //             ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
-    //             '<div style="flex: 0 0 90%; padding-right:5px" class="serenText" id="seren_comment_' +
-    //             sorted_balanced_list[idx].id +
-    //             '">' +
-    //             sorted_balanced_list[idx].text + '</div>' +
-    //             '<div style="display:flex; flex-direction: row; justify-content: flex-end; align-self:center; align-items:flex-end">' +
-    //             sorted_balanced_list[idx]
-    //             .trigger_sent +
-    //             sorted_balanced_list[idx].trigger_sim +
-    //             '</div>' + '</div>'
-    //         divSum.innerHTML = divHTML;
-    //         myNode.appendChild(divSum)
-    //     }
+            divHTML +=
+                '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                '<span ' +
+                ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                '<p class="serenText" id="seren_comment_' +
+                sorted_balanced_list[idx].id +
+                '">' +
+                sorted_balanced_list[idx].text + '</p></div>'
+                // +
+                // '<div style="display:flex; flex-direction: row; justify-content: flex-end; align-self:center; align-items:flex-end">' +
+                // sorted_balanced_list[idx]
+                // .trigger_sent +
+                // sorted_balanced_list[idx].trigger_sim +
+                // '</div>' + '</div>'
+            // divSum.innerHTML = divHTML;
+            // myNode.appendChild(divSum)
+        }
 
-    //     divSum.innerHTML = divHTML;
-    //     myNode.appendChild(divSum)
+        divHTML += '<div style="width=100%; height: 25px; border: solid thin lightgray; margin: 10px 10px 20px 10px">\xa0\xa0Suggested reviews you have visited already</div>'
 
-    //     // console.log(seren_suggest)
+        var proposal_data = full_data[did]
+        for (var i in seren_id_list[did]){
+            for (var j in proposal_data.comments){
+                if(proposal_data.comments[j].comment_id == seren_id_list[did][i]){
 
-    // }
+                    if (proposal_data.comments[j].discourse == "Positive") {
+                        sent = '<i class="fa fa-plus"></i>'
+                    } else if (proposal_data.comments[j].discourse == "Negative") {
+                        sent = '<i class="fa fa-minus"></i>'
+                    } else {
+                        sent = '<i class="fa fa-circle-o"></i>'
+                    }
+
+                     divHTML +=
+                        '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<span ' +
+                        ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                        '<p style="background-color: #81D4FA" class="serenTextPrev" id="seren_comment_' +
+                        proposal_data.comments[j].comment_id +
+                        '">' +
+                        proposal_data.comments[j].comment + '</div></div>'
+                }
+            }
+        }
+        
+        divSum.innerHTML = divHTML;
+        myNode.appendChild(divSum)
+
+        // console.log(seren_id_list[did])
+
+    }
 
     function tinymove(bar_id, max_len) {
         var elem = document.getElementById(bar_id);
+        // console.log(elem)
         var width = 0
         var id = setInterval(frame, 10);
 
@@ -1393,7 +1222,6 @@
                 document.getElementById("covtext").innerHTML =
                     '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#B39DDB" aria-hidden="true"></i>' +
                     'Coverage: You know about ' + covered_list[did].length + ' reviews' + ' (' + width * 1 + '%)';
-
                 localStorage.setItem("coverageBar", width.toString())
 
             } else if (bar_id == "distributionBar") {
@@ -1504,6 +1332,117 @@
         '</b>';
     }
 
+    function refresh_sentbar(bar_id){
+        proposal_data = full_data[did].discourses
+        var pos = 0;
+        var neg = 0;
+        var neut = 0;
+        for (var i in proposal_data){
+            if(proposal_data[i].discourse_name == "Positive")
+                pos = proposal_data[i].count;
+            else if(proposal_data[i].discourse_name == "Negative")
+                neg = proposal_data[i].count;
+            else
+                neut = proposal_data[i].count;
+        } 
+
+        var total = pos + neg + neut;
+        var read = discourses_array[did].Negative + discourses_array[did].Positive + discourses_array[did].Neutral;
+
+        if(bar_id == "negbar"){
+            document.getElementById("negbar").style.width = ((neg / total) * 100).toString() + '%';
+            document.getElementById("negativeBar").style.width = Math.ceil((discourses_array[did].Negative / neg) * 100).toString() + '%';
+            document.getElementById("negativeBar").innerHTML = '<i class="fa fa-minus" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Negative / neg) * 100).toString() + '%'
+        }
+        if(bar_id == "posbar"){
+            document.getElementById("posbar").style.width = ((pos / total) * 100).toString() + '%';
+            document.getElementById("positiveBar").style.width = Math.ceil((discourses_array[did].Positive / pos) * 100).toString() + '%';
+            document.getElementById("positiveBar").innerHTML = '<i class="fa fa-plus" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Positive / pos) * 100).toString() + '%'
+        }
+        else{
+            document.getElementById("neutbar").style.width = ((neut / total) * 100).toString() + '%';
+            document.getElementById("neutralBar").style.width = Math.ceil((discourses_array[did].Neutral / neut) * 100).toString() + '%';
+            document.getElementById("neutralBar").innerHTML = '<i class="fa fa-circle-o" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Neutral / neut) * 100).toString() + '%'
+        }
+
+        var proposal_data = full_data[did]
+        var explored_ids = []
+        for (var i in explored_list[did]) {
+            explored_ids.push(explored_list[did][i].id)
+        }
+        var pos = 0
+        var neg = 0
+        var neut = 0
+
+        for (var i in proposal_data.comments) {
+            if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                if (proposal_data.comments[i].discourse == "Positive") {
+                    pos += 1
+                } else if (proposal_data.comments[i].discourse == "Negative") {
+                    neg += 1
+                } else {
+                    neut += 1
+                }
+            }
+        }
+        var total = pos + neg + neut
+        var items = [{
+            "sent": "Positive",
+            "count": pos
+        }, {
+            "sent": "Negative",
+            "count": neg
+        }, {
+            "sent": "Neutral",
+            "count": neut
+        }]
+        var total = pos + neg + neut
+
+        var items = [{
+            "sent": "Positive",
+            "count": pos
+        }, {
+            "sent": "Negative",
+            "count": neg
+        }, {
+            "sent": "Neutral",
+            "count": neut
+        }]
+
+        var sorted = items.sort(function (a, b) {
+            return b.count - a.count
+        })
+
+        var fgroup = ((sorted[0].count / total) - (sorted[1].count / total)) * 100
+
+        console.log("ggwp", sorted)
+
+        if (fgroup > 10) {
+            document.getElementById("disttext").innerHTML =
+                '<i class="fa fa-square fa-sm" style="margin-right:2px; color:#FFAB91" aria-hidden="true"></i>' +
+                'Distribution: You read ' +
+                sorted[0]
+                .sent + ' reviews';
+        } else {
+            var sgroup = ((sorted[1].count / total) - (sorted[2].count / total)) * 100
+            if (sgroup > 10) {
+                document.getElementById("disttext").innerHTML =
+                    '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i>' +
+                    'Distribution: You read ' +
+                    sorted[0]
+                    .sent + ' and ' + sorted[1]
+                    .sent + ' reviews';
+            } else {
+                document.getElementById("disttext").innerHTML =
+                    '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i>' +
+                    'Distribution: You read all kinds of reviews';
+            }
+        }
+
+        // document.getElementById("disttext").innerHTML = '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i> Distribution: You read ' + explored_list[did].length +
+        //             ' sentiments' + ' (' + metrics[did].visit * 1 + '%)';
+    }
+
     function get_visit() {
         var cnt = 0
         for (var i in dc_array[did]) {
@@ -1551,7 +1490,7 @@
         //     }
         // }
 
-        console.log("in coverage", explored_list[did], unexplored_list[did])
+        // console.log(explored_list[did], unexplored_list[did])
 
         $.ajax({
             type: "POST",
@@ -1643,9 +1582,7 @@
                     ' - Visit: ' +
                     '<div style="color: blue">' + metrics[prev_did].visit + '</div>' +
                     '% Coverage: ' + '<div style="color: green">' + metrics[prev_did]
-                    .coverage + '</div>' + '% Distribution: ' +
-                    '<div style="color: red">' + metrics[prev_did].distribution +
-                    '%' + '</div>')
+                    .coverage + '</div>' + '%')
             }
 
             render_topics(discussion_id)
@@ -1660,6 +1597,8 @@
             // while (myNode.firstChild) {
             //     myNode.removeChild(myNode.firstChild);
             // }
+
+            prev_did = did
 
             did = discussion_id
 
@@ -1705,40 +1644,52 @@
             disc_filter = ""
             text_filter = ""
 
-            // explored_list = []
+            // console.log("exp on swicth", explored_list[did])
+            unexplored_list[did] = [];
 
             for (var i in full_data[did].comments) {
-                unexplored_list[did].push({
-                    "id": full_data[did].comments[i].comment_id,
-                    "text": full_data[did].comments[i].comment,
-                    "disc": full_data[did].comments[i].discourse
-                })
+                var exp_flag = false;
+                for(var j in explored_list[did]){
+                    if(explored_list[did][j].id == full_data[did].comments[i].comment_id){
+                        exp_flag = true;
+                    }
+                }
+
+                if(!exp_flag){
+                    unexplored_list[did].push({
+                        "id": full_data[did].comments[i].comment_id,
+                        "text": full_data[did].comments[i].comment,
+                        "disc": full_data[did].comments[i].discourse
+                    })
+                }
             }
 
             if (dc_array[did].length < 1) {
                 dc_array[did] = new Array(full_data[did].comments.length)
             }
 
-            // console.log("dc_array", dc_array[did])
+            // console.log("unexp on switch", unexplored_list[did])
+
+            refresh_sentbar("negbar");
+            refresh_sentbar("neutbar");
+            refresh_sentbar("posbar");
 
             refresh_move("coverageBar")
-            refresh_move("distributionBar")
+            // refresh_move("distributionBar")
             refresh_move("visitBar")
 
             render_text(text_filter)
 
-            console.log(dice_trigger)
+            console.log("dt", dice_trigger)
             if (dice_trigger == 1) {
                 dice_trigger = 0
                 dice_toggle()
             }
-
-            prev_did = did
         });
     });
 
     $(document).on('click', '.topicbtn', function () {
-        console.log($(this)[0].innerText)
+        // console.log($(this)[0].innerText)
         topic_filter = $(this)[0].innerText
 
         if (clicked_id_metric) {
@@ -1756,7 +1707,7 @@
         if (prev_selected_id_ngram == selected_id_ngram) {
             logInteraction('click,ngram_' + topic_filter + ',deselect an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 140px;"
             )
             selected_id_ngram = ""
             prev_selected_id_ngram = ""
@@ -1770,11 +1721,11 @@
         } else {
             logInteraction('click,ngram_' + topic_filter + ',select an ngram')
             document.getElementById(selected_id_ngram).setAttribute("style",
-                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 200px;"
+                "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px goldenrod; text-align: center; width: 140px;"
             )
             if (prev_selected_id_ngram) {
                 document.getElementById(prev_selected_id_ngram).setAttribute("style",
-                    "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 200px;"
+                    "margin:5px; background-color: white; padding-left:3px; padding-right:3px; border-radius: 5px; border: solid 2px lightgray; text-align: center; width: 140px;"
                 )
             }
             prev_selected_id_ngram = selected_id_ngram
@@ -1875,8 +1826,10 @@
 
     });
 
-    function comment_interact(id) {
+    function comment_interact(id, textType) {
         var text = ""
+        var disc = ""
+        var discbar = ""
         // console.log("inside comment intr --", id)
 
         var covered_ids = []
@@ -1884,22 +1837,24 @@
             covered_ids.push(covered_list[did][i].id)
         }
 
-        // if (!covered_ids.includes(data[0][i].id.toString())) {
-        //     covered_list[did].push({
-        //         "id": data[0][i].id.toString(),
-        //         "text": data[0][i].text
-        //     })
-        // }
-
         for (var i in full_data[did].comments) {
             if (full_data[did].comments[i].comment_id.toString() == id) {
                 text = full_data[did].comments[i].comment
                 disc = full_data[did].comments[i].discourse
+
+                if(disc == "Positive") discbar = "posbar"
+                else if(disc == "Negative") discbar = "negbar"
+                else discbar = "neutbar"
+
                 // console.log(text)
                 if (!dc_array[did][i]) {
                     dc_array[did][i] = 1
                     discourses_array[did][full_data[did].comments[i].discourse] += 1
                     comment_id_list[did].push(full_data[did].comments[i].comment_id)
+
+                    if(textType == "serenText"){
+                        seren_id_list[did].unshift(full_data[did].comments[i].comment_id)
+                    }
 
                     explored_list[did].push({
                         "id": id,
@@ -1924,24 +1879,15 @@
             }
         }
 
-        // // explored_list[did].push(text)
-        // explored_list[did].push({
-        //     "id": id,
-        //     "text": text
-        // })
-
-        // covered_list[did].push({
-        //     "id": id,
-        //     "text": text
-        // })
-
         for (var i in unexplored_list[did]) {
             if (unexplored_list[did][i].text == text) {
                 unexplored_list[did].splice(i, 1)
             }
         }
 
-        get_distribution()
+        console.log(discourses_array[did])
+        // get_distribution()
+        refresh_sentbar(discbar)
         get_coverage(full_data[did].comments)
         get_visit()
     }
@@ -1988,7 +1934,7 @@
         //     }, 4000)
         // }
         logInteraction('click,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
-        comment_interact($(this)[0].id.substring(8))
+        comment_interact($(this)[0].id.substring(8), "commentText")
         // document.getElementById("timing").innerText = " clicked - " + $(this)[0].innerText
     });
 
@@ -2024,26 +1970,41 @@
 
         logInteraction('click,serencomment_' + $(this)[0].id.substring(14) +
             ',interact with a suggested comment')
-        comment_interact($(this)[0].id.substring(14))
+        comment_interact($(this)[0].id.substring(14), "serenText")
     });
 
     $(document).on('mouseover', '.commentText', function () {
         time_start = Date.now();
-        // console.log($(this)[0].innerText, start)
+        var delay = ($(this)[0].innerText.split(" ").length / 15) > 4 ? 4000 : ($(this)[0].innerText.split(" ").length / 15) * 1000
+        if(!document.getElementById($(this)[0].id).style.backgroundColor){
+            document.getElementById("commentloading").style.display = "block"
+            setTimeout(function () {
+                document.getElementById("commentloading").style.display = "none"
+            }, delay)
+        }
+        // console.log($(this)[0].innerText, delay)
     });
 
     $(document).on('mouseover', '.serenText', function () {
         time_start = Date.now();
+        var delay = ($(this)[0].innerText.split(" ").length / 15) > 4 ? 4000 : ($(this)[0].innerText.split(" ").length / 15) * 1000
+        if(!document.getElementById($(this)[0].id).style.backgroundColor){
+            document.getElementById("commentloading").style.display = "block"
+            setTimeout(function () {
+                document.getElementById("commentloading").style.display = "none"
+            }, delay)
+        }
         // console.log($(this)[0].innerText, start)
     });
 
     $(document).on('mouseout', '.commentText', function () {
+        document.getElementById("commentloading").style.display = "none"
         time_end = Date.now();
         var elapsed_time = ((time_end - time_start) / 1000)
-        console.log(elapsed_time)
-        var delay = $(this)[0].innerText.split(" ").length / 40
-        console.log(delay)
-        if (this.className == 'commentText' && elapsed_time > delay) {
+        // console.log("etime", elapsed_time)
+        var delay = $(this)[0].innerText.split(" ").length / 15
+        // console.log("delay", delay)
+        if (this.className == 'commentText' && (elapsed_time > delay || elapsed_time > 4)) {
             // if (dice_trigger == 1) {
             //     document.getElementById("serenloading").style.display = "block"
             //     setTimeout(function () {
@@ -2052,17 +2013,17 @@
             // }
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) + ',interact with a comment')
-            comment_interact($(this)[0].id.substring(8))
+            comment_interact($(this)[0].id.substring(8), "commentText")
         }
     });
 
     $(document).on('mouseout', '.serenText', function () {
+        document.getElementById("commentloading").style.display = "none"
         time_end = Date.now();
-
         var elapsed_time = ((time_end - time_start) / 1000)
         // console.log(elapsed_time, $(this)[0].innerText)
-        var delay = $(this)[0].innerText.split(" ").length / 40
-        if (this.className == 'serenText' && elapsed_time > delay) {
+        var delay = $(this)[0].innerText.split(" ").length / 15
+        if (this.className == 'serenText' && (elapsed_time > delay || elapsed_time > 4)) {
 
             id = $(this)[0].id
             document.getElementById(id).setAttribute(
@@ -2078,7 +2039,7 @@
 
             logInteraction('hover,comment_' + $(this)[0].id.substring(8) +
                 ',interact with a suggested comment')
-            comment_interact($(this)[0].id.substring(14))
+            comment_interact($(this)[0].id.substring(14), "serenText")
         }
         // document.getElementById("timing").innerText = "hovered " + elapsed_time + " s over " + $(this)[
         // 0]
@@ -2133,12 +2094,81 @@
 
     }
 
+    function prev_seren() {
+
+        // console.log("in prev", unexplored_list)
+
+        var random_idx = []
+        // Math.seedrandom(); // seeding
+        for (var cnt = 0; cnt < 5;) {
+            var idx = Math.floor(Math.random() * unexplored_list[did].length)
+            if (!random_idx.includes(idx) || !seren_id_list.includes(idx)) {
+                cnt += 1
+                random_idx.push(idx)
+            }
+        }
+
+        console.log("prev_seren", unexplored_list)
+
+        var myNode = document.getElementById("serenbox");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        proposal_data = full_data[did]
+        divSum = document.createElement("div")
+        var divHTML = ''
+        for (var i = 0; i < 5; i++) {
+            if (proposal_data.comments[random_idx[i]].discourse == "Positive") {
+                sent = '<i class="fa fa-plus" style="margin-right:5px"></i>'
+            } else if (proposal_data.comments[random_idx[i]].discourse == "Negative") {
+                sent = '<i class="fa fa-minus"></i>'
+            } else {
+                sent = '<i class="fa fa-circle-o"></i>'
+            }
+
+            divHTML +=
+                '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                '<span ' +
+                ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                '<div class="serenText" id="seren_comment_' + proposal_data.comments[random_idx[i]].comment_id +
+                '">' +
+                proposal_data.comments[random_idx[i]].comment + '</div>' +
+                '</div>'
+        }
+
+        divHTML += '<div style="width=100%; height: 20px; border-top: solid thin gray"></div>'
+
+        var proposal_data = full_data[did]
+        for (var i in seren_id_list[did]){
+            for (var j in proposal_data.comments){
+                if(proposal_data.comments[j].comment_id == seren_id_list[did][i]){
+                     divHTML +=
+                        '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
+                        '<span ' +
+                        ' style=\"padding-left:5px; padding-right:5px;' + '\">' + sent + '</span>' + "\xa0" +
+                        '<p style="background-color: #81D4FA" class="serenTextPrev" id="seren_comment_' +
+                        proposal_data.comments[j].comment_id +
+                        '">' +
+                        proposal_data.comments[j].comment + '</div></div>'
+                }
+            }
+        }
+
+        divSum.innerHTML = divHTML;
+        myNode.appendChild(divSum)
+
+    }
+    
     function dice_toggle() {
         if (dice_trigger == 0) {
-            logInteraction('click,dice,get suggested comments')
+            // logInteraction('click,dice,get suggested comments')
 
-            // if (!document.getElementById("serenbox").hasChildNodes()) {
+            // if (!document.getElementById("serenbox").hasChildNodes() && explored_list[did].length == 0) {
             //     random_seren()
+            // }
+            // else{
+            //     prev_seren()
             // }
 
             dice_trigger = 1
@@ -2149,15 +2179,19 @@
             // document.getElementById("serenbox").setAttribute("style",
             //     "margin: 10px; max-width: 100%; height: 45vh; overflow-y:auto;")
 
-            // document.getElementById("textboxparent").setAttribute("style",
-            //     "display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin: 5px; max-width: 47%; height: 55vh;"
-            // )
+            document.getElementById("textboxparent").setAttribute("style",
+                "display:flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; margin: 5px; max-width: 95%; height: 55vh;"
+            )
+
+            document.getElementById("textboxheader").setAttribute("style",
+                "display:flex; flex-direction: row; width: 95%; border: solid thin lightgray"
+            )
 
             // document.getElementById("serenboxheader").setAttribute("style",
             //     "display:flex; flex-direction: row; width: 95%; border: solid thin lightgray"
             // )
 
-            // document.getElementById("serenheader").textContent = 'You may also like:'
+            // document.getElementById("serenheader").textContent = '\xa0\xa0 Suggested reviews that You may find useful:'
 
             // document.getElementById("dicetoggle").setAttribute("style",
             //     "width: 150px; height: 23px; background-color: green; color:white; border: solid thin black; border-radius: 2px; margin-left: 5%; text-align: center;"
@@ -2168,7 +2202,7 @@
             // do_pagination()
 
         } else if (dice_trigger == 1) {
-            logInteraction('click,dice,remove suggested comments')
+            // logInteraction('click,dice,remove suggested comments')
             dice_trigger = 0
 
             // document.getElementById("serenboxparent").setAttribute("style",
@@ -2180,6 +2214,8 @@
             // document.getElementById("serenboxheader").setAttribute("style",
             //     "display:flex; flex-direction: row; width: 0px;"
             // )
+
+            // document.getElementById("serenboxparent").style.display = "none";
 
             // document.getElementById("serenheader").textContent = ''
 
@@ -2214,9 +2250,11 @@
         $('input[type="checkbox"]').click(function () {
             if ($(this).is(":checked")) {
                 console.log("checked")
+                logInteraction('click,dice,get suggested comments')
                 dice_toggle()
             } else if ($(this).is(":not(:checked)")) {
                 console.log("unchecked")
+                logInteraction('click,dice,remove suggested comments')
                 dice_toggle()
             }
         });
@@ -2268,7 +2306,7 @@
             }
         }
 
-        console.log(category, tag, met_count, totalcount)
+        // console.log(category, tag, met_count, totalcount)
         return ((met_count / totalcount) * 100)
     }
 
@@ -2354,7 +2392,7 @@
             tot_neut = 1
         }
 
-        console.log(tag, tot_pos, tot_neg, tot_neut)
+        // console.log(tag, tot_pos, tot_neg, tot_neut)
 
         for (var i in explored_list[did]) {
             explored_ids.push(explored_list[did][i].id)
@@ -2419,8 +2457,11 @@
             var ngram_list = []
 
             for (var i in proposal_data.ngrams) {
+                if(i > 7) break;
                 ngram_list.push(proposal_data.ngrams[i].ngram)
             }
+
+            // console.log(ngram_list)
 
             for (var i in ngram_list) {
                 var totalcount = 0
@@ -2439,12 +2480,12 @@
                     // tinycolor = "#81d4fa"
 
                     tinycolor = "rgba(129, 212, 250, 0.7)"
-                    for (var j = 0; j < 13; j++) {
+                    for (var j = 0; j < 11; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
-                    for (var j = 0; j < 10; j++) {
+                    for (var j = 0; j < 8; j++) {
                         // y_array[j].style.opacity = "0.7"
                         y_array[j].style.fontWeight = "bold"
                     }
@@ -2461,12 +2502,12 @@
                 } else if (id == "coverback") {
                     // tinycolor = "#B39DDB"
                     tinycolor = "rgba(179, 157, 209, 0.7)"
-                    for (var j = 0; j < 13; j++) {
+                    for (var j = 0; j < 11; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
-                    for (var j = 0; j < 10; j++) {
+                    for (var j = 0; j < 8; j++) {
                         // y_array[j].style.opacity = "0.7"
                         y_array[j].style.fontWeight = "bold"
                     }
@@ -2483,12 +2524,12 @@
                 } else if (id == "distback") {
                     // tinycolor = "#FFAB91"
                     tinycolor = "rgba(255, 171, 145, 0.7)"
-                    for (var j = 0; j < 13; j++) {
+                    for (var j = 0; j < 11; j++) {
                         x_array[j].style.backgroundColor = tinycolor
                         x_array[j].style.display = "block"
                     }
 
-                    for (var j = 0; j < 10; j++) {
+                    for (var j = 0; j < 8; j++) {
                         // y_array[j].style.opacity = "0.7"
                         y_array[j].style.fontWeight = "bold"
                     }
@@ -2550,11 +2591,11 @@
                     "border: solid 2px lightgray; width:100%")
             }
 
-            for (var i = 0; i < 13; i++) {
+            for (var i = 0; i < 11; i++) {
                 x_array[i].style.backgroundColor = tinycolor
                 x_array[i].style.display = "none"
             }
-            for (var j = 0; j < 10; j++) { //
+            for (var j = 0; j < 8; j++) { //
                 // y_array[j].style.opacity = "0.7"
                 y_array[j].style.fontWeight = "normal"
             }
@@ -2715,7 +2756,7 @@
                     }
 
                     prev_clicked_id_metric = clicked_id_metric
-                    document.getElementById("textboxheader").textContent = met_bar + " " + met_header + " " +
+                    document.getElementById("commentheader").textContent = met_bar + " " + met_header + " " +
                         count.toString()
                 }
 

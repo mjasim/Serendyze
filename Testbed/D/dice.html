@@ -3,9 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    .body{
-        font-size:;
-    }
     .links line {
         stroke: #999;
         stroke-opacity: 0.6;
@@ -289,18 +286,19 @@
                             aria-hidden="true"></i>Distribution: You read 0%
                         sentiments</div>
                 </div> -->
+                
                 <div style="display:flex; flex-direction: column; align-items: center; width:31%; margin-top: 5px; margin-bottom: 5px; margin-left: 1%; margin-right: 1%;">
                     <div style="display: flex; flex-direction: row; align-items: center; width: 100%">
                         <div class="sentbar" id="posbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of positive comments you have directly interacted with.">
-                            <div id="positiveBar" style="height:24px; width:0%; background-color: lightgray;">
+                            <div id="positiveBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-plus" style="margin: 0px 3px 0px 3px"></i>
                             </div>
                         </div>
                         <div class="sentbar" id="neutbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of neutral comments you have directly interacted with.">
-                            <div id="neutralBar" style="height:24px; width:0%; background-color: lightgray;">
+                            <div id="neutralBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-minus" style="margin: 0px 3px 0px 3px"></i>
                             </div>
                         </div>
                         <div class="sentbar" id="negbar" style="border: solid 2px lightgrey;" title="This bar shows the amount of negative comments you have directly interacted with.">
-                            <div id="negativeBar" style="height:24px; width:0%; background-color: lightgray;">
+                            <div id="negativeBar" style="display: flex; flex-direction: row; align-items: center; height:24px; width:0%; background-color: lightgray;"><i class="fa fa-circle-o" style="margin: 0px 3px 0px 3px"></i>
                             </div>
                         </div>
                     </div>
@@ -355,9 +353,9 @@
 
     function gotoPost() {
 
-        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].visit.toString());
-        logInteraction('study' + ',' + 'coverage' + ',' + metrics[did].coverage.toString());
-        logInteraction('study' + ',' + 'visit' + ',' + metrics[did].distribution.toString());
+        logInteraction('study' + ',' + 'visit' + ',' + metrics[0].visit.toString() + ',' + metrics[1].visit.toString() + ',' + metrics[2].visit.toString());
+        logInteraction('study' + ',' + 'coverage' + ',' + metrics[0].coverage.toString() + ',' + metrics[1].coverage.toString() + ',' + metrics[2].coverage.toString());
+        logInteraction('study' + ',' + 'Distribution' + ',' + JSON.stringify(discourses_array[0]) + ',' + JSON.stringify(discourses_array[1]) + ',' + JSON.stringify(discourses_array[2]));
         var finalize_text = orig_area_text[did]
         if (confirm("Confirm " + finalize_text + "?") == true) {
             end_time = Date.now()
@@ -721,7 +719,7 @@
         }
     }
 
-    $(function () {
+    $(document).ready(function(){
         $(document).tooltip();
     });
 
@@ -1153,12 +1151,21 @@
             // myNode.appendChild(divSum)
         }
 
-        divHTML += '<div style="width=100%; height: 20px; border-top: solid thin gray"></div>'
+        divHTML += '<div style="width=100%; height: 25px; border: solid thin lightgray; margin: 10px 10px 20px 10px">\xa0\xa0Suggested reviews you have visited already</div>'
 
         var proposal_data = full_data[did]
         for (var i in seren_id_list[did]){
             for (var j in proposal_data.comments){
                 if(proposal_data.comments[j].comment_id == seren_id_list[did][i]){
+
+                    if (proposal_data.comments[j].discourse == "Positive") {
+                        sent = '<i class="fa fa-plus"></i>'
+                    } else if (proposal_data.comments[j].discourse == "Negative") {
+                        sent = '<i class="fa fa-minus"></i>'
+                    } else {
+                        sent = '<i class="fa fa-circle-o"></i>'
+                    }
+
                      divHTML +=
                         '<div style=\"margin:1px; margin-bottom:10px; display:flex; flex-direction: row; align-items: flex-start\">' +
                         '<span ' +
@@ -1352,19 +1359,96 @@
 
         if(bar_id == "negbar"){
             document.getElementById("negbar").style.width = ((neg / total) * 100).toString() + '%';
-            document.getElementById("negativeBar").style.width = ((discourses_array[did].Negative / neg) * 100).toString() + '%';
+            document.getElementById("negativeBar").style.width = Math.ceil((discourses_array[did].Negative / neg) * 100).toString() + '%';
+            document.getElementById("negativeBar").innerHTML = '<i class="fa fa-minus" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Negative / neg) * 100).toString() + '%'
         }
         if(bar_id == "posbar"){
             document.getElementById("posbar").style.width = ((pos / total) * 100).toString() + '%';
-            document.getElementById("positiveBar").style.width = ((discourses_array[did].Positive / pos) * 100).toString() + '%';
+            document.getElementById("positiveBar").style.width = Math.ceil((discourses_array[did].Positive / pos) * 100).toString() + '%';
+            document.getElementById("positiveBar").innerHTML = '<i class="fa fa-plus" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Positive / pos) * 100).toString() + '%'
         }
         else{
             document.getElementById("neutbar").style.width = ((neut / total) * 100).toString() + '%';
-            document.getElementById("neutralBar").style.width = ((discourses_array[did].Neutral / neut) * 100).toString() + '%';
+            document.getElementById("neutralBar").style.width = Math.ceil((discourses_array[did].Neutral / neut) * 100).toString() + '%';
+            document.getElementById("neutralBar").innerHTML = '<i class="fa fa-circle-o" style="margin: 0px 3px 0px 3px"></i>' + Math.ceil((discourses_array[did].Neutral / neut) * 100).toString() + '%'
         }
 
-        document.getElementById("disttext").innerHTML = '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i> Distribution: You read ' + explored_list[did].length +
-                    ' sentiments' + ' (' + metrics[did].visit * 1 + '%)';
+        var proposal_data = full_data[did]
+        var explored_ids = []
+        for (var i in explored_list[did]) {
+            explored_ids.push(explored_list[did][i].id)
+        }
+        var pos = 0
+        var neg = 0
+        var neut = 0
+
+        for (var i in proposal_data.comments) {
+            if (explored_ids.includes(proposal_data.comments[i].comment_id.toString())) {
+                if (proposal_data.comments[i].discourse == "Positive") {
+                    pos += 1
+                } else if (proposal_data.comments[i].discourse == "Negative") {
+                    neg += 1
+                } else {
+                    neut += 1
+                }
+            }
+        }
+        var total = pos + neg + neut
+        var items = [{
+            "sent": "Positive",
+            "count": pos
+        }, {
+            "sent": "Negative",
+            "count": neg
+        }, {
+            "sent": "Neutral",
+            "count": neut
+        }]
+        var total = pos + neg + neut
+
+        var items = [{
+            "sent": "Positive",
+            "count": pos
+        }, {
+            "sent": "Negative",
+            "count": neg
+        }, {
+            "sent": "Neutral",
+            "count": neut
+        }]
+
+        var sorted = items.sort(function (a, b) {
+            return b.count - a.count
+        })
+
+        var fgroup = ((sorted[0].count / total) - (sorted[1].count / total)) * 100
+
+        console.log("ggwp", sorted)
+
+        if (fgroup > 10) {
+            document.getElementById("disttext").innerHTML =
+                '<i class="fa fa-square fa-sm" style="margin-right:2px; color:#FFAB91" aria-hidden="true"></i>' +
+                'Distribution: You read ' +
+                sorted[0]
+                .sent + ' reviews';
+        } else {
+            var sgroup = ((sorted[1].count / total) - (sorted[2].count / total)) * 100
+            if (sgroup > 10) {
+                document.getElementById("disttext").innerHTML =
+                    '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden="true"></i>' +
+                    'Distribution: You read ' +
+                    sorted[0]
+                    .sent + ' and ' + sorted[1]
+                    .sent + ' reviews';
+            } else {
+                document.getElementById("disttext").innerHTML =
+                    '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i>' +
+                    'Distribution: You read all kinds of reviews';
+            }
+        }
+
+        // document.getElementById("disttext").innerHTML = '<i class="fa fa-square fa-sm" style="margin-right: 2px; color:#FFAB91" aria-hidden = "true"></i> Distribution: You read ' + explored_list[did].length +
+        //             ' sentiments' + ' (' + metrics[did].visit * 1 + '%)';
     }
 
     function get_visit() {
@@ -1615,7 +1699,7 @@
     });
 
     $(document).on('click', '.topicbtn', function () {
-        console.log($(this)[0].innerText)
+        // console.log($(this)[0].innerText)
         topic_filter = $(this)[0].innerText
 
         if (clicked_id_metric) {
@@ -1908,7 +1992,7 @@
                 document.getElementById("commentloading").style.display = "none"
             }, delay)
         }
-        console.log($(this)[0].innerText, delay)
+        // console.log($(this)[0].innerText, delay)
     });
 
     $(document).on('mouseover', '.serenText', function () {
@@ -1927,9 +2011,9 @@
         document.getElementById("commentloading").style.display = "none"
         time_end = Date.now();
         var elapsed_time = ((time_end - time_start) / 1000)
-        console.log("etime", elapsed_time)
+        // console.log("etime", elapsed_time)
         var delay = $(this)[0].innerText.split(" ").length / 15
-        console.log("delay", delay)
+        // console.log("delay", delay)
         if (this.className == 'commentText' && (elapsed_time > delay || elapsed_time > 4)) {
             if (dice_trigger == 1) {
                 document.getElementById("serenloading").style.display = "block"
@@ -2383,6 +2467,7 @@
             var ngram_list = []
 
             for (var i in proposal_data.ngrams) {
+                if(i > 7) break;
                 ngram_list.push(proposal_data.ngrams[i].ngram)
             }
 

@@ -1054,6 +1054,9 @@
                 ));
             }
 
+            localStorage.setItem("postq17Select", validate_form("q17Select", "q17SelectFeedback",
+                "Please select an option"));
+
             if (validate_form("q17Select", "q17SelectFeedback", "Please select an option") ==
                 "Yes") {
                 localStorage.setItem("postq17YesText", validate_form("q17YesText", "q17YesFeedback",

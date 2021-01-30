@@ -1,0 +1,146 @@
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq3YesDecisionSelect,2
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq1,1
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq6checkString,-Sony-Audio-Technica
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq5Select,1
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq7Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq3Select,Yes
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq6Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq2,2
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,totaltime,44880s
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq4YesImpactSelect,1
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq3YesTimeSelect,0
+SUFy6Nmz,Sun, 10 Jan 2021 04:00:47 GMT,pre_q,preq4,Yes
+SUFy6Nmz,Sun, 10 Jan 2021 04:05:46 GMT,click,product_0,select product from dropdown
+SUFy6Nmz,Sun, 10 Jan 2021 04:05:46 GMT,click,dice,get suggested comments
+SUFy6Nmz,Sun, 10 Jan 2021 04:05:46 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:05:48 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:05:50 GMT,click,dice,remove suggested comments
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:02 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:04 GMT,click,sentiment_Positive,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:04 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:15 GMT,click,comment_502,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:16 GMT,hover,comment_502,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:19 GMT,hover,comment_441,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:24 GMT,click,comment_441,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:28 GMT,hover,comment_441,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:45 GMT,click,comment_368,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:47 GMT,hover,comment_368,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:06:50 GMT,click,comment_470,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:02 GMT,click,comment_357,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:03 GMT,hover,comment_357,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:03 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:03 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:05 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:06 GMT,click,ngram_price range,select an ngram
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:10 GMT,click,comment_552,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:12 GMT,hover,comment_552,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:12 GMT,hover,bar_distback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:15 GMT,click,ngram_excellent sound,select an ngram
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:16 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:19 GMT,click,comment_276,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:20 GMT,hover,comment_276,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:20 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:22 GMT,click,sentiment_Negative,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:22 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:28 GMT,click,comment_580,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:28 GMT,hover,comment_580,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:29 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:29 GMT,click,sentiment_Neutral,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:30 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:43 GMT,hover,comment_505,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:47 GMT,hover,comment_255,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:57 GMT,click,comment_32,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:07:58 GMT,hover,comment_32,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:06 GMT,click,comment_536,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:08 GMT,hover,bar_distback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:15 GMT,click,product_1,select product from dropdown
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:15 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:16 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:17 GMT,click,sentiment_Positive,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:18 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:47 GMT,click,comment_956,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:57 GMT,click,comment_784,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:08:59 GMT,hover,comment_784,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:09 GMT,click,comment_1073,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:11 GMT,hover,comment_1073,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:28 GMT,click,comment_659,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:32 GMT,click,comment_1266,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:36 GMT,click,sentiment_Negative,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:40 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:42 GMT,hover,comment_869,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:57 GMT,click,comment_1122,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:09:59 GMT,hover,comment_1122,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:04 GMT,click,comment_789,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:07 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:15 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:15 GMT,click,sentiment_Neutral,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:21 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:25 GMT,hover,comment_1202,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:34 GMT,click,comment_627,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:36 GMT,hover,comment_627,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:39 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:40 GMT,click,product_2,select product from dropdown
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:43 GMT,hover,comment_1521,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:43 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:44 GMT,click,sentiment_Positive,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:45 GMT,hover,bar_visitback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:46 GMT,click,comment_1521,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:47 GMT,click,comment_1521,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:49 GMT,hover,comment_1521,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:10:54 GMT,click,comment_1597,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:04 GMT,click,comment_1678,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:05 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:05 GMT,click,sentiment_Neutral,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:06 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:09 GMT,click,comment_1701,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:13 GMT,click,comment_1454,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:14 GMT,hover,comment_1454,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:17 GMT,click,comment_1383,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:17 GMT,hover,comment_1383,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:25 GMT,click,comment_1325,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:25 GMT,hover,comment_1325,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:26 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:27 GMT,click,sentiment_Neutral,deselect a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:29 GMT,click,sentiment_Neutral,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:32 GMT,click,sentiment_Positive,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:33 GMT,click,sentiment_Neutral,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:34 GMT,click,sentiment_Negative,select a sentiment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:36 GMT,hover,bar_coverback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:38 GMT,click,comment_1430,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:41 GMT,hover,comment_1430,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:42 GMT,click,comment_1443,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:44 GMT,click,comment_1298,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:46 GMT,click,comment_1537,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:46 GMT,hover,comment_1537,interact with a comment
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:46 GMT,hover,bar_distback,hovered on metric bar
+SUFy6Nmz,Sun, 10 Jan 2021 04:11:53 GMT,click,product_0,select product from dropdown
+SUFy6Nmz,Sun, 10 Jan 2021 04:12:01 GMT,study,visit,4
+SUFy6Nmz,Sun, 10 Jan 2021 04:12:01 GMT,study,coverage,18
+SUFy6Nmz,Sun, 10 Jan 2021 04:12:01 GMT,study,visit,4
+SUFy6Nmz,Sun, 10 Jan 2021 04:12:03 GMT,study,totaltime,378769s
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq22,Neutral
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq5NoText,didn't seem necessary
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq21,Nothing in particular.
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq4,Moderately confident
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq7,Very easy
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq16Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq23,None
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq1,0
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,post2checkString,-Audio_Quality-Comfort-Longevity
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq14Select,Slightly useful
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq8Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq20,The ui looks interesting. The list of suggested relevant reviews and information about explored review semantics can be useful to make decisions while buying something online.
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq9YesText,To get an idea of the explored positive and negative reviews distribution
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq15Select,Slightly useful
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq9Select,Yes
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq13Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq5Select,No
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq11Select,Easy
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,post18checkString,-Audio_Quality-Comfort
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq3,Moderately confident
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq19Select,2
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq6,Neutral
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq19PickText,This is a good headphone but with time might start having issues.
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq13NoText,Seemed redundant 
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,postq10Select,Useful
+SUFy6Nmz,Sun, 10 Jan 2021 04:20:59 GMT,post_q,totaltime,534436s

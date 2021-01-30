@@ -1,0 +1,64 @@
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq3Select,Yes
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq4,Yes
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq1,1
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq3YesDecisionSelect,3
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq2,1
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,preq3YesTimeSelect,3
+0ob31jBm,Tue, 10 Nov 2020 00:59:36 GMT,pre_q,totaltime,21980s
+0ob31jBm,Tue, 10 Nov 2020 01:16:07 GMT,click,product_0,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:16:07 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:16:08 GMT,hover,bar_visitback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:09 GMT,hover,bar_visitback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:10 GMT,click,comment_394,interact with a comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:11 GMT,click,comment_502,interact with a comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:13 GMT,click,comment_470,interact with a comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:15 GMT,click,serencomment_95,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:16 GMT,click,serencomment_443,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:18 GMT,click,serencomment_698,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:19 GMT,click,serencomment_714,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:20 GMT,click,serencomment_108,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:22 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:25 GMT,click,product_1,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:16:25 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:16:25 GMT,hover,bar_visitback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:26 GMT,click,comment_627,interact with a comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:26 GMT,click,comment_956,interact with a comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:27 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:27 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:28 GMT,click,serencomment_722,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:29 GMT,click,serencomment_643,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:30 GMT,click,serencomment_829,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:30 GMT,click,serencomment_1152,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:32 GMT,click,serencomment_729,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:33 GMT,click,serencomment_829,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:35 GMT,click,serencomment_912,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:35 GMT,click,serencomment_843,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:36 GMT,click,serencomment_907,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:36 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:41 GMT,click,product_0,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:16:41 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:16:48 GMT,click,product_1,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:16:48 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:16:50 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:16:51 GMT,click,serencomment_653,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:52 GMT,click,serencomment_1046,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:56 GMT,click,product_2,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:16:56 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:16:57 GMT,click,serencomment_1387,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:58 GMT,click,serencomment_1468,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:16:58 GMT,click,serencomment_670,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:17:00 GMT,click,serencomment_1567,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:17:00 GMT,click,serencomment_1438,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:17:01 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:17:02 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:17:03 GMT,click,serencomment_1567,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:17:04 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:17:06 GMT,click,product_1,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:17:06 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:17:08 GMT,click,product_0,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:17:08 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:17:12 GMT,click,product_3,select product from dropdown
+0ob31jBm,Tue, 10 Nov 2020 01:17:12 GMT,click,dice,get suggested comments
+0ob31jBm,Tue, 10 Nov 2020 01:17:12 GMT,hover,bar_coverback,hovered on metric bar
+0ob31jBm,Tue, 10 Nov 2020 01:17:13 GMT,click,serencomment_1787,interact with a suggested comment
+0ob31jBm,Tue, 10 Nov 2020 01:17:15 GMT,study,totaltime,76501s

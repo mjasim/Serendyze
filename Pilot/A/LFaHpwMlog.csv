@@ -1,0 +1,667 @@
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq3Select,Yes
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq1,2
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq3YesDecisionSelect,3
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq4,Yes
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq2,5
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,totaltime,129521s
+LFaHpwM,Mon, 09 Nov 2020 20:19:23 GMT,pre_q,preq3YesTimeSelect,1
+LFaHpwM,Mon, 09 Nov 2020 20:20:25 GMT,click,product_5,select product from dropdown
+LFaHpwM,Mon, 09 Nov 2020 20:20:25 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 09 Nov 2020 20:20:26 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:20:27 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:20:30 GMT,click,comment_4139,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:31 GMT,click,comment_3973,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:32 GMT,click,comment_4369,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:33 GMT,click,comment_3320,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:34 GMT,click,comment_3670,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:35 GMT,click,comment_3519,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:37 GMT,click,comment_3482,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:56 GMT,hover,comment_3482,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:20:59 GMT,click,serencomment_4373,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:03 GMT,click,serencomment_4328,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:04 GMT,click,serencomment_3479,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:05 GMT,click,serencomment_3401,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:09 GMT,click,serencomment_3768,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:26 GMT,hover,comment_mment_4356,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:28 GMT,click,ngram_great price,select an ngram
+LFaHpwM,Mon, 09 Nov 2020 20:21:30 GMT,click,ngram_good price,select an ngram
+LFaHpwM,Mon, 09 Nov 2020 20:21:31 GMT,click,ngram_long cord,select an ngram
+LFaHpwM,Mon, 09 Nov 2020 20:21:36 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:21:38 GMT,click,serencomment_3307,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:21:39 GMT,click,serencomment_4068,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:03 GMT,click,comment_3398,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:04 GMT,click,comment_3486,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:05 GMT,click,comment_4310,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:06 GMT,click,comment_3452,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:08 GMT,hover,comment_3452,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:11 GMT,click,comment_4146,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:12 GMT,hover,comment_4146,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:14 GMT,click,serencomment_3960,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:15 GMT,click,serencomment_3660,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:16 GMT,click,serencomment_3259,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:18 GMT,click,serencomment_3310,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:22 GMT,hover,comment_mment_3310,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:25 GMT,click,comment_4309,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:22:27 GMT,click,comment_3335,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:06 GMT,hover,comment_3335,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:08 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:23:09 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:23:09 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:23:16 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 20:23:18 GMT,click,comment_4233,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:19 GMT,click,comment_4136,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:21 GMT,click,comment_4117,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:22 GMT,click,serencomment_4136,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:24 GMT,click,serencomment_3363,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:26 GMT,click,serencomment_3966,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:27 GMT,click,comment_3447,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 20:23:28 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq4,No
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq3Select,Yes
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq3YesTimeSelect,1
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq2,2
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq3YesDecisionSelect,1
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,preq1,1
+LFaHpwM,Mon, 09 Nov 2020 21:14:23 GMT,pre_q,totaltime,2376577s
+LFaHpwM,Mon, 09 Nov 2020 21:14:37 GMT,click,product_2,select product from dropdown
+LFaHpwM,Mon, 09 Nov 2020 21:14:37 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 09 Nov 2020 21:14:37 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 09 Nov 2020 21:14:40 GMT,click,comment_1597,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:41 GMT,hover,comment_1597,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:42 GMT,click,comment_1646,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:44 GMT,click,comment_1358,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:46 GMT,click,serencomment_1370,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:46 GMT,click,serencomment_1365,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:47 GMT,click,serencomment_1462,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:48 GMT,click,comment_1454,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:49 GMT,hover,comment_1454,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:50 GMT,click,comment_1709,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:51 GMT,click,serencomment_1396,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:52 GMT,click,serencomment_1658,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:53 GMT,click,serencomment_1718,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:53 GMT,click,serencomment_1624,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:56 GMT,click,comment_1521,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:57 GMT,click,comment_1308,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:58 GMT,click,serencomment_1520,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:14:59 GMT,click,serencomment_1307,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:00 GMT,click,serencomment_1333,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:00 GMT,click,serencomment_1463,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:14 GMT,hover,comment_mment_1603,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:20 GMT,click,comment_1689,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:28 GMT,hover,comment_1689,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:29 GMT,click,comment_1472,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:31 GMT,click,comment_1539,interact with a comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:32 GMT,click,serencomment_1399,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:32 GMT,click,serencomment_1294,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:33 GMT,click,serencomment_1577,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:15:35 GMT,click,serencomment_1527,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:06 GMT,click,serencomment_1367,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:06 GMT,hover,comment_mment_1367,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:07 GMT,click,serencomment_1527,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:07 GMT,click,serencomment_1305,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:08 GMT,click,serencomment_1465,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:09 GMT,click,serencomment_1421,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:11 GMT,click,serencomment_1354,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:11 GMT,click,serencomment_1465,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:12 GMT,click,serencomment_1305,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:13 GMT,click,serencomment_1354,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:14 GMT,click,serencomment_1618,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:16 GMT,click,serencomment_1448,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:16 GMT,click,serencomment_1318,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:17 GMT,click,serencomment_1618,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:18 GMT,click,serencomment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:18 GMT,click,serencomment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:20 GMT,hover,comment_mment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:21 GMT,click,serencomment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:22 GMT,hover,comment_mment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:23 GMT,click,serencomment_1618,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:24 GMT,click,serencomment_1448,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:24 GMT,click,serencomment_1318,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:25 GMT,click,serencomment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:26 GMT,click,serencomment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:27 GMT,click,serencomment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:28 GMT,click,serencomment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:28 GMT,click,serencomment_1318,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:29 GMT,click,serencomment_1616,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:30 GMT,click,serencomment_1301,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:31 GMT,click,serencomment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:34 GMT,click,serencomment_1616,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:35 GMT,click,serencomment_1301,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:35 GMT,click,serencomment_1632,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:36 GMT,click,serencomment_1491,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:37 GMT,click,serencomment_1434,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:38 GMT,click,serencomment_1301,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:39 GMT,click,serencomment_1434,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:40 GMT,click,serencomment_1604,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:40 GMT,click,serencomment_1494,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:41 GMT,click,serencomment_1616,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:43 GMT,click,serencomment_1434,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:44 GMT,click,serencomment_1616,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:44 GMT,click,serencomment_1616,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:45 GMT,click,serencomment_1558,interact with a suggested comment
+LFaHpwM,Mon, 09 Nov 2020 21:17:46 GMT,click,serencomment_1301,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq3Select,No
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq4,No
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq2,2
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq1,1
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq3YesTimeSelect,1
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,preq3YesDecisionSelect,1
+LFaHpwM,Mon, 16 Nov 2020 14:29:30 GMT,pre_q,totaltime,9792s
+LFaHpwM,Mon, 16 Nov 2020 14:29:47 GMT,click,product_3,select product from dropdown
+LFaHpwM,Mon, 16 Nov 2020 14:29:47 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 16 Nov 2020 14:30:02 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 16 Nov 2020 14:30:02 GMT,click,comment_2214,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:04 GMT,click,comment_2110,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:04 GMT,click,comment_2199,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:05 GMT,click,comment_1844,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:06 GMT,click,comment_1809,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:07 GMT,click,serencomment_2010,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:07 GMT,click,serencomment_1977,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:08 GMT,click,serencomment_1800,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:09 GMT,click,serencomment_2094,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:10 GMT,click,serencomment_2232,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:11 GMT,click,serencomment_2139,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:12 GMT,click,serencomment_2287,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:13 GMT,click,serencomment_2133,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:17 GMT,click,serencomment_2059,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:18 GMT,click,serencomment_1976,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:20 GMT,click,serencomment_1892,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:31 GMT,click,comment_2264,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:32 GMT,click,comment_2121,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:36 GMT,click,comment_1808,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:37 GMT,hover,comment_1808,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:42 GMT,click,comment_2066,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:44 GMT,click,comment_1868,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:45 GMT,click,comment_2174,interact with a comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:47 GMT,click,serencomment_2225,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:48 GMT,click,serencomment_1819,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:49 GMT,click,serencomment_2144,interact with a suggested comment
+LFaHpwM,Mon, 16 Nov 2020 14:30:54 GMT,click,ngram_much better,select an ngram
+LFaHpwM,Mon, 16 Nov 2020 14:30:56 GMT,click,ngram_hard hearing,select an ngram
+LFaHpwM,Mon, 16 Nov 2020 14:30:58 GMT,click,ngram_excellent sound,select an ngram
+LFaHpwM,Mon, 16 Nov 2020 14:31:00 GMT,click,ngram_five stars,select an ngram
+LFaHpwM,Mon, 16 Nov 2020 14:31:11 GMT,click,ngram_sound quality,select an ngram
+LFaHpwM,Mon, 16 Nov 2020 14:31:13 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 16 Nov 2020 14:31:20 GMT,click,sentiment_Neutral,select a sentiment
+LFaHpwM,Mon, 16 Nov 2020 14:31:26 GMT,click,sentiment_Positive,select a sentiment
+LFaHpwM,Mon, 16 Nov 2020 14:31:29 GMT,click,sentiment_Negative,select a sentiment
+LFaHpwM,Mon, 16 Nov 2020 14:31:34 GMT,click,sentiment_Positive,select a sentiment
+LFaHpwM,Mon, 16 Nov 2020 14:31:37 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:37:45 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 30 Nov 2020 20:37:45 GMT,click,product_0,select product from dropdown
+LFaHpwM,Mon, 30 Nov 2020 20:37:58 GMT,click,comment_394,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:37:59 GMT,click,comment_502,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:00 GMT,click,comment_470,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:00 GMT,click,comment_382,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:01 GMT,click,comment_489,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:01 GMT,click,comment_615,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:02 GMT,click,comment_465,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:02 GMT,click,comment_512,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:07 GMT,click,serencomment_130,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:07 GMT,hover,comment_mment_130,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:07 GMT,click,serencomment_282,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:08 GMT,hover,comment_mment_282,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:08 GMT,click,serencomment_214,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:08 GMT,hover,comment_mment_214,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:09 GMT,click,serencomment_428,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:09 GMT,click,serencomment_481,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:15 GMT,hover,comment_mment_481,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:15 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:38:16 GMT,click,sentiment_Positive,select a sentiment
+LFaHpwM,Mon, 30 Nov 2020 20:38:17 GMT,click,comment_715,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:18 GMT,click,comment_882,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:38:19 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:38:20 GMT,study,totaltime,38884s
+LFaHpwM,Mon, 30 Nov 2020 20:38:28 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 30 Nov 2020 20:38:28 GMT,click,product_1,select product from dropdown
+LFaHpwM,Mon, 30 Nov 2020 20:38:45 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:38:46 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:40:05 GMT,hover,comment_869,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:08 GMT,click,comment_1126,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:10 GMT,click,comment_600,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:11 GMT,click,comment_1122,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:12 GMT,hover,comment_mment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:13 GMT,click,serencomment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:13 GMT,hover,comment_mment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:14 GMT,click,serencomment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:14 GMT,hover,comment_mment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:14 GMT,click,serencomment_643,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:15 GMT,hover,comment_mment_643,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:16 GMT,click,serencomment_1019,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:40:16 GMT,click,serencomment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:12 GMT,click,serencomment_912,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:12 GMT,hover,comment_mment_912,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:13 GMT,click,serencomment_989,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:15 GMT,click,serencomment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:17 GMT,hover,comment_mment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:17 GMT,click,serencomment_843,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:18 GMT,hover,comment_mment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:18 GMT,click,serencomment_1197,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:20 GMT,click,serencomment_1152,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:20 GMT,hover,comment_mment_1152,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:21 GMT,click,serencomment_1244,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:22 GMT,click,serencomment_1152,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:23 GMT,hover,comment_mment_1152,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:24 GMT,click,comment_784,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:26 GMT,click,serencomment_1244,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:27 GMT,click,serencomment_1010,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:28 GMT,click,serencomment_1010,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:29 GMT,hover,comment_mment_1010,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:29 GMT,click,serencomment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:32 GMT,click,serencomment_988,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:33 GMT,click,serencomment_759,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:34 GMT,click,serencomment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:35 GMT,click,serencomment_1010,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:36 GMT,click,serencomment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:37 GMT,hover,comment_mment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:38 GMT,click,serencomment_1010,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:39 GMT,click,serencomment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:40 GMT,hover,comment_mment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:41 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:42 GMT,click,comment_627,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:44 GMT,click,serencomment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:45 GMT,click,serencomment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:45 GMT,hover,comment_mment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:46 GMT,click,serencomment_759,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:47 GMT,click,serencomment_738,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:48 GMT,click,serencomment_1125,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:49 GMT,click,serencomment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:50 GMT,click,serencomment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:50 GMT,hover,comment_mment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:51 GMT,click,serencomment_759,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:52 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:53 GMT,click,serencomment_970,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:54 GMT,click,serencomment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:55 GMT,click,serencomment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:55 GMT,hover,comment_mment_798,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:55 GMT,click,serencomment_759,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:56 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:57 GMT,click,serencomment_988,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:58 GMT,click,serencomment_759,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:41:59 GMT,click,serencomment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:00 GMT,click,serencomment_738,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:00 GMT,click,serencomment_1125,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:01 GMT,click,serencomment_980,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:02 GMT,click,serencomment_738,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:02 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:03 GMT,click,serencomment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:08 GMT,hover,comment_956,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:09 GMT,click,serencomment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:10 GMT,hover,comment_mment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:11 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:13 GMT,hover,comment_mment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:13 GMT,click,serencomment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:15 GMT,hover,comment_mment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:16 GMT,click,serencomment_721,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:21 GMT,hover,comment_mment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:22 GMT,click,serencomment_738,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:25 GMT,click,serencomment_724,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:27 GMT,click,serencomment_1125,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:30 GMT,hover,comment_mment_1125,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:31 GMT,click,serencomment_970,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:42:33 GMT,click,serencomment_970,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 20:43:43 GMT,study,totaltime,319629s
+LFaHpwM,Mon, 30 Nov 2020 20:44:04 GMT,click,product_0,select product from dropdown
+LFaHpwM,Mon, 30 Nov 2020 20:44:04 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 30 Nov 2020 20:54:34 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:54:52 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 20:54:56 GMT,click,nav_dice_brand,reload
+LFaHpwM,Mon, 30 Nov 2020 20:54:58 GMT,click,nav_dice_brand,reload
+LFaHpwM,Mon, 30 Nov 2020 20:55:16 GMT,click,nav_dice_brand,reload
+LFaHpwM,Mon, 30 Nov 2020 20:57:43 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:10:43 GMT,click,product_1,select product from dropdown
+LFaHpwM,Mon, 30 Nov 2020 21:10:43 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 30 Nov 2020 21:10:47 GMT,click,comment_813,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:47 GMT,hover,comment_813,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:47 GMT,click,comment_956,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:48 GMT,click,serencomment_1220,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:49 GMT,click,serencomment_895,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:49 GMT,click,serencomment_1257,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:50 GMT,click,serencomment_919,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:51 GMT,click,serencomment_1212,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:53 GMT,click,comment_627,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:53 GMT,click,comment_784,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:54 GMT,click,comment_1126,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:55 GMT,click,comment_869,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:55 GMT,click,comment_643,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:56 GMT,click,comment_864,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:10:58 GMT,hover,comment_864,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:02 GMT,click,serencomment_1220,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:05 GMT,click,serencomment_895,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:08 GMT,hover,comment_mment_895,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:23 GMT,click,product_1,select product from dropdown
+LFaHpwM,Mon, 30 Nov 2020 21:11:23 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 30 Nov 2020 21:11:24 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:25 GMT,click,comment_956,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:25 GMT,click,comment_627,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:26 GMT,click,comment_784,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:27 GMT,click,comment_1126,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:27 GMT,click,comment_869,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:28 GMT,click,comment_643,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:28 GMT,click,comment_864,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:29 GMT,click,comment_600,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:29 GMT,click,comment_1122,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:30 GMT,click,serencomment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:31 GMT,hover,comment_mment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:31 GMT,click,serencomment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:31 GMT,hover,comment_mment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:32 GMT,click,serencomment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:32 GMT,hover,comment_mment_829,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:33 GMT,click,serencomment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:33 GMT,hover,comment_mment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:33 GMT,click,serencomment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:34 GMT,hover,comment_mment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:34 GMT,click,serencomment_1152,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:35 GMT,hover,comment_mment_904,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:36 GMT,click,serencomment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:36 GMT,hover,comment_mment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:37 GMT,hover,comment_mment_907,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:38 GMT,click,serencomment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:38 GMT,hover,comment_mment_670,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:38 GMT,click,serencomment_729,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:39 GMT,click,serencomment_1197,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:40 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:40 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:41 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:49 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:49 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:51 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:55 GMT,click,sentiment_Neutral,select a sentiment
+LFaHpwM,Mon, 30 Nov 2020 21:11:56 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:11:57 GMT,click,comment_971,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:58 GMT,click,comment_743,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:11:59 GMT,click,comment_856,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:00 GMT,click,comment_1202,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:01 GMT,click,comment_857,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:01 GMT,click,comment_938,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:01 GMT,hover,comment_938,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:02 GMT,click,comment_1019,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:03 GMT,click,serencomment_912,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:04 GMT,click,serencomment_1019,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:05 GMT,click,serencomment_1197,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:05 GMT,click,serencomment_989,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:06 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:06 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:08 GMT,click,bar_visitback,clicked on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:12 GMT,click,serencomment_912,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:12 GMT,click,serencomment_1019,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:13 GMT,click,serencomment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:14 GMT,hover,comment_mment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:14 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:19 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:19 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:20 GMT,click,serencomment_843,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:20 GMT,hover,comment_mment_843,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:22 GMT,click,serencomment_989,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:22 GMT,click,serencomment_1019,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:23 GMT,click,serencomment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:23 GMT,hover,comment_mment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:24 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:24 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:25 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:26 GMT,click,serencomment_843,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:26 GMT,hover,comment_mment_843,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:27 GMT,click,serencomment_912,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:28 GMT,click,serencomment_989,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:29 GMT,click,serencomment_1019,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:29 GMT,click,serencomment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:30 GMT,hover,comment_mment_825,interact with a suggested comment
+LFaHpwM,Mon, 30 Nov 2020 21:12:30 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:31 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:32 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:32 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:33 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:33 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:33 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:34 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:34 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:34 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:34 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:35 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:36 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:36 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:37 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:38 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:38 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:40 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:44 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:44 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:48 GMT,click,bar_distback,clicked on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:53 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:53 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:54 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:54 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:58 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:12:58 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:13:03 GMT,click,bar_visitback,clicked on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:13:04 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:13:05 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:13:05 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:13:12 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:20:30 GMT,hover,comment_627,interact with a comment
+LFaHpwM,Mon, 30 Nov 2020 21:20:30 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:24:13 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:30:22 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 30 Nov 2020 21:30:23 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:03:18 GMT,click,dice,get suggested comments
+LFaHpwM,Mon, 07 Dec 2020 17:03:18 GMT,click,product_0,select product from dropdown
+LFaHpwM,Mon, 07 Dec 2020 17:03:34 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:03:45 GMT,click,comment_394,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:46 GMT,click,comment_346,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:46 GMT,click,comment_502,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:47 GMT,click,comment_170,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:47 GMT,click,comment_470,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:49 GMT,click,comment_382,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:50 GMT,click,serencomment_133,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:50 GMT,click,serencomment_198,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:51 GMT,click,serencomment_673,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:52 GMT,click,serencomment_227,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:52 GMT,click,serencomment_278,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:54 GMT,click,comment_489,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:54 GMT,click,comment_615,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:55 GMT,click,comment_465,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:56 GMT,click,comment_186,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:56 GMT,hover,comment_186,interact with a comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:58 GMT,click,serencomment_698,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:59 GMT,hover,comment_mment_698,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:03:59 GMT,click,serencomment_443,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:00 GMT,click,serencomment_108,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:01 GMT,click,serencomment_130,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:01 GMT,hover,comment_mment_130,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:01 GMT,click,serencomment_110,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:02 GMT,hover,comment_mment_110,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:03 GMT,click,serencomment_698,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:03 GMT,hover,comment_mment_698,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:16 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:16 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:16 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:19 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:19 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:28 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:29 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:38 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:38 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:38 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:38 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:39 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:39 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:44 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:44 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:44 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:54 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:04:56 GMT,click,serencomment_110,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:57 GMT,click,serencomment_317,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:57 GMT,click,serencomment_303,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:57 GMT,hover,comment_mment_303,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:58 GMT,click,serencomment_788,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:58 GMT,hover,comment_mment_788,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:59 GMT,click,serencomment_373,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:04:59 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:01 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:01 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:03 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:08 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:09 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:10 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:10 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:13 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:13 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:28 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:29 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:29 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:32 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:35 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:35 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:53 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:53 GMT,click,serencomment_317,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:54 GMT,hover,comment_mment_317,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:55 GMT,click,serencomment_303,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:55 GMT,hover,comment_mment_303,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:56 GMT,click,serencomment_788,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:56 GMT,hover,comment_mment_788,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:57 GMT,click,serencomment_949,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:57 GMT,hover,comment_mment_949,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:57 GMT,click,serencomment_373,interact with a suggested comment
+LFaHpwM,Mon, 07 Dec 2020 17:05:58 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:58 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:58 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:58 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:05:59 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:06:02 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:06:06 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Mon, 07 Dec 2020 17:06:07 GMT,click,ngram_really good,select an ngram
+LFaHpwM,Mon, 07 Dec 2020 17:06:26 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:26:27 GMT,click,product_0,select product from dropdown
+LFaHpwM,Wed, 16 Dec 2020 21:26:27 GMT,click,dice,get suggested comments
+LFaHpwM,Wed, 16 Dec 2020 21:26:49 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:26:50 GMT,click,comment_394,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:50 GMT,click,comment_346,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:51 GMT,hover,comment_346,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:51 GMT,click,comment_502,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:52 GMT,click,comment_170,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:52 GMT,hover,comment_170,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:52 GMT,click,comment_470,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:53 GMT,click,comment_382,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:54 GMT,click,comment_130,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:54 GMT,hover,comment_130,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:55 GMT,click,comment_489,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:55 GMT,click,comment_615,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:56 GMT,click,comment_186,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:57 GMT,click,serencomment_303,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:58 GMT,click,serencomment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:26:58 GMT,hover,comment_mment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:02 GMT,click,serencomment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:02 GMT,hover,comment_mment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:03 GMT,click,serencomment_108,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:03 GMT,hover,comment_mment_108,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:03 GMT,click,serencomment_303,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:05 GMT,click,serencomment_698,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:05 GMT,hover,comment_mment_698,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:05 GMT,click,serencomment_443,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:06 GMT,click,serencomment_443,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:07 GMT,click,serencomment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:07 GMT,hover,comment_mment_110,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:07 GMT,click,serencomment_303,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:09 GMT,click,serencomment_443,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:10 GMT,click,serencomment_108,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:21 GMT,click,serencomment_443,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:24 GMT,click,serencomment_108,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:27:31 GMT,hover,comment_mment_108,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:28:09 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:10 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:10 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:10 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:11 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:11 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:14 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:14 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:14 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:17 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:28:18 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:29:03 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:29:04 GMT,click,ngram_great price,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:05 GMT,click,ngram_really good,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:07 GMT,click,ngram_excellent sound,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:08 GMT,click,sentiment_Neutral,select a sentiment
+LFaHpwM,Wed, 16 Dec 2020 21:29:10 GMT,click,ngram_comfortable wear,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:12 GMT,click,sentiment_Negative,select a sentiment
+LFaHpwM,Wed, 16 Dec 2020 21:29:13 GMT,click,sentiment_Neutral,select a sentiment
+LFaHpwM,Wed, 16 Dec 2020 21:29:14 GMT,click,sentiment_Positive,select a sentiment
+LFaHpwM,Wed, 16 Dec 2020 21:29:15 GMT,click,ngram_excellent sound,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:17 GMT,click,ngram_excellent sound,deselect an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:19 GMT,click,ngram_really good,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:41 GMT,click,ngram_really good,deselect an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:42 GMT,click,ngram_really good,select an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:43 GMT,click,ngram_really good,deselect an ngram
+LFaHpwM,Wed, 16 Dec 2020 21:29:47 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:29:48 GMT,hover,comment_mment_317,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:05 GMT,click,comment_441,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:06 GMT,click,comment_715,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:17 GMT,click,serencomment_528,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:24 GMT,click,serencomment_949,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:25 GMT,hover,comment_mment_949,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:26 GMT,click,serencomment_373,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:27 GMT,hover,comment_mment_373,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:30 GMT,hover,comment_mment_14,interact with a suggested comment
+LFaHpwM,Wed, 16 Dec 2020 21:30:31 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:31 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:31 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:32 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:36 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:41 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:41 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:41 GMT,click,bar_distback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:44 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:48 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:49 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:49 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:49 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:57 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:30:57 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:20 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:20 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:20 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:21 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:21 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:23 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:24 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:24 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:24 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:27 GMT,click,bar_distback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:28 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:30 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:31 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:32 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:33 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:33 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:33 GMT,click,bar_distback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:36 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:36 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:31:36 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:05 GMT,hover,comment_502,interact with a comment
+LFaHpwM,Wed, 16 Dec 2020 21:32:05 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:06 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:06 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:06 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:07 GMT,click,bar_coverback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:22 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:22 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:23 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:23 GMT,hover,bar_distback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:23 GMT,click,bar_distback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:31 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:31 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:31 GMT,click,bar_visitback,clicked on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:33 GMT,hover,bar_visitback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:33 GMT,hover,bar_coverback,hovered on metric bar
+LFaHpwM,Wed, 16 Dec 2020 21:32:53 GMT,hover,bar_coverback,hovered on metric bar
