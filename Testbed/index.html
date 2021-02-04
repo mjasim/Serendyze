@@ -1,0 +1,106 @@
+<html>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+
+    <body onload=sendtoStudy()>
+        <div id="endmessage" style="display: none;">
+            <p>Maximum participants reached. The study has ended.</p>
+        </div>
+    </body>
+
+</html>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBsEATT0COxlreUQUX0wvbjDUKDphFaB0M",
+    authDomain: "dice-fba17.firebaseapp.com",
+    projectId: "dice-fba17",
+    databaseURL: "https://dice-fba17-default-rtdb.firebaseio.com",
+    storageBucket: "dice-fba17.appspot.com",
+    messagingSenderId: "365884855249",
+    appId: "1:365884855249:web:df4fda957b630a52b806f0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+    option_snapshot = null
+
+    function sendtoStudy(){
+        // create_once()
+        var flag = false;
+        var next = null;
+        var optionsRef = firebase.database().ref('options/');
+        optionsRef.once('value', function (snapshot) {
+            option_snapshot = snapshot.val();
+            console.log(option_snapshot)
+            while(!flag){
+                if(parseInt(option_snapshot["A"].option_count) == 25 && parseInt(option_snapshot["B"].option_count) == 25 && parseInt(option_snapshot["C"].option_count) == 25 && parseInt(option_snapshot["D"].option_count) == 25){
+                    flag = true
+                    console.read
+                    document.getElementById("endmessage").style.display = "block";
+                    break;
+                }
+                next = Math.floor(Math.random() * 4);
+                console.log(next)
+                if(next == 0 && parseInt(option_snapshot["A"].option_count) < 25) {
+                    console.log("ayhaA")
+                    firebase.database().ref('options/A').update({
+                        option_name: "A",
+                        option_count: parseInt(option_snapshot["A"].option_count) + 1
+                    })
+                    flag = true;
+                    window.open('./A/', "_self")
+                }
+                else if(next == 1 && parseInt(option_snapshot["B"].option_count) < 25) {
+                    console.log("ayhaB")
+                    firebase.database().ref('options/B').update({
+                        option_name: "B",
+                        option_count: parseInt(option_snapshot["B"].option_count) + 1
+                    })
+                    flag = true;
+                    window.open('./B/', "_self")
+                }
+                else if(next == 2 && parseInt(option_snapshot["C"].option_count) < 25) {
+                    console.log("ayhaC")
+                    firebase.database().ref('options/C').update({
+                        option_name: "C",
+                        option_count: parseInt(option_snapshot["C"].option_count) + 1
+                    })
+                    flag = true;
+                    window.open('./C/', "_self")
+                }
+                else if(next == 3 && parseInt(option_snapshot["D"].option_count) < 25) {
+                    console.log("ayhaD")
+                    firebase.database().ref('options/D').update({
+                        option_name: "D",
+                        option_count: parseInt(option_snapshot["D"].option_count) + 1
+                    })
+                    flag = true;
+                    window.open('./D/', "_self")
+                }
+            }
+        });
+    }
+</script>
+
+
+<script>
+    // function create_once() {
+    //     console.log("hello")
+    //     var options = ["A", "B", "C", "D"];
+    //     for (var i in options) {
+    //         firebase.database().ref('options/' + options[i]).set({
+    //             option_name: options[i],
+    //             option_count: 0
+    //         })
+    //         // console.log(options[i])
+    //     }
+    // }
+</script>
+
