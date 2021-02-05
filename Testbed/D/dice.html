@@ -372,6 +372,9 @@
         "seren_sim_mod": 0
     }
 
+    comment_interacted_with_this_batch = 0
+    responses_received_this_batch = 0
+
     seren_suggest = []
     time_start = 0
     orig_area_text = []
@@ -1519,8 +1522,6 @@
 
                 // console.log(covered_ids)
 
-                render_serenbox(data);
-
                 for (var i in data[0]) {
                     // console.log(data[0][i].id, covered_ids)
                     if (!covered_ids.includes(data[0][i].id.toString())) {
@@ -1531,11 +1532,20 @@
                     }
                 }
 
+                responses_received_this_batch += 1
+                console.log("resrec", responses_received_this_batch)
+
                 // console.log(explored_list[did], covered_list[did], data[0])
 
                 move("coverageBar", ((covered_list[did].length) / disc_comments
                         .length) *
                     100);
+
+                render_serenbox(data);
+
+                if(comment_interacted_with_this_batch == responses_received_this_batch){
+                    document.getElementById("area").disabled = false
+                }
             }
         });
     }
@@ -1630,25 +1640,8 @@
                     "." + '\xa0\xa0\xa0' + '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
             }
 
-            // metrics.coverage = 0
-            // metrics.visit = 0
-            // metrics.distribution = 0
-            // metrics.depth = 0
-
-            // discourses_array.question = 0
-            // discourses_array.answer = 0
-            // discourses_array.announcement = 0
-            // discourses_array.elaboration = 0
-            // discourses_array.appreciation = 0
-            // discourses_array.agreement = 0
-            // discourses_array.disagreement = 0
-            // discourses_array.negativereaction = 0
-            // discourses_array.humor = 0
-            // discourses_array.other = 0
-
-            // discourses_array.positive = 0
-            // discourses_array.negative = 0
-            // discourses_array.neutral = 0
+            comment_interacted_with_this_batch = 0
+            responses_received_this_batch = 0
 
             topic_filter = ""
             disc_filter = ""
@@ -1840,6 +1833,12 @@
         var text = ""
         var disc = ""
         var discbar = ""
+
+        comment_interacted_with_this_batch += 1
+        console.log("cominter", comment_interacted_with_this_batch)
+
+        document.getElementById("area").disabled = true;
+
         // console.log("inside comment intr --", id)
 
         var covered_ids = []

@@ -308,6 +308,9 @@
         "seren_sim_mod": 0
     }
 
+    comment_interacted_with_this_batch = 0
+    responses_received_this_batch = 0
+
     seren_suggest = []
     time_start = 0
     orig_area_text = []
@@ -1455,8 +1458,6 @@
 
                 // console.log(covered_ids)
 
-                render_serenbox(data);
-
                 for (var i in data[0]) {
                     // console.log(data[0][i].id, covered_ids)
                     if (!covered_ids.includes(data[0][i].id.toString())) {
@@ -1465,6 +1466,17 @@
                             "text": data[0][i].text
                         })
                     }
+                }
+
+                responses_received_this_batch += 1
+                console.log("resrec", responses_received_this_batch)
+
+                // console.log(explored_list[did], covered_list[did], data[0])
+
+                render_serenbox(data);
+
+                if(comment_interacted_with_this_batch == responses_received_this_batch){
+                    document.getElementById("area").disabled = false
                 }
 
                 // console.log(explored_list[did], covered_list[did], data[0])
@@ -1530,6 +1542,9 @@
             //         '<div style="color: red">' + metrics[prev_did].distribution +
             //         '%' + '</div>')
             // }
+
+            comment_interacted_with_this_batch = 0
+            responses_received_this_batch = 0
 
             render_topics(discussion_id)
             render_discourse(discussion_id)
@@ -1777,6 +1792,11 @@
         var disc = ""
         var discbar = ""
         // console.log("inside comment intr --", id)
+
+        comment_interacted_with_this_batch += 1
+        console.log("cominter", comment_interacted_with_this_batch)
+
+        document.getElementById("area").disabled = true;
 
         var covered_ids = []
         for (var i in covered_list[did]) {

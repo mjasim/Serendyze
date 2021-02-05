@@ -363,6 +363,9 @@
         "seren_sim_mod": 0
     }
 
+    comment_interacted_with_this_batch = 0
+    responses_received_this_batch = 0
+
     seren_suggest = []
     time_start = 0
     orig_area_text = []
@@ -1523,11 +1526,20 @@
                     }
                 }
 
+                responses_received_this_batch += 1
+                console.log("resrec", responses_received_this_batch)
+
                 // console.log(explored_list[did], covered_list[did], data[0])
 
                 move("coverageBar", ((covered_list[did].length) / disc_comments
                         .length) *
                     100);
+
+                // render_serenbox(data);
+
+                if(comment_interacted_with_this_batch == responses_received_this_batch){
+                    document.getElementById("area").disabled = false
+                }
             }
         });
     }
@@ -1584,6 +1596,9 @@
                     '% Coverage: ' + '<div style="color: green">' + metrics[prev_did]
                     .coverage + '</div>' + '%')
             }
+
+            comment_interacted_with_this_batch = 0
+            responses_received_this_batch = 0
 
             render_topics(discussion_id)
             render_discourse(discussion_id)
@@ -1831,6 +1846,11 @@
         var disc = ""
         var discbar = ""
         // console.log("inside comment intr --", id)
+
+        comment_interacted_with_this_batch += 1
+        console.log("cominter", comment_interacted_with_this_batch)
+
+        document.getElementById("area").disabled = true;
 
         var covered_ids = []
         for (var i in covered_list[did]) {
